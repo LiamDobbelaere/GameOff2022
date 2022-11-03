@@ -1,0 +1,462 @@
+fileFormatVersion: 2
+guid: e616ec754aece1246bca570012335dcc
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: lips_AEI
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 608
+        width: 270
+        height: 148
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fee730d9f5fef904e92e40509a460356
+      internalID: 1657139843
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LIPS_O
+      rect:
+        serializedVersion: 2
+        x: 482
+        y: 583
+        width: 116
+        height: 175
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c52edfe31b30bd34bb4205d991061c7e
+      internalID: 2040076611
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lips_CDNSTXYZ
+      rect:
+        serializedVersion: 2
+        x: 749
+        y: 626
+        width: 264
+        height: 128
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d05106124e91f443820239ee56dd18a
+      internalID: 1790863636
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lips_GK
+      rect:
+        serializedVersion: 2
+        x: 1088
+        y: 612
+        width: 251
+        height: 147
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2cae875b0e0219443b153ea6f5c1c9ed
+      internalID: 1771394706
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lips_L
+      rect:
+        serializedVersion: 2
+        x: 46
+        y: 330
+        width: 265
+        height: 147
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7eda623e723dfa0499ca8f2e071d299c
+      internalID: -1296839807
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lips_FV
+      rect:
+        serializedVersion: 2
+        x: 765
+        y: 379
+        width: 267
+        height: 78
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4180f797508efd54c9e86c082a27f82c
+      internalID: 797363967
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lips_Ee
+      rect:
+        serializedVersion: 2
+        x: 1103
+        y: 349
+        width: 232
+        height: 114
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2871163cefd39654283420d84be28a63
+      internalID: 1666969898
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lips_BMP
+      rect:
+        serializedVersion: 2
+        x: 397
+        y: 394
+        width: 287
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b05a4e1aa336dc14da6d60d316d8b95b
+      internalID: 430676877
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lips_U
+      rect:
+        serializedVersion: 2
+        x: 769
+        y: 100
+        width: 265
+        height: 147
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 341d3701d50fd25409a44edf4584df77
+      internalID: 47717422
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lips_TH
+      rect:
+        serializedVersion: 2
+        x: 59
+        y: 107
+        width: 243
+        height: 104
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bcb9b7222a8ee27449bd82d149ff258c
+      internalID: -1987415059
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lips_CHJSH
+      rect:
+        serializedVersion: 2
+        x: 428
+        y: 99
+        width: 239
+        height: 122
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d01dd259be1a0084bbf46d8e911fa8ae
+      internalID: 1772641396
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: lips_QW
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 98
+        width: 88
+        height: 130
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bdbfe882939b5c94cbcdcdd268ece79d
+      internalID: 976359212
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      lips_42: 1744943091
+      lips_AEI: 1657139843
+      lips_47: -1096353565
+      lips_27: 895418333
+      lips_TH: -1987415059
+      lips_37: 1098118538
+      lips_68: -1080104731
+      lips_CHJSH: 1772641396
+      lips_24: 1336191318
+      lips_0: -1320410374
+      lips_29: 1324854289
+      lips_51: -1557281242
+      lips_FV: 797363967
+      lips_54: 1833317141
+      lips_50: -1681110114
+      LIPS_O: 2040076611
+      lips_U: 47717422
+      lips_Ee: 1666969898
+      lips_26: 1595668194
+      lips_4: 68962581
+      lips_11: -1147584755
+      lips_63: -1441107832
+      lips_12: 1557483199
+      lips_74: -1587218672
+      lips_41: -1580066879
+      lips_40: 1906776050
+      lips_46: 1736315403
+      lips_32: 1925322551
+      lips_BMP: 430676877
+      lips_8: -2120304839
+      lips_65: -2117320625
+      lips_66: 1803278754
+      lips_25: 1350632996
+      lips_QW: 976359212
+      lips_23: -49967505
+      lips_2: -1867497180
+      lips_CDNSTXYZ: 1790863636
+      lips_62: 1181139059
+      lips_15: 1016204748
+      lips_71: -2145003916
+      lips_18: -448762457
+      lips_22: -1902087068
+      lips_43: 409875378
+      lips_52: 531996089
+      lips_28: -1296962872
+      lips_20: 168912105
+      lips_38: -308149738
+      lips_35: -1017214375
+      lips_31: 143702371
+      lips_48: 1207689597
+      lips_21: 2047455534
+      lips_64: 1850248410
+      lips_10: -1905012171
+      lips_14: -1823909480
+      lips_69: -1351149343
+      lips_60: 1046770895
+      lips_13: -1121159947
+      lips_57: -391647807
+      lips_58: 701908062
+      lips_6: 755316289
+      lips_9: -2046011679
+      lips_17: -1625866634
+      lips_16: -896902855
+      lips_72: 1934192214
+      lips_70: 317877857
+      lips_GK: 1771394706
+      lips_55: -696260666
+      lips_L: -1296839807
+      lips_45: -562519219
+      lips_30: 521040626
+      lips_19: 2003258499
+      lips_67: -114062330
+      lips_44: -1374120711
+      lips_49: 1314846573
+      lips_73: -1435380869
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
