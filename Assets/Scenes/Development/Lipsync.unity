@@ -397,7 +397,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 9125c204f566db048a92ebcb64d9d14a, type: 3}
+  m_Sprite: {fileID: 430676877, guid: e616ec754aece1246bca570012335dcc, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -481,3 +481,8 @@ MonoBehaviour:
     sprite: {fileID: 430676877, guid: e616ec754aece1246bca570012335dcc, type: 3}
   - phoneme: '-'
     sprite: {fileID: 430676877, guid: e616ec754aece1246bca570012335dcc, type: 3}
+  simpleLipSyncSprites:
+  - {fileID: 430676877, guid: e616ec754aece1246bca570012335dcc, type: 3}
+  - {fileID: 1790863636, guid: e616ec754aece1246bca570012335dcc, type: 3}
+  - {fileID: 1657139843, guid: e616ec754aece1246bca570012335dcc, type: 3}
+  - {fileID: 2040076611, guid: e616ec754aece1246bca570012335dcc, type: 3}

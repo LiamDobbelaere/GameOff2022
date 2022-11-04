@@ -138,7 +138,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: LIPS_O
+      name: lips_O
       rect:
         serializedVersion: 2
         x: 482
@@ -379,7 +379,6 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      lips_42: 1744943091
       lips_AEI: 1657139843
       lips_47: -1096353565
       lips_27: 895418333
@@ -394,9 +393,9 @@ TextureImporter:
       lips_FV: 797363967
       lips_54: 1833317141
       lips_50: -1681110114
-      LIPS_O: 2040076611
-      lips_U: 47717422
       lips_Ee: 1666969898
+      lips_U: 47717422
+      lips_49: 1314846573
       lips_26: 1595668194
       lips_4: 68962581
       lips_11: -1147584755
@@ -413,15 +412,16 @@ TextureImporter:
       lips_66: 1803278754
       lips_25: 1350632996
       lips_QW: 976359212
+      lips_43: 409875378
       lips_23: -49967505
       lips_2: -1867497180
       lips_CDNSTXYZ: 1790863636
       lips_62: 1181139059
       lips_15: 1016204748
+      lips_O: 2040076611
       lips_71: -2145003916
       lips_18: -448762457
       lips_22: -1902087068
-      lips_43: 409875378
       lips_52: 531996089
       lips_28: -1296962872
       lips_20: 168912105
@@ -452,8 +452,8 @@ TextureImporter:
       lips_19: 2003258499
       lips_67: -114062330
       lips_44: -1374120711
-      lips_49: 1314846573
       lips_73: -1435380869
+      lips_42: 1744943091
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
