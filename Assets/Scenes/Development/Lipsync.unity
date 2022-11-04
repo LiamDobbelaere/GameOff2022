@@ -270,7 +270,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 0ed00e426a8e686469b24d5182ba312d, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 03ad054e344c98942834a33926f9caf5, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -435,7 +435,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5026b1f192af7884dadc44859e3ce661, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  labelsTextFile: {fileID: 4900000, guid: bb2682eb2f1a6584d99be77a56d33298, type: 3}
+  labelsTextFile: {fileID: 4900000, guid: e545661321006f6469fb31d809d37221, type: 3}
   phonemeSprites:
   - phoneme: W
     sprite: {fileID: 976359212, guid: e616ec754aece1246bca570012335dcc, type: 3}
@@ -459,5 +459,25 @@ MonoBehaviour:
     sprite: {fileID: 430676877, guid: e616ec754aece1246bca570012335dcc, type: 3}
   - phoneme: AA
     sprite: {fileID: 2040076611, guid: e616ec754aece1246bca570012335dcc, type: 3}
+  - phoneme: K
+    sprite: {fileID: 1771394706, guid: e616ec754aece1246bca570012335dcc, type: 3}
+  - phoneme: P
+    sprite: {fileID: 430676877, guid: e616ec754aece1246bca570012335dcc, type: 3}
+  - phoneme: OW
+    sprite: {fileID: 2040076611, guid: e616ec754aece1246bca570012335dcc, type: 3}
+  - phoneme: Z
+    sprite: {fileID: 1790863636, guid: e616ec754aece1246bca570012335dcc, type: 3}
+  - phoneme: F
+    sprite: {fileID: 797363967, guid: e616ec754aece1246bca570012335dcc, type: 3}
+  - phoneme: IH
+    sprite: {fileID: 1666969898, guid: e616ec754aece1246bca570012335dcc, type: 3}
+  - phoneme: NG
+    sprite: {fileID: 1790863636, guid: e616ec754aece1246bca570012335dcc, type: 3}
+  - phoneme: N
+    sprite: {fileID: 1790863636, guid: e616ec754aece1246bca570012335dcc, type: 3}
+  - phoneme: R
+    sprite: {fileID: 1790863636, guid: e616ec754aece1246bca570012335dcc, type: 3}
+  - phoneme: M
+    sprite: {fileID: 430676877, guid: e616ec754aece1246bca570012335dcc, type: 3}
   - phoneme: '-'
     sprite: {fileID: 430676877, guid: e616ec754aece1246bca570012335dcc, type: 3}
