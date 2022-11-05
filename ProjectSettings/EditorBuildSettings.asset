@@ -6,6 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/Development/Picker.unity
+    guid: 02af13b6991ecfa49a0b2d17dfac6600
+  - enabled: 1
     path: Assets/Scenes/Development/Lipsync.unity
     guid: 6207b63954f98cb41ab838737b4f7e61
   - enabled: 1
