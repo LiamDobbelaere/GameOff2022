@@ -4,11 +4,13 @@ public class DragAndDropObject : MonoBehaviour {
     private Vector2 distanceFromOrigin;
     private CopyBoundsAndDisable boundsCopy;
     private DragAndDropItems dndItems;
+    private JollyRogerCheck jrCheck;
 
     // Start is called before the first frame update
     void Start() {
         boundsCopy = transform.parent.GetComponent<CopyBoundsAndDisable>();
         dndItems = transform.parent.GetComponent<DragAndDropItems>();
+        jrCheck = transform.parent.GetComponent<JollyRogerCheck>();
     }
 
     // Update is called once per frame
@@ -21,14 +23,19 @@ public class DragAndDropObject : MonoBehaviour {
 
     public void Rotate() {
         transform.Rotate(Vector3.forward, 30f);
+        jrCheck.DoCheck();
     }
 
     private void OnMouseDown() {
         distanceFromOrigin = (Vector2)transform.position - (Vector2)Camera.main.ScreenToWorldPoint(Input.mousePosition);
-        dndItems.lastTouched = gameObject;
+        dndItems.lastTouched = this;
     }
 
     private void OnMouseDrag() {
         transform.position = distanceFromOrigin + (Vector2)Camera.main.ScreenToWorldPoint(Input.mousePosition);
+    }
+
+    private void OnMouseUp() {
+        jrCheck.DoCheck();
     }
 }
