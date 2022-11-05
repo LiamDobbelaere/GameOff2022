@@ -1,16 +1,20 @@
 using UnityEngine;
 
 public class DragAndDropObject : MonoBehaviour {
-    Vector2 distanceFromOrigin;
+    private Vector2 distanceFromOrigin;
+    private CopyBoundsAndDisable boundsCopy;
 
     // Start is called before the first frame update
     void Start() {
-
+        boundsCopy = transform.parent.GetComponent<CopyBoundsAndDisable>();
     }
 
     // Update is called once per frame
     void Update() {
-
+        transform.position = new Vector2(
+            Mathf.Clamp(transform.position.x, boundsCopy.bounds.min.x, boundsCopy.bounds.max.x),
+            Mathf.Clamp(transform.position.y, boundsCopy.bounds.min.y, boundsCopy.bounds.max.y)
+        );
     }
 
     private void OnMouseDown() {
