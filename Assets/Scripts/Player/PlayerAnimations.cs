@@ -19,9 +19,13 @@ public class PlayerAnimations : MonoBehaviour {
         if (isMoving) {
             currentAnimationState = GetCurrentAnimationStateName();
             rend.flipX = GetCurrentSpriteFlipState();
-            anim.speed = 0.12f;
+            anim.speed = currentAnimationState.Contains("Left") ? 0.15f : 0.12f;
             anim.Play(currentAnimationState);
         } else {
+            if (currentAnimationState == "WalkLeft") {
+                currentAnimationState = "StandLeft";
+            }
+
             anim.speed = 0f;
             anim.Play(currentAnimationState, -1, 0f);
         }

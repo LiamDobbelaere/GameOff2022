@@ -121,7 +121,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 128
+        y: 256
         width: 128
         height: 128
       alignment: 9
@@ -131,7 +131,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 00c4614cb395b4e6eb234320fb85d5f3
+      spriteID: 329508db05b40e344a2021412c44313b
       internalID: 637819378
       vertices: []
       indices: 
@@ -142,7 +142,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 128
-        y: 128
+        y: 256
         width: 128
         height: 128
       alignment: 9
@@ -152,7 +152,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d1dd447eb9e3749c19110c3e33fdc5af
+      spriteID: 7c6526ce045e43541b40be7a1f0d7f6a
       internalID: 2022375388
       vertices: []
       indices: 
@@ -163,7 +163,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 256
-        y: 128
+        y: 256
         width: 128
         height: 128
       alignment: 9
@@ -173,7 +173,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 51697d384c1c7492c828a08b96bca2b2
+      spriteID: 2e721b2f0d86b544a843df1fe985085c
       internalID: -1379188912
       vertices: []
       indices: 
@@ -184,7 +184,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 384
-        y: 128
+        y: 256
         width: 128
         height: 128
       alignment: 9
@@ -194,7 +194,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8a649d103d7b940c6821c8fefd813b1b
+      spriteID: a7fd7450b926dad42b49c5c403aec957
       internalID: -854023782
       vertices: []
       indices: 
@@ -205,7 +205,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 512
-        y: 128
+        y: 256
         width: 128
         height: 128
       alignment: 9
@@ -215,7 +215,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f2c0c9c36111c4a3c83b8cb6fa99e5be
+      spriteID: aeef7cdbf1cd13740b8e7094ff38e669
       internalID: -243069578
       vertices: []
       indices: 
@@ -226,6 +226,27 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 640
+        y: 256
+        width: 128
+        height: 128
+      alignment: 9
+      pivot: {x: 0.5, y: 0.22}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 008e3a70bbc26974082d95c1ef5ce80a
+      internalID: -2116655945
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Martha_stand_left
+      rect:
+        serializedVersion: 2
+        x: 0
         y: 128
         width: 128
         height: 128
@@ -236,8 +257,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fed8e55d3496c43a5bfeaf7f6e8e21d5
-      internalID: -2116655945
+      spriteID: 29f98a7d5fa524d4e8defb2d86a8a318
+      internalID: 1890802321
       vertices: []
       indices: 
       edges: []
@@ -246,7 +267,70 @@ TextureImporter:
       name: Martha_walk_left1
       rect:
         serializedVersion: 2
-        x: 0
+        x: 256
+        y: 128
+        width: 128
+        height: 128
+      alignment: 9
+      pivot: {x: 0.5, y: 0.22}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61855bef5f72565438cf1336c924a83c
+      internalID: 1876019961
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Martha_walk_left2
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 128
+        width: 128
+        height: 128
+      alignment: 9
+      pivot: {x: 0.5, y: 0.22}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d49a7e23213df64383014793edc2c72
+      internalID: 1773856643
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Martha_walk_left3
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 128
+        width: 128
+        height: 128
+      alignment: 9
+      pivot: {x: 0.5, y: 0.22}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bad77636c5d7b3c409b15fb63da4b69b
+      internalID: -2112765062
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Martha_walk_left4
+      rect:
+        serializedVersion: 2
+        x: 256
         y: 0
         width: 128
         height: 128
@@ -257,29 +341,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 219cff17011b14a95abb0566258b300b
-      internalID: 1876019961
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Martha_walk_left2
-      rect:
-        serializedVersion: 2
-        x: 128
-        y: 2
-        width: 128
-        height: 128
-      alignment: 9
-      pivot: {x: 0.5, y: 0.22}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 147e84643f5ae46d2a6259be7375d47e
-      internalID: 1773856643
+      spriteID: 8fee2355a507c3743b5fd9f6943082ae
+      internalID: -1998590276
       vertices: []
       indices: 
       edges: []
@@ -288,8 +351,8 @@ TextureImporter:
       name: Martha_walk_left5
       rect:
         serializedVersion: 2
-        x: 256
-        y: 1
+        x: 384
+        y: 0
         width: 128
         height: 128
       alignment: 9
@@ -299,35 +362,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 49f31b146d5574f12a3d84c1d2b93571
+      spriteID: b9dd6a10ee1dc7844b3afe853cb651d8
       internalID: 10177221
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Martha_walk_left3
-      rect:
-        serializedVersion: 2
-        x: 384
-        y: 1
-        width: 128
-        height: 128
-      alignment: 9
-      pivot: {x: 0.5, y: 0.22}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a72fc0b7a0cd64117a855cc998ec47ea
-      internalID: -2112765062
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Martha_walk_left4
+      name: Martha_walk_left6
       rect:
         serializedVersion: 2
         x: 512
@@ -341,8 +383,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8dc6f3e2c5a0e4a81b92062ad906551c
-      internalID: -1998590276
+      spriteID: 8c99da2e96952534f960438a98046f13
+      internalID: 124385187
       vertices: []
       indices: 
       edges: []
@@ -361,6 +403,7 @@ TextureImporter:
       Martha_walk_left1: 1876019961
       Martha_walk_left2: 1773856643
       Martha_walk_up3: -2116655945
+      Martha_stand_left: 1890802321
       Martha_walk_down3: -1379188912
       Martha_walk_left5: 10177221
       Martha_walk_left4: -1998590276
@@ -368,6 +411,7 @@ TextureImporter:
       Martha_walk_left3: -2112765062
       Martha_walk_up1: -854023782
       Martha_walk_down1: 637819378
+      Martha_walk_left6: 124385187
       Martha_walk_down2: 2022375388
   spritePackingTag: 
   pSDRemoveMatte: 0

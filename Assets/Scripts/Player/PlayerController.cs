@@ -2,6 +2,7 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour {
     private Rigidbody2D rb;
+    private float walkSpeed = 1.2f;
 
     // Start is called before the first frame update
     void Start() {
@@ -9,7 +10,7 @@ public class PlayerController : MonoBehaviour {
     }
 
     private void Update() {
-        rb.velocity = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));
+        rb.velocity = new Vector2(Input.GetAxisRaw("Horizontal") * walkSpeed, Input.GetAxisRaw("Vertical") * walkSpeed);
     }
 
     // Update is called once per frame
