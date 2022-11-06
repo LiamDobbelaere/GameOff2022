@@ -1,6 +1,7 @@
 using System.Collections.Generic;
 using System.Text.RegularExpressions;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class LabelEntry {
     public float startSeconds;
@@ -22,6 +23,7 @@ public class LipSync : MonoBehaviour {
     // Own components
     private AudioSource asource;
     private SpriteRenderer rend;
+    private Image mouthImage;
 
     // LipSync related stuff
     private List<LabelEntry> labels;
@@ -74,6 +76,8 @@ public class LipSync : MonoBehaviour {
 
     // Update is called once per frame
     void Update() {
+        SetupMouthIfNotSet();
+
         if (labelsTextFile != lastLabelsTextFile) {
             ReloadLabelsTextFile();
         }
@@ -104,9 +108,25 @@ public class LipSync : MonoBehaviour {
         }
 
         if (currentLabelEntry == null) {
-            rend.sprite = phonemeSpritesDict["-"];
+            if (rend != null) {
+                rend.sprite = phonemeSpritesDict["-"];
+            }
+
+            if (mouthImage != null) {
+                mouthImage.overrideSprite = phonemeSpritesDict["-"];
+                mouthImage.SetNativeSize();
+                mouthImage.rectTransform.localScale = new Vector3(-1f, 1f, 1f);
+            }
         } else {
-            rend.sprite = phonemeSpritesDict[currentLabelEntry.label];
+            if (rend != null) {
+                rend.sprite = phonemeSpritesDict[currentLabelEntry.label];
+            }
+
+            if (mouthImage != null) {
+                mouthImage.overrideSprite = phonemeSpritesDict[currentLabelEntry.label];
+                mouthImage.SetNativeSize();
+                mouthImage.rectTransform.localScale = new Vector3(-1f, 1f, 1f);
+            }
         }
     }
 
@@ -125,6 +145,21 @@ public class LipSync : MonoBehaviour {
             rend.sprite = simpleLipSyncSprites[Mathf.RoundToInt(
                 Mathf.Clamp01(clipLoudness * 8f) * (simpleLipSyncSprites.Count - 1))
             ];
+        }
+    }
+
+    private void SetupMouthIfNotSet() {
+        if (mouthImage != null) {
+            return;
+        }
+
+        GameObject dialogueSystemMouth = GameObject.FindGameObjectWithTag("DialogueSystemMouth");
+        if (dialogueSystemMouth != null) {
+            mouthImage = dialogueSystemMouth.GetComponent<Image>();
+
+            if (mouthImage != null) {
+                mouthImage.overrideSprite = phonemeSpritesDict["-"];
+            }
         }
     }
 }
