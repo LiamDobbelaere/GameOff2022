@@ -1,13 +1,13 @@
 # =============== #
 # Unity generated #
 # =============== #
-Temp/
+Temp
 /Export
-Obj/
-UnityGenerated/
-Library/
-Assets/AssetStoreTools*
-Logs/
+/Obj
+/UnityGenerated
+/Library
+/Assets/AssetStoreTools*
+/Logs
 
 /exports
 
