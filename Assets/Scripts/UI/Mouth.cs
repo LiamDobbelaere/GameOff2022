@@ -4,6 +4,7 @@ using UnityEngine.UI;
 public class Mouth : MonoBehaviour {
     private RectTransform rect;
     private Image portrait;
+    private float mouthScale = 0.6f;
 
     // Start is called before the first frame update
     void Start() {
@@ -26,6 +27,6 @@ public class Mouth : MonoBehaviour {
         float flipXFloat = portrait.overrideSprite.name.Contains("$MF") ? -1f : 1f;
 
         transform.position = new Vector2(Screen.width, Screen.height) * new Vector2(pivotX, pivotY);
-        transform.localScale = new Vector3(.8f * flipXFloat, .8f, 1f);
+        transform.localScale = new Vector3(mouthScale * flipXFloat, mouthScale, 1f);
     }
 }
