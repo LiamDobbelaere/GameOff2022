@@ -22,6 +22,10 @@ public class Mouth : MonoBehaviour {
         var pivotX = -bounds.center.x / bounds.extents.x / 2 + 0.5f;
         var pivotY = -bounds.center.y / bounds.extents.y / 2 + 0.5f;
 
+
+        float flipXFloat = portrait.overrideSprite.name.Contains("$MF") ? -1f : 1f;
+
         transform.position = new Vector2(Screen.width, Screen.height) * new Vector2(pivotX, pivotY);
+        transform.localScale = new Vector3(.8f * flipXFloat, .8f, 1f);
     }
 }

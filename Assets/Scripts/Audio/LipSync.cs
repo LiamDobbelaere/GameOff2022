@@ -107,26 +107,20 @@ public class LipSync : MonoBehaviour {
             }
         }
 
+        Sprite targetSprite = null;
         if (currentLabelEntry == null) {
-            if (rend != null) {
-                rend.sprite = phonemeSpritesDict["-"];
-            }
-
-            if (mouthImage != null) {
-                mouthImage.overrideSprite = phonemeSpritesDict["-"];
-                mouthImage.SetNativeSize();
-                mouthImage.rectTransform.localScale = new Vector3(-1f, 1f, 1f);
-            }
+            targetSprite = phonemeSpritesDict["-"];
         } else {
-            if (rend != null) {
-                rend.sprite = phonemeSpritesDict[currentLabelEntry.label];
-            }
+            targetSprite = phonemeSpritesDict[currentLabelEntry.label];
+        }
 
-            if (mouthImage != null) {
-                mouthImage.overrideSprite = phonemeSpritesDict[currentLabelEntry.label];
-                mouthImage.SetNativeSize();
-                mouthImage.rectTransform.localScale = new Vector3(-1f, 1f, 1f);
-            }
+        if (mouthImage != null && mouthImage.overrideSprite != targetSprite) {
+            mouthImage.overrideSprite = targetSprite;
+            mouthImage.SetNativeSize();
+        }
+
+        if (rend != null && rend.sprite != targetSprite) {
+            rend.sprite = targetSprite;
         }
     }
 
