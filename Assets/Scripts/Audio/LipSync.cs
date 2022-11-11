@@ -6,7 +6,8 @@ using UnityEngine.UI;
 public class LabelEntry {
     public float startSeconds;
     public float endSeconds;
-    public string label;
+    public string phoneme;
+    public string poseName;
 }
 
 [System.Serializable]
@@ -66,10 +67,17 @@ public class LipSync : MonoBehaviour {
             if (labelLine.Trim().Length > 0) {
                 string[] parts = labelLine.Split('\t');
 
+                string[] label = parts[2].Split(' ');
+                string pose = null;
+                if (label.Length > 1) {
+                    pose = label[1];
+                }
+
                 labels.Add(new LabelEntry {
                     startSeconds = float.Parse(parts[0]),
                     endSeconds = float.Parse(parts[1]),
-                    label = parts[2]
+                    phoneme = label[0],
+                    poseName = pose
                 });
             }
         }
@@ -98,6 +106,10 @@ public class LipSync : MonoBehaviour {
         lastAudioTime = asource.timeSamples;
     }
 
+    public LabelEntry GetCurrentLabelEntry() {
+        return currentLabelEntry;
+    }
+
     private void LipSyncUpdate() {
         for (int i = lastUsedLabelEntry; i < labels.Count; i++) {
             LabelEntry labelEntry = labels[i];
@@ -117,7 +129,7 @@ public class LipSync : MonoBehaviour {
         if (currentLabelEntry == null) {
             targetSprite = phonemeSpritesDict["-"];
         } else {
-            targetSprite = phonemeSpritesDict[currentLabelEntry.label];
+            targetSprite = phonemeSpritesDict[currentLabelEntry.phoneme];
         }
 
         if (mouthImage != null && mouthImage.overrideSprite != targetSprite) {

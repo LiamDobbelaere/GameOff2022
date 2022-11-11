@@ -80,12 +80,9 @@ MonoBehaviour:
       type: 0
       typeString: 
     portrait: {fileID: 0}
-    spritePortrait: {fileID: 21300000, guid: 665dee5c34500443da318eac6e77c40c, type: 3}
+    spritePortrait: {fileID: 21300000, guid: 57d61c108d830d248b556a7db37e655f, type: 3}
     alternatePortraits: []
-    spritePortraits:
-    - {fileID: 21300000, guid: 439b966ac740841b5b10bbbbd57c5a94, type: 3}
-    - {fileID: 21300000, guid: 27e6c13224fdc41769badf89502d6ab0, type: 3}
-    - {fileID: 21300000, guid: a5e8c9d485c414905ae63086382e6149, type: 3}
+    spritePortraits: []
   items: []
   locations: []
   variables:
