@@ -27,8 +27,8 @@ public class LipSync : MonoBehaviour {
 
     // LipSync related stuff
     private List<LabelEntry> labels;
-    private int currentLabelEntryIndex;
     private LabelEntry currentLabelEntry;
+    private int lastUsedLabelEntry = 0;
     private Dictionary<string, Sprite> phonemeSpritesDict;
     private TextAsset lastLabelsTextFile;
 
@@ -37,6 +37,7 @@ public class LipSync : MonoBehaviour {
     private int sampleDataLength = 1024;
     private float currentUpdateTime = 0f;
     private float[] clipSampleData;
+    private int lastAudioTime;
 
     // Start is called before the first frame update
     void Start() {
@@ -53,9 +54,9 @@ public class LipSync : MonoBehaviour {
 
     private void ReloadLabelsTextFile() {
         lastLabelsTextFile = labelsTextFile;
+        lastUsedLabelEntry = 0;
 
         labels = new List<LabelEntry>();
-        currentLabelEntryIndex = 0;
         currentLabelEntry = null;
 
         string labelText = labelsTextFile.text;
@@ -89,19 +90,24 @@ public class LipSync : MonoBehaviour {
                 SimpleLipSyncUpdate();
             }
         }
+
+        if (asource.timeSamples < lastAudioTime) {
+            lastUsedLabelEntry = 0;
+        }
+
+        lastAudioTime = asource.timeSamples;
     }
 
     private void LipSyncUpdate() {
-        foreach (LabelEntry labelEntry in labels) {
+        for (int i = lastUsedLabelEntry; i < labels.Count; i++) {
+            LabelEntry labelEntry = labels[i];
+
             if (
                 asource.timeSamples >= (labelEntry.startSeconds * asource.clip.frequency)
-                && asource.timeSamples <= (labelEntry.endSeconds * asource.clip.frequency)) {
+                && asource.timeSamples <= (labelEntry.endSeconds * asource.clip.frequency)
+            ) {
                 currentLabelEntry = labelEntry;
-                currentLabelEntryIndex++;
-
-                if (currentLabelEntryIndex >= labels.Count) {
-                    currentLabelEntryIndex = 0;
-                }
+                lastUsedLabelEntry = i + 1;
 
                 break;
             }
