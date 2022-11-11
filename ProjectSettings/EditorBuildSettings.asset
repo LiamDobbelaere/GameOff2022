@@ -17,4 +17,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Development/FlagCreation.unity
     guid: da7e9ce346309804da72b5ecf760d469
+  - enabled: 1
+    path: Assets/Scenes/Development/DialogueSystemIntegration.unity
+    guid: b373d3372771da44b875a5701f66eb48
+  - enabled: 1
+    path: Assets/Scenes/Development/Phone.unity
+    guid: 09ffebde94bc150488233d85417e6471
   m_configObjects: {}
