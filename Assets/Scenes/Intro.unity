@@ -597,6 +597,23 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!1 &4503336120174494494 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8573823919113554144, guid: e30b8792ff19dc24d8d6b2de1b368845, type: 3}
+  m_PrefabInstance: {fileID: 5225098310782356478}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &4503336120179826777
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4503336120174494494}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e84908b7fb3310542b863eab0b1aed43, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &5225098310782356478
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -605,17 +622,21 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 8573823919107877803, guid: e30b8792ff19dc24d8d6b2de1b368845, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8573823919107877803, guid: e30b8792ff19dc24d8d6b2de1b368845, type: 3}
       propertyPath: conversation
-      value: Messy Desk Intro
+      value: MarthaLovesFrogs
       objectReference: {fileID: 0}
     - target: {fileID: 8573823919107877803, guid: e30b8792ff19dc24d8d6b2de1b368845, type: 3}
       propertyPath: selectedDatabase
       value: 
-      objectReference: {fileID: 11400000, guid: 4fa1de86beb4148ec86e13731a878d4e, type: 2}
+      objectReference: {fileID: 11400000, guid: d2a0c7d735b15014ca74562d02354224, type: 2}
     - target: {fileID: 8573823919107963492, guid: e30b8792ff19dc24d8d6b2de1b368845, type: 3}
       propertyPath: initialDatabase
       value: 
-      objectReference: {fileID: 11400000, guid: 4fa1de86beb4148ec86e13731a878d4e, type: 2}
+      objectReference: {fileID: 11400000, guid: d2a0c7d735b15014ca74562d02354224, type: 2}
     - target: {fileID: 8573823919113554144, guid: e30b8792ff19dc24d8d6b2de1b368845, type: 3}
       propertyPath: m_Name
       value: Dialogue Manager
