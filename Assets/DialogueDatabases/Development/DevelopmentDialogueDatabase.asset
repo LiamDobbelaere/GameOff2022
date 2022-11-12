@@ -482,11 +482,11 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Dialogue Text
-        value: Click to start
+        value: Keep those fucking coconuts away from me!
         type: 0
         typeString: 
       - title: Sequence
-        value: 
+        value: AudioWait(coconuts)
         type: 0
         typeString: 
       conversationID: 2
@@ -515,8 +515,8 @@ MonoBehaviour:
         width: 160
         height: 30
     entryGroups: []
-    canvasScrollPosition: {x: 8.259395, y: 28.663055}
-    canvasZoom: 1.1799998
+    canvasScrollPosition: {x: 0, y: 38.409393}
+    canvasZoom: 1.1199999
   syncInfo:
     syncActors: 0
     syncItems: 0

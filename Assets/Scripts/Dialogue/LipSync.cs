@@ -17,7 +17,6 @@ public struct PhonemeSprite {
 }
 
 public class LipSync : MonoBehaviour {
-    public TextAsset labelsTextFile;
     public List<PhonemeSprite> phonemeSprites;
     public List<Sprite> simpleLipSyncSprites;
 
@@ -31,7 +30,9 @@ public class LipSync : MonoBehaviour {
     private LabelEntry currentLabelEntry;
     private int lastUsedLabelEntry = 0;
     private Dictionary<string, Sprite> phonemeSpritesDict;
+    private TextAsset labelsTextFile;
     private TextAsset lastLabelsTextFile;
+    private AudioClip lastAudioClip;
 
     // SimpleLipSync related stuff
     private float updateStep = 0.1f;
@@ -87,6 +88,13 @@ public class LipSync : MonoBehaviour {
     void Update() {
         SetupMouthIfNotSet();
 
+        if (lastAudioClip != asource.clip) {
+            lastUsedLabelEntry = 0;
+            string labelsPath = "Labels/" + asource.clip.name + ".mp3.labels";
+            labelsTextFile = Resources.Load<TextAsset>(labelsPath);
+            lastAudioClip = asource.clip;
+        }
+
         if (labelsTextFile != lastLabelsTextFile) {
             ReloadLabelsTextFile();
         }
@@ -98,12 +106,6 @@ public class LipSync : MonoBehaviour {
                 SimpleLipSyncUpdate();
             }
         }
-
-        if (asource.timeSamples < lastAudioTime) {
-            lastUsedLabelEntry = 0;
-        }
-
-        lastAudioTime = asource.timeSamples;
     }
 
     public LabelEntry GetCurrentLabelEntry() {
@@ -154,9 +156,18 @@ public class LipSync : MonoBehaviour {
             }
             clipLoudness /= sampleDataLength; //clipLoudness is what you are looking for
 
-            rend.sprite = simpleLipSyncSprites[Mathf.RoundToInt(
+            Sprite targetSprite = simpleLipSyncSprites[Mathf.RoundToInt(
                 Mathf.Clamp01(clipLoudness * 8f) * (simpleLipSyncSprites.Count - 1))
             ];
+
+            if (mouthImage != null && mouthImage.overrideSprite != targetSprite) {
+                mouthImage.overrideSprite = targetSprite;
+                mouthImage.SetNativeSize();
+            }
+
+            if (rend != null && rend.sprite != targetSprite) {
+                rend.sprite = targetSprite;
+            }
         }
     }
 
