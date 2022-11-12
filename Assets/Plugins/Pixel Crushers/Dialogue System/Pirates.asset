@@ -73,11 +73,11 @@ MonoBehaviour:
       type: 0
       typeString: CustomFieldType_Text
     - title: IsPlayer
-      value: True
+      value: False
       type: 2
       typeString: CustomFieldType_Boolean
     portrait: {fileID: 0}
-    spritePortrait: {fileID: 0}
+    spritePortrait: {fileID: 21300000, guid: 665dee5c34500443da318eac6e77c40c, type: 3}
     alternatePortraits: []
     spritePortraits: []
   - id: 3
@@ -3353,7 +3353,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: None()
+        value: AudioWait(Chap00_Introduction/Good evening Im Martha...)
         type: 0
         typeString: 
       conversationID: 7
@@ -3425,7 +3425,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Sequence
-        value: 
+        value: AudioWait(Chap00_Introduction/The day is Wednesday...)
         type: 0
         typeString: CustomFieldType_Text
       conversationID: 7
@@ -3496,7 +3496,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Sequence
-        value: 
+        value: AudioWait(Chap00_Introduction/Pirates!)
         type: 0
         typeString: CustomFieldType_Text
       conversationID: 7
@@ -4444,7 +4444,7 @@ MonoBehaviour:
         height: 30
     entryGroups: []
     canvasScrollPosition: {x: 0, y: 0}
-    canvasZoom: 0.37100226
+    canvasZoom: 0.91100216
   syncInfo:
     syncActors: 0
     syncItems: 0

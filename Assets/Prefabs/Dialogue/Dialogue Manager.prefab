@@ -16,6 +16,7 @@ GameObject:
   - component: {fileID: 8573823919107877800}
   - component: {fileID: 8573823919107877801}
   - component: {fileID: 8573823919107877798}
+  - component: {fileID: 4503336120179826777}
   m_Layer: 0
   m_Name: Dialogue Manager
   m_TagString: Untagged
@@ -51,7 +52,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ab8b685e62a9aeb4a9472b30ec2d86d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  initialDatabase: {fileID: 11400000, guid: d2a0c7d735b15014ca74562d02354224, type: 2}
+  initialDatabase: {fileID: 11400000, guid: 4fa1de86beb4148ec86e13731a878d4e, type: 2}
   displaySettings:
     conversationOverrideSettings:
       useOverrides: 0
@@ -225,7 +226,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8573823919113554144}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c593457cd8105e148906690e1707c592, type: 3}
   m_Name: 
@@ -266,7 +267,7 @@ MonoBehaviour:
   allowBarksDuringConversations: 0
   skipBarkIfNoValidEntries: 0
   cacheBarkLines: 0
-  conversation: MarthaLovesFrogs
+  conversation: Martha Phillips
   conversationConversant: {fileID: 0}
   conversationActor: {fileID: 0}
   startConversationEntryID: -1
@@ -289,7 +290,7 @@ MonoBehaviour:
   useConversationTitlePicker: 1
   useBarkTitlePicker: 1
   useQuestNamePicker: 1
-  selectedDatabase: {fileID: 11400000, guid: d2a0c7d735b15014ca74562d02354224, type: 2}
+  selectedDatabase: {fileID: 11400000, guid: 4fa1de86beb4148ec86e13731a878d4e, type: 2}
 --- !u!82 &8573823919107877800
 AudioSource:
   m_ObjectHideFlags: 0
@@ -398,7 +399,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5026b1f192af7884dadc44859e3ce661, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  labelsTextFile: {fileID: 4900000, guid: fc86f936cb75b654d9b4d518566aa270, type: 3}
   phonemeSprites:
   - phoneme: W
     sprite: {fileID: 21300000, guid: f84bda2c770494b959d34113b09b0ffd, type: 3}
@@ -450,11 +450,23 @@ MonoBehaviour:
     sprite: {fileID: 21300000, guid: d1fb70d7179f447f1a30c353d3213fa4, type: 3}
   - phoneme: G
     sprite: {fileID: 21300000, guid: f7789c3025b004cbe88c75aeb69469bd, type: 3}
+  - phoneme: UH
+    sprite: {fileID: 21300000, guid: 4b6aba20faa504b8fa560b91e7ac1d13, type: 3}
+  - phoneme: TH
+    sprite: {fileID: 21300000, guid: f7789c3025b004cbe88c75aeb69469bd, type: 3}
+  - phoneme: UW
+    sprite: {fileID: 21300000, guid: 4b6aba20faa504b8fa560b91e7ac1d13, type: 3}
+  - phoneme: AO
+    sprite: {fileID: 21300000, guid: 4b6aba20faa504b8fa560b91e7ac1d13, type: 3}
+  - phoneme: Y
+    sprite: {fileID: 21300000, guid: f84bda2c770494b959d34113b09b0ffd, type: 3}
+  - phoneme: OY
+    sprite: {fileID: 21300000, guid: 4b6aba20faa504b8fa560b91e7ac1d13, type: 3}
   simpleLipSyncSprites:
-  - {fileID: 430676877, guid: e616ec754aece1246bca570012335dcc, type: 3}
-  - {fileID: 1790863636, guid: e616ec754aece1246bca570012335dcc, type: 3}
-  - {fileID: 1657139843, guid: e616ec754aece1246bca570012335dcc, type: 3}
-  - {fileID: 2040076611, guid: e616ec754aece1246bca570012335dcc, type: 3}
+  - {fileID: 21300000, guid: 76218bda42d19468fba8ac7f0840001f, type: 3}
+  - {fileID: 21300000, guid: 3a3e179f0d6f84772a908f7b26faf244, type: 3}
+  - {fileID: 21300000, guid: f3e342db53af74221af93cf12de2d7e7, type: 3}
+  - {fileID: 21300000, guid: 4b6aba20faa504b8fa560b91e7ac1d13, type: 3}
 --- !u!114 &8573823919107877798
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -465,6 +477,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 643fab60ddfb16a44b2953906eb39977, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &4503336120179826777
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8573823919113554144}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e84908b7fb3310542b863eab0b1aed43, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &8573823919113554150
