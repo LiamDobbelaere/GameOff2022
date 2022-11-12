@@ -695,7 +695,7 @@ MonoBehaviour:
   allowBarksDuringConversations: 0
   skipBarkIfNoValidEntries: 0
   cacheBarkLines: 0
-  conversation: MarthaTest
+  conversation: MarthaLovesFrogs
   conversationConversant: {fileID: 0}
   conversationActor: {fileID: 0}
   startConversationEntryID: -1
@@ -827,7 +827,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5026b1f192af7884dadc44859e3ce661, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  labelsTextFile: {fileID: 4900000, guid: e545661321006f6469fb31d809d37221, type: 3}
+  labelsTextFile: {fileID: 4900000, guid: fc86f936cb75b654d9b4d518566aa270, type: 3}
   phonemeSprites:
   - phoneme: W
     sprite: {fileID: 21300000, guid: f84bda2c770494b959d34113b09b0ffd, type: 3}
@@ -873,6 +873,12 @@ MonoBehaviour:
     sprite: {fileID: 21300000, guid: f84bda2c770494b959d34113b09b0ffd, type: 3}
   - phoneme: '-'
     sprite: {fileID: 21300000, guid: 76218bda42d19468fba8ac7f0840001f, type: 3}
+  - phoneme: AY
+    sprite: {fileID: 21300000, guid: f3e342db53af74221af93cf12de2d7e7, type: 3}
+  - phoneme: V
+    sprite: {fileID: 21300000, guid: d1fb70d7179f447f1a30c353d3213fa4, type: 3}
+  - phoneme: G
+    sprite: {fileID: 21300000, guid: f7789c3025b004cbe88c75aeb69469bd, type: 3}
   simpleLipSyncSprites:
   - {fileID: 430676877, guid: e616ec754aece1246bca570012335dcc, type: 3}
   - {fileID: 1790863636, guid: e616ec754aece1246bca570012335dcc, type: 3}
