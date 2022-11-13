@@ -695,7 +695,7 @@ MonoBehaviour:
   allowBarksDuringConversations: 0
   skipBarkIfNoValidEntries: 0
   cacheBarkLines: 0
-  conversation: MarthaLovesFrogs
+  conversation: MarthaTest
   conversationConversant: {fileID: 0}
   conversationActor: {fileID: 0}
   startConversationEntryID: -1
@@ -827,7 +827,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5026b1f192af7884dadc44859e3ce661, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  labelsTextFile: {fileID: 4900000, guid: fc86f936cb75b654d9b4d518566aa270, type: 3}
   phonemeSprites:
   - phoneme: W
     sprite: {fileID: 21300000, guid: f84bda2c770494b959d34113b09b0ffd, type: 3}

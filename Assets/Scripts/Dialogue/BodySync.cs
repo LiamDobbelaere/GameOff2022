@@ -8,6 +8,7 @@ public class BodySync : MonoBehaviour {
     private Image portrait;
     private PoseLibrary poseLibrary;
     private Pose currentPose;
+    private Eyes currentEyes;
     private float mouthScaleFactor = 0.5f;
 
     // Start is called before the first frame update
@@ -29,6 +30,10 @@ public class BodySync : MonoBehaviour {
         LabelEntry currentLabelEntry = lipSync.GetCurrentLabelEntry();
         if (currentLabelEntry != null && currentLabelEntry.poseName != null) {
             currentPose = poseLibrary.GetPose(currentLabelEntry.poseName);
+
+            if (currentLabelEntry.eyesName != null) {
+                currentEyes = poseLibrary.GetEyes(currentLabelEntry.eyesName);
+            }
         }
 
         if (currentPose == null) {
@@ -59,6 +64,7 @@ public class BodySync : MonoBehaviour {
 
     private void UpdateEyes() {
         ApplyReferenceToTransform(currentPose.eyes, eyes);
+        eyes.GetComponent<Image>().overrideSprite = currentEyes.sprite;
     }
 
     private void ApplyReferenceToTransform(Reference reference, Transform target) {

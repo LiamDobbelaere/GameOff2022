@@ -8,6 +8,7 @@ public class LabelEntry {
     public float endSeconds;
     public string phoneme;
     public string poseName;
+    public string eyesName;
 }
 
 [System.Serializable]
@@ -33,6 +34,7 @@ public class LipSync : MonoBehaviour {
     private TextAsset labelsTextFile;
     private TextAsset lastLabelsTextFile;
     private AudioClip lastAudioClip;
+    private PoseLibrary poseLibrary;
 
     // SimpleLipSync related stuff
     private float updateStep = 0.1f;
@@ -70,15 +72,25 @@ public class LipSync : MonoBehaviour {
 
                 string[] label = parts[2].Split(' ');
                 string pose = null;
+                string eyes = null;
                 if (label.Length > 1) {
-                    pose = label[1];
+                    for (int i = 1; i < label.Length; i++) {
+                        Eyes eyesDef = poseLibrary.eyes.Find((eye) => eye.name == label[i]);
+
+                        if (eyesDef != null) {
+                            eyes = eyesDef.name;
+                        } else {
+                            pose = label[1];
+                        }
+                    }
                 }
 
                 labels.Add(new LabelEntry {
                     startSeconds = float.Parse(parts[0]),
                     endSeconds = float.Parse(parts[1]),
                     phoneme = label[0],
-                    poseName = pose
+                    poseName = pose,
+                    eyesName = eyes
                 });
             }
         }
@@ -86,6 +98,7 @@ public class LipSync : MonoBehaviour {
 
     // Update is called once per frame
     void Update() {
+        SetupPoseLibraryIfNotSet();
         SetupMouthIfNotSet();
 
         if (lastAudioClip != asource.clip) {
@@ -183,6 +196,17 @@ public class LipSync : MonoBehaviour {
             if (mouthImage != null) {
                 mouthImage.overrideSprite = phonemeSpritesDict["-"];
             }
+        }
+    }
+
+    private void SetupPoseLibraryIfNotSet() {
+        if (poseLibrary != null) {
+            return;
+        }
+
+        GameObject poseLibraryGameObject = GameObject.FindGameObjectWithTag("PoseLibrary");
+        if (poseLibraryGameObject != null) {
+            poseLibrary = poseLibraryGameObject.GetComponent<PoseLibrary>();
         }
     }
 }
