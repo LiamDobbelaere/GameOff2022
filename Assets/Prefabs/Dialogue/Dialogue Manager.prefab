@@ -462,6 +462,8 @@ MonoBehaviour:
     sprite: {fileID: 21300000, guid: f84bda2c770494b959d34113b09b0ffd, type: 3}
   - phoneme: OY
     sprite: {fileID: 21300000, guid: 4b6aba20faa504b8fa560b91e7ac1d13, type: 3}
+  - phoneme: EH
+    sprite: {fileID: 21300000, guid: 3a3e179f0d6f84772a908f7b26faf244, type: 3}
   simpleLipSyncSprites:
   - {fileID: 21300000, guid: 76218bda42d19468fba8ac7f0840001f, type: 3}
   - {fileID: 21300000, guid: 3a3e179f0d6f84772a908f7b26faf244, type: 3}

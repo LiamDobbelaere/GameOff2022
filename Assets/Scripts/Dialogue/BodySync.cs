@@ -4,6 +4,7 @@ using UnityEngine.UI;
 public class BodySync : MonoBehaviour {
     private LipSync lipSync;
     private Transform mouth;
+    private Transform eyes;
     private Image portrait;
     private PoseLibrary poseLibrary;
     private Pose currentPose;
@@ -18,6 +19,7 @@ public class BodySync : MonoBehaviour {
     void Update() {
         SetupPoseLibraryIfNotSet();
         SetupMouthIfNotSet();
+        SetupEyesIfNotSet();
         SetupPortraitIfNotSet();
 
         if (poseLibrary == null) {
@@ -40,6 +42,10 @@ public class BodySync : MonoBehaviour {
         if (mouth != null) {
             UpdateMouth();
         }
+
+        if (eyes != null) {
+            UpdateEyes();
+        }
     }
 
     private void UpdatePortrait() {
@@ -48,11 +54,17 @@ public class BodySync : MonoBehaviour {
     }
 
     private void UpdateMouth() {
-        MouthReference mouthRef = currentPose.mouth;
+        ApplyReferenceToTransform(currentPose.mouth, mouth);
+    }
 
-        mouth.position = new Vector2(Screen.width, Screen.height) * mouthRef.position;
-        mouth.localScale = mouthRef.scale * mouthScaleFactor;
-        mouth.localRotation = mouthRef.rotation;
+    private void UpdateEyes() {
+        ApplyReferenceToTransform(currentPose.eyes, eyes);
+    }
+
+    private void ApplyReferenceToTransform(Reference reference, Transform target) {
+        target.position = new Vector2(Screen.width, Screen.height) * reference.position;
+        target.localScale = reference.scale * mouthScaleFactor;
+        target.localRotation = reference.rotation;
     }
 
     private void SetupMouthIfNotSet() {
@@ -65,6 +77,17 @@ public class BodySync : MonoBehaviour {
             mouth = dialogueSystemMouth.transform;
         }
     }
+    private void SetupEyesIfNotSet() {
+        if (eyes != null) {
+            return;
+        }
+
+        GameObject dialogueSystemEyes = GameObject.FindGameObjectWithTag("DialogueSystemEyes");
+        if (dialogueSystemEyes != null) {
+            eyes = dialogueSystemEyes.transform;
+        }
+    }
+
 
     private void SetupPortraitIfNotSet() {
         if (portrait != null) {

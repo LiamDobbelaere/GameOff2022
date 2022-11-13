@@ -3,7 +3,7 @@ using UnityEngine;
 using UnityEngine.UI;
 
 [System.Serializable]
-public class MouthReference {
+public class Reference {
     public Vector2 position;
     public Quaternion rotation;
     public Vector2 scale;
@@ -13,7 +13,8 @@ public class MouthReference {
 public class Pose {
     public string name;
     public Sprite pose;
-    public MouthReference mouth;
+    public Reference mouth;
+    public Reference eyes;
 }
 
 public class PoseLibrary : MonoBehaviour {
@@ -25,28 +26,19 @@ public class PoseLibrary : MonoBehaviour {
         Transform posesContainer = transform.Find("Canvas");
 
         for (int i = 0; i < posesContainer.childCount; i++) {
-            Transform pose = posesContainer.GetChild(i);
-            Transform mouthReference = pose.Find("MouthReference");
+            Transform poseTransform = posesContainer.GetChild(i);
+            Transform mouthReferenceTransform = poseTransform.Find("MouthReference");
+            Transform eyesReferenceTransform = poseTransform.Find("EyesReference");
 
-            RectTransform poseRect = pose.GetComponent<RectTransform>();
-            RectTransform mouthRect = mouthReference.GetComponent<RectTransform>();
-
-            float xPivot = mouthRect.anchoredPosition.x / poseRect.rect.width;
-            float yPivot = mouthRect.anchoredPosition.y / poseRect.rect.height;
-
-            string poseName = pose.name;
-            Vector2 mouthPosition = new Vector2(xPivot, yPivot);
-            Quaternion mouthRotation = mouthRect.localRotation;
-            Vector2 mouthScale = mouthRect.localScale;
+            string poseName = poseTransform.name;
+            Reference mouthReference = GetReferenceForTransform(poseTransform, mouthReferenceTransform);
+            Reference eyesReference = GetReferenceForTransform(poseTransform, eyesReferenceTransform);
 
             Pose newPose = new Pose {
                 name = poseName,
-                pose = pose.GetComponent<Image>().overrideSprite,
-                mouth = new MouthReference {
-                    position = mouthPosition,
-                    rotation = mouthRotation,
-                    scale = mouthScale
-                }
+                pose = poseTransform.GetComponent<Image>().overrideSprite,
+                mouth = mouthReference,
+                eyes = eyesReference
             };
 
             posesByName.Add(poseName, newPose);
@@ -63,5 +55,19 @@ public class PoseLibrary : MonoBehaviour {
 
     public Pose GetPose(string name) {
         return posesByName[name];
+    }
+
+    private Reference GetReferenceForTransform(Transform pose, Transform reference) {
+        RectTransform poseRect = pose.GetComponent<RectTransform>();
+        RectTransform referenceRect = reference.GetComponent<RectTransform>();
+
+        float xPivot = referenceRect.anchoredPosition.x / poseRect.rect.width;
+        float yPivot = referenceRect.anchoredPosition.y / poseRect.rect.height;
+
+        return new Reference {
+            position = new Vector2(xPivot, yPivot),
+            rotation = referenceRect.localRotation,
+            scale = referenceRect.localScale
+        };
     }
 }
