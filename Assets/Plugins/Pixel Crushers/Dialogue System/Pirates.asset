@@ -3567,7 +3567,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Sequence
-        value: 
+        value: AudioWait(Chap00_Introduction/Menacing coastlines)
         type: 0
         typeString: CustomFieldType_Text
       conversationID: 7
@@ -3639,7 +3639,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Sequence
-        value: 
+        value: AudioWait(Chap00_Introduction/These boisterous bucaneers)
         type: 0
         typeString: CustomFieldType_Text
       conversationID: 7
@@ -3663,7 +3663,7 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 37
+        x: 35.962082
         y: 355
         width: 160
         height: 30
@@ -3710,7 +3710,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Sequence
-        value: 
+        value: AudioWait(Chap00_Introduction/Lets take a deeper)
         type: 0
         typeString: CustomFieldType_Text
       conversationID: 7
@@ -3735,7 +3735,7 @@ MonoBehaviour:
       canvasRect:
         serializedVersion: 2
         x: 38.030396
-        y: 427.66873
+        y: 426.62973
         width: 160
         height: 30
     - id: 6
@@ -3781,7 +3781,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Sequence
-        value: 
+        value: AudioWait(Chap00_Introduction/inaudible)
         type: 0
         typeString: CustomFieldType_Text
       conversationID: 7
@@ -3852,7 +3852,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Sequence
-        value: 
+        value: AudioWait(Chap00_Introduction/deep look sarcastic)
         type: 0
         typeString: CustomFieldType_Text
       conversationID: 7
@@ -3923,7 +3923,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Sequence
-        value: 
+        value: AudioWait(Chap00_Introduction/who writes this shit)
         type: 0
         typeString: CustomFieldType_Text
       conversationID: 7
@@ -3994,7 +3994,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Sequence
-        value: 
+        value: AudioWait(Chap00_Introduction/formidble legacy sarcastic)
         type: 0
         typeString: CustomFieldType_Text
       conversationID: 7
@@ -4049,7 +4049,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Dialogue Text
-        value: You know I've been here three weeks...
+        value: 'You know I''ve been here three weeks... and nothing has happened. '
         type: 0
         typeString: CustomFieldType_Text
       - title: Parenthetical
@@ -4065,7 +4065,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Sequence
-        value: 
+        value: AudioWait(Chap00_Introduction/been here three weeks)
         type: 0
         typeString: CustomFieldType_Text
       conversationID: 7
@@ -4079,77 +4079,6 @@ MonoBehaviour:
       - originConversationID: 7
         originDialogueID: 10
         destinationConversationID: 7
-        destinationDialogueID: 11
-        isConnector: 0
-        priority: 2
-      conditionsString: 
-      userScript: 
-      onExecute:
-        m_PersistentCalls:
-          m_Calls: []
-      canvasRect:
-        serializedVersion: 2
-        x: 38.030396
-        y: 755.08185
-        width: 160
-        height: 30
-    - id: 11
-      fields:
-      - title: Title
-        value: 
-        type: 0
-        typeString: CustomFieldType_Text
-      - title: Pictures
-        value: '[]'
-        type: 3
-        typeString: CustomFieldType_Files
-      - title: Description
-        value: 
-        type: 0
-        typeString: CustomFieldType_Text
-      - title: Actor
-        value: 3
-        type: 5
-        typeString: CustomFieldType_Actor
-      - title: Conversant
-        value: 2
-        type: 5
-        typeString: CustomFieldType_Actor
-      - title: Menu Text
-        value: 
-        type: 0
-        typeString: CustomFieldType_Text
-      - title: Dialogue Text
-        value: And nothing has happened, right...
-        type: 0
-        typeString: CustomFieldType_Text
-      - title: Parenthetical
-        value: 
-        type: 0
-        typeString: CustomFieldType_Text
-      - title: Audio Files
-        value: '[]'
-        type: 3
-        typeString: CustomFieldType_Files
-      - title: Video File
-        value: 
-        type: 0
-        typeString: CustomFieldType_Text
-      - title: Sequence
-        value: 
-        type: 0
-        typeString: CustomFieldType_Text
-      conversationID: 7
-      isRoot: 0
-      isGroup: 0
-      nodeColor: 
-      delaySimStatus: 0
-      falseConditionAction: Block
-      conditionPriority: 2
-      outgoingLinks:
-      - originConversationID: 7
-        originDialogueID: 11
-        destinationConversationID: 7
         destinationDialogueID: 12
         isConnector: 0
         priority: 2
@@ -4160,8 +4089,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 38.030396
-        y: 822.8509
+        x: 39.230453
+        y: 755.08185
         width: 160
         height: 30
     - id: 12
@@ -4207,7 +4136,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Sequence
-        value: 
+        value: AudioWait(Chap00_Introduction/just talk)
         type: 0
         typeString: CustomFieldType_Text
       conversationID: 7
@@ -4278,7 +4207,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Sequence
-        value: 
+        value: AudioWait(Chap00_Introduction/no fights)
         type: 0
         typeString: CustomFieldType_Text
       conversationID: 7
@@ -4349,7 +4278,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Sequence
-        value: 
+        value: AudioWait(Chap00_Introduction/wheres the drama)
         type: 0
         typeString: CustomFieldType_Text
       conversationID: 7
@@ -4420,7 +4349,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Sequence
-        value: 
+        value: AudioWait(Chap00_Introduction/i need something soon)
         type: 0
         typeString: CustomFieldType_Text
       conversationID: 7
@@ -4439,12 +4368,12 @@ MonoBehaviour:
       canvasRect:
         serializedVersion: 2
         x: 38.030396
-        y: 1032.4893
+        y: 1034.8894
         width: 160
         height: 30
     entryGroups: []
-    canvasScrollPosition: {x: 0, y: 0}
-    canvasZoom: 0.91100216
+    canvasScrollPosition: {x: 28.801605, y: 839.39526}
+    canvasZoom: 0.8332862
   syncInfo:
     syncActors: 0
     syncItems: 0
