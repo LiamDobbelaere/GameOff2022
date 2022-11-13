@@ -273,6 +273,20 @@ MonoBehaviour:
       value: 
       type: 0
       typeString: CustomFieldType_Text
+  - id: 5
+    fields:
+    - title: Name
+      value: Plundering Quests Done
+      type: 0
+      typeString: CustomFieldType_Text
+    - title: Initial Value
+      value: 0
+      type: 1
+      typeString: CustomFieldType_Number
+    - title: Description
+      value: 
+      type: 0
+      typeString: CustomFieldType_Text
   conversations:
   - id: 1
     fields:
@@ -2426,7 +2440,10 @@ MonoBehaviour:
       conditionPriority: 2
       outgoingLinks: []
       conditionsString: 
-      userScript: Variable["Plundering_Frogsword"] = true
+      userScript: 'Variable["Plundering_Frogsword"] = true;
+
+        Variable["Plundering_Quests_Done"]
+        = Variable["Plundering_Quests_Done"] + 1'
       onExecute:
         m_PersistentCalls:
           m_Calls: []
@@ -2437,8 +2454,8 @@ MonoBehaviour:
         width: 160
         height: 30
     entryGroups: []
-    canvasScrollPosition: {x: 145.12798, y: 396.78656}
-    canvasZoom: 1.9499995
+    canvasScrollPosition: {x: 0, y: 225.53465}
+    canvasZoom: 0.90000045
   - id: 6
     fields:
     - title: Title
@@ -3332,7 +3349,10 @@ MonoBehaviour:
       conditionPriority: 2
       outgoingLinks: []
       conditionsString: 
-      userScript: Variable["Plundering_Hearthorn"] = true
+      userScript: 'Variable["Plundering_Hearthorn"] = true;
+
+        Variable["Plundering_Quests_Done"]
+        = Variable["Plundering_Quests_Done"] + 1'
       onExecute:
         m_PersistentCalls:
           m_Calls: []
@@ -3343,7 +3363,7 @@ MonoBehaviour:
         width: 160
         height: 30
     entryGroups: []
-    canvasScrollPosition: {x: 4.4005013, y: 65.33801}
+    canvasScrollPosition: {x: 0, y: 491.78683}
     canvasZoom: 0.97549826
   - id: 7
     fields:
@@ -7339,8 +7359,8 @@ MonoBehaviour:
         width: 160
         height: 30
     entryGroups: []
-    canvasScrollPosition: {x: 23.30999, y: 44.42617}
-    canvasZoom: 0.9189976
+    canvasScrollPosition: {x: 152.30438, y: 207.29964}
+    canvasZoom: 1.0389975
   - id: 13
     fields:
     - title: Title
@@ -7457,8 +7477,8 @@ MonoBehaviour:
         width: 160
         height: 30
     entryGroups: []
-    canvasScrollPosition: {x: 0, y: 0}
-    canvasZoom: 1
+    canvasScrollPosition: {x: 64.02467, y: 33.871758}
+    canvasZoom: 1.0400004
   syncInfo:
     syncActors: 0
     syncItems: 0

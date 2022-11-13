@@ -9,6 +9,7 @@ TagManager:
   - DialogueSystemMouth
   - DialogueSystemPortrait
   - PoseLibrary
+  - DialogueSystemEyes
   layers:
   - Default
   - TransparentFX
