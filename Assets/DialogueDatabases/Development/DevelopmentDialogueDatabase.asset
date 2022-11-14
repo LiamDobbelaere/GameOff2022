@@ -119,6 +119,10 @@ MonoBehaviour:
       value: 2
       type: 5
       typeString: CustomFieldType_Actor
+    - title: automatic
+      value: True
+      type: 2
+      typeString: CustomFieldType_Boolean
     overrideSettings:
       useOverrides: 0
       overrideSubtitleSettings: 0
