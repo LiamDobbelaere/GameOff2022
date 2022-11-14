@@ -350,571 +350,82 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!224 &4503336120162457720
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4503336120174494488}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0, y: 0, z: 0}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 4503336120174007870}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
-  m_Pivot: {x: 0, y: 0}
---- !u!223 &4503336120162615582
-Canvas:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4503336120174494488}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_RenderMode: 0
-  m_Camera: {fileID: 0}
-  m_PlaneDistance: 100
-  m_PixelPerfect: 0
-  m_ReceivesEvents: 1
-  m_OverrideSorting: 0
-  m_OverridePixelPerfect: 0
-  m_SortingBucketNormalizedSize: 0
-  m_AdditionalShaderChannelsFlag: 25
-  m_SortingLayerID: 0
-  m_SortingOrder: 0
-  m_TargetDisplay: 0
---- !u!4 &4503336120174007870
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4503336120174494494}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.6530272, y: -1.7526133, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 4503336120162457720}
-  m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &4503336120174494488
-GameObject:
+--- !u!1001 &1130935464
+PrefabInstance:
   m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 4503336120162457720}
-  - component: {fileID: 4503336120162615582}
-  - component: {fileID: 4503336120179782038}
-  - component: {fileID: 7749447042587462662}
-  m_Layer: 5
-  m_Name: Canvas
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!1 &4503336120174494494
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 4503336120174007870}
-  - component: {fileID: 4503336120179782042}
-  - component: {fileID: 4503336120179826772}
-  - component: {fileID: 4503336120179784682}
-  - component: {fileID: 4503336120179826773}
-  - component: {fileID: 4503336120179826774}
-  - component: {fileID: 4503336120179826775}
-  - component: {fileID: 4503336120179826776}
-  m_Layer: 0
-  m_Name: Dialogue Manager
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &4503336120179782038
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4503336120174494488}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dc42784cf147c0c48a680349fa168899, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_IgnoreReversedGraphics: 1
-  m_BlockingObjects: 0
-  m_BlockingMask:
-    serializedVersion: 2
-    m_Bits: 4294967295
---- !u!114 &4503336120179782042
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4503336120174494494}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ab8b685e62a9aeb4a9472b30ec2d86d9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  initialDatabase: {fileID: 11400000, guid: d2a0c7d735b15014ca74562d02354224, type: 2}
-  displaySettings:
-    conversationOverrideSettings:
-      useOverrides: 0
-      overrideSubtitleSettings: 0
-      showNPCSubtitlesDuringLine: 1
-      showNPCSubtitlesWithResponses: 1
-      showPCSubtitlesDuringLine: 0
-      skipPCSubtitleAfterResponseMenu: 0
-      subtitleCharsPerSecond: 30
-      minSubtitleSeconds: 2
-      continueButton: 0
-      overrideSequenceSettings: 0
-      defaultSequence: 
-      defaultPlayerSequence: 
-      defaultResponseMenuSequence: 
-      overrideInputSettings: 0
-      alwaysForceResponseMenu: 1
-      includeInvalidEntries: 0
-      responseTimeout: 0
-      emTagForOldResponses: 0
-      emTagForInvalidResponses: 0
-      cancelSubtitle:
-        key: 27
-        buttonName: 
-      cancelConversation:
-        key: 27
-        buttonName: 
-    dialogueUI: {fileID: 66859864177434169, guid: 003f6c94e9fddb34f806023b49e498ad, type: 3}
-    defaultCanvas: {fileID: 4503336120162615582}
-    localizationSettings:
-      language: 
-      useSystemLanguage: 0
-      textTable: {fileID: 0}
-    subtitleSettings:
-      showNPCSubtitlesDuringLine: 1
-      showNPCSubtitlesWithResponses: 1
-      showPCSubtitlesDuringLine: 1
-      allowPCSubtitleReminders: 0
-      skipPCSubtitleAfterResponseMenu: 1
-      subtitleCharsPerSecond: 1
-      minSubtitleSeconds: 2
-      continueButton: 1
-      requireContinueOnLastLine: 0
-      richTextEmphases: 1
-      informSequenceStartAndEnd: 0
-    cameraSettings:
-      sequencerCamera: {fileID: 0}
-      alternateCameraObject: {fileID: 0}
-      cameraAngles: {fileID: 0}
-      keepCameraPositionAtConversationEnd: 0
-      defaultSequence: Delay({{end}})
-      defaultPlayerSequence: 
-      defaultResponseMenuSequence: 
-      entrytagFormat: 0
-      disableInternalSequencerCommands: 0
-    inputSettings:
-      alwaysForceResponseMenu: 1
-      includeInvalidEntries: 0
-      responseTimeout: 0
-      responseTimeoutAction: 0
-      emTagForOldResponses: 0
-      emTagForInvalidResponses: 0
-      qteButtons:
-      - Fire1
-      - Fire2
-      cancel:
-        key: 27
-        buttonName: 
-      cancelConversation:
-        key: 27
-        buttonName: 
-    barkSettings:
-      allowBarksDuringConversations: 1
-      barkCharsPerSecond: 0
-      minBarkSeconds: 0
-      defaultBarkSequence: 
-    alertSettings:
-      allowAlertsDuringConversations: 0
-      alertCheckFrequency: 0
-      alertCharsPerSecond: 0
-      minAlertSeconds: 0
-  persistentDataSettings:
-    recordPersistentDataOn: 0
-    includeActorData: 1
-    includeAllItemData: 0
-    includeLocationData: 0
-    includeStatusAndRelationshipData: 1
-    includeAllConversationFields: 0
-    saveConversationSimStatusWithField: 
-    saveDialogueEntrySimStatusWithField: 
-    asyncGameObjectBatchSize: 1000
-    asyncDialogueEntryBatchSize: 100
-    initializeNewVariables: 1
-  allowSimultaneousConversations: 0
-  interruptActiveConversations: 0
-  includeSimStatus: 1
-  instantiateDatabase: 0
-  preloadResources: 1
-  warmUpConversationController: 0
-  dontHideImmediateDuringWarmup: 0
-  dontDestroyOnLoad: 0
-  allowOnlyOneInstance: 1
-  onStartTriggerWaitForSaveDataApplied: 0
-  dialogueTimeMode: 0
-  debugLevel: 2
---- !u!114 &4503336120179784682
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4503336120174494494}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dddab24af7a02a54c9631fd5c532d7c4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  inputDevice: 0
-  joystickKeyCodesToCheck: 4a0100004b0100004c01000051010000
-  joystickButtonsToCheck: []
-  joystickAxesToCheck: []
-  joystickAxisThreshold: 0.5
-  keyButtonsToCheck: []
-  keyCodesToCheck: 1b000000
-  keyInputSwitchesModeTo: 1
-  alwaysAutoFocus: 0
-  detectMouseControl: 1
-  mouseMoveThreshold: 0.1
-  controlCursorState: 1
-  enforceCursorOnPause: 0
-  controlGraphicRaycasters: 0
-  backKeyCodes: 4b010000
-  backButtons:
-  - Cancel
-  submitButton: Submit
-  singleton: 0
-  onUseKeyboard:
-    m_PersistentCalls:
-      m_Calls: []
-  onUseJoystick:
-    m_PersistentCalls:
-      m_Calls: []
-  onUseMouse:
-    m_PersistentCalls:
-      m_Calls: []
-  onUseTouch:
-    m_PersistentCalls:
-      m_Calls: []
---- !u!114 &4503336120179826772
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4503336120174494494}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3b24a5606b164c84db0d3ed3ee8256e1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_parent: {fileID: 4503336120162457720}
-  m_prefabs:
-  - {fileID: 168688, guid: a5c98dfcec76e1847a0aa8d7c8a93459, type: 3}
-  - {fileID: 121952, guid: 720348da784b8fa49a7c48365da6f1b1, type: 3}
-  - {fileID: 162630, guid: f40d1072f56eeb04f9c104b7c4a8811f, type: 3}
-  m_position: 0
---- !u!114 &4503336120179826773
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4503336120174494494}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c593457cd8105e148906690e1707c592, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  trigger: 64
-  condition:
-    luaConditions: []
-    questConditions: []
-    acceptedTags: []
-    acceptedGameObjects: []
-    luaWizardIndex: -1
-    lastEvaluationValue: 0
-  setQuestState: 1
-  questName: 
-  questState: 0
-  setQuestEntryState: 0
-  questEntryNumber: 1
-  questEntryState: 0
-  setAnotherQuestEntryState: 0
-  anotherQuestEntryNumber: 1
-  anotherQuestEntryState: 0
-  luaCode: 
-  sequence: 
-  sequenceSpeaker: {fileID: 0}
-  sequenceListener: {fileID: 0}
-  waitOneFrameOnStartOrEnable: 1
-  alertMessage: 
-  textTable: {fileID: 0}
-  alertDuration: 0
-  sendMessages: []
-  barkSource: 0
-  barkConversation: 
-  barkText: 
-  barkTextSequence: 
-  barker: {fileID: 0}
-  barkTarget: {fileID: 0}
-  barkOrder: 0
-  allowBarksDuringConversations: 0
-  skipBarkIfNoValidEntries: 0
-  cacheBarkLines: 0
-  conversation: MarthaTest
-  conversationConversant: {fileID: 0}
-  conversationActor: {fileID: 0}
-  startConversationEntryID: -1
-  exclusive: 0
-  replace: 0
-  skipIfNoValidEntries: 0
-  preventRestartOnSameFrameEnded: 0
-  stopConversationOnTriggerExit: 0
-  stopConversationIfTooFar: 0
-  maxConversationDistance: 5
-  monitorConversationDistanceFrequency: 1
-  showCursorDuringConversation: 0
-  pauseGameDuringConversation: 0
-  setActiveActions: []
-  setEnabledActions: []
-  setAnimatorStateActions: []
-  onExecute:
-    m_PersistentCalls:
-      m_Calls: []
-  useConversationTitlePicker: 1
-  useBarkTitlePicker: 1
-  useQuestNamePicker: 1
-  selectedDatabase: {fileID: 11400000, guid: d2a0c7d735b15014ca74562d02354224, type: 2}
---- !u!82 &4503336120179826774
-AudioSource:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4503336120174494494}
-  m_Enabled: 1
-  serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
-  m_PlayOnAwake: 1
-  m_Volume: 1
-  m_Pitch: 1
-  Loop: 0
-  Mute: 0
-  Spatialize: 0
-  SpatializePostEffects: 0
-  Priority: 128
-  DopplerLevel: 1
-  MinDistance: 1
-  MaxDistance: 500
-  Pan2D: 0
-  rolloffMode: 0
-  BypassEffects: 0
-  BypassListenerEffects: 0
-  BypassReverbZones: 0
-  rolloffCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 8573823919107877803, guid: e30b8792ff19dc24d8d6b2de1b368845, type: 3}
+      propertyPath: m_Enabled
       value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
-      time: 1
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  panLevelCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  spreadCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  reverbZoneMixCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8573823919107877803, guid: e30b8792ff19dc24d8d6b2de1b368845, type: 3}
+      propertyPath: conversation
+      value: MarthaLovesFrogs
+      objectReference: {fileID: 0}
+    - target: {fileID: 8573823919107877803, guid: e30b8792ff19dc24d8d6b2de1b368845, type: 3}
+      propertyPath: selectedDatabase
+      value: 
+      objectReference: {fileID: 11400000, guid: d2a0c7d735b15014ca74562d02354224, type: 2}
+    - target: {fileID: 8573823919107963492, guid: e30b8792ff19dc24d8d6b2de1b368845, type: 3}
+      propertyPath: initialDatabase
+      value: 
+      objectReference: {fileID: 11400000, guid: d2a0c7d735b15014ca74562d02354224, type: 2}
+    - target: {fileID: 8573823919107963492, guid: e30b8792ff19dc24d8d6b2de1b368845, type: 3}
+      propertyPath: displaySettings.subtitleSettings.continueButton
       value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
---- !u!114 &4503336120179826775
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4503336120174494494}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5026b1f192af7884dadc44859e3ce661, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  phonemeSprites:
-  - phoneme: W
-    sprite: {fileID: 21300000, guid: f84bda2c770494b959d34113b09b0ffd, type: 3}
-  - phoneme: AH
-    sprite: {fileID: 21300000, guid: f3e342db53af74221af93cf12de2d7e7, type: 3}
-  - phoneme: T
-    sprite: {fileID: 21300000, guid: f7789c3025b004cbe88c75aeb69469bd, type: 3}
-  - phoneme: S
-    sprite: {fileID: 21300000, guid: f7789c3025b004cbe88c75aeb69469bd, type: 3}
-  - phoneme: DH
-    sprite: {fileID: 21300000, guid: f7789c3025b004cbe88c75aeb69469bd, type: 3}
-  - phoneme: D
-    sprite: {fileID: 21300000, guid: f7789c3025b004cbe88c75aeb69469bd, type: 3}
-  - phoneme: IY
-    sprite: {fileID: 21300000, guid: 3a3e179f0d6f84772a908f7b26faf244, type: 3}
-  - phoneme: L
-    sprite: {fileID: 21300000, guid: f7789c3025b004cbe88c75aeb69469bd, type: 3}
-  - phoneme: EY
-    sprite: {fileID: 21300000, guid: 3a3e179f0d6f84772a908f7b26faf244, type: 3}
-  - phoneme: B
-    sprite: {fileID: 21300000, guid: f84bda2c770494b959d34113b09b0ffd, type: 3}
-  - phoneme: AA
-    sprite: {fileID: 21300000, guid: f3e342db53af74221af93cf12de2d7e7, type: 3}
-  - phoneme: K
-    sprite: {fileID: 21300000, guid: f7789c3025b004cbe88c75aeb69469bd, type: 3}
-  - phoneme: P
-    sprite: {fileID: 21300000, guid: f84bda2c770494b959d34113b09b0ffd, type: 3}
-  - phoneme: OW
-    sprite: {fileID: 21300000, guid: 4b6aba20faa504b8fa560b91e7ac1d13, type: 3}
-  - phoneme: Z
-    sprite: {fileID: 21300000, guid: f7789c3025b004cbe88c75aeb69469bd, type: 3}
-  - phoneme: F
-    sprite: {fileID: 21300000, guid: d1fb70d7179f447f1a30c353d3213fa4, type: 3}
-  - phoneme: IH
-    sprite: {fileID: 21300000, guid: 3a3e179f0d6f84772a908f7b26faf244, type: 3}
-  - phoneme: NG
-    sprite: {fileID: 21300000, guid: f7789c3025b004cbe88c75aeb69469bd, type: 3}
-  - phoneme: N
-    sprite: {fileID: 21300000, guid: f7789c3025b004cbe88c75aeb69469bd, type: 3}
-  - phoneme: R
-    sprite: {fileID: 21300000, guid: f7789c3025b004cbe88c75aeb69469bd, type: 3}
-  - phoneme: M
-    sprite: {fileID: 21300000, guid: f84bda2c770494b959d34113b09b0ffd, type: 3}
-  - phoneme: '-'
-    sprite: {fileID: 21300000, guid: 76218bda42d19468fba8ac7f0840001f, type: 3}
-  - phoneme: AY
-    sprite: {fileID: 21300000, guid: f3e342db53af74221af93cf12de2d7e7, type: 3}
-  - phoneme: V
-    sprite: {fileID: 21300000, guid: d1fb70d7179f447f1a30c353d3213fa4, type: 3}
-  - phoneme: G
-    sprite: {fileID: 21300000, guid: f7789c3025b004cbe88c75aeb69469bd, type: 3}
-  simpleLipSyncSprites:
-  - {fileID: 430676877, guid: e616ec754aece1246bca570012335dcc, type: 3}
-  - {fileID: 1790863636, guid: e616ec754aece1246bca570012335dcc, type: 3}
-  - {fileID: 1657139843, guid: e616ec754aece1246bca570012335dcc, type: 3}
-  - {fileID: 2040076611, guid: e616ec754aece1246bca570012335dcc, type: 3}
---- !u!114 &4503336120179826776
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4503336120174494494}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 643fab60ddfb16a44b2953906eb39977, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &7749447042587462662
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4503336120174494488}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_UiScaleMode: 1
-  m_ReferencePixelsPerUnit: 100
-  m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 960, y: 600}
-  m_ScreenMatchMode: 0
-  m_MatchWidthOrHeight: 1
-  m_PhysicalUnit: 3
-  m_FallbackScreenDPI: 96
-  m_DefaultSpriteDPI: 96
-  m_DynamicPixelsPerUnit: 1
-  m_PresetInfoIsWorld: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8573823919113554144, guid: e30b8792ff19dc24d8d6b2de1b368845, type: 3}
+      propertyPath: m_Name
+      value: Dialogue Manager
+      objectReference: {fileID: 0}
+    - target: {fileID: 8573823919113723328, guid: e30b8792ff19dc24d8d6b2de1b368845, type: 3}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8573823919113723328, guid: e30b8792ff19dc24d8d6b2de1b368845, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.6530272
+      objectReference: {fileID: 0}
+    - target: {fileID: 8573823919113723328, guid: e30b8792ff19dc24d8d6b2de1b368845, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -1.7526133
+      objectReference: {fileID: 0}
+    - target: {fileID: 8573823919113723328, guid: e30b8792ff19dc24d8d6b2de1b368845, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8573823919113723328, guid: e30b8792ff19dc24d8d6b2de1b368845, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8573823919113723328, guid: e30b8792ff19dc24d8d6b2de1b368845, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8573823919113723328, guid: e30b8792ff19dc24d8d6b2de1b368845, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8573823919113723328, guid: e30b8792ff19dc24d8d6b2de1b368845, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8573823919113723328, guid: e30b8792ff19dc24d8d6b2de1b368845, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8573823919113723328, guid: e30b8792ff19dc24d8d6b2de1b368845, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8573823919113723328, guid: e30b8792ff19dc24d8d6b2de1b368845, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: e30b8792ff19dc24d8d6b2de1b368845, type: 3}
