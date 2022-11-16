@@ -1,3 +1,4 @@
+using PixelCrushers.DialogueSystem;
 using System;
 using System.Collections.Generic;
 using TMPro;
@@ -145,6 +146,11 @@ public class Calculator : MonoBehaviour {
             case Operation.DIVIDE:
                 result = lhs / float.Parse(secondEntry);
                 break;
+        }
+
+        // Quartermaster calculation for dialogue system
+        if (result == 245 * 1030) {
+            DialogueLua.SetVariable("Quartermaster Calculation Done", true);
         }
 
         input.text = ((float)result).ToString("#.######");

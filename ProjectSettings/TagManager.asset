@@ -10,6 +10,7 @@ TagManager:
   - DialogueSystemPortrait
   - PoseLibrary
   - DialogueSystemEyes
+  - PlayerDialogueSystemCollider
   layers:
   - Default
   - TransparentFX

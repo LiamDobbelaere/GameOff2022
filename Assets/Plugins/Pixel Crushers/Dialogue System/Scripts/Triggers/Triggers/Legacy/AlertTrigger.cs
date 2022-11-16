@@ -1,8 +1,7 @@
 using UnityEngine;
 using System.Collections;
 
-namespace PixelCrushers.DialogueSystem
-{
+namespace PixelCrushers.DialogueSystem {
 
     /// <summary>
     /// Deprecated by DialogueSystemTrigger.
@@ -11,8 +10,7 @@ namespace PixelCrushers.DialogueSystem
     /// localized version of the alert message.
     /// </summary>
     [AddComponentMenu("")] // Deprecated
-    public class AlertTrigger : DialogueEventStarter
-    {
+    public class AlertTrigger : DialogueEventStarter {
 
         /// <summary>
         /// The trigger that shows the alert.
@@ -46,53 +44,43 @@ namespace PixelCrushers.DialogueSystem
 
         private bool tryingToStart = false;
 
-        public void OnBarkEnd(Transform actor)
-        {
+        public void OnBarkEnd(Transform actor) {
             if (enabled && (trigger == DialogueTriggerEvent.OnBarkEnd)) TryStart(actor);
         }
 
-        public void OnConversationEnd(Transform actor)
-        {
+        public void OnConversationEnd(Transform actor) {
             if (enabled && (trigger == DialogueTriggerEvent.OnConversationEnd)) TryStart(actor);
         }
 
-        public void OnSequenceEnd(Transform actor)
-        {
+        public void OnSequenceEnd(Transform actor) {
             if (enabled && (trigger == DialogueTriggerEvent.OnSequenceEnd)) TryStart(actor);
         }
 
-        public void OnUse(Transform actor)
-        {
+        public void OnUse(Transform actor) {
             if (enabled && (trigger == DialogueTriggerEvent.OnUse)) TryStart(actor);
         }
 
-        public void OnUse(string message)
-        {
+        public void OnUse(string message) {
             if (enabled && (trigger == DialogueTriggerEvent.OnUse)) TryStart(null);
         }
 
-        public void OnUse()
-        {
+        public void OnUse() {
             if (enabled && (trigger == DialogueTriggerEvent.OnUse)) TryStart(null);
         }
 
-        public void OnTriggerEnter(Collider other)
-        {
+        public void OnTriggerEnter(Collider other) {
             if (enabled && (trigger == DialogueTriggerEvent.OnTriggerEnter)) TryStart(other.transform);
         }
 
-        public void OnTriggerExit(Collider other)
-        {
+        public void OnTriggerExit(Collider other) {
             if (enabled && (trigger == DialogueTriggerEvent.OnTriggerExit)) TryStart(other.transform);
         }
 
-        public void OnCollisionEnter(Collision collision)
-        {
+        public void OnCollisionEnter(Collision collision) {
             if (enabled && (trigger == DialogueTriggerEvent.OnCollisionEnter)) TryStart(collision.collider.transform);
         }
 
-        public void OnCollisionExit(Collision collision)
-        {
+        public void OnCollisionExit(Collision collision) {
             if (enabled && (trigger == DialogueTriggerEvent.OnTriggerExit)) TryStart(collision.collider.transform);
         }
 
@@ -120,45 +108,38 @@ namespace PixelCrushers.DialogueSystem
 
 #endif
 
-        public void Start()
-        {
+        public void Start() {
             // Waits one frame to allow all other components to finish their Start() methods.
             if (trigger == DialogueTriggerEvent.OnStart) StartCoroutine(StartAfterOneFrame());
         }
 
         private bool listenForOnDestroy = false;
 
-        public void OnEnable()
-        {
+        public void OnEnable() {
             listenForOnDestroy = true;
             // Waits one frame to allow all other components to finish their OnEnable() methods.
             if (trigger == DialogueTriggerEvent.OnEnable) StartCoroutine(StartAfterOneFrame());
         }
 
-        public void OnDisable()
-        {
+        public void OnDisable() {
             if (!listenForOnDestroy) return;
             if (trigger == DialogueTriggerEvent.OnDisable) TryStart(null);
         }
 
-        public void OnLevelWillBeUnloaded()
-        {
+        public void OnLevelWillBeUnloaded() {
             listenForOnDestroy = false;
         }
 
-        public void OnApplicationQuit()
-        {
+        public void OnApplicationQuit() {
             listenForOnDestroy = false;
         }
 
-        public void OnDestroy()
-        {
+        public void OnDestroy() {
             if (!listenForOnDestroy) return;
             if (trigger == DialogueTriggerEvent.OnDestroy) TryStart(null);
         }
 
-        private IEnumerator StartAfterOneFrame()
-        {
+        private IEnumerator StartAfterOneFrame() {
             yield return null;
             TryStart(null);
         }
@@ -166,33 +147,24 @@ namespace PixelCrushers.DialogueSystem
         /// <summary>
         /// Show the alert if the condition is true.
         /// </summary>
-        public void TryStart(Transform actor)
-        {
+        public void TryStart(Transform actor) {
             if (tryingToStart) return;
             tryingToStart = true;
-            try
-            {
-                if (((condition == null) || condition.IsTrue(actor)) && !string.IsNullOrEmpty(message))
-                {
+            try {
+                if (((condition == null) || condition.IsTrue(actor)) && !string.IsNullOrEmpty(message)) {
                     string actualMessage = message;
-                    if ((localizedTextTable != null) && localizedTextTable.ContainsField(message))
-                    {
+                    if ((localizedTextTable != null) && localizedTextTable.ContainsField(message)) {
                         actualMessage = localizedTextTable[message];
                     }
                     string text = FormattedText.Parse(actualMessage, DialogueManager.masterDatabase.emphasisSettings).text;
-                    if (Mathf.Approximately(0, duration))
-                    {
+                    if (Mathf.Approximately(0, duration)) {
                         DialogueManager.ShowAlert(text);
-                    }
-                    else
-                    {
+                    } else {
                         DialogueManager.ShowAlert(text, duration);
                     }
                     DestroyIfOnce();
                 }
-            }
-            finally
-            {
+            } finally {
                 tryingToStart = false;
             }
         }

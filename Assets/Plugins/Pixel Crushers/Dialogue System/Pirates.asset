@@ -73,7 +73,7 @@ MonoBehaviour:
       type: 0
       typeString: CustomFieldType_Text
     - title: IsPlayer
-      value: False
+      value: True
       type: 2
       typeString: CustomFieldType_Boolean
     portrait: {fileID: 0}
@@ -283,6 +283,20 @@ MonoBehaviour:
       value: 0
       type: 1
       typeString: CustomFieldType_Number
+    - title: Description
+      value: 
+      type: 0
+      typeString: CustomFieldType_Text
+  - id: 6
+    fields:
+    - title: Name
+      value: Quartermaster Calculation Done
+      type: 0
+      typeString: CustomFieldType_Text
+    - title: Initial Value
+      value: False
+      type: 2
+      typeString: CustomFieldType_Boolean
     - title: Description
       value: 
       type: 0
@@ -3363,8 +3377,8 @@ MonoBehaviour:
         width: 160
         height: 30
     entryGroups: []
-    canvasScrollPosition: {x: 0, y: 491.78683}
-    canvasZoom: 0.97549826
+    canvasScrollPosition: {x: 13.111235, y: 240.30807}
+    canvasZoom: 0.9154984
   - id: 7
     fields:
     - title: Title
@@ -7426,11 +7440,11 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Actor
-        value: 8
+        value: 6
         type: 5
         typeString: CustomFieldType_Actor
       - title: Conversant
-        value: 6
+        value: 2
         type: 5
         typeString: CustomFieldType_Actor
       - title: Menu Text
@@ -7478,7 +7492,7 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 118.04077
+        x: 118.91109
         y: 105
         width: 160
         height: 30
@@ -7691,7 +7705,7 @@ MonoBehaviour:
         destinationDialogueID: 5
         isConnector: 0
         priority: 2
-      conditionsString: 
+      conditionsString: Variable["Quartermaster_Calculation_Done"] == true
       userScript: 
       onExecute:
         m_PersistentCalls:
@@ -8544,8 +8558,8 @@ MonoBehaviour:
         width: 160
         height: 30
     entryGroups: []
-    canvasScrollPosition: {x: 5.760187, y: 12.740559}
-    canvasZoom: 0.788996
+    canvasScrollPosition: {x: 34.393562, y: 55.45725}
+    canvasZoom: 1.4489951
   syncInfo:
     syncActors: 0
     syncItems: 0
