@@ -11,6 +11,7 @@ TagManager:
   - PoseLibrary
   - DialogueSystemEyes
   - PlayerDialogueSystemCollider
+  - FlagCaptureCamera
   layers:
   - Default
   - TransparentFX

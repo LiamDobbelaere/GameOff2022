@@ -53,7 +53,6 @@ public class JollyRogerCheck : MonoBehaviour {
         };
 
         int angleBetweenBones = Mathf.RoundToInt(Vector3.Angle(bones[0].transform.right, bones[1].transform.right));
-        Debug.Log(bones[0].transform.eulerAngles.z);
 
         List<int> invalidBoneAngles = new List<int> {
             90, 270

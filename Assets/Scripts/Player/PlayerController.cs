@@ -7,6 +7,8 @@ public class PlayerController : MonoBehaviour {
     // Start is called before the first frame update
     void Start() {
         this.rb = GetComponent<Rigidbody2D>();
+
+        RestoreLastPositionIfSet();
     }
 
     private void Update() {
@@ -16,5 +18,14 @@ public class PlayerController : MonoBehaviour {
     // Update is called once per frame
     void FixedUpdate() {
 
+    }
+
+    private void RestoreLastPositionIfSet() {
+        if (GameState.lastPosition == null) {
+            return;
+        }
+
+        transform.position = (Vector2)GameState.lastPosition;
+        GameState.lastPosition = null;
     }
 }
