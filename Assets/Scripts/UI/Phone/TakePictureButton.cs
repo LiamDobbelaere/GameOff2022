@@ -31,6 +31,12 @@ public class TakePictureButton : MonoBehaviour {
                 GameState.customFlagTextureDrawn.Apply();
 
                 flagCam.cullingMask = currentCullingMask;
+
+                GameState.customFlagIsJollyRoger =
+                    GameObject.FindGameObjectWithTag("DragAndDropItems")
+                        .GetComponent<JollyRogerCheck>().isJollyRoger;
+
+                GameState.hasTakenPictureOf["flag"] = true;
             }
         });
 

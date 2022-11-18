@@ -8,7 +8,13 @@ public class Picture : MonoBehaviour {
     // Start is called before the first frame update
     void Start() {
         GetComponent<Button>().onClick.AddListener(() => {
-            DialogueLua.SetVariable("Chosen Photo For Flag", pictureKeyName);
+            string finalKeyName = pictureKeyName;
+            if (pictureKeyName == "flag") {
+                finalKeyName += GameState.customFlagIsJollyRoger ? "-jolly" : "-other";
+            }
+
+            DialogueLua.SetVariable("Chosen Photo For Flag", finalKeyName);
+
 
             GetComponentInParent<PhoneCanvas>().HidePhone();
         });

@@ -9287,7 +9287,7 @@ GameObject:
   - component: {fileID: 1587701269742372946}
   - component: {fileID: 902187164991147080}
   m_Layer: 5
-  m_Name: Pirate Flag
+  m_Name: flag
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9408,7 +9408,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ad3051ab41e89c8409b23262772b173b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pictureKeyName: flag-jolly
+  pictureKeyName: flag
 --- !u!1 &1939780094747206382
 GameObject:
   m_ObjectHideFlags: 0
@@ -9421,6 +9421,7 @@ GameObject:
   - component: {fileID: 4250692498996013933}
   - component: {fileID: 76649483634821952}
   - component: {fileID: 5694905103142286650}
+  - component: {fileID: 8069984518790309144}
   m_Layer: 5
   m_Name: Body
   m_TagString: Untagged
@@ -9513,6 +9514,18 @@ MonoBehaviour:
   m_Spacing: {x: 0, y: 0}
   m_Constraint: 0
   m_ConstraintCount: 2
+--- !u!114 &8069984518790309144
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1939780094747206382}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 25a01ceb3b5f2d54799eaaa828192813, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &3565924984065425774
 GameObject:
   m_ObjectHideFlags: 0
@@ -9527,7 +9540,7 @@ GameObject:
   - component: {fileID: 3360176579969659735}
   - component: {fileID: 114381731908015485}
   m_Layer: 5
-  m_Name: Seagulls
+  m_Name: seagulls
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -14475,7 +14488,7 @@ GameObject:
   - component: {fileID: 1309990154583019605}
   - component: {fileID: 6248296193843920233}
   m_Layer: 5
-  m_Name: Hearthorn
+  m_Name: hearthorn
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
