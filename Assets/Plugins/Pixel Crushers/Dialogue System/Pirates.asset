@@ -11620,7 +11620,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Dialogue Text
-        value: 
+        value: 'Let''s go with this. '
         type: 0
         typeString: CustomFieldType_Text
       - title: Parenthetical
@@ -11709,7 +11709,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Dialogue Text
-        value: 
+        value: Acually, let me get back to you...
         type: 0
         typeString: CustomFieldType_Text
       - title: Parenthetical
@@ -11774,7 +11774,8 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Dialogue Text
-        value: kinda gay ngl
+        value: 'Ohh, I''ve always had a thing for Hearthorn... let me see what I
+          can do. '
         type: 0
         typeString: CustomFieldType_Text
       - title: Parenthetical
@@ -11839,7 +11840,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Dialogue Text
-        value: jolly roger my dude
+        value: 'This cliche old thing? If you''re sure. '
         type: 0
         typeString: CustomFieldType_Text
       - title: Parenthetical
@@ -11904,7 +11905,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Dialogue Text
-        value: cool abstract design
+        value: 'I mean... it''s definitely out there. '
         type: 0
         typeString: CustomFieldType_Text
       - title: Parenthetical
@@ -11969,7 +11970,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Dialogue Text
-        value: love them birds my dude
+        value: 'A seagull? Mmm... I''ll see what I can do. '
         type: 0
         typeString: CustomFieldType_Text
       - title: Parenthetical
@@ -12008,8 +12009,8 @@ MonoBehaviour:
         width: 160
         height: 30
     entryGroups: []
-    canvasScrollPosition: {x: 0, y: 0}
-    canvasZoom: 0.24970251
+    canvasScrollPosition: {x: 70.90245, y: 0}
+    canvasZoom: 1.0206771
   - id: 15
     fields:
     - title: Title
