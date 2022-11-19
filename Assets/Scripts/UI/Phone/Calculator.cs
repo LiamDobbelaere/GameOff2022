@@ -78,8 +78,23 @@ public class Calculator : MonoBehaviour {
     }
 
     private void OnOperation(Operation op) {
-        operation = op;
+        if (op == Operation.SUBTRACT) {
+            if (operation == null) {
+                if (firstEntry == "") {
+                    firstEntry = "-";
+                    input.text = firstEntry;
+                    return;
+                }
+            } else {
+                if (secondEntry == "") {
+                    secondEntry = "-";
+                    input.text = secondEntry;
+                    return;
+                }
+            }
+        }
 
+        operation = op;
 
         switch (operation) {
             case Operation.ADD:
@@ -148,11 +163,20 @@ public class Calculator : MonoBehaviour {
                 break;
         }
 
+        input.text = ((float)result).ToString("#.######");
+
         // Quartermaster calculation for dialogue system
         if (result == 245 * 1030) {
             DialogueLua.SetVariable("Quartermaster Calculation Done", true);
         }
 
-        input.text = ((float)result).ToString("#.######");
+        // Cheat: show all pictures
+        if (result == -159632) {
+            GameState.hasTakenPictureOf["flag"] = true;
+            GameState.hasTakenPictureOf["hearthorn"] = true;
+            GameState.hasTakenPictureOf["seagulls"] = true;
+
+            input.text = "ALLPICS";
+        }
     }
 }
