@@ -104,7 +104,9 @@ public class LipSync : MonoBehaviour {
         if (lastAudioClip != asource.clip) {
             lastUsedLabelEntry = 0;
             string labelsPath = "Labels/" + asource.clip.name + ".mp3.labels";
+            Debug.Log("Loading label file " + labelsPath);
             labelsTextFile = Resources.Load<TextAsset>(labelsPath);
+            Debug.Log(labelsTextFile);
             lastAudioClip = asource.clip;
         }
 
@@ -207,6 +209,7 @@ public class LipSync : MonoBehaviour {
         GameObject poseLibraryGameObject = GameObject.FindGameObjectWithTag("PoseLibrary");
         if (poseLibraryGameObject != null) {
             poseLibrary = poseLibraryGameObject.GetComponent<PoseLibrary>();
+            Debug.Log(poseLibrary);
         }
     }
 }

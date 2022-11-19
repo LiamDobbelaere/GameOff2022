@@ -17,6 +17,7 @@ GameObject:
   - component: {fileID: 8573823919107877798}
   - component: {fileID: 1541905112402803111}
   - component: {fileID: 7406701233709606370}
+  - component: {fileID: 4313900057166012581}
   m_Layer: 0
   m_Name: Dialogue Manager
   m_TagString: Untagged
@@ -199,7 +200,7 @@ MonoBehaviour:
   alwaysAutoFocus: 0
   detectMouseControl: 1
   mouseMoveThreshold: 0.1
-  controlCursorState: 1
+  controlCursorState: 0
   enforceCursorOnPause: 0
   controlGraphicRaycasters: 0
   backKeyCodes: 4b010000
@@ -511,6 +512,18 @@ MonoBehaviour:
     onDialogueSystemUnpause:
       m_PersistentCalls:
         m_Calls: []
+--- !u!114 &4313900057166012581
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8573823919113554144}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d5a7dd51c38bcbe4a8e14d6bc129419a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &8573823919113554150
 GameObject:
   m_ObjectHideFlags: 0

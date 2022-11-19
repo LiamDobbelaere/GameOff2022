@@ -236,6 +236,28 @@ MonoBehaviour:
     spritePortrait: {fileID: 0}
     alternatePortraits: []
     spritePortraits: []
+  - id: 10
+    fields:
+    - title: Name
+      value: Martha Lipsync
+      type: 0
+      typeString: CustomFieldType_Text
+    - title: Pictures
+      value: '[]'
+      type: 3
+      typeString: CustomFieldType_Files
+    - title: Description
+      value: 
+      type: 0
+      typeString: CustomFieldType_Text
+    - title: IsPlayer
+      value: False
+      type: 2
+      typeString: CustomFieldType_Boolean
+    portrait: {fileID: 0}
+    spritePortrait: {fileID: 21300000, guid: dc1ff359b0d184bf6be942980f7e4e77, type: 3}
+    alternatePortraits: []
+    spritePortraits: []
   items: []
   locations: []
   variables:
@@ -246,7 +268,7 @@ MonoBehaviour:
       type: 0
       typeString: CustomFieldType_Text
     - title: Initial Value
-      value: True
+      value: False
       type: 2
       typeString: CustomFieldType_Boolean
     - title: Description
@@ -302,7 +324,7 @@ MonoBehaviour:
       type: 0
       typeString: CustomFieldType_Text
     - title: Initial Value
-      value: True
+      value: False
       type: 2
       typeString: CustomFieldType_Boolean
     - title: Description
@@ -316,7 +338,7 @@ MonoBehaviour:
       type: 0
       typeString: CustomFieldType_Text
     - title: Initial Value
-      value: True
+      value: False
       type: 2
       typeString: CustomFieldType_Boolean
     - title: Description
@@ -344,7 +366,7 @@ MonoBehaviour:
       type: 0
       typeString: CustomFieldType_Text
     - title: Initial Value
-      value: 3
+      value: 0
       type: 1
       typeString: CustomFieldType_Number
     - title: Description
@@ -480,7 +502,7 @@ MonoBehaviour:
   - id: 18
     fields:
     - title: Name
-      value: 
+      value: Doing Interviews
       type: 0
       typeString: CustomFieldType_Text
     - title: Initial Value
@@ -2754,7 +2776,9 @@ MonoBehaviour:
       falseConditionAction: Block
       conditionPriority: 2
       outgoingLinks: []
-      conditionsString: Variable["Plundering_Quest_Over"] == false
+      conditionsString: Variable["Plundering_Quest_Over"] == false and ( (Variable["Plundering___Spoken_to_Hearthorn"]
+        == false) or (Variable["Plundering___Spoken_to_Frogsword"] == false) or (Variable["Plundering___Spoken_to_Coinbone"]
+        == false))
       userScript: 
       onExecute:
         m_PersistentCalls:
@@ -2818,7 +2842,13 @@ MonoBehaviour:
       delaySimStatus: 0
       falseConditionAction: Block
       conditionPriority: 2
-      outgoingLinks: []
+      outgoingLinks:
+      - originConversationID: 4
+        originDialogueID: 2
+        destinationConversationID: 4
+        destinationDialogueID: 5
+        isConnector: 0
+        priority: 2
       conditionsString: (Variable["Plundering___Spoken_to_Hearthorn"] == true) and
         (Variable["Plundering___Spoken_to_Frogsword"] == true) and (Variable["Plundering___Spoken_to_Coinbone"]
         == true) and (Variable["Plundering_Quest_Over"] == false)
@@ -2963,9 +2993,74 @@ MonoBehaviour:
         y: 178.31555
         width: 160
         height: 30
+    - id: 5
+      fields:
+      - title: Title
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Pictures
+        value: '[]'
+        type: 3
+        typeString: CustomFieldType_Files
+      - title: Description
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Actor
+        value: 8
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Conversant
+        value: 2
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Menu Text
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Dialogue Text
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Parenthetical
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Audio Files
+        value: '[]'
+        type: 3
+        typeString: CustomFieldType_Files
+      - title: Video File
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Sequence
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      conversationID: 4
+      isRoot: 0
+      isGroup: 0
+      nodeColor: 
+      delaySimStatus: 0
+      falseConditionAction: Block
+      conditionPriority: 2
+      outgoingLinks: []
+      conditionsString: 
+      userScript: SwitchScene("Council")
+      onExecute:
+        m_PersistentCalls:
+          m_Calls: []
+      canvasRect:
+        serializedVersion: 2
+        x: 330.729
+        y: 258.841
+        width: 160
+        height: 30
     entryGroups: []
-    canvasScrollPosition: {x: 0, y: 0}
-    canvasZoom: 0.9934694
+    canvasScrollPosition: {x: 71.65343, y: 1.327179}
+    canvasZoom: 0.75346965
   - id: 5
     fields:
     - title: Title
@@ -4121,7 +4216,7 @@ MonoBehaviour:
       - originConversationID: 6
         originDialogueID: 0
         destinationConversationID: 6
-        destinationDialogueID: 13
+        destinationDialogueID: 15
         isConnector: 0
         priority: 2
       - originConversationID: 6
@@ -4133,7 +4228,7 @@ MonoBehaviour:
       - originConversationID: 6
         originDialogueID: 0
         destinationConversationID: 6
-        destinationDialogueID: 15
+        destinationDialogueID: 13
         isConnector: 0
         priority: 2
       - originConversationID: 6
@@ -5068,7 +5163,8 @@ MonoBehaviour:
         destinationDialogueID: 18
         isConnector: 0
         priority: 2
-      conditionsString: Variable["Mutiny___Spoken_to_Hearthorn"] == false
+      conditionsString: Variable["Mutiny___Spoken_to_Hearthorn"] == false and (Variable["Plundering_Quest_Over"]
+        == true)
       userScript: 
       onExecute:
         m_PersistentCalls:
@@ -5146,14 +5242,15 @@ MonoBehaviour:
         destinationDialogueID: 16
         isConnector: 0
         priority: 2
-      conditionsString: Variable["Plundering___Spoken_to_Hearthorn"] == false
+      conditionsString: Variable["Plundering___Spoken_to_Hearthorn"] == false and
+        (Variable["Plundering_Quest_Over"] == false)
       userScript: 
       onExecute:
         m_PersistentCalls:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 364.66653
+        x: 365.50885
         y: 241.60153
         width: 160
         height: 30
@@ -5922,8 +6019,8 @@ MonoBehaviour:
         width: 160
         height: 30
     entryGroups: []
-    canvasScrollPosition: {x: 0, y: 0}
-    canvasZoom: 0.6472037
+    canvasScrollPosition: {x: 256.13834, y: 91.5734}
+    canvasZoom: 0.3472038
   - id: 7
     fields:
     - title: Title
@@ -5939,13 +6036,17 @@ MonoBehaviour:
       type: 0
       typeString: CustomFieldType_Text
     - title: Actor
-      value: 2
+      value: 10
       type: 5
       typeString: CustomFieldType_Actor
     - title: Conversant
       value: 3
       type: 5
       typeString: CustomFieldType_Actor
+    - title: automatic
+      value: True
+      type: 2
+      typeString: CustomFieldType_Boolean
     overrideSettings:
       useOverrides: 0
       overrideSubtitleSettings: 0
@@ -5989,7 +6090,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Actor
-        value: 2
+        value: 10
         type: 5
         typeString: CustomFieldType_Actor
       - title: Conversant
@@ -6001,8 +6102,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Dialogue Text
-        value: 'Good evening. I''m Martha Phillips, with VBC News, talking to you
-          from Port Royal. '
+        value: 
         type: 0
         typeString: 
       - title: Parenthetical
@@ -6018,7 +6118,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Sequence
-        value: AudioWait(Chap00_Introduction/Good evening Im Martha...)
+        value: 
         type: 0
         typeString: 
       conversationID: 7
@@ -6032,7 +6132,7 @@ MonoBehaviour:
       - originConversationID: 7
         originDialogueID: 0
         destinationConversationID: 7
-        destinationDialogueID: 1
+        destinationDialogueID: 16
         isConnector: 0
         priority: 2
       conditionsString: 
@@ -6043,7 +6143,7 @@ MonoBehaviour:
       canvasRect:
         serializedVersion: 2
         x: 30
-        y: 20
+        y: 19.086006
         width: 160
         height: 30
     - id: 1
@@ -6061,11 +6161,11 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Actor
-        value: 3
+        value: 10
         type: 5
         typeString: CustomFieldType_Actor
       - title: Conversant
-        value: 2
+        value: 3
         type: 5
         typeString: CustomFieldType_Actor
       - title: Menu Text
@@ -6114,8 +6214,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 31
-        y: 104
+        x: 29.172009
+        y: 134.16187
         width: 160
         height: 30
     - id: 2
@@ -6133,7 +6233,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Actor
-        value: 2
+        value: 10
         type: 5
         typeString: CustomFieldType_Actor
       - title: Conversant
@@ -6185,8 +6285,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 28
-        y: 180
+        x: 28.913998
+        y: 203.76389
         width: 160
         height: 30
     - id: 3
@@ -6204,11 +6304,11 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Actor
-        value: 3
+        value: 10
         type: 5
         typeString: CustomFieldType_Actor
       - title: Conversant
-        value: 2
+        value: 3
         type: 5
         typeString: CustomFieldType_Actor
       - title: Menu Text
@@ -6275,7 +6375,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Actor
-        value: 2
+        value: 10
         type: 5
         typeString: CustomFieldType_Actor
       - title: Conversant
@@ -6347,11 +6447,11 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Actor
-        value: 3
+        value: 10
         type: 5
         typeString: CustomFieldType_Actor
       - title: Conversant
-        value: 2
+        value: 3
         type: 5
         typeString: CustomFieldType_Actor
       - title: Menu Text
@@ -6400,7 +6500,7 @@ MonoBehaviour:
       canvasRect:
         serializedVersion: 2
         x: 38.030396
-        y: 426.62973
+        y: 425.71576
         width: 160
         height: 30
     - id: 6
@@ -6418,7 +6518,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Actor
-        value: 2
+        value: 10
         type: 5
         typeString: CustomFieldType_Actor
       - title: Conversant
@@ -6489,11 +6589,11 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Actor
-        value: 3
+        value: 10
         type: 5
         typeString: CustomFieldType_Actor
       - title: Conversant
-        value: 2
+        value: 3
         type: 5
         typeString: CustomFieldType_Actor
       - title: Menu Text
@@ -6560,7 +6660,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Actor
-        value: 2
+        value: 10
         type: 5
         typeString: CustomFieldType_Actor
       - title: Conversant
@@ -6631,11 +6731,11 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Actor
-        value: 3
+        value: 10
         type: 5
         typeString: CustomFieldType_Actor
       - title: Conversant
-        value: 2
+        value: 3
         type: 5
         typeString: CustomFieldType_Actor
       - title: Menu Text
@@ -6702,7 +6802,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Actor
-        value: 2
+        value: 10
         type: 5
         typeString: CustomFieldType_Actor
       - title: Conversant
@@ -6773,7 +6873,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Actor
-        value: 2
+        value: 10
         type: 5
         typeString: CustomFieldType_Actor
       - title: Conversant
@@ -6844,11 +6944,11 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Actor
-        value: 3
+        value: 10
         type: 5
         typeString: CustomFieldType_Actor
       - title: Conversant
-        value: 2
+        value: 3
         type: 5
         typeString: CustomFieldType_Actor
       - title: Menu Text
@@ -6915,7 +7015,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Actor
-        value: 2
+        value: 10
         type: 5
         typeString: CustomFieldType_Actor
       - title: Conversant
@@ -6986,11 +7086,11 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Actor
-        value: 3
+        value: 10
         type: 5
         typeString: CustomFieldType_Actor
       - title: Conversant
-        value: 2
+        value: 3
         type: 5
         typeString: CustomFieldType_Actor
       - title: Menu Text
@@ -7036,9 +7136,81 @@ MonoBehaviour:
         y: 1034.8894
         width: 160
         height: 30
+    - id: 16
+      fields:
+      - title: Title
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Pictures
+        value: '[]'
+        type: 3
+        typeString: CustomFieldType_Files
+      - title: Description
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Actor
+        value: 10
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Conversant
+        value: 3
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Menu Text
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Dialogue Text
+        value: 'Good evening. I''m Martha Phillips, with VBC News, talking to you
+          from Port Royal. '
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Parenthetical
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Audio Files
+        value: '[]'
+        type: 3
+        typeString: CustomFieldType_Files
+      - title: Video File
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Sequence
+        value: AudioWait(Chap00_Introduction/Good evening Im Martha...)
+        type: 0
+        typeString: CustomFieldType_Text
+      conversationID: 7
+      isRoot: 0
+      isGroup: 0
+      nodeColor: 
+      delaySimStatus: 0
+      falseConditionAction: Block
+      conditionPriority: 2
+      outgoingLinks:
+      - originConversationID: 7
+        originDialogueID: 16
+        destinationConversationID: 7
+        destinationDialogueID: 1
+        isConnector: 0
+        priority: 2
+      conditionsString: 
+      userScript: 
+      onExecute:
+        m_PersistentCalls:
+          m_Calls: []
+      canvasRect:
+        serializedVersion: 2
+        x: 30
+        y: 70
+        width: 160
+        height: 30
     entryGroups: []
-    canvasScrollPosition: {x: 0, y: 105.5199}
-    canvasZoom: 0.7040974
+    canvasScrollPosition: {x: 0, y: 0}
+    canvasZoom: 1.0940971
   - id: 8
     fields:
     - title: Title
@@ -10071,7 +10243,13 @@ MonoBehaviour:
       delaySimStatus: 0
       falseConditionAction: Block
       conditionPriority: 2
-      outgoingLinks: []
+      outgoingLinks:
+      - originConversationID: 12
+        originDialogueID: 11
+        destinationConversationID: 12
+        destinationDialogueID: 15
+        isConnector: 0
+        priority: 2
       conditionsString: Variable["Plundering_Quests_Done"] == 0
       userScript: Variable["Plundering_Quest_Over"] = true
       onExecute:
@@ -10137,7 +10315,13 @@ MonoBehaviour:
       delaySimStatus: 0
       falseConditionAction: Block
       conditionPriority: 2
-      outgoingLinks: []
+      outgoingLinks:
+      - originConversationID: 12
+        originDialogueID: 12
+        destinationConversationID: 12
+        destinationDialogueID: 15
+        isConnector: 0
+        priority: 2
       conditionsString: Variable["Plundering_Quests_Done"] == 1
       userScript: Variable["Plundering_Quest_Over"] = true
       onExecute:
@@ -10202,7 +10386,13 @@ MonoBehaviour:
       delaySimStatus: 0
       falseConditionAction: Block
       conditionPriority: 2
-      outgoingLinks: []
+      outgoingLinks:
+      - originConversationID: 12
+        originDialogueID: 13
+        destinationConversationID: 12
+        destinationDialogueID: 15
+        isConnector: 0
+        priority: 2
       conditionsString: Variable["Plundering_Quests_Done"] == 2
       userScript: Variable["Plundering_Quest_Over"] = true
       onExecute:
@@ -10267,7 +10457,13 @@ MonoBehaviour:
       delaySimStatus: 0
       falseConditionAction: Block
       conditionPriority: 2
-      outgoingLinks: []
+      outgoingLinks:
+      - originConversationID: 12
+        originDialogueID: 14
+        destinationConversationID: 12
+        destinationDialogueID: 15
+        isConnector: 0
+        priority: 2
       conditionsString: Variable["Plundering_Quests_Done"] == 3
       userScript: Variable["Plundering_Quest_Over"] = true
       onExecute:
@@ -10279,9 +10475,74 @@ MonoBehaviour:
         y: 1127.153
         width: 160
         height: 30
+    - id: 15
+      fields:
+      - title: Title
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Pictures
+        value: '[]'
+        type: 3
+        typeString: CustomFieldType_Files
+      - title: Description
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Actor
+        value: 4
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Conversant
+        value: 8
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Menu Text
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Dialogue Text
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Parenthetical
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Audio Files
+        value: '[]'
+        type: 3
+        typeString: CustomFieldType_Files
+      - title: Video File
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Sequence
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      conversationID: 12
+      isRoot: 0
+      isGroup: 0
+      nodeColor: 
+      delaySimStatus: 0
+      falseConditionAction: Block
+      conditionPriority: 2
+      outgoingLinks: []
+      conditionsString: 
+      userScript: SwitchScene("Port")
+      onExecute:
+        m_PersistentCalls:
+          m_Calls: []
+      canvasRect:
+        serializedVersion: 2
+        x: 429.53107
+        y: 1321.0696
+        width: 160
+        height: 30
     entryGroups: []
-    canvasScrollPosition: {x: 148.70227, y: 164.22029}
-    canvasZoom: 0.6850632
+    canvasScrollPosition: {x: 88.25978, y: 848.11566}
+    canvasZoom: 0.7750631
   - id: 13
     fields:
     - title: Title
@@ -15300,7 +15561,7 @@ MonoBehaviour:
       canvasRect:
         serializedVersion: 2
         x: 422.4192
-        y: 261.89218
+        y: 260.62955
         width: 160
         height: 30
     - id: 5
@@ -15505,8 +15766,8 @@ MonoBehaviour:
         width: 160
         height: 30
     entryGroups: []
-    canvasScrollPosition: {x: 0.5450035, y: 0.32539362}
-    canvasZoom: 1.0020003
+    canvasScrollPosition: {x: 0, y: 0}
+    canvasZoom: 0.79200053
   - id: 18
     fields:
     - title: Title
@@ -15907,7 +16168,7 @@ MonoBehaviour:
         width: 160
         height: 30
     entryGroups: []
-    canvasScrollPosition: {x: 0, y: 0}
+    canvasScrollPosition: {x: 7.1016574, y: 43.858696}
     canvasZoom: 1
   - id: 19
     fields:
@@ -16525,7 +16786,7 @@ MonoBehaviour:
         width: 160
         height: 30
     entryGroups: []
-    canvasScrollPosition: {x: 0, y: 5.523219}
+    canvasScrollPosition: {x: 71.66169, y: 157.80432}
     canvasZoom: 0.78144956
   - id: 20
     fields:

@@ -6,6 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/Start.unity
+    guid: 43d77955fa11be547b2d205437f505be
+  - enabled: 1
     path: Assets/Scenes/Development/Picker.unity
     guid: 02af13b6991ecfa49a0b2d17dfac6600
   - enabled: 1
@@ -26,4 +29,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/FlagEditor.unity
     guid: 7a9d2e700ca97944c8a55189209b8653
+  - enabled: 1
+    path: Assets/Scenes/Intro.unity
+    guid: 43baf41b19b804847932cd76683e958a
+  - enabled: 1
+    path: Assets/Scenes/Port.unity
+    guid: 3a746f9ed05ac5144a6200dfa5ef0b39
+  - enabled: 1
+    path: Assets/Scenes/Council.unity
+    guid: 9d1527771fc328e4bb53ce04de03fc38
   m_configObjects: {}

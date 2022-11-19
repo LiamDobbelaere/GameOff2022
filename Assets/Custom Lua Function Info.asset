@@ -17,3 +17,6 @@ MonoBehaviour:
   - functionName: ShowPhone
     parameters: 
     returnValue: 0
+  - functionName: SwitchScene
+    parameters: 02000000
+    returnValue: 0
