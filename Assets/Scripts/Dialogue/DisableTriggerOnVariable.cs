@@ -7,9 +7,11 @@ public class DisableTriggerOnVariable : MonoBehaviour {
     private float updateTime;
     private const float MAX_UPDATE_TIME = 0.3f;
 
+    private Usable usable;
+
     // Start is called before the first frame update
     void Start() {
-
+        usable = GetComponent<Usable>();
     }
 
     // Update is called once per frame

@@ -671,6 +671,7 @@ GameObject:
   - component: {fileID: 305952509}
   - component: {fileID: 305952508}
   - component: {fileID: 305952514}
+  - component: {fileID: 305952515}
   m_Layer: 0
   m_Name: Pirate_capitain_01
   m_TagString: Untagged
@@ -915,6 +916,27 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   variableName: Doing Interviews
+--- !u!114 &305952515
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 305952507}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c9c0eddcdf126154b8da157b0ebd6cc9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  whenVariable: Chosen Photo For Flag
+  hasValue:
+  - seagulls
+  - hearthorn
+  - flag-jolly
+  - flag-other
+  sceneToLoad: LipSync
+  overrideUseMessage: Start interview
+  isConditionTrue: 0
 --- !u!1 &400601814
 GameObject:
   m_ObjectHideFlags: 0
@@ -1532,6 +1554,7 @@ GameObject:
   - component: {fileID: 821635323}
   - component: {fileID: 821635322}
   - component: {fileID: 821635321}
+  - component: {fileID: 821635328}
   m_Layer: 0
   m_Name: Pirate_Jack_01
   m_TagString: Untagged
@@ -1776,6 +1799,25 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 27
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &821635328
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 821635320}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c9c0eddcdf126154b8da157b0ebd6cc9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  whenVariable: Chosen Photo For Flag
+  hasValue:
+  - flag-jolly
+  - flag-other
+  sceneToLoad: LipSync
+  overrideUseMessage: Start interview
+  isConditionTrue: 0
 --- !u!1 &837212954
 GameObject:
   m_ObjectHideFlags: 0
@@ -2087,6 +2129,7 @@ GameObject:
   - component: {fileID: 1049819770}
   - component: {fileID: 1049819769}
   - component: {fileID: 1049819775}
+  - component: {fileID: 1049819776}
   m_Layer: 0
   m_Name: Pirate_hearthorn_01
   m_TagString: Untagged
@@ -2331,6 +2374,25 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   variableName: Doing Interviews
+--- !u!114 &1049819776
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1049819768}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c9c0eddcdf126154b8da157b0ebd6cc9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  whenVariable: Chosen Photo For Flag
+  hasValue:
+  - hearthorn
+  - seagulls
+  sceneToLoad: LipSync
+  overrideUseMessage: Start interview
+  isConditionTrue: 0
 --- !u!1 &1144432737
 GameObject:
   m_ObjectHideFlags: 0
