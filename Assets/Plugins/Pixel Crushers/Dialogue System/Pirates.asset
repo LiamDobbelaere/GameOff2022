@@ -7406,7 +7406,7 @@ MonoBehaviour:
       canvasRect:
         serializedVersion: 2
         x: 223.48224
-        y: 144.8934
+        y: 145.90863
         width: 160
         height: 30
     - id: 2
@@ -7755,7 +7755,7 @@ MonoBehaviour:
       canvasRect:
         serializedVersion: 2
         x: 452.38513
-        y: 151.26901
+        y: 152.28424
         width: 160
         height: 30
     - id: 7
@@ -8045,7 +8045,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Dialogue Text
-        value: What's the question?
+        value: 
         type: 0
         typeString: 
       - title: Parenthetical
@@ -8134,7 +8134,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Dialogue Text
-        value: Tell me about the raid. Did you duel anyone?
+        value: Did you duel anyone?
         type: 0
         typeString: CustomFieldType_Text
       - title: Parenthetical
@@ -8174,7 +8174,7 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 128
+        x: 129
         y: 208
         width: 160
         height: 30
@@ -8205,7 +8205,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Dialogue Text
-        value: Tell me about the raid. Did you loot anything?
+        value: Did you loot anything?
         type: 0
         typeString: CustomFieldType_Text
       - title: Parenthetical
@@ -8762,7 +8762,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Dialogue Text
-        value: Are you disappointed you didn't pillage and plunder?
+        value: Are you disappointed?
         type: 0
         typeString: CustomFieldType_Text
       - title: Parenthetical
@@ -8803,7 +8803,7 @@ MonoBehaviour:
       canvasRect:
         serializedVersion: 2
         x: 806.69824
-        y: 221
+        y: 223.00302
         width: 160
         height: 30
     - id: 11
@@ -9082,7 +9082,7 @@ MonoBehaviour:
         height: 30
     entryGroups: []
     canvasScrollPosition: {x: 0, y: 0}
-    canvasZoom: 1
+    canvasZoom: 0.9945
   - id: 12
     fields:
     - title: Title
@@ -18370,8 +18370,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 698
-        y: 369
+        x: 663
+        y: 430
         width: 160
         height: 30
     - id: 11
@@ -18631,8 +18631,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 698
-        y: 427
+        x: 679
+        y: 335
         width: 160
         height: 30
     entryGroups: []
