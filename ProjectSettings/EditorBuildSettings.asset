@@ -38,4 +38,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Council.unity
     guid: 9d1527771fc328e4bb53ce04de03fc38
+  - enabled: 1
+    path: Assets/Scenes/Documentary/D_EntryPoint.unity
+    guid: 0c04281687dbe62429dc3510cd6dffc7
+  - enabled: 1
+    path: Assets/Scenes/Documentary/D_Intro.unity
+    guid: f7b7e76749f371e49aa6c77f3e73ce64
+  - enabled: 1
+    path: Assets/Scenes/Documentary/D_Title.unity
+    guid: ec6231948e6da8440ab4a9736b40e15f
   m_configObjects: {}

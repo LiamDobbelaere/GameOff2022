@@ -12,6 +12,8 @@ TagManager:
   - DialogueSystemEyes
   - PlayerDialogueSystemCollider
   - FlagCaptureCamera
+  - DocumentarySequencer
+  - DocumentarySceneOptions
   layers:
   - Default
   - TransparentFX
