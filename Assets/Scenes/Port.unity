@@ -670,7 +670,6 @@ GameObject:
   - component: {fileID: 305952510}
   - component: {fileID: 305952509}
   - component: {fileID: 305952508}
-  - component: {fileID: 305952514}
   - component: {fileID: 305952515}
   m_Layer: 0
   m_Name: Pirate_capitain_01
@@ -744,7 +743,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   trigger: 32
   condition:
-    luaConditions: []
+    luaConditions:
+    - Variable["Doing_Interviews"] == false
     questConditions: []
     acceptedTags:
     - PlayerDialogueSystemCollider
@@ -903,19 +903,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 22
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &305952514
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 305952507}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a1a6281f450776c429e6dd54585224b5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  variableName: Doing Interviews
 --- !u!114 &305952515
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1553,7 +1540,6 @@ GameObject:
   - component: {fileID: 821635324}
   - component: {fileID: 821635323}
   - component: {fileID: 821635322}
-  - component: {fileID: 821635321}
   - component: {fileID: 821635328}
   m_Layer: 0
   m_Name: Pirate_Jack_01
@@ -1562,19 +1548,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &821635321
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 821635320}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a1a6281f450776c429e6dd54585224b5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  variableName: Doing Interviews
 --- !u!114 &821635322
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1640,7 +1613,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   trigger: 32
   condition:
-    luaConditions: []
+    luaConditions:
+    - Variable["Doing_Interviews"] == false
     questConditions: []
     acceptedTags:
     - PlayerDialogueSystemCollider
@@ -2128,7 +2102,6 @@ GameObject:
   - component: {fileID: 1049819771}
   - component: {fileID: 1049819770}
   - component: {fileID: 1049819769}
-  - component: {fileID: 1049819775}
   - component: {fileID: 1049819776}
   m_Layer: 0
   m_Name: Pirate_hearthorn_01
@@ -2202,7 +2175,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   trigger: 32
   condition:
-    luaConditions: []
+    luaConditions:
+    - Variable["Doing_Interviews"] == false
     questConditions: []
     acceptedTags:
     - PlayerDialogueSystemCollider
@@ -2361,19 +2335,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 23
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1049819775
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1049819768}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a1a6281f450776c429e6dd54585224b5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  variableName: Doing Interviews
 --- !u!114 &1049819776
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2390,7 +2351,7 @@ MonoBehaviour:
   hasValue:
   - hearthorn
   - seagulls
-  sceneToLoad: LipSync
+  sceneToLoad: Interview Hearthorn Flag
   overrideUseMessage: Start interview
   isConditionTrue: 0
 --- !u!1 &1144432737
@@ -2633,7 +2594,6 @@ GameObject:
   - component: {fileID: 1317632545}
   - component: {fileID: 1317632544}
   - component: {fileID: 1317632543}
-  - component: {fileID: 1317632549}
   m_Layer: 0
   m_Name: Pirate_Pablo_01
   m_TagString: Untagged
@@ -2706,7 +2666,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   trigger: 32
   condition:
-    luaConditions: []
+    luaConditions:
+    - Variable["Doing_Interviews"] == false
     questConditions: []
     acceptedTags:
     - PlayerDialogueSystemCollider
@@ -2865,19 +2826,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 24
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1317632549
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1317632542}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a1a6281f450776c429e6dd54585224b5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  variableName: Doing Interviews
 --- !u!1 &1319271702
 GameObject:
   m_ObjectHideFlags: 0
@@ -2892,7 +2840,6 @@ GameObject:
   - component: {fileID: 1319271703}
   - component: {fileID: 1319271707}
   - component: {fileID: 1319271708}
-  - component: {fileID: 1319271709}
   m_Layer: 0
   m_Name: Pirate_Quartermaster_01
   m_TagString: Untagged
@@ -2914,7 +2861,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   trigger: 32
   condition:
-    luaConditions: []
+    luaConditions:
+    - Variable["Doing_Interviews"] == false
     questConditions: []
     acceptedTags:
     - PlayerDialogueSystemCollider
@@ -3124,19 +3072,6 @@ MonoBehaviour:
     onUse:
       m_PersistentCalls:
         m_Calls: []
---- !u!114 &1319271709
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1319271702}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a1a6281f450776c429e6dd54585224b5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  variableName: Doing Interviews
 --- !u!1 &1332450433
 GameObject:
   m_ObjectHideFlags: 0

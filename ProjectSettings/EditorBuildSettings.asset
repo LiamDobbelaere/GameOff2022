@@ -47,4 +47,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Documentary/D_Title.unity
     guid: ec6231948e6da8440ab4a9736b40e15f
+  - enabled: 1
+    path: Assets/Scenes/Interview Hearthorn Flag.unity
+    guid: 483454966e4cdf0408117e214825a9d6
   m_configObjects: {}
