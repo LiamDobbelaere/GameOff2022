@@ -13,6 +13,7 @@ public static class GameState {
         ["hearthorn"] = false,
         ["seagulls"] = false
     };
+    public static bool inPhotographyMode = false;
 
     public static void StoreLastLocation() {
         lastScene = SceneManager.GetActiveScene().name;
@@ -21,5 +22,9 @@ public static class GameState {
 
     public static void LoadLastLocation() {
         SceneManager.LoadScene(lastScene);
+    }
+
+    public static void ShowUIHint(string message) {
+        GameObject.FindGameObjectWithTag("HintsCanvas").GetComponent<HintsCanvas>().ShowHint(message);
     }
 }

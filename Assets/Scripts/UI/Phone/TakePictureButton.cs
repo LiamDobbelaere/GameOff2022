@@ -37,6 +37,8 @@ public class TakePictureButton : MonoBehaviour {
                         .GetComponent<JollyRogerCheck>().isJollyRoger;
 
                 GameState.hasTakenPictureOf["flag"] = true;
+
+                GetComponentInParent<Phone>().StartApp("Pictures");
             }
         });
 

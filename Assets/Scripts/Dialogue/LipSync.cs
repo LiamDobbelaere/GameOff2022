@@ -164,6 +164,10 @@ public class LipSync : MonoBehaviour {
         if (currentUpdateTime >= updateStep) {
             currentUpdateTime = 0f;
 
+            if (asource.clip == null) {
+                return;
+            }
+
             asource.clip.GetData(clipSampleData, asource.timeSamples);
             float clipLoudness = 0f;
             foreach (var sample in clipSampleData) {

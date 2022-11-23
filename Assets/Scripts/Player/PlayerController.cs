@@ -8,6 +8,8 @@ public class PlayerController : MonoBehaviour {
     void Start() {
         this.rb = GetComponent<Rigidbody2D>();
 
+        GameState.inPhotographyMode = false;
+
         RestoreLastPositionIfSet();
     }
 
