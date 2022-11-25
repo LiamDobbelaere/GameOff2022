@@ -7,6 +7,8 @@ public class TakePictureButton : MonoBehaviour {
     // Start is called before the first frame update
     void Start() {
         GetComponent<Button>().onClick.AddListener(() => {
+            GetComponent<AudioSource>().Play();
+
             GameObject flagCaptureCamera = GameObject.FindGameObjectWithTag("FlagCaptureCamera");
             if (flagCaptureCamera != null) {
                 Camera flagCam = flagCaptureCamera.GetComponent<Camera>();

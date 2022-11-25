@@ -10,6 +10,7 @@ public class FilterPickPhoto : MonoBehaviour {
             Transform child = transform.GetChild(i);
 
             child.GetComponent<Button>().onClick.AddListener(() => {
+                GetComponent<AudioSource>().Play();
                 lastTouchedRawImage = child.GetComponentInChildren<RawImage>();
                 Texture image = lastTouchedRawImage.texture;
 

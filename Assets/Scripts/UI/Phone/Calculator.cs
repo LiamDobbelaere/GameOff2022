@@ -22,12 +22,16 @@ public class Calculator : MonoBehaviour {
     private Operation? operation = null;
     private float? result = null;
 
+    private AudioSource audioSource;
+
     // Start is called before the first frame update
     void Start() {
+        audioSource = GetComponent<AudioSource>();
+
         input = transform.Find("Input").GetComponent<TMP_InputField>();
 
         buttons = new Dictionary<string, Action>() {
-            ["Reset"] = OnReset,
+            ["Reset"] = () => OnReset(),
             ["Clear"] = OnClear,
             ["="] = OnEquals,
             ["Multiply"] = () => OnOperation(Operation.MULTIPLY),
@@ -50,15 +54,21 @@ public class Calculator : MonoBehaviour {
             }
         }
 
-        OnReset();
+        OnReset(false);
     }
 
     // Update is called once per frame
     void Update() {
 
     }
+    private void PlayClick() {
+        audioSource.PlayOneShot(audioSource.clip);
+    }
+    private void OnReset(bool playSound = true) {
+        if (playSound) {
+            PlayClick();
+        }
 
-    private void OnReset() {
         firstEntry = "";
         secondEntry = "";
         operation = null;
@@ -68,6 +78,8 @@ public class Calculator : MonoBehaviour {
     }
 
     private void OnClear() {
+        PlayClick();
+
         if (operation == null) {
             firstEntry = "";
         } else {
@@ -78,6 +90,8 @@ public class Calculator : MonoBehaviour {
     }
 
     private void OnOperation(Operation op) {
+        PlayClick();
+
         if (op == Operation.SUBTRACT) {
             if (operation == null) {
                 if (firstEntry == "") {
@@ -115,6 +129,8 @@ public class Calculator : MonoBehaviour {
     }
 
     private void OnCharacter(char character) {
+        PlayClick();
+
         if (character == '.') {
             if (operation == null) {
                 if (firstEntry.Contains(".")) {
@@ -137,6 +153,8 @@ public class Calculator : MonoBehaviour {
     }
 
     private void OnEquals() {
+        PlayClick();
+
         if (operation == null) {
             return;
         }
