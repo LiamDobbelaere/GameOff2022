@@ -2,6 +2,8 @@ using PixelCrushers.DialogueSystem;
 using UnityEngine;
 
 public class PhoneCanvas : MonoBehaviour {
+    public AudioClip showPhone;
+    public AudioClip forceShowPhone;
     private GameObject phoneOverlay;
 
     // Start is called before the first frame update
@@ -12,7 +14,7 @@ public class PhoneCanvas : MonoBehaviour {
 
     private void OnEnable() {
         Lua.RegisterFunction(
-            "ShowPhone", this, SymbolExtensions.GetMethodInfo(() => ShowPhone())
+            "ShowPhone", this, SymbolExtensions.GetMethodInfo(() => ShowPhone(false))
         );
     }
 
@@ -20,8 +22,14 @@ public class PhoneCanvas : MonoBehaviour {
         Lua.UnregisterFunction("ShowPhone");
     }
 
-    public void ShowPhone() {
+    public void ShowPhone(bool isManual = false) {
         phoneOverlay.SetActive(true);
+
+        if (isManual) {
+            GetComponent<AudioSource>().PlayOneShot(showPhone);
+        } else {
+            GetComponent<AudioSource>().PlayOneShot(forceShowPhone);
+        }
     }
 
     public void HidePhone() {
@@ -31,7 +39,11 @@ public class PhoneCanvas : MonoBehaviour {
     // Update is called once per frame
     void Update() {
         if (Input.GetButtonDown("Phone")) {
-            phoneOverlay.SetActive(!phoneOverlay.activeSelf);
+            if (phoneOverlay.activeSelf) {
+                HidePhone();
+            } else {
+                ShowPhone(true);
+            }
         }
     }
 }

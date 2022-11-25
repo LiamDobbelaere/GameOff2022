@@ -8,6 +8,8 @@ public class Picture : MonoBehaviour {
     // Start is called before the first frame update
     void Start() {
         GetComponent<Button>().onClick.AddListener(() => {
+            GetComponent<AudioSource>().Play();
+
             string finalKeyName = pictureKeyName;
             if (pictureKeyName == "flag") {
                 finalKeyName += GameState.customFlagIsJollyRoger ? "-jolly" : "-other";

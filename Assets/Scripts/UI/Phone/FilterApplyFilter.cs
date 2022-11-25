@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -12,14 +13,19 @@ public class FilterApplyFilter : MonoBehaviour {
             Transform filterButton = filterOptions.GetChild(i);
 
             filterButton.GetComponent<Button>().onClick.AddListener(() => {
+                GetComponent<AudioSource>().Play();
+
                 Texture filteredTexture = originalImage;
 
-                if (filterButton.name != "none") {
-                    foreach (Texture2D filteredPicture in filteredPictures) {
-                        if (filteredPicture.name == originalImage.name + "_" + filterButton.name) {
-                            filteredTexture = filteredPicture;
-                            break;
-                        }
+                foreach (Texture2D filteredPicture in filteredPictures) {
+                    List<string> namePieces = new List<string>(originalImage.name.Split('_'));
+                    namePieces.RemoveAt(namePieces.Count - 1);
+
+                    string cutName = string.Join('_', namePieces);
+
+                    if (filteredPicture.name == cutName + "_" + filterButton.name) {
+                        filteredTexture = filteredPicture;
+                        break;
                     }
                 }
 
@@ -28,6 +34,8 @@ public class FilterApplyFilter : MonoBehaviour {
         }
 
         transform.Find("Confirm").GetComponent<Button>().onClick.AddListener(() => {
+            GetComponent<AudioSource>().Play();
+
             transform.parent.Find("Body - Pick photo").gameObject.SetActive(true);
             transform.parent.Find("Body - Pick photo").GetComponent<FilterPickPhoto>().ApplyFilter(
                 transform.Find("RawImage").GetComponent<RawImage>().texture
