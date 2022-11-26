@@ -15578,7 +15578,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Sequence
-        value: 
+        value: AudioWait(Interviews/Flags/what do you think new flag)
         type: 0
         typeString: CustomFieldType_Text
       conversationID: 17
@@ -15667,7 +15667,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Sequence
-        value: 
+        value: AudioWait(Interviews/Flags/Frogsword/frog next time)
         type: 0
         typeString: CustomFieldType_Text
       conversationID: 17
@@ -15732,7 +15732,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Sequence
-        value: 
+        value: AudioWait(Interviews/Flags/Frogsword/very intimidating men love)
         type: 0
         typeString: CustomFieldType_Text
       conversationID: 17
@@ -15797,7 +15797,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Sequence
-        value: 
+        value: AudioWait(Interviews/Flags/Frogsword/it looks like someone familar)
         type: 0
         typeString: CustomFieldType_Text
       conversationID: 17
@@ -15868,7 +15868,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Sequence
-        value: 
+        value: AudioWait(Interviews/Flags/Frogsword/bit of a disaster if im honest)
         type: 0
         typeString: CustomFieldType_Text
       conversationID: 17
@@ -15933,7 +15933,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Sequence
-        value: 
+        value: AudioWait(Interviews/Flags/Frogsword/its first mate hearthorn)
         type: 0
         typeString: CustomFieldType_Text
       conversationID: 17
@@ -16004,7 +16004,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Sequence
-        value: 
+        value: AudioWait(Interviews/Flags/Frogsword/who the fuck approved)
         type: 0
         typeString: CustomFieldType_Text
       conversationID: 17
@@ -16193,7 +16193,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Sequence
-        value: 
+        value: AudioWait(Interviews/Flags/what do you think new flag)
         type: 0
         typeString: CustomFieldType_Text
       conversationID: 18
@@ -16270,7 +16270,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Sequence
-        value: 
+        value: AudioWait(Interviews/Flags/Hearthorn/couldnt imagine a better design)
         type: 0
         typeString: CustomFieldType_Text
       conversationID: 18
@@ -16341,7 +16341,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Sequence
-        value: 
+        value: AudioWait(Interviews/Flags/Hearthorn/not a great fun of seagulls)
         type: 0
         typeString: CustomFieldType_Text
       conversationID: 18
@@ -16412,7 +16412,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Sequence
-        value: 
+        value: AudioWait(Interviews/Flags/Hearthorn/just look at me)
         type: 0
         typeString: CustomFieldType_Text
       conversationID: 18
@@ -16477,7 +16477,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Sequence
-        value: 
+        value: AudioWait(Interviews/Flags/Hearthorn/could have been a frog)
         type: 0
         typeString: CustomFieldType_Text
       conversationID: 18
@@ -16650,7 +16650,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Dialogue Text
-        value: What do you think of the flag?
+        value: What do you think of the new flag?
         type: 0
         typeString: CustomFieldType_Text
       - title: Parenthetical
@@ -16666,7 +16666,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Sequence
-        value: 
+        value: AudioWait(Interviews/Flags/what do you think new flag)
         type: 0
         typeString: CustomFieldType_Text
       conversationID: 19
@@ -16745,7 +16745,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Sequence
-        value: 
+        value: AudioWait(Interviews/Flags/Jack/deep abstract image)
         type: 0
         typeString: CustomFieldType_Text
       conversationID: 19
@@ -16806,7 +16806,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Dialogue Text
-        value: 'It''s a classic. Skull. Bones. It''s definitely a statement. '
+        value: 'What can I say? It''s a classic. '
         type: 0
         typeString: CustomFieldType_Text
       - title: Parenthetical
@@ -16822,7 +16822,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Sequence
-        value: 
+        value: AudioWait(Interviews/Flags/Jack/what can i say its a classic)
         type: 0
         typeString: CustomFieldType_Text
       conversationID: 19
@@ -16832,7 +16832,13 @@ MonoBehaviour:
       delaySimStatus: 0
       falseConditionAction: Block
       conditionPriority: 2
-      outgoingLinks: []
+      outgoingLinks:
+      - originConversationID: 19
+        originDialogueID: 3
+        destinationConversationID: 19
+        destinationDialogueID: 8
+        isConnector: 0
+        priority: 2
       conditionsString: 
       userScript: 
       onExecute:
@@ -16840,7 +16846,7 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 149.33305
+        x: 148.05339
         y: 361.42346
         width: 160
         height: 30
@@ -16887,7 +16893,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Sequence
-        value: 
+        value: AudioWait(Interviews/Flags/Jack/which misconceptions)
         type: 0
         typeString: CustomFieldType_Text
       conversationID: 19
@@ -16958,7 +16964,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Sequence
-        value: 
+        value: AudioWait(Interviews/Flags/Jack/are you a fan of art)
         type: 0
         typeString: CustomFieldType_Text
       conversationID: 19
@@ -17029,7 +17035,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Sequence
-        value: 
+        value: AudioWait(Interviews/Flags/Jack/id love to paint but)
         type: 0
         typeString: CustomFieldType_Text
       conversationID: 19
@@ -17095,7 +17101,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Sequence
-        value: 
+        value: AudioWait(Interviews/Flags/Jack/crazy barbarian murderers)
         type: 0
         typeString: CustomFieldType_Text
       conversationID: 19
@@ -17117,9 +17123,74 @@ MonoBehaviour:
         y: 510.05133
         width: 160
         height: 30
+    - id: 8
+      fields:
+      - title: Title
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Pictures
+        value: '[]'
+        type: 3
+        typeString: CustomFieldType_Files
+      - title: Description
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Actor
+        value: 7
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Conversant
+        value: 2
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Menu Text
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Dialogue Text
+        value: 'You''ve got your skulls. Bones. It''s a statement. '
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Parenthetical
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Audio Files
+        value: '[]'
+        type: 3
+        typeString: CustomFieldType_Files
+      - title: Video File
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Sequence
+        value: AudioWait(Interviews/Flags/Jack/skull bones statement)
+        type: 0
+        typeString: CustomFieldType_Text
+      conversationID: 19
+      isRoot: 0
+      isGroup: 0
+      nodeColor: 
+      delaySimStatus: 0
+      falseConditionAction: Block
+      conditionPriority: 2
+      outgoingLinks: []
+      conditionsString: 
+      userScript: 
+      onExecute:
+        m_PersistentCalls:
+          m_Calls: []
+      canvasRect:
+        serializedVersion: 2
+        x: 149.36324
+        y: 471.67627
+        width: 160
+        height: 30
     entryGroups: []
-    canvasScrollPosition: {x: 71.66169, y: 157.80432}
-    canvasZoom: 0.78144956
+    canvasScrollPosition: {x: 62.96715, y: 149.21355}
+    canvasZoom: 0.76345015
   - id: 20
     fields:
     - title: Title
