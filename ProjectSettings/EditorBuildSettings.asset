@@ -50,4 +50,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Interview Hearthorn Flag.unity
     guid: 483454966e4cdf0408117e214825a9d6
+  - enabled: 1
+    path: Assets/Scenes/Interview Frogsword Flag.unity
+    guid: 6ae5823da8c9dcf418fb92a2e316cbfd
+  - enabled: 1
+    path: Assets/Scenes/Interview Jack Flag.unity
+    guid: f6136faa5cd104d4c8e05da5dc022245
   m_configObjects: {}

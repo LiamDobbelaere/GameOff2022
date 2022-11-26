@@ -509,7 +509,7 @@ GameObject:
   - component: {fileID: 1233886738}
   - component: {fileID: 1233886737}
   m_Layer: 0
-  m_Name: HearthornInterviewTrigger
+  m_Name: JackInterviewTrigger
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -563,7 +563,7 @@ MonoBehaviour:
   allowBarksDuringConversations: 0
   skipBarkIfNoValidEntries: 0
   cacheBarkLines: 0
-  conversation: Interview - The Flag - Hearthorn
+  conversation: Interview - The Flag - Jack Jones
   conversationConversant: {fileID: 0}
   conversationActor: {fileID: 0}
   startConversationEntryID: -1

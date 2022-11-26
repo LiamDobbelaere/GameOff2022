@@ -15678,7 +15678,7 @@ MonoBehaviour:
       falseConditionAction: Block
       conditionPriority: 2
       outgoingLinks: []
-      conditionsString: 
+      conditionsString: Variable["Chosen_Photo_For_Flag"] == "seagulls"
       userScript: 
       onExecute:
         m_PersistentCalls:
@@ -15743,7 +15743,7 @@ MonoBehaviour:
       falseConditionAction: Block
       conditionPriority: 2
       outgoingLinks: []
-      conditionsString: 
+      conditionsString: Variable["Chosen_Photo_For_Flag"] == "flag-jolly"
       userScript: 
       onExecute:
         m_PersistentCalls:
@@ -15814,7 +15814,7 @@ MonoBehaviour:
         destinationDialogueID: 6
         isConnector: 0
         priority: 2
-      conditionsString: 
+      conditionsString: Variable["Chosen_Photo_For_Flag"] == "hearthorn"
       userScript: 
       onExecute:
         m_PersistentCalls:
@@ -15879,7 +15879,7 @@ MonoBehaviour:
       falseConditionAction: Block
       conditionPriority: 2
       outgoingLinks: []
-      conditionsString: 
+      conditionsString: Variable["Chosen_Photo_For_Flag"] == "flag-other"
       userScript: 
       onExecute:
         m_PersistentCalls:
@@ -15887,7 +15887,7 @@ MonoBehaviour:
       canvasRect:
         serializedVersion: 2
         x: 614.0356
-        y: 277.86023
+        y: 278.95673
         width: 160
         height: 30
     - id: 6
@@ -16027,8 +16027,8 @@ MonoBehaviour:
         width: 160
         height: 30
     entryGroups: []
-    canvasScrollPosition: {x: 0, y: 0}
-    canvasZoom: 0.79200053
+    canvasScrollPosition: {x: 5.482422, y: 36.184174}
+    canvasZoom: 0.9120004
   - id: 18
     fields:
     - title: Title
@@ -16287,7 +16287,7 @@ MonoBehaviour:
         destinationDialogueID: 4
         isConnector: 0
         priority: 2
-      conditionsString: 
+      conditionsString: Variable["Chosen_Photo_For_Flag"] == "hearthorn"
       userScript: 
       onExecute:
         m_PersistentCalls:
@@ -16358,7 +16358,7 @@ MonoBehaviour:
         destinationDialogueID: 5
         isConnector: 0
         priority: 2
-      conditionsString: 
+      conditionsString: Variable["Chosen_Photo_For_Flag"] == "seagulls"
       userScript: 
       onExecute:
         m_PersistentCalls:
@@ -16366,7 +16366,7 @@ MonoBehaviour:
       canvasRect:
         serializedVersion: 2
         x: 344
-        y: 287
+        y: 288
         width: 160
         height: 30
     - id: 4
@@ -16768,7 +16768,7 @@ MonoBehaviour:
         destinationDialogueID: 5
         isConnector: 0
         priority: 2
-      conditionsString: 
+      conditionsString: Variable["Chosen_Photo_For_Flag"] == "flag-other"
       userScript: 
       onExecute:
         m_PersistentCalls:
@@ -16839,7 +16839,7 @@ MonoBehaviour:
         destinationDialogueID: 8
         isConnector: 0
         priority: 2
-      conditionsString: 
+      conditionsString: Variable["Chosen_Photo_For_Flag"] == "flag-jolly"
       userScript: 
       onExecute:
         m_PersistentCalls:
@@ -17189,8 +17189,8 @@ MonoBehaviour:
         width: 160
         height: 30
     entryGroups: []
-    canvasScrollPosition: {x: 62.96715, y: 149.21355}
-    canvasZoom: 0.76345015
+    canvasScrollPosition: {x: 93.28516, y: 188.34218}
+    canvasZoom: 0.88345003
   - id: 20
     fields:
     - title: Title
