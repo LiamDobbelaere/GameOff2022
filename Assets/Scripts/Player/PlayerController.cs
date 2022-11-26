@@ -1,3 +1,4 @@
+using PixelCrushers.DialogueSystem;
 using UnityEngine;
 
 public class PlayerController : MonoBehaviour {
@@ -10,6 +11,7 @@ public class PlayerController : MonoBehaviour {
 
         GameState.inPhotographyMode = false;
 
+        DisableDoingFlagInterviewsWhenDone();
         RestoreLastPositionIfSet();
     }
 
@@ -29,5 +31,11 @@ public class PlayerController : MonoBehaviour {
 
         transform.position = (Vector2)GameState.lastPosition;
         GameState.lastPosition = null;
+    }
+
+    private void DisableDoingFlagInterviewsWhenDone() {
+        if (DialogueLua.GetVariable("Flag - Interviews done").asInt >= 2) {
+            DialogueLua.SetVariable("Doing Interviews", false);
+        }
     }
 }

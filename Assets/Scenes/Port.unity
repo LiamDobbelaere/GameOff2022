@@ -915,6 +915,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c9c0eddcdf126154b8da157b0ebd6cc9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bailCondition: Flag - Interviewed Frogsword
   whenVariable: Chosen Photo For Flag
   hasValue:
   - seagulls
@@ -1910,6 +1911,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c9c0eddcdf126154b8da157b0ebd6cc9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bailCondition: Flag - Interviewed Jack
   whenVariable: Chosen Photo For Flag
   hasValue:
   - flag-jolly
@@ -3487,6 +3489,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c9c0eddcdf126154b8da157b0ebd6cc9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bailCondition: Flag - Interviewed Hearthorn
   whenVariable: Chosen Photo For Flag
   hasValue:
   - hearthorn
@@ -4240,10 +4243,6 @@ PrefabInstance:
     - target: {fileID: 8573823919113554144, guid: e30b8792ff19dc24d8d6b2de1b368845, type: 3}
       propertyPath: m_Name
       value: Dialogue Manager
-      objectReference: {fileID: 0}
-    - target: {fileID: 8573823919113554144, guid: e30b8792ff19dc24d8d6b2de1b368845, type: 3}
-      propertyPath: m_IsActive
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8573823919113723328, guid: e30b8792ff19dc24d8d6b2de1b368845, type: 3}
       propertyPath: m_RootOrder

@@ -4,11 +4,11 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class GoToSceneOnUse : MonoBehaviour {
+    public string bailCondition;
     public string whenVariable;
     public List<string> hasValue;
     public string sceneToLoad;
     public string overrideUseMessage;
-
     private Usable usable;
 
     private float updateTime;
@@ -26,7 +26,9 @@ public class GoToSceneOnUse : MonoBehaviour {
 
     // Update is called once per frame
     void Update() {
-        if (!DialogueLua.GetVariable("Doing Interviews").asBool) {
+        bool mustBail = DialogueLua.GetVariable(bailCondition).asBool;
+
+        if (!DialogueLua.GetVariable("Doing Interviews").asBool || mustBail) {
             return;
         }
 

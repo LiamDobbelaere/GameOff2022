@@ -438,7 +438,7 @@ MonoBehaviour:
       type: 0
       typeString: CustomFieldType_Text
     - title: Initial Value
-      value: 
+      value: flag-jolly
       type: 0
       typeString: CustomFieldType_Text
     - title: Description
@@ -550,7 +550,7 @@ MonoBehaviour:
       type: 0
       typeString: CustomFieldType_Text
     - title: Initial Value
-      value: False
+      value: True
       type: 2
       typeString: CustomFieldType_Boolean
     - title: Description
@@ -567,6 +567,62 @@ MonoBehaviour:
       value: False
       type: 2
       typeString: CustomFieldType_Boolean
+    - title: Description
+      value: 
+      type: 0
+      typeString: CustomFieldType_Text
+  - id: 20
+    fields:
+    - title: Name
+      value: Flag - Interviewed Frogsword
+      type: 0
+      typeString: CustomFieldType_Text
+    - title: Initial Value
+      value: False
+      type: 2
+      typeString: CustomFieldType_Boolean
+    - title: Description
+      value: 
+      type: 0
+      typeString: CustomFieldType_Text
+  - id: 21
+    fields:
+    - title: Name
+      value: Flag - Interviewed Hearthorn
+      type: 0
+      typeString: CustomFieldType_Text
+    - title: Initial Value
+      value: False
+      type: 2
+      typeString: CustomFieldType_Boolean
+    - title: Description
+      value: 
+      type: 0
+      typeString: CustomFieldType_Text
+  - id: 22
+    fields:
+    - title: Name
+      value: Flag - Interviewed Jack
+      type: 0
+      typeString: CustomFieldType_Text
+    - title: Initial Value
+      value: False
+      type: 2
+      typeString: CustomFieldType_Boolean
+    - title: Description
+      value: 
+      type: 0
+      typeString: CustomFieldType_Text
+  - id: 23
+    fields:
+    - title: Name
+      value: Flag - Interviews done
+      type: 0
+      typeString: CustomFieldType_Text
+    - title: Initial Value
+      value: 0
+      type: 1
+      typeString: CustomFieldType_Number
     - title: Description
       value: 
       type: 0
@@ -15525,7 +15581,10 @@ MonoBehaviour:
         isConnector: 0
         priority: 2
       conditionsString: 
-      userScript: 
+      userScript: 'Variable["Flag___Interviewed_Frogsword"] = true;
+
+        Variable["Flag___Interviews_done"]
+        = Variable["Flag___Interviews_done"] + 1'
       onExecute:
         m_PersistentCalls:
           m_Calls: []
@@ -16140,7 +16199,8 @@ MonoBehaviour:
         isConnector: 0
         priority: 2
       conditionsString: 
-      userScript: 
+      userScript: Variable["Flag___Interviewed_Hearthorn"] = true; Variable["Flag___Interviews_done"]
+        = Variable["Flag___Interviews_done"] + 1
       onExecute:
         m_PersistentCalls:
           m_Calls: []
@@ -16613,7 +16673,8 @@ MonoBehaviour:
         isConnector: 0
         priority: 2
       conditionsString: 
-      userScript: 
+      userScript: Variable["Flag___Interviewed_Jack"] = true; Variable["Flag___Interviews_done"]
+        = Variable["Flag___Interviews_done"] + 1
       onExecute:
         m_PersistentCalls:
           m_Calls: []
