@@ -438,7 +438,7 @@ MonoBehaviour:
       type: 0
       typeString: CustomFieldType_Text
     - title: Initial Value
-      value: hearthorn
+      value: seagulls
       type: 0
       typeString: CustomFieldType_Text
     - title: Description
