@@ -1871,7 +1871,13 @@ MonoBehaviour:
       delaySimStatus: 0
       falseConditionAction: Block
       conditionPriority: 2
-      outgoingLinks: []
+      outgoingLinks:
+      - originConversationID: 2
+        originDialogueID: 21
+        destinationConversationID: 2
+        destinationDialogueID: 25
+        isConnector: 0
+        priority: 2
       conditionsString: Variable["Chosen_Photo_For_Flag"] == "hearthorn"
       userScript: 
       onExecute:
@@ -1936,7 +1942,13 @@ MonoBehaviour:
       delaySimStatus: 0
       falseConditionAction: Block
       conditionPriority: 2
-      outgoingLinks: []
+      outgoingLinks:
+      - originConversationID: 2
+        originDialogueID: 22
+        destinationConversationID: 2
+        destinationDialogueID: 25
+        isConnector: 0
+        priority: 2
       conditionsString: Variable["Chosen_Photo_For_Flag"] == "flag-jolly"
       userScript: 
       onExecute:
@@ -2001,7 +2013,13 @@ MonoBehaviour:
       delaySimStatus: 0
       falseConditionAction: Block
       conditionPriority: 2
-      outgoingLinks: []
+      outgoingLinks:
+      - originConversationID: 2
+        originDialogueID: 23
+        destinationConversationID: 2
+        destinationDialogueID: 25
+        isConnector: 0
+        priority: 2
       conditionsString: Variable["Chosen_Photo_For_Flag"] == "flag-other"
       userScript: 
       onExecute:
@@ -2066,7 +2084,13 @@ MonoBehaviour:
       delaySimStatus: 0
       falseConditionAction: Block
       conditionPriority: 2
-      outgoingLinks: []
+      outgoingLinks:
+      - originConversationID: 2
+        originDialogueID: 24
+        destinationConversationID: 2
+        destinationDialogueID: 25
+        isConnector: 0
+        priority: 2
       conditionsString: Variable["Chosen_Photo_For_Flag"] == "seagulls"
       userScript: 
       onExecute:
@@ -2078,9 +2102,74 @@ MonoBehaviour:
         y: 686.099
         width: 160
         height: 30
+    - id: 25
+      fields:
+      - title: Title
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Pictures
+        value: '[]'
+        type: 3
+        typeString: CustomFieldType_Files
+      - title: Description
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Actor
+        value: 1
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Conversant
+        value: 2
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Menu Text
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Dialogue Text
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Parenthetical
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Audio Files
+        value: '[]'
+        type: 3
+        typeString: CustomFieldType_Files
+      - title: Video File
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Sequence
+        value: None()
+        type: 0
+        typeString: CustomFieldType_Text
+      conversationID: 2
+      isRoot: 0
+      isGroup: 0
+      nodeColor: 
+      delaySimStatus: 0
+      falseConditionAction: Block
+      conditionPriority: 2
+      outgoingLinks: []
+      conditionsString: 
+      userScript: SwitchScene("PabloShowFlag")
+      onExecute:
+        m_PersistentCalls:
+          m_Calls: []
+      canvasRect:
+        serializedVersion: 2
+        x: 693.62836
+        y: 844.43134
+        width: 160
+        height: 30
     entryGroups: []
-    canvasScrollPosition: {x: 405.82968, y: 375.3475}
-    canvasZoom: 0.81207037
+    canvasScrollPosition: {x: 469.7027, y: 471.41125}
+    canvasZoom: 0.8199997
   - id: 3
     fields:
     - title: Title
@@ -4533,11 +4622,11 @@ MonoBehaviour:
         type: 5
         typeString: CustomFieldType_Actor
       - title: Menu Text
-        value: 
+        value: Aspirations?
         type: 0
         typeString: CustomFieldType_Text
       - title: Dialogue Text
-        value: Aspirations?
+        value: Do you aspire to become more?
         type: 0
         typeString: CustomFieldType_Text
       - title: Parenthetical
@@ -4553,7 +4642,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Sequence
-        value: Do you aspire to become more?
+        value: 
         type: 0
         typeString: CustomFieldType_Text
       conversationID: 6
@@ -6281,8 +6370,8 @@ MonoBehaviour:
         width: 160
         height: 30
     entryGroups: []
-    canvasScrollPosition: {x: 0, y: 29.598694}
-    canvasZoom: 0.9601455
+    canvasScrollPosition: {x: 94.54152, y: 126.418495}
+    canvasZoom: 0.8101456
   - id: 7
     fields:
     - title: Title

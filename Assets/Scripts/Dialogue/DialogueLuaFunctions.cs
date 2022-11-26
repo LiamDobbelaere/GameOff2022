@@ -19,6 +19,7 @@ public class DialogueLuaFunctions : MonoBehaviour {
     }
 
     private void SwitchScene(string sceneName) {
+        GameState.StoreLastLocation();
         SceneManager.LoadScene(sceneName);
     }
 
