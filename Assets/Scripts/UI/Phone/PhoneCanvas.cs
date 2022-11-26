@@ -14,7 +14,7 @@ public class PhoneCanvas : MonoBehaviour {
 
     private void OnEnable() {
         Lua.RegisterFunction(
-            "ShowPhone", this, SymbolExtensions.GetMethodInfo(() => ShowPhone(false))
+            "ShowPhone", this, SymbolExtensions.GetMethodInfo(() => ShowPhone())
         );
     }
 
@@ -22,14 +22,14 @@ public class PhoneCanvas : MonoBehaviour {
         Lua.UnregisterFunction("ShowPhone");
     }
 
-    public void ShowPhone(bool isManual = false) {
+    public void ShowPhone() {
         phoneOverlay.SetActive(true);
 
-        if (isManual) {
+        /*if (isManual) {
             GetComponent<AudioSource>().PlayOneShot(showPhone);
         } else {
             GetComponent<AudioSource>().PlayOneShot(forceShowPhone);
-        }
+        }*/
     }
 
     public void HidePhone() {
@@ -42,7 +42,7 @@ public class PhoneCanvas : MonoBehaviour {
             if (phoneOverlay.activeSelf) {
                 HidePhone();
             } else {
-                ShowPhone(true);
+                ShowPhone();
             }
         }
     }

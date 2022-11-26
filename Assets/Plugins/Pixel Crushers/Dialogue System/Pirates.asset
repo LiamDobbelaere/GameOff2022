@@ -438,7 +438,7 @@ MonoBehaviour:
       type: 0
       typeString: CustomFieldType_Text
     - title: Initial Value
-      value: flag-jolly
+      value: 
       type: 0
       typeString: CustomFieldType_Text
     - title: Description
@@ -550,7 +550,7 @@ MonoBehaviour:
       type: 0
       typeString: CustomFieldType_Text
     - title: Initial Value
-      value: True
+      value: False
       type: 2
       typeString: CustomFieldType_Boolean
     - title: Description
@@ -1807,7 +1807,7 @@ MonoBehaviour:
         isConnector: 0
         priority: 2
       conditionsString: 
-      userScript: 
+      userScript: Variable["Doing_Interviews"] = true
       onExecute:
         m_PersistentCalls:
           m_Calls: []
@@ -2079,8 +2079,8 @@ MonoBehaviour:
         width: 160
         height: 30
     entryGroups: []
-    canvasScrollPosition: {x: 0, y: 1.4449463}
-    canvasZoom: 0.6920703
+    canvasScrollPosition: {x: 405.82968, y: 375.3475}
+    canvasZoom: 0.81207037
   - id: 3
     fields:
     - title: Title
@@ -12322,7 +12322,7 @@ MonoBehaviour:
         isConnector: 0
         priority: 2
       conditionsString: 
-      userScript: 
+      userScript: Variable["Doing_Interviews"] = true
       onExecute:
         m_PersistentCalls:
           m_Calls: []
@@ -12659,8 +12659,8 @@ MonoBehaviour:
         width: 160
         height: 30
     entryGroups: []
-    canvasScrollPosition: {x: 70.90245, y: 0}
-    canvasZoom: 1.0206771
+    canvasScrollPosition: {x: 181.5152, y: 15.135563}
+    canvasZoom: 0.7806773
   - id: 15
     fields:
     - title: Title
