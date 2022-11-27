@@ -11,7 +11,7 @@ public class AppIcon : MonoBehaviour {
 
         GetComponent<Button>().onClick.AddListener(() => {
             phone.StartApp(appName);
-            GetComponent<AudioSource>().Play();
+            SaneAudio.PlaySFX("phone.click-button");
         });
     }
 

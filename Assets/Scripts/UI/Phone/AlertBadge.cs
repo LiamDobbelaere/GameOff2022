@@ -9,10 +9,10 @@ public class AlertBadge : MonoBehaviour {
 
     // Start is called before the first frame update
     void Start() {
-        image = GetComponent<Image>();
     }
 
     private void OnEnable() {
+        image = GetComponent<Image>();
         image.enabled = GameState.hasUnreadNotifications;
     }
 

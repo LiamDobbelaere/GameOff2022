@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public enum Operation {
@@ -22,12 +23,8 @@ public class Calculator : MonoBehaviour {
     private Operation? operation = null;
     private float? result = null;
 
-    private AudioSource audioSource;
-
     // Start is called before the first frame update
     void Start() {
-        audioSource = GetComponent<AudioSource>();
-
         input = transform.Find("Input").GetComponent<TMP_InputField>();
 
         buttons = new Dictionary<string, Action>() {
@@ -62,7 +59,7 @@ public class Calculator : MonoBehaviour {
 
     }
     private void PlayClick() {
-        audioSource.PlayOneShot(audioSource.clip);
+        SaneAudio.PlaySFX("phone.click-button");
     }
     private void OnReset(bool playSound = true) {
         if (playSound) {
@@ -194,7 +191,20 @@ public class Calculator : MonoBehaviour {
             GameState.hasTakenPictureOf["hearthorn"] = true;
             GameState.hasTakenPictureOf["seagulls"] = true;
 
-            input.text = "ALLPICS";
+            input.text = "All pics";
+        }
+
+        // Cheat: add documentary scene test
+        if (result == -147896) {
+            GameState.AddDocumentaryScene("Plunder01");
+
+            input.text = "Docu test";
+        }
+
+        // Cheat: start documentary
+        if (result == -369874) {
+            SceneManager.LoadScene("D_EntryPoint");
+            input.text = "Docu test";
         }
     }
 }

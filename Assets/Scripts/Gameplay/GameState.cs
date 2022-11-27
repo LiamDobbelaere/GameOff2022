@@ -22,6 +22,7 @@ public static class GameState {
     public static string targetMarker;
     public static List<Notification> notifications = new List<Notification> { };
     public static bool hasUnreadNotifications = false;
+    public static List<string> documentaryScenes = new List<string> { };
 
     public static void StoreLastLocation() {
         lastScene = SceneManager.GetActiveScene().name;
@@ -43,5 +44,10 @@ public static class GameState {
         });
         hasUnreadNotifications = true;
         ShowUIHint("You have a new notification, press TAB to open your phone!");
+    }
+
+    public static void AddDocumentaryScene(string sceneName) {
+        documentaryScenes.Add(sceneName);
+        ShowUIHint("You made progress on your documentary!");
     }
 }

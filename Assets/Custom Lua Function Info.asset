@@ -26,3 +26,6 @@ MonoBehaviour:
   - functionName: Advance
     parameters: 
     returnValue: 0
+  - functionName: AddDocumentaryScene
+    parameters: 02000000
+    returnValue: 0

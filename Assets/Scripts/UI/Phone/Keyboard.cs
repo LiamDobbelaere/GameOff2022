@@ -15,6 +15,8 @@ public class Keyboard : MonoBehaviour {
             newKey.GetComponentInChildren<TextMeshProUGUI>().text = keyboardKey.ToString().ToUpper();
             newKey.gameObject.SetActive(true);
             newKey.GetComponent<Button>().onClick.AddListener(() => {
+                SaneAudio.PlaySFX("phone.click-button");
+
                 typedText.text += keyboardKey.ToString();
             });
         }

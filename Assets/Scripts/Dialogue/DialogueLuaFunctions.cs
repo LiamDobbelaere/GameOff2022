@@ -18,12 +18,16 @@ public class DialogueLuaFunctions : MonoBehaviour {
         Lua.RegisterFunction(
             "Advance", this, SymbolExtensions.GetMethodInfo(() => Advance())
         );
+        Lua.RegisterFunction(
+            "AddDocumentaryScene", this, SymbolExtensions.GetMethodInfo(() => GameState.AddDocumentaryScene(string.Empty))
+        );
     }
 
     private void OnDisable() {
         Lua.UnregisterFunction("SwitchScene");
         Lua.UnregisterFunction("ShowUIHint");
         Lua.UnregisterFunction("Advance");
+        Lua.UnregisterFunction("AddDocumentaryScene");
     }
 
     private void Advance() {

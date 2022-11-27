@@ -2,8 +2,6 @@ using PixelCrushers.DialogueSystem;
 using UnityEngine;
 
 public class PhoneCanvas : MonoBehaviour {
-    public AudioClip showPhone;
-    public AudioClip forceShowPhone;
     private GameObject phoneOverlay;
 
     // Start is called before the first frame update
@@ -24,6 +22,7 @@ public class PhoneCanvas : MonoBehaviour {
 
     public void ShowPhone() {
         phoneOverlay.SetActive(true);
+        SaneAudio.PlaySFX("phone.open");
 
         /*if (isManual) {
             GetComponent<AudioSource>().PlayOneShot(showPhone);

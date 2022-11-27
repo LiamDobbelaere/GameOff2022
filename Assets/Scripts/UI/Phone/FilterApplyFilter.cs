@@ -13,7 +13,7 @@ public class FilterApplyFilter : MonoBehaviour {
             Transform filterButton = filterOptions.GetChild(i);
 
             filterButton.GetComponent<Button>().onClick.AddListener(() => {
-                GetComponent<AudioSource>().Play();
+                SaneAudio.PlaySFX("phone.click-button");
 
                 Texture filteredTexture = originalImage;
 
@@ -34,7 +34,7 @@ public class FilterApplyFilter : MonoBehaviour {
         }
 
         transform.Find("Confirm").GetComponent<Button>().onClick.AddListener(() => {
-            GetComponent<AudioSource>().Play();
+            SaneAudio.PlaySFX("phone.click-button");
 
             transform.parent.Find("Body - Pick photo").gameObject.SetActive(true);
             transform.parent.Find("Body - Pick photo").GetComponent<FilterPickPhoto>().ApplyFilter(
