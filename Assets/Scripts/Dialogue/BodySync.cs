@@ -39,6 +39,22 @@ public class BodySync : MonoBehaviour {
             }
         }
 
+        if (portrait != null) {
+            portrait.enabled = currentLabelEntry != null;
+        }
+
+        if (mouth != null) {
+            mouth.GetComponent<Image>().enabled = currentLabelEntry != null;
+        }
+
+        if (eyes != null) {
+            eyes.GetComponent<Image>().enabled = currentLabelEntry != null;
+        }
+
+        if (simpleEyes != null) {
+            simpleEyes.GetComponent<Image>().enabled = currentLabelEntry != null;
+        }
+
         if (currentPose == null) {
             return;
         }
@@ -51,8 +67,6 @@ public class BodySync : MonoBehaviour {
             UpdateMouth();
         }
 
-
-
         if (eyes != null) {
             eyes.GetComponent<Image>().enabled = true;
             if (simpleEyes != null) simpleEyes.GetComponent<Image>().enabled = false;
@@ -64,7 +78,7 @@ public class BodySync : MonoBehaviour {
 
         if (simpleEyes != null) {
             if (eyes != null) eyes.GetComponent<Image>().enabled = false;
-            simpleEyes.GetComponent<Image>().enabled = true;
+            simpleEyes.GetComponent<Image>().enabled = true && currentLabelEntry != null;
 
             if (currentPose.useSimpleEyes == true) {
                 UpdateSimpleEyes();

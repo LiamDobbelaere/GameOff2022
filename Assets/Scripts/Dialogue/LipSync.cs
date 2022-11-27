@@ -103,6 +103,7 @@ public class LipSync : MonoBehaviour {
 
         if (lastAudioClip != asource.clip) {
             lastUsedLabelEntry = 0;
+            currentLabelEntry = null;
             string labelsPath = "Labels/" + asource.clip.name + ".mp3.labels";
             Debug.Log("Loading label file " + labelsPath);
             labelsTextFile = Resources.Load<TextAsset>(labelsPath);
