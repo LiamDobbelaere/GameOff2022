@@ -18,7 +18,7 @@ public class Notifications : MonoBehaviour {
         foreach (Notification notification in GameState.notifications) {
             Transform newNotification = Instantiate(notificationTemplate, transform);
 
-            newNotification.Find("Body/Message").GetComponent<TextMeshProUGUI>().text = notification.message;
+            newNotification.Find("Message").GetComponent<TextMeshProUGUI>().text = notification.message;
 
             newNotification.gameObject.SetActive(true);
         }

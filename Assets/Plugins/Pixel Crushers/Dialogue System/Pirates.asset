@@ -22564,7 +22564,7 @@ MonoBehaviour:
       canvasRect:
         serializedVersion: 2
         x: 30
-        y: 151
+        y: 150
         width: 160
         height: 30
     entryGroups: []
