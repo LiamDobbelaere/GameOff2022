@@ -15,6 +15,7 @@ public class Pose {
     public Sprite pose;
     public Reference mouth;
     public Reference eyes;
+    public bool useSimpleEyes;
 }
 
 [System.Serializable]
@@ -47,16 +48,21 @@ public class PoseLibrary : MonoBehaviour {
             Transform poseTransform = posesContainer.GetChild(i);
             Transform mouthReferenceTransform = poseTransform.Find("MouthReference");
             Transform eyesReferenceTransform = poseTransform.Find("EyesReference");
+            Reference eyesReference = null;
 
             string poseName = poseTransform.name;
             Reference mouthReference = GetReferenceForTransform(poseTransform, mouthReferenceTransform);
-            Reference eyesReference = GetReferenceForTransform(poseTransform, eyesReferenceTransform);
+
+            if (eyesReferenceTransform != null) {
+                eyesReference = GetReferenceForTransform(poseTransform, eyesReferenceTransform);
+            }
 
             Pose newPose = new Pose {
                 name = poseName,
                 pose = poseTransform.GetComponent<Image>().overrideSprite,
                 mouth = mouthReference,
-                eyes = eyesReference
+                eyes = eyesReference,
+                useSimpleEyes = eyesReference == null
             };
 
             posesByName.Add(poseName, newPose);

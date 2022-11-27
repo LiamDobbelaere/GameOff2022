@@ -17,6 +17,7 @@ TagManager:
   - Photographable
   - PhoneCanvas
   - HintsCanvas
+  - DialogueSystemSimpleEyes
   layers:
   - Default
   - TransparentFX

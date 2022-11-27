@@ -5,12 +5,13 @@ public class BodySync : MonoBehaviour {
     private LipSync lipSync;
     private Transform mouth;
     private Transform eyes;
+    private Transform simpleEyes;
     private Image portrait;
     private PoseLibrary poseLibrary;
     private Pose currentPose;
     private Eyes currentEyes;
     private float mouthScaleFactor = 0.5f;
-    private float eyesScaleFactor = 0.75f;
+    private float eyesScaleFactor = 1f; //0.75f;
 
     // Start is called before the first frame update
     void Start() {
@@ -22,6 +23,7 @@ public class BodySync : MonoBehaviour {
         SetupPoseLibraryIfNotSet();
         SetupMouthIfNotSet();
         SetupEyesIfNotSet();
+        SetupSimpleEyesIfNotSet();
         SetupPortraitIfNotSet();
 
         if (poseLibrary == null) {
@@ -49,8 +51,24 @@ public class BodySync : MonoBehaviour {
             UpdateMouth();
         }
 
+
+
         if (eyes != null) {
-            UpdateEyes();
+            eyes.GetComponent<Image>().enabled = true;
+            if (simpleEyes != null) simpleEyes.GetComponent<Image>().enabled = false;
+
+            if (currentPose.useSimpleEyes == false) {
+                UpdateEyes();
+            }
+        }
+
+        if (simpleEyes != null) {
+            if (eyes != null) eyes.GetComponent<Image>().enabled = false;
+            simpleEyes.GetComponent<Image>().enabled = true;
+
+            if (currentPose.useSimpleEyes == true) {
+                UpdateSimpleEyes();
+            }
         }
     }
 
@@ -66,6 +84,10 @@ public class BodySync : MonoBehaviour {
     private void UpdateEyes() {
         ApplyReferenceToTransform(currentPose.eyes, eyes, eyesScaleFactor);
         eyes.GetComponent<Image>().overrideSprite = currentEyes.sprite;
+    }
+
+    private void UpdateSimpleEyes() {
+        simpleEyes.GetComponent<Image>().overrideSprite = currentEyes.sprite;
     }
 
     private void ApplyReferenceToTransform(Reference reference, Transform target, float scaleFactor = 1f) {
@@ -95,6 +117,16 @@ public class BodySync : MonoBehaviour {
         }
     }
 
+    private void SetupSimpleEyesIfNotSet() {
+        if (simpleEyes != null) {
+            return;
+        }
+
+        GameObject dialogueSystemEyes = GameObject.FindGameObjectWithTag("DialogueSystemSimpleEyes");
+        if (dialogueSystemEyes != null) {
+            simpleEyes = dialogueSystemEyes.transform;
+        }
+    }
 
     private void SetupPortraitIfNotSet() {
         if (portrait != null) {
