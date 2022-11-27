@@ -12,10 +12,14 @@ public class DialogueLuaFunctions : MonoBehaviour {
         Lua.RegisterFunction(
             "SwitchScene", this, SymbolExtensions.GetMethodInfo(() => SwitchScene(string.Empty))
         );
+        Lua.RegisterFunction(
+            "ShowUIHint", this, SymbolExtensions.GetMethodInfo(() => GameState.ShowUIHint(string.Empty))
+        );
     }
 
     private void OnDisable() {
         Lua.UnregisterFunction("SwitchScene");
+        Lua.UnregisterFunction("ShowUIHint");
     }
 
     private void SwitchScene(string sceneName) {

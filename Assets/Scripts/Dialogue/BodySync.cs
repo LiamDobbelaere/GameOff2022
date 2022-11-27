@@ -10,6 +10,7 @@ public class BodySync : MonoBehaviour {
     private Pose currentPose;
     private Eyes currentEyes;
     private float mouthScaleFactor = 0.5f;
+    private float eyesScaleFactor = 0.75f;
 
     // Start is called before the first frame update
     void Start() {
@@ -59,17 +60,17 @@ public class BodySync : MonoBehaviour {
     }
 
     private void UpdateMouth() {
-        ApplyReferenceToTransform(currentPose.mouth, mouth);
+        ApplyReferenceToTransform(currentPose.mouth, mouth, mouthScaleFactor);
     }
 
     private void UpdateEyes() {
-        ApplyReferenceToTransform(currentPose.eyes, eyes);
+        ApplyReferenceToTransform(currentPose.eyes, eyes, eyesScaleFactor);
         eyes.GetComponent<Image>().overrideSprite = currentEyes.sprite;
     }
 
-    private void ApplyReferenceToTransform(Reference reference, Transform target) {
+    private void ApplyReferenceToTransform(Reference reference, Transform target, float scaleFactor = 1f) {
         target.position = new Vector2(Screen.width, Screen.height) * reference.position;
-        target.localScale = reference.scale * mouthScaleFactor;
+        target.localScale = reference.scale * scaleFactor;
         target.localRotation = reference.rotation;
     }
 
