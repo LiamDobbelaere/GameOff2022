@@ -11,6 +11,10 @@ public class PlayerController : MonoBehaviour {
 
         GameState.inPhotographyMode = false;
 
+        if (GameState.isFirstTime) {
+            AddMechanicsExplanationNotification();
+            GameState.isFirstTime = false;
+        }
         DisableDoingFlagInterviewsWhenDone();
         RestoreLastPositionIfSet();
         RestoreMarkerPositionIfSet();
@@ -53,5 +57,9 @@ public class PlayerController : MonoBehaviour {
         if (DialogueLua.GetVariable("Flag - Interviews done").asInt >= 2) {
             DialogueLua.SetVariable("Doing Interviews", false);
         }
+    }
+
+    private void AddMechanicsExplanationNotification() {
+        GameState.AddNotification("this is how u play game");
     }
 }

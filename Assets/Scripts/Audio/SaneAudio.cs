@@ -59,8 +59,8 @@ public class SaneAudio : MonoBehaviour {
         }
     }
 
-    public void PlaySFX(AudioSource audioSource, string sfxName, float? pitchOverride = null, bool exclusive = false) {
-        SaneSFX sfx = this.soundEffectsDict[sfxName];
+    public static void PlaySFX(AudioSource audioSource, string sfxName, float? pitchOverride = null, bool exclusive = false) {
+        SaneSFX sfx = SaneAudio.instance.soundEffectsDict[sfxName];
 
         if (pitchOverride != null) {
             audioSource.pitch = (float)pitchOverride;
@@ -81,9 +81,9 @@ public class SaneAudio : MonoBehaviour {
     /// Use this if you don't have an appropriate audio source to play the sound effect with.
     /// </summary>
     /// <param name="sfxName"></param>
-    public void PlaySFX(string sfxName, float? pitchOverride = null) {
+    public static void PlaySFX(string sfxName, float? pitchOverride = null) {
         AudioSource freeAudioSource = null;
-        foreach (AudioSource audioSource in genericSfxSources) {
+        foreach (AudioSource audioSource in SaneAudio.instance.genericSfxSources) {
             if (audioSource != null && !audioSource.isPlaying) {
                 freeAudioSource = audioSource;
                 break;
@@ -91,13 +91,13 @@ public class SaneAudio : MonoBehaviour {
         }
 
         if (freeAudioSource == null) {
-            freeAudioSource = gameObject.AddComponent<AudioSource>();
-            genericSfxSources.Add(freeAudioSource);
+            freeAudioSource = SaneAudio.instance.gameObject.AddComponent<AudioSource>();
+            SaneAudio.instance.genericSfxSources.Add(freeAudioSource);
         }
 
         PlaySFX(freeAudioSource, sfxName, pitchOverride, true);
 
-        CleanUpGenericSources();
+        SaneAudio.instance.CleanUpGenericSources();
     }
 
     private void CleanUpGenericSources() {
