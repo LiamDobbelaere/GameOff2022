@@ -15726,7 +15726,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Sequence
-        value: AudioWait(Interviews/Flags/what do you think new flag)
+        value: AudioWait(Interviews/Flags/what do you think new flag - Frogsword)
         type: 0
         typeString: CustomFieldType_Text
       conversationID: 17
@@ -16816,7 +16816,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Sequence
-        value: AudioWait(Interviews/Flags/what do you think new flag)
+        value: AudioWait(Interviews/Flags/what do you think new flag - jack)
         type: 0
         typeString: CustomFieldType_Text
       conversationID: 19
