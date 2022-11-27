@@ -1,0 +1,67 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &2203583828758200967
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7747213770259640639}
+  - component: {fileID: 3377619262631536863}
+  m_Layer: 0
+  m_Name: SaneAudio
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7747213770259640639
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2203583828758200967}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 251.9, y: 143.22998, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3377619262631536863
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2203583828758200967}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b5b1fef836021f1459324a4677844386, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  soundEffectCategories:
+  - name: phone
+    soundEffects:
+    - name: open
+      audioClips:
+      - {fileID: 8300000, guid: 3e6dc9b0aca5b41e9aca389d7e59ff77, type: 3}
+      minPitch: 1
+      maxPitch: 1
+      volume: 1
+    - name: notification
+      audioClips:
+      - {fileID: 8300000, guid: 56ff3905b1c6b4197beed2e985022640, type: 3}
+      minPitch: 1
+      maxPitch: 1
+      volume: 1
+    - name: click-button
+      audioClips:
+      - {fileID: 8300000, guid: fabf89b02cbbe409397b88473aded4b3, type: 3}
+      minPitch: 1
+      maxPitch: 1
+      volume: 1
