@@ -23268,7 +23268,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Sequence
-        value: (None)
+        value: None()
         type: 0
         typeString: CustomFieldType_Text
       conversationID: 30
@@ -23280,14 +23280,14 @@ MonoBehaviour:
       conditionPriority: 2
       outgoingLinks: []
       conditionsString: 
-      userScript: (Advance)
+      userScript: Advance()
       onExecute:
         m_PersistentCalls:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
         x: 29
-        y: 153
+        y: 154
         width: 160
         height: 30
     entryGroups: []

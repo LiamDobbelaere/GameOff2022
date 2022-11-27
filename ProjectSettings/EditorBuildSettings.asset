@@ -63,6 +63,12 @@ EditorBuildSettings:
     path: Assets/Scenes/Ship.unity
     guid: c3f89aa46a2999f439902eb528a64842
   - enabled: 1
+    path: Assets/Scenes/Documentary/Plunder02.unity
+    guid: 43c299447606b4152a860b60ce0f867f
+  - enabled: 1
+    path: Assets/Scenes/Documentary/Plunder03.unity
+    guid: 31e22be323ad640169308e2a8687249d
+  - enabled: 1
     path: Assets/Scenes/Documentary/Plunder01.unity
     guid: 5de0588fbbb2a4b12ba5ad2d749ab454
   - enabled: 1
