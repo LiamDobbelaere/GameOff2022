@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public enum Operation {
@@ -194,7 +195,20 @@ public class Calculator : MonoBehaviour {
             GameState.hasTakenPictureOf["hearthorn"] = true;
             GameState.hasTakenPictureOf["seagulls"] = true;
 
-            input.text = "ALLPICS";
+            input.text = "All pics";
+        }
+
+        // Cheat: add documentary scene test
+        if (result == -147896) {
+            GameState.AddDocumentaryScene("Plunder01");
+
+            input.text = "Docu test";
+        }
+
+        // Cheat: start documentary
+        if (result == -369874) {
+            SceneManager.LoadScene("D_EntryPoint");
+            input.text = "Docu test";
         }
     }
 }
