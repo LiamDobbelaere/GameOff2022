@@ -23,6 +23,7 @@ public static class GameState {
     public static List<Notification> notifications = new List<Notification> { };
     public static bool hasUnreadNotifications = false;
     public static List<string> documentaryScenes = new List<string> { };
+    private static float lastNotificationTime = float.MinValue;
 
     public static void StoreLastLocation() {
         lastScene = SceneManager.GetActiveScene().name;
@@ -38,8 +39,14 @@ public static class GameState {
     }
 
     public static void AddNotification(string message) {
-        SaneAudio.PlaySFX("phone.notification");
-        notifications.Insert(0, new Notification {
+        if (Time.time - lastNotificationTime > 0.5f) {
+            SaneAudio.PlaySFX("phone.notification");
+            lastNotificationTime = Time.time;
+        }
+        /*notifications.Insert(0, new Notification {
+            message = message
+        });*/
+        notifications.Add(new Notification {
             message = message
         });
         hasUnreadNotifications = true;

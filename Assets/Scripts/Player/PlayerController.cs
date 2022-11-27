@@ -60,6 +60,10 @@ public class PlayerController : MonoBehaviour {
     }
 
     private void AddMechanicsExplanationNotification() {
-        GameState.AddNotification("this is how u play game");
+        GameState.AddNotification("The goal is simple. Make the most cliche pirate documentary ever. Or go completely wild.");
+        GameState.AddNotification("Speak to the crew, use your apps to assist you, and once you've plotted and schemed, talk to Council Chair Coldwell.");
+        GameState.AddNotification("After each event, you can then interview several pirates to create a unique narrative.");
+        GameState.AddNotification("There are many branching paths, and everything will stick together at the end to make your hopefully epic documentary.");
+        GameState.AddNotification("You can look at your checklist. The main objectives are in order, whilst the side objectives can be completed at any time. Everything will stick together at the end, and you'll have a full documentary based on your decisions.");
     }
 }
