@@ -128,6 +128,9 @@ public class LipSync : MonoBehaviour {
         return currentLabelEntry;
     }
 
+    public void OnConversationStart() {
+        currentLabelEntry = null;
+    }
     private void LipSyncUpdate() {
         for (int i = lastUsedLabelEntry; i < labels.Count; i++) {
             LabelEntry labelEntry = labels[i];
