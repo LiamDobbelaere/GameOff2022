@@ -8,7 +8,7 @@ public class Picture : MonoBehaviour {
     // Start is called before the first frame update
     void Start() {
         GetComponent<Button>().onClick.AddListener(() => {
-            GetComponent<AudioSource>().Play();
+            SaneAudio.PlaySFX("phone.click-button");
 
             string finalKeyName = pictureKeyName;
             if (pictureKeyName == "flag") {
@@ -16,7 +16,6 @@ public class Picture : MonoBehaviour {
             }
 
             DialogueLua.SetVariable("Chosen Photo For Flag", finalKeyName);
-
 
             GetComponentInParent<PhoneCanvas>().HidePhone();
         });

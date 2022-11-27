@@ -23,12 +23,8 @@ public class Calculator : MonoBehaviour {
     private Operation? operation = null;
     private float? result = null;
 
-    private AudioSource audioSource;
-
     // Start is called before the first frame update
     void Start() {
-        audioSource = GetComponent<AudioSource>();
-
         input = transform.Find("Input").GetComponent<TMP_InputField>();
 
         buttons = new Dictionary<string, Action>() {
@@ -63,7 +59,7 @@ public class Calculator : MonoBehaviour {
 
     }
     private void PlayClick() {
-        audioSource.PlayOneShot(audioSource.clip);
+        SaneAudio.PlaySFX("phone.click-button");
     }
     private void OnReset(bool playSound = true) {
         if (playSound) {
