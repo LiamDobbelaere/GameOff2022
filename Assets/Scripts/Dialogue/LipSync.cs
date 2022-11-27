@@ -43,6 +43,8 @@ public class LipSync : MonoBehaviour {
     private float[] clipSampleData;
     private int lastAudioTime;
 
+    public const bool ALWAYS_USE_SIMPLE_LIPSYNC = true;
+
     // Start is called before the first frame update
     void Start() {
         asource = GetComponent<AudioSource>();
@@ -70,7 +72,11 @@ public class LipSync : MonoBehaviour {
             if (labelLine.Trim().Length > 0) {
                 string[] parts = labelLine.Split('\t');
 
-                string[] label = parts[2].Split(' ');
+                string[] label = new string[] { };
+                if (parts.Length > 2) {
+                    label = parts[2].Split(' ');
+                }
+
                 string pose = null;
                 string eyes = null;
                 if (label.Length > 1) {
@@ -117,7 +123,15 @@ public class LipSync : MonoBehaviour {
 
         if (asource.isPlaying) {
             if (labelsTextFile != null) {
-                LipSyncUpdate();
+                UpdateCurrentLabelEntry();
+            }
+
+            if (labelsTextFile != null) {
+                if (ALWAYS_USE_SIMPLE_LIPSYNC) {
+                    if (labels.Count > 0 && labels[0].phoneme != "$") SimpleLipSyncUpdate();
+                } else {
+                    LipSyncUpdate();
+                }
             } else {
                 SimpleLipSyncUpdate();
             }
@@ -131,7 +145,8 @@ public class LipSync : MonoBehaviour {
     public void OnConversationStart() {
         currentLabelEntry = null;
     }
-    private void LipSyncUpdate() {
+
+    private void UpdateCurrentLabelEntry() {
         for (int i = lastUsedLabelEntry; i < labels.Count; i++) {
             LabelEntry labelEntry = labels[i];
 
@@ -145,12 +160,19 @@ public class LipSync : MonoBehaviour {
                 break;
             }
         }
+    }
 
+    private void LipSyncUpdate() {
         Sprite targetSprite = null;
+        string phonemeCorrected = currentLabelEntry.phoneme;
+        if (phonemeCorrected == "$") {
+            phonemeCorrected = "-";
+        }
+
         if (currentLabelEntry == null) {
             targetSprite = phonemeSpritesDict["-"];
         } else {
-            targetSprite = phonemeSpritesDict[currentLabelEntry.phoneme];
+            targetSprite = phonemeSpritesDict[phonemeCorrected];
         }
 
         if (mouthImage != null && mouthImage.overrideSprite != targetSprite) {

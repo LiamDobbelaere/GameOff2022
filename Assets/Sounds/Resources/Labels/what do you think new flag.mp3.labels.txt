@@ -1,4 +1,4 @@
-0.000000	0.095782	- HearthornCasual HearthFront1
+0.000000	0.095782	$ HearthornCasual HearthFront1
 0.095782	0.191565	
 0.191565	0.287347	
 0.287347	0.383129	

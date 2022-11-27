@@ -1,1 +1,1 @@
-0.000000	2.011429	- JackCasual JackNormal
+0.000000	2.011429	$ JackCasual JackNormal
