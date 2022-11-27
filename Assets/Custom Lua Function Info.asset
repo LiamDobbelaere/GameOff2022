@@ -23,3 +23,6 @@ MonoBehaviour:
   - functionName: ShowUIHint
     parameters: 02000000
     returnValue: 0
+  - functionName: Advance
+    parameters: 
+    returnValue: 0

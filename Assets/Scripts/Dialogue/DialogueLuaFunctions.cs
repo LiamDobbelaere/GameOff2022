@@ -15,11 +15,20 @@ public class DialogueLuaFunctions : MonoBehaviour {
         Lua.RegisterFunction(
             "ShowUIHint", this, SymbolExtensions.GetMethodInfo(() => GameState.ShowUIHint(string.Empty))
         );
+        Lua.RegisterFunction(
+            "Advance", this, SymbolExtensions.GetMethodInfo(() => Advance())
+        );
     }
 
     private void OnDisable() {
         Lua.UnregisterFunction("SwitchScene");
         Lua.UnregisterFunction("ShowUIHint");
+        Lua.UnregisterFunction("Advance");
+    }
+
+    private void Advance() {
+        GameObject.FindGameObjectWithTag("DocumentarySequencer")
+            .GetComponent<DocumentarySequencer>().Advance();
     }
 
     private void SwitchScene(string sceneName) {
