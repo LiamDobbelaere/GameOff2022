@@ -813,7 +813,7 @@ GameObject:
   - component: {fileID: 2143199052}
   - component: {fileID: 2143199051}
   m_Layer: 5
-  m_Name: '--- STEP 2: Change the background image below: ---'
+  m_Name: '--- STEP 2: Change the background image on the child of this object ---'
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
