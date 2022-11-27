@@ -14,6 +14,7 @@ public static class GameState {
         ["seagulls"] = false
     };
     public static bool inPhotographyMode = false;
+    public static string targetMarker;
 
     public static void StoreLastLocation() {
         lastScene = SceneManager.GetActiveScene().name;

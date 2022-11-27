@@ -59,4 +59,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/PabloShowFlag.unity
     guid: 47851a85130dc8d4da7377b3db4975e4
+  - enabled: 1
+    path: Assets/Scenes/Ship.unity
+    guid: c3f89aa46a2999f439902eb528a64842
+  - enabled: 1
+    path: Assets/Scenes/CaptainRoom.unity
+    guid: 22e37810aace36f42b39eea2e05b4ded
   m_configObjects: {}

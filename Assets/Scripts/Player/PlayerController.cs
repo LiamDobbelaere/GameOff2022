@@ -13,6 +13,7 @@ public class PlayerController : MonoBehaviour {
 
         DisableDoingFlagInterviewsWhenDone();
         RestoreLastPositionIfSet();
+        RestoreMarkerPositionIfSet();
     }
 
     private void Update() {
@@ -31,6 +32,21 @@ public class PlayerController : MonoBehaviour {
 
         transform.position = (Vector2)GameState.lastPosition;
         GameState.lastPosition = null;
+    }
+
+    private void RestoreMarkerPositionIfSet() {
+        if (GameState.targetMarker == null) {
+            return;
+        }
+
+        GameObject marker = GameObject.Find(GameState.targetMarker);
+        if (marker == null) {
+            Debug.LogError("Marker not found for name " + GameState.targetMarker);
+        }
+
+        transform.position = (Vector2)marker.transform.position;
+
+        GameState.targetMarker = null;
     }
 
     private void DisableDoingFlagInterviewsWhenDone() {
