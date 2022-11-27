@@ -116,12 +116,18 @@ public class DocumentarySequencer : MonoBehaviour {
 
     private void SetMusicTrack(AudioClip clip, float volume) {
         if (!audioSourceA.isPlaying || audioSourceA.volume <= 0.05f) {
+            if (clip == audioSourceB.clip) {
+                return;
+            }
             audioSourceA.clip = clip;
             audioSourceA.volume = 0f;
             audioSourceA.Play();
             audioSourceATargetVolume = volume;
             audioSourceBTargetVolume = 0f;
         } else {
+            if (clip == audioSourceA.clip) {
+                return;
+            }
             audioSourceB.clip = clip;
             audioSourceB.volume = 0f;
             audioSourceB.Play();
