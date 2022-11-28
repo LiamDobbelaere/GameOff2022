@@ -84,6 +84,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Documentary/Intro05.unity
     guid: 72770defba4df4c25b981e46c49ac262
   - enabled: 1
+    path: Assets/Scenes/Documentary/Plunder05.unity
+    guid: 013e8feee52fe4be1b34d3638b2ce4d1
+  - enabled: 1
     path: Assets/Scenes/Documentary/Mutiny01a.unity
     guid: ee681c4d5b404423ead3aff64580e072
   - enabled: 1
