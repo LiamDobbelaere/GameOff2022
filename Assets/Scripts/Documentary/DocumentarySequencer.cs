@@ -7,7 +7,8 @@ public class DocumentarySequencer : MonoBehaviour {
     private static DocumentarySequencer instance = null;
     private Stack<string> scenes = new Stack<string>(
         new string[] {
-            "Plunder03", 
+            "Mutiny01a",
+            "Plunder04", 
             "Plunder02",
             "Plunder01",
             "Intro02",

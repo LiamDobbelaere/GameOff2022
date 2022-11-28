@@ -1,0 +1,2 @@
+0.000000	1.280000	N HearthornShrug HeartFront1
+1.280000	2.560000	OW
