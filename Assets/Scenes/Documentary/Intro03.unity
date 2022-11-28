@@ -541,7 +541,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: c68bcdf3691d0413bba476a8de5f2c4c, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 8131b6a3d509149308e394a5ca3328e8, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -783,7 +783,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 552a3e155a129394d9bc3da796283f1d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  music: {fileID: 8300000, guid: f5cef4214d69eb0428069cb8709aefc1, type: 3}
+  music: {fileID: 0}
   musicVolume: 0.75
 --- !u!4 &1320002077
 Transform:

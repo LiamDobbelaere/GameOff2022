@@ -12,7 +12,10 @@ public class DocumentarySequencer : MonoBehaviour {
             "Mutiny03",
             "Mutiny02",
             "Mutiny01b",
-            "Mutiny01a",
+             "Intro05",
+             "Intro04",
+             "Intro03",
+
             "Intro02",
         }
     );

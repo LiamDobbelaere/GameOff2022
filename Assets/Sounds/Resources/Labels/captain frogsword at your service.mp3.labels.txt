@@ -1,0 +1,2 @@
+0.000000	1.658776	N FrogCasual FrogHappy
+3.658776	3.317551	N FrogTip FrogBlink
