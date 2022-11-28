@@ -93,6 +93,18 @@ EditorBuildSettings:
     path: Assets/Scenes/Documentary/Intro05.unity
     guid: 72770defba4df4c25b981e46c49ac262
   - enabled: 1
+    path: Assets/Scenes/Documentary/Mutiny01b.unity
+    guid: 5fa08ef3a30bf4a16abcda655641e1f4
+  - enabled: 1
+    path: Assets/Scenes/Documentary/Mutiny02.unity
+    guid: f78f3e291cef8449cb6b8f3c1118e003
+  - enabled: 1
+    path: Assets/Scenes/Documentary/Mutiny03.unity
+    guid: 41e80ff493f954ed5b50633e1464173c
+  - enabled: 1
+    path: Assets/Scenes/Documentary/Mutiny04.unity
+    guid: cce1ac683935041b4a355fad3c5b1256
+  - enabled: 1
     path: Assets/Scenes/Documentary/Plunder05.unity
     guid: 013e8feee52fe4be1b34d3638b2ce4d1
   - enabled: 1
