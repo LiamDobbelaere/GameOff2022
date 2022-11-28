@@ -1,0 +1,2 @@
+0.000000	0.470204	N JackCasual JackNormal
+0.470204	0.940408	OW
