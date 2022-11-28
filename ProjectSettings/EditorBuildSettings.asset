@@ -24,6 +24,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Development/DialogueSystemIntegration.unity
     guid: b373d3372771da44b875a5701f66eb48
   - enabled: 1
+    path: Assets/Scenes/Documentary/Plunder06.unity
+    guid: d595cc43d2d0f4c179289583e8303517
+  - enabled: 1
     path: Assets/Scenes/Development/Phone.unity
     guid: 09ffebde94bc150488233d85417e6471
   - enabled: 1
