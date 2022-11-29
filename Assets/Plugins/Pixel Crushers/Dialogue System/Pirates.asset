@@ -438,7 +438,7 @@ MonoBehaviour:
       type: 0
       typeString: CustomFieldType_Text
     - title: Initial Value
-      value: flag-jolly
+      value: 
       type: 0
       typeString: CustomFieldType_Text
     - title: Description
@@ -550,7 +550,7 @@ MonoBehaviour:
       type: 0
       typeString: CustomFieldType_Text
     - title: Initial Value
-      value: True
+      value: False
       type: 2
       typeString: CustomFieldType_Boolean
     - title: Description
@@ -2168,8 +2168,8 @@ MonoBehaviour:
         width: 160
         height: 30
     entryGroups: []
-    canvasScrollPosition: {x: 469.7027, y: 471.41125}
-    canvasZoom: 0.8199997
+    canvasScrollPosition: {x: 335.57178, y: 616.58575}
+    canvasZoom: 0.7899997
   - id: 3
     fields:
     - title: Title

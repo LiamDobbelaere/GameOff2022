@@ -18,6 +18,7 @@ public class PlayerController : MonoBehaviour {
         DisableDoingFlagInterviewsWhenDone();
         RestoreLastPositionIfSet();
         RestoreMarkerPositionIfSet();
+        AddInterviewsNotificationIfNeeded();
     }
 
     private void Update() {
@@ -65,5 +66,12 @@ public class PlayerController : MonoBehaviour {
         GameState.AddNotification("After each event, you can then interview several pirates to create a unique narrative.");
         GameState.AddNotification("There are many branching paths, and everything will stick together at the end to make your hopefully epic documentary.");
         GameState.AddNotification("You can look at your checklist. The main objectives are in order, whilst the side objectives can be completed at any time. Everything will stick together at the end, and you'll have a full documentary based on your decisions.");
+    }
+
+    private void AddInterviewsNotificationIfNeeded() {
+        if (GameState.justSawTheFlag) {
+            GameState.AddNotification("Interview some people about the flag! Not everyone will have something to say.");
+            GameState.justSawTheFlag = false;
+        }
     }
 }

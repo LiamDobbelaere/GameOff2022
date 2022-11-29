@@ -4,13 +4,10 @@ using UnityEngine;
 public class Notifications : MonoBehaviour {
     Transform notificationTemplate;
 
-    // Start is called before the first frame update
-    void Start() {
+    private void OnEnable() {
         notificationTemplate = transform.Find("NotificationTemplate");
         notificationTemplate.gameObject.SetActive(false);
-    }
 
-    private void OnEnable() {
         for (int i = 1; i < transform.childCount; i++) {
             Destroy(transform.GetChild(i).gameObject);
         }

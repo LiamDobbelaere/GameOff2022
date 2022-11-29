@@ -21,6 +21,9 @@ public class DialogueLuaFunctions : MonoBehaviour {
         Lua.RegisterFunction(
             "AddDocumentaryScene", this, SymbolExtensions.GetMethodInfo(() => GameState.AddDocumentaryScene(string.Empty))
         );
+        Lua.RegisterFunction(
+            "AddNotification", this, SymbolExtensions.GetMethodInfo(() => GameState.AddNotification(string.Empty))
+        );
     }
 
     private void OnDisable() {
@@ -28,6 +31,7 @@ public class DialogueLuaFunctions : MonoBehaviour {
         Lua.UnregisterFunction("ShowUIHint");
         Lua.UnregisterFunction("Advance");
         Lua.UnregisterFunction("AddDocumentaryScene");
+        Lua.UnregisterFunction("AddNotification");
     }
 
     private void Advance() {
@@ -37,6 +41,9 @@ public class DialogueLuaFunctions : MonoBehaviour {
 
     private void SwitchScene(string sceneName) {
         GameState.StoreLastLocation();
+        if (sceneName == "PabloShowFlag") {
+            GameState.justSawTheFlag = true;
+        }
         SceneManager.LoadScene(sceneName);
     }
 

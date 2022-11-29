@@ -24,6 +24,7 @@ public static class GameState {
     public static bool hasUnreadNotifications = false;
     public static List<string> documentaryScenes = new List<string> { };
     private static float lastNotificationTime = float.MinValue;
+    public static bool justSawTheFlag = false;
 
     public static void StoreLastLocation() {
         lastScene = SceneManager.GetActiveScene().name;
@@ -47,7 +48,7 @@ public static class GameState {
             message = message
         });*/
         notifications.Add(new Notification {
-            message = message
+            message = (notifications.Count + 1).ToString() + " - " + message
         });
         hasUnreadNotifications = true;
         ShowUIHint("You have a new notification, press TAB to open your phone!");
