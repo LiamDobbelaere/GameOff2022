@@ -38,6 +38,10 @@ public class PhoneCanvas : MonoBehaviour {
     // Update is called once per frame
     void Update() {
         if (Input.GetButtonDown("Phone")) {
+            if (GameObject.FindGameObjectWithTag("DragAndDropItems") != null) {
+                GameObject.FindGameObjectWithTag("DragAndDropItems").GetComponent<DragAndDropItems>().lastTouched = null;
+            }
+
             if (phoneOverlay.activeSelf) {
                 HidePhone();
             } else {
