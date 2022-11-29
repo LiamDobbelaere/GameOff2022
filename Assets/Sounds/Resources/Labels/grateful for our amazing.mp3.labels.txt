@@ -1,0 +1,2 @@
+0.000000	3.787755	N HearthornShrug HearthFront1
+3.787755	7.575510	OW
