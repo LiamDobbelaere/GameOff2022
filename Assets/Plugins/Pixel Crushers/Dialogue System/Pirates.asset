@@ -17236,7 +17236,7 @@ MonoBehaviour:
         typeString: CustomFieldType_Text
       - title: Dialogue Text
         value: 'That all pirates all crazy barbarian murders. Some of us do have
-          a heart. '
+          other hobbies. '
         type: 0
         typeString: CustomFieldType_Text
       - title: Parenthetical
@@ -17270,8 +17270,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 424.46298
-        y: 510.05133
+        x: 431.2855
+        y: 519.148
         width: 160
         height: 30
     - id: 8
@@ -19829,7 +19829,7 @@ MonoBehaviour:
         height: 30
     entryGroups: []
     canvasScrollPosition: {x: 0, y: 0}
-    canvasZoom: 0.9405001
+    canvasZoom: 0.8936635
   - id: 23
     fields:
     - title: Title
