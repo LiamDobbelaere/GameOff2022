@@ -18929,7 +18929,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Sequence
-        value: 
+        value: AudioWait(Interviews/Mutiny/Hearthorn/lovely ring am i right)
         type: 0
         typeString: CustomFieldType_Text
       conversationID: 21
@@ -19000,7 +19000,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Sequence
-        value: 
+        value: AudioWait(Interviews/Mutiny/Hearthorn/a real shame great man)
         type: 0
         typeString: CustomFieldType_Text
       conversationID: 21
@@ -19071,7 +19071,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Sequence
-        value: 
+        value: AudioWait(Interviews/Mutiny/grateful for our amazing)
         type: 0
         typeString: CustomFieldType_Text
       conversationID: 21
@@ -19142,7 +19142,8 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Sequence
-        value: 
+        value: AudioWait(Interviews/Mutiny/Hearthorn/more than happy being first
+          mate)
         type: 0
         typeString: CustomFieldType_Text
       conversationID: 21
@@ -19152,13 +19153,7 @@ MonoBehaviour:
       delaySimStatus: 0
       falseConditionAction: Block
       conditionPriority: 2
-      outgoingLinks:
-      - originConversationID: 21
-        originDialogueID: 10
-        destinationConversationID: 21
-        destinationDialogueID: 14
-        isConnector: 0
-        priority: 2
+      outgoingLinks: []
       conditionsString: 
       userScript: 
       onExecute:
@@ -19213,7 +19208,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Sequence
-        value: 
+        value: AudioWait(Interviews/Mutiny/Hearthorn/but i was greater)
         type: 0
         typeString: CustomFieldType_Text
       conversationID: 21
@@ -19278,7 +19273,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Sequence
-        value: 
+        value: AudioWait(Interviews/Mutiny/are we done now)
         type: 0
         typeString: CustomFieldType_Text
       conversationID: 21
@@ -19344,7 +19339,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Sequence
-        value: 
+        value: AudioWait(Interviews/Mutiny/Hearthorn/this is my hat you know)
         type: 0
         typeString: CustomFieldType_Text
       conversationID: 21
@@ -19364,71 +19359,6 @@ MonoBehaviour:
         serializedVersion: 2
         x: 51
         y: 448
-        width: 160
-        height: 30
-    - id: 14
-      fields:
-      - title: Title
-        value: 
-        type: 0
-        typeString: CustomFieldType_Text
-      - title: Pictures
-        value: '[]'
-        type: 3
-        typeString: CustomFieldType_Files
-      - title: Description
-        value: 
-        type: 0
-        typeString: CustomFieldType_Text
-      - title: Actor
-        value: 5
-        type: 5
-        typeString: CustomFieldType_Actor
-      - title: Conversant
-        value: 2
-        type: 5
-        typeString: CustomFieldType_Actor
-      - title: Menu Text
-        value: 
-        type: 0
-        typeString: CustomFieldType_Text
-      - title: Dialogue Text
-        value: 'Not sure why you''d thin otherswise. '
-        type: 0
-        typeString: CustomFieldType_Text
-      - title: Parenthetical
-        value: 
-        type: 0
-        typeString: CustomFieldType_Text
-      - title: Audio Files
-        value: '[]'
-        type: 3
-        typeString: CustomFieldType_Files
-      - title: Video File
-        value: 
-        type: 0
-        typeString: CustomFieldType_Text
-      - title: Sequence
-        value: 
-        type: 0
-        typeString: CustomFieldType_Text
-      conversationID: 21
-      isRoot: 0
-      isGroup: 0
-      nodeColor: 
-      delaySimStatus: 0
-      falseConditionAction: Block
-      conditionPriority: 2
-      outgoingLinks: []
-      conditionsString: 
-      userScript: 
-      onExecute:
-        m_PersistentCalls:
-          m_Calls: []
-      canvasRect:
-        serializedVersion: 2
-        x: 714
-        y: 426.48602
         width: 160
         height: 30
     entryGroups: []
