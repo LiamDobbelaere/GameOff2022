@@ -18456,7 +18456,7 @@ MonoBehaviour:
         destinationDialogueID: 7
         isConnector: 0
         priority: 2
-      conditionsString: 
+      conditionsString: Variable["Mutiny_Outcome"] == "frogwins"
       userScript: 
       onExecute:
         m_PersistentCalls:
@@ -18464,7 +18464,7 @@ MonoBehaviour:
       canvasRect:
         serializedVersion: 2
         x: 219.67938
-        y: 258.38547
+        y: 257.00995
         width: 160
         height: 30
     - id: 3
@@ -18533,7 +18533,7 @@ MonoBehaviour:
         destinationDialogueID: 5
         isConnector: 0
         priority: 2
-      conditionsString: 
+      conditionsString: Variable["Mutiny_Outcome"] == "hug"
       userScript: 
       onExecute:
         m_PersistentCalls:
@@ -19358,7 +19358,7 @@ MonoBehaviour:
         destinationDialogueID: 6
         isConnector: 0
         priority: 2
-      conditionsString: 
+      conditionsString: Variable["Mutiny_Outcome"] == "hug"
       userScript: 
       onExecute:
         m_PersistentCalls:
@@ -19435,7 +19435,7 @@ MonoBehaviour:
         destinationDialogueID: 4
         isConnector: 0
         priority: 2
-      conditionsString: 
+      conditionsString: Variable["Mutiny_Outcome"] == "frogdies"
       userScript: 
       onExecute:
         m_PersistentCalls:
