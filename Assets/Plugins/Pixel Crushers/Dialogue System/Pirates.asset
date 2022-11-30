@@ -683,6 +683,34 @@ MonoBehaviour:
       value: 
       type: 0
       typeString: CustomFieldType_Text
+  - id: 28
+    fields:
+    - title: Name
+      value: Mutiny Decided
+      type: 0
+      typeString: CustomFieldType_Text
+    - title: Initial Value
+      value: False
+      type: 2
+      typeString: CustomFieldType_Boolean
+    - title: Description
+      value: 
+      type: 0
+      typeString: CustomFieldType_Text
+  - id: 29
+    fields:
+    - title: Name
+      value: Frogsword Blade
+      type: 0
+      typeString: CustomFieldType_Text
+    - title: Initial Value
+      value: False
+      type: 2
+      typeString: CustomFieldType_Boolean
+    - title: Description
+      value: 
+      type: 0
+      typeString: CustomFieldType_Text
   conversations:
   - id: 1
     fields:
@@ -1080,7 +1108,8 @@ MonoBehaviour:
         destinationDialogueID: 4
         isConnector: 0
         priority: 2
-      conditionsString: Dialog[thisID].SimStatus ~= "WasDisplayed"
+      conditionsString: Dialog[thisID].SimStatus ~= "WasDisplayed" and (Variable["Flag___Interviews_done"]
+        == 0)
       userScript: 
       onExecute:
         m_PersistentCalls:
@@ -1151,7 +1180,7 @@ MonoBehaviour:
         destinationDialogueID: 5
         isConnector: 0
         priority: 2
-      conditionsString: Dialog[thisID].SimStatus ~= "WasDisplayed"
+      conditionsString: 'Dialog[thisID].SimStatus ~= "WasDisplayed" and  (Variable["Flag___Interviews_done"] '
       userScript: 
       onExecute:
         m_PersistentCalls:
@@ -1424,7 +1453,7 @@ MonoBehaviour:
         destinationDialogueID: 16
         isConnector: 0
         priority: 2
-      conditionsString: 
+      conditionsString: ' (Variable["Flag___Interviews_done"] '
       userScript: ShowPhone()
       onExecute:
         m_PersistentCalls:
@@ -1734,11 +1763,11 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Actor
-        value: 2
+        value: 1
         type: 5
         typeString: CustomFieldType_Actor
       - title: Conversant
-        value: 1
+        value: 2
         type: 5
         typeString: CustomFieldType_Actor
       - title: Menu Text
@@ -1746,7 +1775,8 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Dialogue Text
-        value: 
+        value: 'I hope everyone is happy with our design. If they''re not happy -
+          it was mostly your idea anyway. '
         type: 0
         typeString: CustomFieldType_Text
       - title: Parenthetical
@@ -2224,8 +2254,8 @@ MonoBehaviour:
         width: 160
         height: 30
     entryGroups: []
-    canvasScrollPosition: {x: 335.57178, y: 616.58575}
-    canvasZoom: 0.7899997
+    canvasScrollPosition: {x: 73.266205, y: 0}
+    canvasZoom: 0.6795493
   - id: 3
     fields:
     - title: Title
@@ -21092,7 +21122,7 @@ MonoBehaviour:
       conditionPriority: 2
       outgoingLinks: []
       conditionsString: 
-      userScript: 
+      userScript: Variable["Mutiny_Decided"] = false
       onExecute:
         m_PersistentCalls:
           m_Calls: []
@@ -21660,7 +21690,7 @@ MonoBehaviour:
       conditionPriority: 2
       outgoingLinks: []
       conditionsString: 
-      userScript: 
+      userScript: Variable["Mutiny_Decided"] = true
       onExecute:
         m_PersistentCalls:
           m_Calls: []
@@ -21671,8 +21701,8 @@ MonoBehaviour:
         width: 160
         height: 30
     entryGroups: []
-    canvasScrollPosition: {x: 150.29779, y: 290.71463}
-    canvasZoom: 0.70526665
+    canvasScrollPosition: {x: 95.766945, y: 501.01077}
+    canvasZoom: 0.7128734
   - id: 24
     fields:
     - title: Title
