@@ -305,132 +305,6 @@ MonoBehaviour:
   items: []
   locations: []
   variables:
-  - id: 13
-    fields:
-    - title: Name
-      value: Plundering - Spoken to Hearthorn
-      type: 0
-      typeString: CustomFieldType_Text
-    - title: Initial Value
-      value: True
-      type: 2
-      typeString: CustomFieldType_Boolean
-    - title: Description
-      value: 
-      type: 0
-      typeString: CustomFieldType_Text
-  - id: 15
-    fields:
-    - title: Name
-      value: Plundering - Spoken to Frogsword
-      type: 0
-      typeString: CustomFieldType_Text
-    - title: Initial Value
-      value: True
-      type: 2
-      typeString: CustomFieldType_Boolean
-    - title: Description
-      value: 
-      type: 0
-      typeString: CustomFieldType_Text
-  - id: 16
-    fields:
-    - title: Name
-      value: Plundering - Spoken to Coinbone
-      type: 0
-      typeString: CustomFieldType_Text
-    - title: Initial Value
-      value: True
-      type: 2
-      typeString: CustomFieldType_Boolean
-    - title: Description
-      value: 
-      type: 0
-      typeString: CustomFieldType_Text
-  - id: 2
-    fields:
-    - title: Name
-      value: Plundering Frogsword
-      type: 0
-      typeString: CustomFieldType_Text
-    - title: Initial Value
-      value: False
-      type: 2
-      typeString: CustomFieldType_Boolean
-    - title: Description
-      value: 
-      type: 0
-      typeString: CustomFieldType_Text
-  - id: 1
-    fields:
-    - title: Name
-      value: Plundering Hearthorn
-      type: 0
-      typeString: CustomFieldType_Text
-    - title: Initial Value
-      value: True
-      type: 2
-      typeString: CustomFieldType_Boolean
-    - title: Description
-      value: 
-      type: 0
-      typeString: CustomFieldType_Text
-  - id: 3
-    fields:
-    - title: Name
-      value: Plundering Coinbone
-      type: 0
-      typeString: CustomFieldType_Text
-    - title: Initial Value
-      value: False
-      type: 2
-      typeString: CustomFieldType_Boolean
-    - title: Description
-      value: 
-      type: 0
-      typeString: CustomFieldType_Text
-  - id: 4
-    fields:
-    - title: Name
-      value: Frog Statue
-      type: 0
-      typeString: CustomFieldType_Text
-    - title: Initial Value
-      value: False
-      type: 2
-      typeString: CustomFieldType_Boolean
-    - title: Description
-      value: 
-      type: 0
-      typeString: CustomFieldType_Text
-  - id: 5
-    fields:
-    - title: Name
-      value: Plundering Quests Done
-      type: 0
-      typeString: CustomFieldType_Text
-    - title: Initial Value
-      value: 2
-      type: 1
-      typeString: CustomFieldType_Number
-    - title: Description
-      value: 
-      type: 0
-      typeString: CustomFieldType_Text
-  - id: 6
-    fields:
-    - title: Name
-      value: Quartermaster Calculation Done
-      type: 0
-      typeString: CustomFieldType_Text
-    - title: Initial Value
-      value: True
-      type: 2
-      typeString: CustomFieldType_Boolean
-    - title: Description
-      value: 
-      type: 0
-      typeString: CustomFieldType_Text
   - id: 7
     fields:
     - title: Name
@@ -438,101 +312,17 @@ MonoBehaviour:
       type: 0
       typeString: CustomFieldType_Text
     - title: Initial Value
-      value: flag-other
+      value: 
       type: 0
       typeString: CustomFieldType_Text
     - title: Description
       value: 
       type: 0
       typeString: CustomFieldType_Text
-  - id: 8
+  - id: 19
     fields:
     - title: Name
-      value: Plundering Quest Over
-      type: 0
-      typeString: CustomFieldType_Text
-    - title: Initial Value
-      value: True
-      type: 2
-      typeString: CustomFieldType_Boolean
-    - title: Description
-      value: 
-      type: 0
-      typeString: CustomFieldType_Text
-  - id: 9
-    fields:
-    - title: Name
-      value: Mutiny - Spoken to Jack
-      type: 0
-      typeString: CustomFieldType_Text
-    - title: Initial Value
-      value: True
-      type: 2
-      typeString: CustomFieldType_Boolean
-    - title: Description
-      value: 
-      type: 0
-      typeString: CustomFieldType_Text
-  - id: 14
-    fields:
-    - title: Name
-      value: Mutiny - Spoken to Hearthorn
-      type: 0
-      typeString: CustomFieldType_Text
-    - title: Initial Value
-      value: True
-      type: 2
-      typeString: CustomFieldType_Boolean
-    - title: Description
-      value: 
-      type: 0
-      typeString: CustomFieldType_Text
-  - id: 17
-    fields:
-    - title: Name
-      value: Mutiny - Spoken to Stella
-      type: 0
-      typeString: CustomFieldType_Text
-    - title: Initial Value
-      value: True
-      type: 2
-      typeString: CustomFieldType_Boolean
-    - title: Description
-      value: 
-      type: 0
-      typeString: CustomFieldType_Text
-  - id: 10
-    fields:
-    - title: Name
-      value: Mutiny Hearthorn
-      type: 0
-      typeString: CustomFieldType_Text
-    - title: Initial Value
-      value: True
-      type: 2
-      typeString: CustomFieldType_Boolean
-    - title: Description
-      value: 
-      type: 0
-      typeString: CustomFieldType_Text
-  - id: 11
-    fields:
-    - title: Name
-      value: Mutiny Crew
-      type: 0
-      typeString: CustomFieldType_Text
-    - title: Initial Value
-      value: True
-      type: 2
-      typeString: CustomFieldType_Boolean
-    - title: Description
-      value: 
-      type: 0
-      typeString: CustomFieldType_Text
-  - id: 12
-    fields:
-    - title: Name
-      value: Mutiny Jack Jones
+      value: DidPlundering
       type: 0
       typeString: CustomFieldType_Text
     - title: Initial Value
@@ -550,21 +340,35 @@ MonoBehaviour:
       type: 0
       typeString: CustomFieldType_Text
     - title: Initial Value
-      value: True
+      value: False
       type: 2
       typeString: CustomFieldType_Boolean
     - title: Description
       value: 
       type: 0
       typeString: CustomFieldType_Text
-  - id: 19
+  - id: 32
     fields:
     - title: Name
-      value: DidPlundering
+      value: Doing Mutiny Interviews
       type: 0
       typeString: CustomFieldType_Text
     - title: Initial Value
-      value: True
+      value: False
+      type: 2
+      typeString: CustomFieldType_Boolean
+    - title: Description
+      value: 
+      type: 0
+      typeString: CustomFieldType_Text
+  - id: 24
+    fields:
+    - title: Name
+      value: Doing Plundering Interviews
+      type: 0
+      typeString: CustomFieldType_Text
+    - title: Initial Value
+      value: False
       type: 2
       typeString: CustomFieldType_Boolean
     - title: Description
@@ -578,7 +382,7 @@ MonoBehaviour:
       type: 0
       typeString: CustomFieldType_Text
     - title: Initial Value
-      value: True
+      value: False
       type: 2
       typeString: CustomFieldType_Boolean
     - title: Description
@@ -606,7 +410,7 @@ MonoBehaviour:
       type: 0
       typeString: CustomFieldType_Text
     - title: Initial Value
-      value: True
+      value: False
       type: 2
       typeString: CustomFieldType_Boolean
     - title: Description
@@ -620,73 +424,17 @@ MonoBehaviour:
       type: 0
       typeString: CustomFieldType_Text
     - title: Initial Value
-      value: 2
+      value: 0
       type: 1
       typeString: CustomFieldType_Number
     - title: Description
       value: 
       type: 0
       typeString: CustomFieldType_Text
-  - id: 24
+  - id: 4
     fields:
     - title: Name
-      value: Doing Plundering Interviews
-      type: 0
-      typeString: CustomFieldType_Text
-    - title: Initial Value
-      value: False
-      type: 2
-      typeString: CustomFieldType_Boolean
-    - title: Description
-      value: 
-      type: 0
-      typeString: CustomFieldType_Text
-  - id: 25
-    fields:
-    - title: Name
-      value: Plundering - Interviews done
-      type: 0
-      typeString: CustomFieldType_Text
-    - title: Initial Value
-      value: 2
-      type: 1
-      typeString: CustomFieldType_Number
-    - title: Description
-      value: 
-      type: 0
-      typeString: CustomFieldType_Text
-  - id: 26
-    fields:
-    - title: Name
-      value: Plundering - Interviewed Hearthorn
-      type: 0
-      typeString: CustomFieldType_Text
-    - title: Initial Value
-      value: True
-      type: 2
-      typeString: CustomFieldType_Boolean
-    - title: Description
-      value: 
-      type: 0
-      typeString: CustomFieldType_Text
-  - id: 27
-    fields:
-    - title: Name
-      value: Plundering - Interviewed Jack
-      type: 0
-      typeString: CustomFieldType_Text
-    - title: Initial Value
-      value: True
-      type: 2
-      typeString: CustomFieldType_Boolean
-    - title: Description
-      value: 
-      type: 0
-      typeString: CustomFieldType_Text
-  - id: 28
-    fields:
-    - title: Name
-      value: Mutiny Decided
+      value: Frog Statue
       type: 0
       typeString: CustomFieldType_Text
     - title: Initial Value
@@ -711,10 +459,10 @@ MonoBehaviour:
       value: 
       type: 0
       typeString: CustomFieldType_Text
-  - id: 30
+  - id: 35
     fields:
     - title: Name
-      value: Mutiny - Spoken to Frogsword
+      value: Mutiny - Interviewed Frogsword
       type: 0
       typeString: CustomFieldType_Text
     - title: Initial Value
@@ -725,24 +473,24 @@ MonoBehaviour:
       value: 
       type: 0
       typeString: CustomFieldType_Text
-  - id: 31
+  - id: 34
     fields:
     - title: Name
-      value: Mutiny Outcome
+      value: Mutiny - Interviewed Hearthorn
       type: 0
       typeString: CustomFieldType_Text
     - title: Initial Value
-      value: 
-      type: 0
-      typeString: CustomFieldType_Text
+      value: False
+      type: 2
+      typeString: CustomFieldType_Boolean
     - title: Description
       value: 
       type: 0
       typeString: CustomFieldType_Text
-  - id: 32
+  - id: 36
     fields:
     - title: Name
-      value: Doing Mutiny Interviews
+      value: Mutiny - Interviewed Jack
       type: 0
       typeString: CustomFieldType_Text
     - title: Initial Value
@@ -767,10 +515,10 @@ MonoBehaviour:
       value: 
       type: 0
       typeString: CustomFieldType_Text
-  - id: 34
+  - id: 30
     fields:
     - title: Name
-      value: Mutiny - Interviewed Hearthorn
+      value: Mutiny - Spoken to Frogsword
       type: 0
       typeString: CustomFieldType_Text
     - title: Initial Value
@@ -781,10 +529,10 @@ MonoBehaviour:
       value: 
       type: 0
       typeString: CustomFieldType_Text
-  - id: 35
+  - id: 14
     fields:
     - title: Name
-      value: Mutiny - Interviewed Frogsword
+      value: Mutiny - Spoken to Hearthorn
       type: 0
       typeString: CustomFieldType_Text
     - title: Initial Value
@@ -795,16 +543,282 @@ MonoBehaviour:
       value: 
       type: 0
       typeString: CustomFieldType_Text
-  - id: 36
+  - id: 9
     fields:
     - title: Name
-      value: Mutiny - Interviewed Jack
+      value: Mutiny - Spoken to Jack
       type: 0
       typeString: CustomFieldType_Text
     - title: Initial Value
       value: False
       type: 2
       typeString: CustomFieldType_Boolean
+    - title: Description
+      value: 
+      type: 0
+      typeString: CustomFieldType_Text
+  - id: 17
+    fields:
+    - title: Name
+      value: Mutiny - Spoken to Stella
+      type: 0
+      typeString: CustomFieldType_Text
+    - title: Initial Value
+      value: False
+      type: 2
+      typeString: CustomFieldType_Boolean
+    - title: Description
+      value: 
+      type: 0
+      typeString: CustomFieldType_Text
+  - id: 11
+    fields:
+    - title: Name
+      value: Mutiny Crew
+      type: 0
+      typeString: CustomFieldType_Text
+    - title: Initial Value
+      value: False
+      type: 2
+      typeString: CustomFieldType_Boolean
+    - title: Description
+      value: 
+      type: 0
+      typeString: CustomFieldType_Text
+  - id: 28
+    fields:
+    - title: Name
+      value: Mutiny Decided
+      type: 0
+      typeString: CustomFieldType_Text
+    - title: Initial Value
+      value: False
+      type: 2
+      typeString: CustomFieldType_Boolean
+    - title: Description
+      value: 
+      type: 0
+      typeString: CustomFieldType_Text
+  - id: 10
+    fields:
+    - title: Name
+      value: Mutiny Hearthorn
+      type: 0
+      typeString: CustomFieldType_Text
+    - title: Initial Value
+      value: False
+      type: 2
+      typeString: CustomFieldType_Boolean
+    - title: Description
+      value: 
+      type: 0
+      typeString: CustomFieldType_Text
+  - id: 12
+    fields:
+    - title: Name
+      value: Mutiny Jack Jones
+      type: 0
+      typeString: CustomFieldType_Text
+    - title: Initial Value
+      value: False
+      type: 2
+      typeString: CustomFieldType_Boolean
+    - title: Description
+      value: 
+      type: 0
+      typeString: CustomFieldType_Text
+  - id: 31
+    fields:
+    - title: Name
+      value: Mutiny Outcome
+      type: 0
+      typeString: CustomFieldType_Text
+    - title: Initial Value
+      value: 
+      type: 0
+      typeString: CustomFieldType_Text
+    - title: Description
+      value: 
+      type: 0
+      typeString: CustomFieldType_Text
+  - id: 26
+    fields:
+    - title: Name
+      value: Plundering - Interviewed Hearthorn
+      type: 0
+      typeString: CustomFieldType_Text
+    - title: Initial Value
+      value: False
+      type: 2
+      typeString: CustomFieldType_Boolean
+    - title: Description
+      value: 
+      type: 0
+      typeString: CustomFieldType_Text
+  - id: 27
+    fields:
+    - title: Name
+      value: Plundering - Interviewed Jack
+      type: 0
+      typeString: CustomFieldType_Text
+    - title: Initial Value
+      value: False
+      type: 2
+      typeString: CustomFieldType_Boolean
+    - title: Description
+      value: 
+      type: 0
+      typeString: CustomFieldType_Text
+  - id: 25
+    fields:
+    - title: Name
+      value: Plundering - Interviews done
+      type: 0
+      typeString: CustomFieldType_Text
+    - title: Initial Value
+      value: 0
+      type: 1
+      typeString: CustomFieldType_Number
+    - title: Description
+      value: 
+      type: 0
+      typeString: CustomFieldType_Text
+  - id: 16
+    fields:
+    - title: Name
+      value: Plundering - Spoken to Coinbone
+      type: 0
+      typeString: CustomFieldType_Text
+    - title: Initial Value
+      value: False
+      type: 2
+      typeString: CustomFieldType_Boolean
+    - title: Description
+      value: 
+      type: 0
+      typeString: CustomFieldType_Text
+  - id: 15
+    fields:
+    - title: Name
+      value: Plundering - Spoken to Frogsword
+      type: 0
+      typeString: CustomFieldType_Text
+    - title: Initial Value
+      value: False
+      type: 2
+      typeString: CustomFieldType_Boolean
+    - title: Description
+      value: 
+      type: 0
+      typeString: CustomFieldType_Text
+  - id: 13
+    fields:
+    - title: Name
+      value: Plundering - Spoken to Hearthorn
+      type: 0
+      typeString: CustomFieldType_Text
+    - title: Initial Value
+      value: False
+      type: 2
+      typeString: CustomFieldType_Boolean
+    - title: Description
+      value: 
+      type: 0
+      typeString: CustomFieldType_Text
+  - id: 3
+    fields:
+    - title: Name
+      value: Plundering Coinbone
+      type: 0
+      typeString: CustomFieldType_Text
+    - title: Initial Value
+      value: False
+      type: 2
+      typeString: CustomFieldType_Boolean
+    - title: Description
+      value: 
+      type: 0
+      typeString: CustomFieldType_Text
+  - id: 2
+    fields:
+    - title: Name
+      value: Plundering Frogsword
+      type: 0
+      typeString: CustomFieldType_Text
+    - title: Initial Value
+      value: False
+      type: 2
+      typeString: CustomFieldType_Boolean
+    - title: Description
+      value: 
+      type: 0
+      typeString: CustomFieldType_Text
+  - id: 1
+    fields:
+    - title: Name
+      value: Plundering Hearthorn
+      type: 0
+      typeString: CustomFieldType_Text
+    - title: Initial Value
+      value: False
+      type: 2
+      typeString: CustomFieldType_Boolean
+    - title: Description
+      value: 
+      type: 0
+      typeString: CustomFieldType_Text
+  - id: 8
+    fields:
+    - title: Name
+      value: Plundering Quest Over
+      type: 0
+      typeString: CustomFieldType_Text
+    - title: Initial Value
+      value: False
+      type: 2
+      typeString: CustomFieldType_Boolean
+    - title: Description
+      value: 
+      type: 0
+      typeString: CustomFieldType_Text
+  - id: 5
+    fields:
+    - title: Name
+      value: Plundering Quests Done
+      type: 0
+      typeString: CustomFieldType_Text
+    - title: Initial Value
+      value: 0
+      type: 1
+      typeString: CustomFieldType_Number
+    - title: Description
+      value: 
+      type: 0
+      typeString: CustomFieldType_Text
+  - id: 6
+    fields:
+    - title: Name
+      value: Quartermaster Calculation Done
+      type: 0
+      typeString: CustomFieldType_Text
+    - title: Initial Value
+      value: False
+      type: 2
+      typeString: CustomFieldType_Boolean
+    - title: Description
+      value: 
+      type: 0
+      typeString: CustomFieldType_Text
+  - id: 37
+    fields:
+    - title: Name
+      value: Chosen Photo For Hearthorn
+      type: 0
+      typeString: CustomFieldType_Text
+    - title: Initial Value
+      value: 
+      type: 0
+      typeString: CustomFieldType_Text
     - title: Description
       value: 
       type: 0
@@ -1278,7 +1292,8 @@ MonoBehaviour:
         destinationDialogueID: 5
         isConnector: 0
         priority: 2
-      conditionsString: 'Dialog[thisID].SimStatus ~= "WasDisplayed" and  (Variable["Flag___Interviews_done"] '
+      conditionsString: Dialog[thisID].SimStatus ~= "WasDisplayed" and  (Variable["Flag___Interviews_done"]
+        == 0)
       userScript: 
       onExecute:
         m_PersistentCalls:
@@ -1551,7 +1566,7 @@ MonoBehaviour:
         destinationDialogueID: 16
         isConnector: 0
         priority: 2
-      conditionsString: ' (Variable["Flag___Interviews_done"] '
+      conditionsString: ' (Variable["Flag___Interviews_done"] == 0)'
       userScript: ShowPhone()
       onExecute:
         m_PersistentCalls:
@@ -1559,7 +1574,7 @@ MonoBehaviour:
       canvasRect:
         serializedVersion: 2
         x: 463.41803
-        y: 275.5122
+        y: 274.38803
         width: 160
         height: 30
     - id: 8
@@ -1901,15 +1916,15 @@ MonoBehaviour:
       falseConditionAction: Block
       conditionPriority: 2
       outgoingLinks: []
-      conditionsString: 
+      conditionsString: Variable["Chosen_Photo_For_Flag"] ~= ""
       userScript: 
       onExecute:
         m_PersistentCalls:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 1224.2361
-        y: 325.7397
+        x: 673.8713
+        y: 235.9743
         width: 160
         height: 30
     - id: 19
@@ -2352,8 +2367,8 @@ MonoBehaviour:
         width: 160
         height: 30
     entryGroups: []
-    canvasScrollPosition: {x: 73.266205, y: 0}
-    canvasZoom: 0.6795493
+    canvasScrollPosition: {x: 59.39683, y: 118.13298}
+    canvasZoom: 0.8895491
   - id: 3
     fields:
     - title: Title
@@ -6602,7 +6617,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Dialogue Text
-        value: Here it
+        value: Here it is.
         type: 0
         typeString: CustomFieldType_Text
       - title: Parenthetical
@@ -6660,7 +6675,7 @@ MonoBehaviour:
         isConnector: 0
         priority: 2
       conditionsString: 
-      userScript: 
+      userScript: ShowPhone()
       onExecute:
         m_PersistentCalls:
           m_Calls: []
@@ -6789,7 +6804,7 @@ MonoBehaviour:
       falseConditionAction: Block
       conditionPriority: 2
       outgoingLinks: []
-      conditionsString: 
+      conditionsString: Variable["Chosen_Photo_For_Hearthorn"] == "hearthorn"
       userScript: 
       onExecute:
         m_PersistentCalls:
@@ -6854,7 +6869,8 @@ MonoBehaviour:
       falseConditionAction: Block
       conditionPriority: 2
       outgoingLinks: []
-      conditionsString: 
+      conditionsString: (Variable["Chosen_Photo_For_Hearthorn"] == "flag") or (Variable["Chosen_Photo_For_Hearthorn"]
+        == "flag-hat")
       userScript: 
       onExecute:
         m_PersistentCalls:
@@ -6919,7 +6935,7 @@ MonoBehaviour:
       falseConditionAction: Block
       conditionPriority: 2
       outgoingLinks: []
-      conditionsString: 
+      conditionsString: Variable["Chosen_Photo_For_Hearthorn"] == "seagulls-hat"
       userScript: 
       onExecute:
         m_PersistentCalls:
@@ -6985,7 +7001,7 @@ MonoBehaviour:
       falseConditionAction: Block
       conditionPriority: 2
       outgoingLinks: []
-      conditionsString: 
+      conditionsString: Variable["Chosen_Photo_For_Hearthorn"] == "hearthorn-hat"
       userScript: Variable["Mutiny___Spoken_to_Hearthorn"] = true
       onExecute:
         m_PersistentCalls:
@@ -7050,7 +7066,7 @@ MonoBehaviour:
       falseConditionAction: Block
       conditionPriority: 2
       outgoingLinks: []
-      conditionsString: 
+      conditionsString: Variable["Chosen_Photo_For_Hearthorn"] == "seagulls"
       userScript: 
       onExecute:
         m_PersistentCalls:
@@ -7062,8 +7078,8 @@ MonoBehaviour:
         width: 160
         height: 30
     entryGroups: []
-    canvasScrollPosition: {x: 94.54152, y: 126.418495}
-    canvasZoom: 0.8101456
+    canvasScrollPosition: {x: 389.74286, y: 131.44406}
+    canvasZoom: 0.78014565
   - id: 7
     fields:
     - title: Title
@@ -8167,7 +8183,13 @@ MonoBehaviour:
       delaySimStatus: 0
       falseConditionAction: Block
       conditionPriority: 2
-      outgoingLinks: []
+      outgoingLinks:
+      - originConversationID: 7
+        originDialogueID: 15
+        destinationConversationID: 7
+        destinationDialogueID: 17
+        isConnector: 0
+        priority: 2
       conditionsString: 
       userScript: 
       onExecute:
@@ -8251,9 +8273,74 @@ MonoBehaviour:
         y: 70
         width: 160
         height: 30
+    - id: 17
+      fields:
+      - title: Title
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Pictures
+        value: '[]'
+        type: 3
+        typeString: CustomFieldType_Files
+      - title: Description
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Actor
+        value: 3
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Conversant
+        value: 10
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Menu Text
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Dialogue Text
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Parenthetical
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Audio Files
+        value: '[]'
+        type: 3
+        typeString: CustomFieldType_Files
+      - title: Video File
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Sequence
+        value: None()
+        type: 0
+        typeString: CustomFieldType_Text
+      conversationID: 7
+      isRoot: 0
+      isGroup: 0
+      nodeColor: 
+      delaySimStatus: 0
+      falseConditionAction: Block
+      conditionPriority: 2
+      outgoingLinks: []
+      conditionsString: 
+      userScript: SwitchScene("Port")
+      onExecute:
+        m_PersistentCalls:
+          m_Calls: []
+      canvasRect:
+        serializedVersion: 2
+        x: 38.72693
+        y: 1084.1929
+        width: 160
+        height: 30
     entryGroups: []
-    canvasScrollPosition: {x: 50.94246, y: 40.30903}
-    canvasZoom: 0.50568193
+    canvasScrollPosition: {x: 0, y: 970.3009}
+    canvasZoom: 1.4356815
   - id: 8
     fields:
     - title: Title
