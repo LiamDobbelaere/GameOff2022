@@ -2640,6 +2640,25 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e66f397b44cce4322bde19b4d3377fd5, type: 3}
+--- !u!1 &2104443144 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5861269466234436934, guid: e66f397b44cce4322bde19b4d3377fd5, type: 3}
+  m_PrefabInstance: {fileID: 2104443143}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2104443145
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2104443144}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5cb928f2523f4674caf96f50fa863dcc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  whenVariable: Mutiny Outcome
+  isValue: frogwins
 --- !u!1 &2125240284
 GameObject:
   m_ObjectHideFlags: 0
