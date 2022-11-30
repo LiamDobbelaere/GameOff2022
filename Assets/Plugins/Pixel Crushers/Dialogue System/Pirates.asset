@@ -7862,7 +7862,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Sequence
-        value: 
+        value: AudioWait(Interviews/Plundering/gaggle of women)
         type: 0
         typeString: CustomFieldType_Text
       conversationID: 8
@@ -7933,7 +7933,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Sequence
-        value: 
+        value: AudioWait(Interviews/Plundering/never seen a pirate so handsome)
         type: 0
         typeString: CustomFieldType_Text
       conversationID: 8
@@ -8004,7 +8004,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Sequence
-        value: 
+        value: AudioWait(Interviews/Plundering/must of thought i was captain)
         type: 0
         typeString: CustomFieldType_Text
       conversationID: 8
@@ -8075,7 +8075,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Sequence
-        value: 
+        value: AudioWait(Interviews/Plundering/what was the question again)
         type: 0
         typeString: CustomFieldType_Text
       conversationID: 8
@@ -8211,7 +8211,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Sequence
-        value: 
+        value: AudioWait(Interviews/Plundering/oh it's not how i feel)
         type: 0
         typeString: CustomFieldType_Text
       conversationID: 8
@@ -8282,7 +8282,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Sequence
-        value: 
+        value: AudioWait(Interviews/Plundering/men displeased)
         type: 0
         typeString: CustomFieldType_Text
       conversationID: 8
@@ -8306,7 +8306,7 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 465.78723
+        x: 464.66553
         y: 353.31525
         width: 160
         height: 30
@@ -8353,7 +8353,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Sequence
-        value: 
+        value: AudioWait(Interviews/Plundering/dear captain choice)
         type: 0
         typeString: CustomFieldType_Text
       conversationID: 8

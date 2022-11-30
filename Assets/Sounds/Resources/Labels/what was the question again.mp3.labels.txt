@@ -1,0 +1,2 @@
+0.000000	0.848980	N HearthornShrug HearthFront3
+0.848980	1.697959	OW
