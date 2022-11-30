@@ -1,0 +1,2 @@
+0.000000	2.403265	N HearhornShrug HearthFront2
+2.403265	4.806530	OW
