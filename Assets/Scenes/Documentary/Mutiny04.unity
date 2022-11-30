@@ -495,6 +495,7 @@ GameObject:
   - component: {fileID: 1177453529}
   - component: {fileID: 1177453528}
   - component: {fileID: 1177453530}
+  - component: {fileID: 1177453531}
   m_Layer: 5
   m_Name: Image
   m_TagString: Untagged
@@ -542,7 +543,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: e2a1eea39e9be4099b5a69823a40168d, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 0db62002882934c408ea9a0db35bd57f, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -574,6 +575,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   scaleFactor: 1.5
   speed: 0.1
+--- !u!114 &1177453531
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1177453526}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b42a34fd29571844aa0b8d3c438c6d1b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  targetSprite: {fileID: 21300000, guid: e2a1eea39e9be4099b5a69823a40168d, type: 3}
+  changeTime: 9
 --- !u!1 &1233886734
 GameObject:
   m_ObjectHideFlags: 0

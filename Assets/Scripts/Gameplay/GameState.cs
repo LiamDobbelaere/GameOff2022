@@ -28,8 +28,10 @@ public static class GameState {
     public static string lastChosenFilterPhoto = "";
 
     public static void StoreLastLocation() {
-        lastScene = SceneManager.GetActiveScene().name;
-        lastPosition = GameObject.FindGameObjectWithTag("Player").transform.position;
+        if (GameObject.FindGameObjectWithTag("Player") != null) {
+            lastScene = SceneManager.GetActiveScene().name;
+            lastPosition = GameObject.FindGameObjectWithTag("Player").transform.position;
+        }
     }
 
     public static void LoadLastLocation() {
