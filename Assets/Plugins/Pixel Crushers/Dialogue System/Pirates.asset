@@ -564,7 +564,7 @@ MonoBehaviour:
       type: 0
       typeString: CustomFieldType_Text
     - title: Initial Value
-      value: False
+      value: True
       type: 2
       typeString: CustomFieldType_Boolean
     - title: Description
@@ -7735,7 +7735,10 @@ MonoBehaviour:
         isConnector: 0
         priority: 2
       conditionsString: 
-      userScript: 
+      userScript: 'Variable["Plundering___Interviewed_Hearthorn"] = true;
+
+        Variable["Plundering___Interviews_done"]
+        = Variable["Plundering___Interviews_done"] + 1'
       onExecute:
         m_PersistentCalls:
           m_Calls: []
@@ -8504,7 +8507,10 @@ MonoBehaviour:
         isConnector: 0
         priority: 2
       conditionsString: 
-      userScript: 
+      userScript: 'Variable["Plundering___Interviewed_Jack"] = true;
+
+        Variable["Plundering___Interviews_done"]
+        = Variable["Plundering___Interviews_done"] + 1'
       onExecute:
         m_PersistentCalls:
           m_Calls: []
@@ -9489,8 +9495,8 @@ MonoBehaviour:
         width: 160
         height: 30
     entryGroups: []
-    canvasScrollPosition: {x: 87.79745, y: 87.79745}
-    canvasZoom: 0.8194998
+    canvasScrollPosition: {x: 91.94918, y: 47.324284}
+    canvasZoom: 0.6994999
   - id: 12
     fields:
     - title: Title
@@ -10714,7 +10720,9 @@ MonoBehaviour:
       conditionPriority: 2
       outgoingLinks: []
       conditionsString: 
-      userScript: SwitchScene("Port")
+      userScript: 'Variable["Doing_Plundering_Interviews"] = true;
+
+        SwitchScene("Port");'
       onExecute:
         m_PersistentCalls:
           m_Calls: []
@@ -10725,8 +10733,8 @@ MonoBehaviour:
         width: 160
         height: 30
     entryGroups: []
-    canvasScrollPosition: {x: 109.44245, y: 1000.9468}
-    canvasZoom: 0.9901315
+    canvasScrollPosition: {x: 88.23529, y: 946.989}
+    canvasZoom: 0.84999967
   - id: 13
     fields:
     - title: Title
