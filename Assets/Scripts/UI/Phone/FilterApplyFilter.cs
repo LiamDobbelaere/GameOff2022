@@ -1,3 +1,4 @@
+using PixelCrushers.DialogueSystem;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -28,6 +29,12 @@ public class FilterApplyFilter : MonoBehaviour {
                         break;
                     }
                 }
+
+                string suffix = "";
+                if (filteredTexture.name.Contains("hat")) {
+                    suffix = "-hat";
+                }
+                DialogueLua.SetVariable("Chosen Photo For Hearthorn", GameState.lastChosenFilterPhoto + suffix);
 
                 SetShownImageTo(filteredTexture);
             });

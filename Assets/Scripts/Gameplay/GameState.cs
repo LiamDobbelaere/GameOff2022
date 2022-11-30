@@ -25,6 +25,7 @@ public static class GameState {
     public static List<string> documentaryScenes = new List<string> { };
     private static float lastNotificationTime = float.MinValue;
     public static bool justSawTheFlag = false;
+    public static string lastChosenFilterPhoto = "";
 
     public static void StoreLastLocation() {
         lastScene = SceneManager.GetActiveScene().name;
