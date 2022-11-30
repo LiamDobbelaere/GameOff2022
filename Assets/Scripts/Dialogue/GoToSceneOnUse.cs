@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 public class GoToSceneOnUse : MonoBehaviour {
     public string bailCondition;
     public string whenVariable;
+    public bool isWhenVariableBoolean;
     public List<string> hasValue;
     public string sceneToLoad;
     public string overrideUseMessage;
@@ -28,13 +29,21 @@ public class GoToSceneOnUse : MonoBehaviour {
     void Update() {
         bool mustBail = DialogueLua.GetVariable(bailCondition).asBool;
 
-        if (!DialogueLua.GetVariable("Doing Interviews").asBool || mustBail) {
+        if (
+            (!DialogueLua.GetVariable("Doing Interviews").asBool && !DialogueLua.GetVariable("Doing Plundering Interviews").asBool)
+            || mustBail
+        ) {
             return;
         }
 
         updateTime += Time.deltaTime;
         if (updateTime > MAX_UPDATE_TIME) {
-            isConditionTrue = hasValue.Contains(DialogueLua.GetVariable(whenVariable).asString);
+            if (isWhenVariableBoolean) {
+                Debug.Log(DialogueLua.GetVariable(whenVariable));
+                isConditionTrue = DialogueLua.GetVariable(whenVariable).asBool;
+            } else {
+                isConditionTrue = hasValue.Contains(DialogueLua.GetVariable(whenVariable).asString);
+            }
 
             if (isConditionTrue) {
                 usable.overrideUseMessage = overrideUseMessage;

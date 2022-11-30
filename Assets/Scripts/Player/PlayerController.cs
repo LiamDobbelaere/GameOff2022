@@ -24,6 +24,7 @@ public class PlayerController : MonoBehaviour {
             GameState.isFirstTime = false;
         }
         DisableDoingFlagInterviewsWhenDone();
+        DisableDoingPlunderingInterviewsWhenDone();
         RestoreLastPositionIfSet();
         RestoreMarkerPositionIfSet();
         AddInterviewsNotificationIfNeeded();
@@ -67,6 +68,12 @@ public class PlayerController : MonoBehaviour {
     private void DisableDoingFlagInterviewsWhenDone() {
         if (DialogueLua.GetVariable("Flag - Interviews done").asInt >= 2) {
             DialogueLua.SetVariable("Doing Interviews", false);
+        }
+    }
+
+    private void DisableDoingPlunderingInterviewsWhenDone() {
+        if (DialogueLua.GetVariable("Plundering - Interviews done").asInt >= 2) {
+            DialogueLua.SetVariable("Doing Plundering Interviews", false);
         }
     }
 

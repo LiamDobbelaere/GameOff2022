@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 5861269464676864022}
   - component: {fileID: 5861269464676864025}
   - component: {fileID: 5861269464676864024}
+  - component: {fileID: 254846614}
   m_Layer: 0
   m_Name: Usable
   m_TagString: Untagged
@@ -85,6 +86,7 @@ MonoBehaviour:
   condition:
     luaConditions:
     - Variable["Doing_Interviews"] == false
+    - Variable["Doing_Plundering_Interviews"] == false
     questConditions: []
     acceptedTags:
     - PlayerDialogueSystemCollider
@@ -208,10 +210,30 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bailCondition: Flag - Interviewed Hearthorn
   whenVariable: Chosen Photo For Flag
+  isWhenVariableBoolean: 0
   hasValue:
   - hearthorn
   - seagulls
   sceneToLoad: Interview Hearthorn Flag
+  overrideUseMessage: Start interview
+  isConditionTrue: 0
+--- !u!114 &254846614
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5861269464676864026}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c9c0eddcdf126154b8da157b0ebd6cc9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bailCondition: Plundering - Interviewed Hearthorn
+  whenVariable: Doing Plundering Interviews
+  isWhenVariableBoolean: 1
+  hasValue: []
+  sceneToLoad: Interview Hearthorn Plundering
   overrideUseMessage: Start interview
   isConditionTrue: 0
 --- !u!1 &5861269466234436934
