@@ -4,10 +4,18 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour {
     private Rigidbody2D rb;
     private float walkSpeed = 1.2f;
+    private Vector3 originalScale;
+
+    private GameObject playerScaleTargetMin = null;
+    private GameObject playerScaleTargetMax = null;
 
     // Start is called before the first frame update
     void Start() {
         this.rb = GetComponent<Rigidbody2D>();
+
+        originalScale = transform.localScale;
+
+        GetPlayerScaleTargets();
 
         GameState.inPhotographyMode = false;
 
@@ -23,6 +31,8 @@ public class PlayerController : MonoBehaviour {
 
     private void Update() {
         rb.velocity = new Vector2(Input.GetAxisRaw("Horizontal") * walkSpeed, Input.GetAxisRaw("Vertical") * walkSpeed);
+
+        UpdateScale();
     }
 
     // Update is called once per frame
@@ -72,6 +82,39 @@ public class PlayerController : MonoBehaviour {
         if (GameState.justSawTheFlag) {
             GameState.AddNotification("Interview some people about the flag! Not everyone will have something to say.");
             GameState.justSawTheFlag = false;
+        }
+    }
+
+    private void GetPlayerScaleTargets() {
+        GameObject[] scaleTargets = GameObject.FindGameObjectsWithTag("PlayerScaleTarget");
+
+        if (scaleTargets.Length > 2) {
+            Debug.LogError("Too many scale targets!");
+            return;
+        } else if (scaleTargets.Length == 2) {
+            playerScaleTargetMin = scaleTargets[0];
+            playerScaleTargetMax = scaleTargets[1];
+
+            if (playerScaleTargetMin.transform.position.y < playerScaleTargetMax.transform.position.y) {
+                playerScaleTargetMin = scaleTargets[1];
+                playerScaleTargetMax = scaleTargets[0];
+            }
+
+            playerScaleTargetMin.GetComponent<SpriteRenderer>().enabled = false;
+            playerScaleTargetMax.GetComponent<SpriteRenderer>().enabled = false;
+        }
+    }
+
+    private void UpdateScale() {
+        if (playerScaleTargetMin == null || playerScaleTargetMax == null) {
+            transform.localScale = originalScale;
+            return;
+        } else {
+            float yDistance = Vector2.Distance(playerScaleTargetMin.transform.position, playerScaleTargetMax.transform.position);
+            float playerDistanceFromMin = Vector2.Distance(transform.position, playerScaleTargetMin.transform.position);
+            float lerpFactor = Mathf.Clamp01(playerDistanceFromMin / yDistance);
+
+            transform.localScale = Vector3.Lerp(playerScaleTargetMin.transform.localScale, playerScaleTargetMax.transform.localScale, lerpFactor);
         }
     }
 }

@@ -18,6 +18,7 @@ TagManager:
   - PhoneCanvas
   - HintsCanvas
   - DialogueSystemSimpleEyes
+  - PlayerScaleTarget
   layers:
   - Default
   - TransparentFX
