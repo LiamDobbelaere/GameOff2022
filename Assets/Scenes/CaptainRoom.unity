@@ -512,6 +512,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 289025400626384353, guid: 46bcb1da5fb4d4159ba7326191d76d9e, type: 3}
+      propertyPath: condition.luaConditions.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 289025400626384353, guid: 46bcb1da5fb4d4159ba7326191d76d9e, type: 3}
+      propertyPath: condition.luaConditions.Array.data[1]
+      value: Variable["Doing_Plundering_Interviews"] == false
+      objectReference: {fileID: 0}
+    - target: {fileID: 289025400626384353, guid: 46bcb1da5fb4d4159ba7326191d76d9e, type: 3}
+      propertyPath: condition.luaConditions.Array.data[2]
+      value: Variable["Doing_Mutiny_Interviews"] == false
+      objectReference: {fileID: 0}
     - target: {fileID: 289025400626384356, guid: 46bcb1da5fb4d4159ba7326191d76d9e, type: 3}
       propertyPath: m_Name
       value: Captain Frogsword
@@ -1230,7 +1242,7 @@ Transform:
   m_Children:
   - {fileID: 2501609852739768881}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2501609853259902614
 GameObject:

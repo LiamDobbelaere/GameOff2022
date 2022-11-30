@@ -25,6 +25,7 @@ public class PlayerController : MonoBehaviour {
         }
         DisableDoingFlagInterviewsWhenDone();
         DisableDoingPlunderingInterviewsWhenDone();
+        DisableDoingMutinyInterviewsWhenDone();
         RestoreLastPositionIfSet();
         RestoreMarkerPositionIfSet();
         AddInterviewsNotificationIfNeeded();
@@ -74,6 +75,11 @@ public class PlayerController : MonoBehaviour {
     private void DisableDoingPlunderingInterviewsWhenDone() {
         if (DialogueLua.GetVariable("Plundering - Interviews done").asInt >= 2) {
             DialogueLua.SetVariable("Doing Plundering Interviews", false);
+        }
+    }
+    private void DisableDoingMutinyInterviewsWhenDone() {
+        if (DialogueLua.GetVariable("Mutiny - Interviews done").asInt >= 2) {
+            DialogueLua.SetVariable("Doing Mutiny Interviews", false);
         }
     }
 

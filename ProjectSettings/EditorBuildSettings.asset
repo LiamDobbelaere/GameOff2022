@@ -33,6 +33,15 @@ EditorBuildSettings:
     path: Assets/Scenes/Development/FlagCreation.unity
     guid: da7e9ce346309804da72b5ecf760d469
   - enabled: 1
+    path: Assets/Scenes/Interview Frogsword Mutiny.unity
+    guid: 869718a0716678e42be84a6db016cdc9
+  - enabled: 1
+    path: Assets/Scenes/Interview Hearthorn Mutiny.unity
+    guid: 09e9856269cb13343b6497eb04f85d9d
+  - enabled: 1
+    path: Assets/Scenes/Interview Jack Mutiny.unity
+    guid: 4f19283af6a12e14faba1c9dfcdee700
+  - enabled: 1
     path: Assets/Scenes/Development/DialogueSystemIntegration.unity
     guid: b373d3372771da44b875a5701f66eb48
   - enabled: 1

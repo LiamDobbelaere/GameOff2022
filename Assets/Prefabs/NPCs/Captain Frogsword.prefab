@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 289025400626384354}
   - component: {fileID: 289025400626384355}
   - component: {fileID: 289025400626383900}
+  - component: {fileID: 1357151668239830960}
   m_Layer: 0
   m_Name: Captain Frogsword
   m_TagString: Untagged
@@ -261,11 +262,33 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bailCondition: Flag - Interviewed Frogsword
   whenVariable: Chosen Photo For Flag
+  isWhenVariableBoolean: 0
   hasValue:
   - seagulls
   - hearthorn
   - flag-jolly
   - flag-other
   sceneToLoad: Interview Frogsword Flag
+  overrideUseMessage: Start interview
+  isConditionTrue: 0
+--- !u!114 &1357151668239830960
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 289025400626384356}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c9c0eddcdf126154b8da157b0ebd6cc9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bailCondition: Mutiny - Interviewed Frogsword
+  whenVariable: Mutiny Outcome
+  isWhenVariableBoolean: 0
+  hasValue:
+  - hug
+  - frogwins
+  sceneToLoad: Interview Frogsword Mutiny
   overrideUseMessage: Start interview
   isConditionTrue: 0

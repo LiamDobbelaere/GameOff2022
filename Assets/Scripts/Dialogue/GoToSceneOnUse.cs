@@ -30,7 +30,11 @@ public class GoToSceneOnUse : MonoBehaviour {
         bool mustBail = DialogueLua.GetVariable(bailCondition).asBool;
 
         if (
-            (!DialogueLua.GetVariable("Doing Interviews").asBool && !DialogueLua.GetVariable("Doing Plundering Interviews").asBool)
+            (
+            !DialogueLua.GetVariable("Doing Interviews").asBool
+            && !DialogueLua.GetVariable("Doing Plundering Interviews").asBool
+            && !DialogueLua.GetVariable("Doing Mutiny Interviews").asBool
+            )
             || mustBail
         ) {
             return;

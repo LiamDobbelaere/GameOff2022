@@ -725,6 +725,90 @@ MonoBehaviour:
       value: 
       type: 0
       typeString: CustomFieldType_Text
+  - id: 31
+    fields:
+    - title: Name
+      value: Mutiny Outcome
+      type: 0
+      typeString: CustomFieldType_Text
+    - title: Initial Value
+      value: 
+      type: 0
+      typeString: CustomFieldType_Text
+    - title: Description
+      value: 
+      type: 0
+      typeString: CustomFieldType_Text
+  - id: 32
+    fields:
+    - title: Name
+      value: Doing Mutiny Interviews
+      type: 0
+      typeString: CustomFieldType_Text
+    - title: Initial Value
+      value: False
+      type: 2
+      typeString: CustomFieldType_Boolean
+    - title: Description
+      value: 
+      type: 0
+      typeString: CustomFieldType_Text
+  - id: 33
+    fields:
+    - title: Name
+      value: Mutiny - Interviews done
+      type: 0
+      typeString: CustomFieldType_Text
+    - title: Initial Value
+      value: 0
+      type: 1
+      typeString: CustomFieldType_Number
+    - title: Description
+      value: 
+      type: 0
+      typeString: CustomFieldType_Text
+  - id: 34
+    fields:
+    - title: Name
+      value: Mutiny - Interviewed Hearthorn
+      type: 0
+      typeString: CustomFieldType_Text
+    - title: Initial Value
+      value: False
+      type: 2
+      typeString: CustomFieldType_Boolean
+    - title: Description
+      value: 
+      type: 0
+      typeString: CustomFieldType_Text
+  - id: 35
+    fields:
+    - title: Name
+      value: Mutiny - Interviewed Frogsword
+      type: 0
+      typeString: CustomFieldType_Text
+    - title: Initial Value
+      value: False
+      type: 2
+      typeString: CustomFieldType_Boolean
+    - title: Description
+      value: 
+      type: 0
+      typeString: CustomFieldType_Text
+  - id: 36
+    fields:
+    - title: Name
+      value: Mutiny - Interviewed Jack
+      type: 0
+      typeString: CustomFieldType_Text
+    - title: Initial Value
+      value: False
+      type: 2
+      typeString: CustomFieldType_Boolean
+    - title: Description
+      value: 
+      type: 0
+      typeString: CustomFieldType_Text
   conversations:
   - id: 1
     fields:
@@ -22503,7 +22587,12 @@ MonoBehaviour:
       conditionPriority: 2
       outgoingLinks: []
       conditionsString: Variable["Frogsword_Blade"] == true
-      userScript: SwitchScene("Mutiny04")
+      userScript: 'Variable["Mutiny_Outcome"] = "frogwins";
+
+        Variable["Doing_Mutiny_Interviews"]
+        = true;
+
+        SwitchScene("Mutiny04");'
       onExecute:
         m_PersistentCalls:
           m_Calls: []
@@ -22568,13 +22657,20 @@ MonoBehaviour:
       conditionPriority: 2
       outgoingLinks: []
       conditionsString: 
-      userScript: SwitchScene("Mutiny02")
+      userScript: 'Variable["Mutiny_Outcome"] = "hug";
+
+        Variable["Doing_Mutiny_Interviews"]
+        = true;
+
+        SwitchScene("Mutiny02");
+
+'
       onExecute:
         m_PersistentCalls:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 872.44
+        x: 873.45746
         y: 982.37213
         width: 160
         height: 30
@@ -22633,7 +22729,12 @@ MonoBehaviour:
       conditionPriority: 2
       outgoingLinks: []
       conditionsString: Variable["Frogsword_Blade"] == false
-      userScript: SwitchScene("Mutiny03")
+      userScript: 'Variable["Mutiny_Outcome"] = "frogdies";
+
+        Variable["Doing_Mutiny_Interviews"]
+        = true;
+
+        SwitchScene("Mutiny03");'
       onExecute:
         m_PersistentCalls:
           m_Calls: []
@@ -22644,8 +22745,8 @@ MonoBehaviour:
         width: 160
         height: 30
     entryGroups: []
-    canvasScrollPosition: {x: 57.77027, y: 37.99229}
-    canvasZoom: 0.83287346
+    canvasScrollPosition: {x: 0, y: 844.7014}
+    canvasZoom: 0.95287335
   - id: 24
     fields:
     - title: Title

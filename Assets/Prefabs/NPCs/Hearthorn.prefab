@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 5861269464676864025}
   - component: {fileID: 5861269464676864024}
   - component: {fileID: 254846614}
+  - component: {fileID: 8039968886132237250}
   m_Layer: 0
   m_Name: Usable
   m_TagString: Untagged
@@ -87,6 +88,7 @@ MonoBehaviour:
     luaConditions:
     - Variable["Doing_Interviews"] == false
     - Variable["Doing_Plundering_Interviews"] == false
+    - Variable["Doing_Mutiny_Interviews"] == false
     questConditions: []
     acceptedTags:
     - PlayerDialogueSystemCollider
@@ -234,6 +236,27 @@ MonoBehaviour:
   isWhenVariableBoolean: 1
   hasValue: []
   sceneToLoad: Interview Hearthorn Plundering
+  overrideUseMessage: Start interview
+  isConditionTrue: 0
+--- !u!114 &8039968886132237250
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5861269464676864026}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c9c0eddcdf126154b8da157b0ebd6cc9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bailCondition: Mutiny - Interviewed Hearthorn
+  whenVariable: Mutiny Outcome
+  isWhenVariableBoolean: 0
+  hasValue:
+  - hug
+  - frogdies
+  sceneToLoad: Interview Hearthorn Mutiny
   overrideUseMessage: Start interview
   isConditionTrue: 0
 --- !u!1 &5861269466234436934
