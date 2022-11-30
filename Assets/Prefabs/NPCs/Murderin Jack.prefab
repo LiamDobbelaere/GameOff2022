@@ -10,11 +10,11 @@ GameObject:
   m_Component:
   - component: {fileID: 2817213415247097137}
   - component: {fileID: 2817213415247097136}
-  - component: {fileID: 2817213415247097139}
   - component: {fileID: 2817213415247097138}
   - component: {fileID: 2817213415247097141}
   - component: {fileID: 2817213415247097140}
   - component: {fileID: 2817213415247097038}
+  - component: {fileID: 1515740131}
   m_Layer: 0
   m_Name: Murderin Jack
   m_TagString: Untagged
@@ -31,7 +31,7 @@ Transform:
   m_GameObject: {fileID: 2817213415247097142}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 1.215, y: -1.29, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: -1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -89,39 +89,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 1
---- !u!114 &2817213415247097139
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2817213415247097142}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a64578247383140469c45370654a984a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  actor: Quartermaster Coinbone
-  persistentDataName: 
-  portrait: {fileID: 0}
-  spritePortrait: {fileID: 0}
-  barkUISettings:
-    barkUI: {fileID: 0}
-    barkUIOffset: {x: 0, y: 2, z: 0}
-  standardDialogueUISettings:
-    subtitlePanelNumber: 0
-    customSubtitlePanel: {fileID: 0}
-    customSubtitlePanelOffset: {x: 0, y: 0, z: 0}
-    menuPanelNumber: 0
-    customMenuPanel: {fileID: 0}
-    customMenuPanelOffset: {x: 0, y: 0, z: 0}
-    useMenuPanelFor: 0
-    portraitAnimatorController: {fileID: 0}
-    setSubtitleColor: 0
-    applyColorToPrependedName: 0
-    prependActorNameSeparator: ': '
-    prependActorNameFormat: '{0}{1}'
-    subtitleColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!114 &2817213415247097138
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -138,6 +105,7 @@ MonoBehaviour:
   condition:
     luaConditions:
     - Variable["Doing_Interviews"] == false
+    - Variable["Doing_Plundering_Interviews"] == false
     questConditions: []
     acceptedTags:
     - PlayerDialogueSystemCollider
@@ -172,7 +140,7 @@ MonoBehaviour:
   allowBarksDuringConversations: 0
   skipBarkIfNoValidEntries: 0
   cacheBarkLines: 0
-  conversation: Plundering - Quartermaster Coinbone
+  conversation: '''Murderin'' Jack Jones'
   conversationConversant: {fileID: 0}
   conversationActor: {fileID: 0}
   startConversationEntryID: -1
@@ -261,9 +229,29 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bailCondition: Flag - Interviewed Jack
   whenVariable: Chosen Photo For Flag
+  isWhenVariableBoolean: 0
   hasValue:
   - flag-jolly
   - flag-other
   sceneToLoad: Interview Jack Flag
+  overrideUseMessage: Start interview
+  isConditionTrue: 0
+--- !u!114 &1515740131
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2817213415247097142}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c9c0eddcdf126154b8da157b0ebd6cc9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bailCondition: Plundering - Interviewed Jack
+  whenVariable: Doing Plundering Interviews
+  isWhenVariableBoolean: 1
+  hasValue: []
+  sceneToLoad: Interview Jack Plundering
   overrideUseMessage: Start interview
   isConditionTrue: 0

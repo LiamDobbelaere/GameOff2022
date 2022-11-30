@@ -39,7 +39,6 @@ public class GoToSceneOnUse : MonoBehaviour {
         updateTime += Time.deltaTime;
         if (updateTime > MAX_UPDATE_TIME) {
             if (isWhenVariableBoolean) {
-                Debug.Log(DialogueLua.GetVariable(whenVariable));
                 isConditionTrue = DialogueLua.GetVariable(whenVariable).asBool;
             } else {
                 isConditionTrue = hasValue.Contains(DialogueLua.GetVariable(whenVariable).asString);

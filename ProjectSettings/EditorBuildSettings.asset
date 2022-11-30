@@ -122,4 +122,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/CaptainRoom.unity
     guid: 22e37810aace36f42b39eea2e05b4ded
+  - enabled: 1
+    path: Assets/Scenes/Interview Hearthorn Plundering.unity
+    guid: 0d6056053470072459630a0bcf65799b
   m_configObjects: {}

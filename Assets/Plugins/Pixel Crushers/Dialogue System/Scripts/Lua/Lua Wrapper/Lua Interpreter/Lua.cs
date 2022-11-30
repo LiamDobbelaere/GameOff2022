@@ -5,27 +5,23 @@ using UnityEngine;
 using System;
 using System.Reflection;
 
-namespace PixelCrushers.DialogueSystem
-{
+namespace PixelCrushers.DialogueSystem {
 
     /// <summary>
     /// A static class that provides a global Lua virtual machine. This class provides a layer of
     /// abstraction between the low level Lua implementation (in this case LuaInterpreter) and
     /// the Dialogue System.
     /// </summary>
-    public sealed class Lua
-    {
+    public sealed class Lua {
 
         /// <summary>
         /// Stores a Lua interpreter result (LuaValue) and provides easy conversion to basic types.
         /// </summary>
-        public struct Result
-        {
+        public struct Result {
             public Language.Lua.LuaValue luaValue;
             public LuaTableWrapper luaTableWrapper;
 
-            public Result(Language.Lua.LuaValue luaValue)
-            {
+            public Result(Language.Lua.LuaValue luaValue) {
                 this.luaValue = luaValue;
                 this.luaTableWrapper = null;
             }
@@ -93,8 +89,7 @@ namespace PixelCrushers.DialogueSystem
 
 #if UNITY_2019_3_OR_NEWER && UNITY_EDITOR
         [RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.SubsystemRegistration)]
-        static void InitStaticVariables()
-        {
+        static void InitStaticVariables() {
             m_environment = Language.Lua.LuaInterpreter.CreateGlobalEnviroment();
             m_noResult = new Result(null);
         }
@@ -124,8 +119,7 @@ namespace PixelCrushers.DialogueSystem
         /// <example>
         /// float myHeight = Lua.Run("return height").asFloat;
         /// </example>
-        public static Result Run(string luaCode, bool debug, bool allowExceptions)
-        {
+        public static Result Run(string luaCode, bool debug, bool allowExceptions) {
             return new Result(RunRaw(luaCode, debug, allowExceptions));
         }
 
@@ -134,8 +128,7 @@ namespace PixelCrushers.DialogueSystem
         /// </summary>
         /// <param name="luaCode">The Lua code to run. Generally, if you want a return value, this string should start with "return".</param>
         /// <param name="debug">If set to <c>true</c>, logs the Lua command to the console.</param>
-        public static Result Run(string luaCode, bool debug)
-        {
+        public static Result Run(string luaCode, bool debug) {
             return Run(luaCode, debug, false);
         }
 
@@ -143,8 +136,7 @@ namespace PixelCrushers.DialogueSystem
         /// Run the specified luaCode. The code is not logged to the console, and exceptions are ignored.
         /// </summary>
         /// <param name="luaCode">The Lua code to run. Generally, if you want a return value, this string should start with "return".</param>
-        public static Result Run(string luaCode)
-        {
+        public static Result Run(string luaCode) {
             return Run(luaCode, false, false);
         }
 
@@ -166,8 +158,7 @@ namespace PixelCrushers.DialogueSystem
         /// <example>
         /// if (Lua.IsTrue("height > 6")) { ... }
         /// </example>
-        public static bool IsTrue(string luaCondition, bool debug, bool allowExceptions)
-        {
+        public static bool IsTrue(string luaCondition, bool debug, bool allowExceptions) {
             return Tools.IsStringNullOrEmptyOrWhitespace(luaCondition) ? true : Run("return " + luaCondition, debug, allowExceptions).asBool;
         }
 
@@ -177,8 +168,7 @@ namespace PixelCrushers.DialogueSystem
         /// <returns><c>true</c> if luaCode evaluates to true; otherwise, <c>false</returns>
         /// <param name="luaCondition">The conditional expression to evaluate. Do not include "return" in front.</param>
         /// <param name="debug">If <c>true</c>, logs the Lua command to the console.</param>
-        public static bool IsTrue(string luaCondition, bool debug)
-        {
+        public static bool IsTrue(string luaCondition, bool debug) {
             return IsTrue(luaCondition, debug, false);
         }
 
@@ -187,8 +177,7 @@ namespace PixelCrushers.DialogueSystem
         /// </summary>
         /// <returns><c>true</c> if luaCode evaluates to true; otherwise, <c>false</returns>
         /// <param name="luaCondition">The conditional expression to evaluate. Do not include "return" in front.</param>
-        public static bool IsTrue(string luaCondition)
-        {
+        public static bool IsTrue(string luaCondition) {
             return IsTrue(luaCondition, false, false);
         }
 
@@ -208,24 +197,20 @@ namespace PixelCrushers.DialogueSystem
         /// <param name='allowExceptions'>
         /// If <c>true</c>, exceptions are passed up to the caller. Otherwise they're caught and logged but ignored.
         /// </param>
-        public static Language.Lua.LuaValue RunRaw(string luaCode, bool debug, bool allowExceptions)
-        {
-            try
-            {
-                if (string.IsNullOrEmpty(luaCode))
-                {
+        public static Language.Lua.LuaValue RunRaw(string luaCode, bool debug, bool allowExceptions) {
+            try {
+                if (string.IsNullOrEmpty(luaCode)) {
                     return null;
-                }
-                else
-                {
+                } else {
                     if (Debug.isDebugBuild && debug) Debug.Log(string.Format("{0}: Lua({1})", new System.Object[] { DialogueDebug.Prefix, luaCode }));
                     wasInvoked = true;
                     return Language.Lua.LuaInterpreter.Interpreter(luaCode, environment);
                 }
-            }
-            catch (Exception e)
-            {
-                if (Debug.isDebugBuild && !muteExceptions) Debug.LogError(string.Format("{0}: Lua code '{1}' threw exception '{2}'", new System.Object[] { DialogueDebug.Prefix, luaCode, e.Message }));
+            } catch (Exception e) {
+                if (Debug.isDebugBuild && !muteExceptions) {
+                    Debug.LogError(DialogueManager.lastConversationStarted);
+                    Debug.LogError(string.Format("{0}: Lua code '{1}' threw exception '{2}'", new System.Object[] { DialogueDebug.Prefix, luaCode, e.Message }));
+                }
                 if (allowExceptions) throw e; else return null;
             }
         }
@@ -243,8 +228,7 @@ namespace PixelCrushers.DialogueSystem
         /// <param name='debug'>
         /// If <c>true</c>, logs the Lua command to the console.
         /// </param>
-        public static Language.Lua.LuaValue RunRaw(string luaCode, bool debug)
-        {
+        public static Language.Lua.LuaValue RunRaw(string luaCode, bool debug) {
             return RunRaw(luaCode, debug, false);
         }
 
@@ -258,8 +242,7 @@ namespace PixelCrushers.DialogueSystem
         /// The Lua code to run. If you want a return value, this string should usually start with
         /// "<c>return</c>".
         /// </param>
-        public static Language.Lua.LuaValue RunRaw(string luaCode)
-        {
+        public static Language.Lua.LuaValue RunRaw(string luaCode) {
             return RunRaw(luaCode, false, false);
         }
 
@@ -275,14 +258,10 @@ namespace PixelCrushers.DialogueSystem
         /// <param name='function'>
         /// The method that will be called from Lua.
         /// </param>
-        public static void RegisterFunction(string functionName, object target, MethodInfo method)
-        {
-            if (environment.ContainsKey(new Language.Lua.LuaString(functionName)))
-            {
+        public static void RegisterFunction(string functionName, object target, MethodInfo method) {
+            if (environment.ContainsKey(new Language.Lua.LuaString(functionName))) {
                 if (warnRegisteringExistingFunction && DialogueDebug.logWarnings) Debug.LogWarning(string.Format("{0}: Can't register Lua function {1}. A function with that name is already registered.", new System.Object[] { DialogueDebug.Prefix, functionName }));
-            }
-            else
-            {
+            } else {
                 if (DialogueDebug.logInfo) Debug.Log(string.Format("{0}: Registering Lua function {1}", new System.Object[] { DialogueDebug.Prefix, functionName }));
                 environment.RegisterMethodFunction(functionName, target, method);
             }
@@ -292,8 +271,7 @@ namespace PixelCrushers.DialogueSystem
         /// Unregisters a C# function.
         /// </summary>
         /// <param name="functionName">Function name.</param>
-        public static void UnregisterFunction(string functionName)
-        {
+        public static void UnregisterFunction(string functionName) {
             if (DialogueDebug.logInfo) Debug.Log(string.Format("{0}: Unregistering Lua function {1}", new System.Object[] { DialogueDebug.Prefix, functionName }));
             environment.SetNameValue(functionName, Language.Lua.LuaNil.Nil);
         }
