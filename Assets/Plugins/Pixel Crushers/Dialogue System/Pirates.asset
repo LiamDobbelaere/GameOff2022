@@ -2834,13 +2834,13 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 627.6415
-        y: 160.58609
+        x: 625.48895
+        y: 159.50981
         width: 160
         height: 30
     entryGroups: []
-    canvasScrollPosition: {x: 8.62716, y: 7.79807}
-    canvasZoom: 1.0154996
+    canvasScrollPosition: {x: 0, y: 0}
+    canvasZoom: 0.82374257
   - id: 4
     fields:
     - title: Title
@@ -7805,7 +7805,7 @@ MonoBehaviour:
         destinationDialogueID: 2
         isConnector: 0
         priority: 2
-      conditionsString: 
+      conditionsString: Variable["DidPlundering"] == true
       userScript: 
       onExecute:
         m_PersistentCalls:
@@ -8154,7 +8154,7 @@ MonoBehaviour:
         destinationDialogueID: 7
         isConnector: 0
         priority: 2
-      conditionsString: 
+      conditionsString: Variable["DidPlundering"] == false
       userScript: 
       onExecute:
         m_PersistentCalls:
@@ -8574,7 +8574,7 @@ MonoBehaviour:
         destinationDialogueID: 3
         isConnector: 0
         priority: 2
-      conditionsString: 
+      conditionsString: Variable["DidPlundering"] == true
       userScript: 
       onExecute:
         m_PersistentCalls:
@@ -8645,7 +8645,7 @@ MonoBehaviour:
         destinationDialogueID: 6
         isConnector: 0
         priority: 2
-      conditionsString: 
+      conditionsString: Variable["DidPlundering"] == true
       userScript: 
       onExecute:
         m_PersistentCalls:
@@ -9131,7 +9131,7 @@ MonoBehaviour:
         destinationDialogueID: 12
         isConnector: 0
         priority: 2
-      conditionsString: 
+      conditionsString: Variable["DidPlundering"] == false
       userScript: 
       onExecute:
         m_PersistentCalls:
@@ -9202,7 +9202,7 @@ MonoBehaviour:
         destinationDialogueID: 11
         isConnector: 0
         priority: 2
-      conditionsString: 
+      conditionsString: Variable["DidPlundering"] == false
       userScript: 
       onExecute:
         m_PersistentCalls:
@@ -10423,7 +10423,10 @@ MonoBehaviour:
         isConnector: 0
         priority: 2
       conditionsString: Variable["Plundering_Quests_Done"] == 0
-      userScript: Variable["Plundering_Quest_Over"] = true
+      userScript: 'Variable["Plundering_Quest_Over"] = true;
+
+        Variable["DidPlundering"]
+        = false'
       onExecute:
         m_PersistentCalls:
           m_Calls: []
@@ -10495,7 +10498,10 @@ MonoBehaviour:
         isConnector: 0
         priority: 2
       conditionsString: Variable["Plundering_Quests_Done"] == 1
-      userScript: Variable["Plundering_Quest_Over"] = true
+      userScript: 'Variable["Plundering_Quest_Over"] = true;
+
+        Variable["DidPlundering"]
+        = false'
       onExecute:
         m_PersistentCalls:
           m_Calls: []
@@ -10566,7 +10572,10 @@ MonoBehaviour:
         isConnector: 0
         priority: 2
       conditionsString: Variable["Plundering_Quests_Done"] == 2
-      userScript: Variable["Plundering_Quest_Over"] = true
+      userScript: 'Variable["Plundering_Quest_Over"] = true;
+
+        Variable["DidPlundering"]
+        = true'
       onExecute:
         m_PersistentCalls:
           m_Calls: []
@@ -10637,7 +10646,10 @@ MonoBehaviour:
         isConnector: 0
         priority: 2
       conditionsString: Variable["Plundering_Quests_Done"] == 3
-      userScript: Variable["Plundering_Quest_Over"] = true
+      userScript: 'Variable["Plundering_Quest_Over"] = true;
+
+        Variable["DidPlundering"]
+        = true'
       onExecute:
         m_PersistentCalls:
           m_Calls: []
@@ -10713,8 +10725,8 @@ MonoBehaviour:
         width: 160
         height: 30
     entryGroups: []
-    canvasScrollPosition: {x: 251.17981, y: 66.9813}
-    canvasZoom: 0.6145
+    canvasScrollPosition: {x: 109.44245, y: 1000.9468}
+    canvasZoom: 0.9901315
   - id: 13
     fields:
     - title: Title
@@ -17292,7 +17304,7 @@ MonoBehaviour:
         typeString: CustomFieldType_Text
       - title: Dialogue Text
         value: 'That all pirates all crazy barbarian murders. Some of us do have
-          a heart. '
+          other hobbies. '
         type: 0
         typeString: CustomFieldType_Text
       - title: Parenthetical
@@ -17326,8 +17338,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 424.46298
-        y: 510.05133
+        x: 431.2855
+        y: 519.148
         width: 160
         height: 30
     - id: 8
@@ -19885,7 +19897,7 @@ MonoBehaviour:
         height: 30
     entryGroups: []
     canvasScrollPosition: {x: 0, y: 0}
-    canvasZoom: 0.9405001
+    canvasZoom: 0.8936635
   - id: 23
     fields:
     - title: Title
