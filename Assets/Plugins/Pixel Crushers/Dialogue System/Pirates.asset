@@ -7232,7 +7232,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Dialogue Text
-        value: 'The day is Wednesday, the year is 1695, and I''m bringng you a special
+        value: 'The day is Wednesday, the year is 1695, and I''m bringing you a special
           documentary about history''s most fearsome foe. '
         type: 0
         typeString: CustomFieldType_Text
@@ -8339,8 +8339,8 @@ MonoBehaviour:
         width: 160
         height: 30
     entryGroups: []
-    canvasScrollPosition: {x: 0, y: 970.3009}
-    canvasZoom: 1.4356815
+    canvasScrollPosition: {x: 91.14653, y: 63.80258}
+    canvasZoom: 1.1294996
   - id: 8
     fields:
     - title: Title
@@ -18959,7 +18959,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Sequence
-        value: 
+        value: AudioWait(Interviews/Mutiny/everyone was so emotional)
         type: 0
         typeString: CustomFieldType_Text
       conversationID: 20
@@ -19025,7 +19025,8 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Sequence
-        value: 
+        value: AudioWait(Interviews/Mutiny/Frogsword/it was totally unexpected hes
+          closed)
         type: 0
         typeString: CustomFieldType_Text
       conversationID: 20
@@ -19090,7 +19091,8 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Sequence
-        value: 
+        value: AudioWait(Interviews/Mutiny/Frogsword/i never knew the the men were
+          so happy)
         type: 0
         typeString: CustomFieldType_Text
       conversationID: 20
@@ -19108,7 +19110,7 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 260.95468
+        x: 259.57916
         y: 408.7496
         width: 160
         height: 30
@@ -19156,7 +19158,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Sequence
-        value: 
+        value: AudioWait(Interviews/Mutiny/Frogsword/ive known him my entire life)
         type: 0
         typeString: CustomFieldType_Text
       conversationID: 20
@@ -19227,7 +19229,8 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Sequence
-        value: 
+        value: AudioWait(Interviews/Mutiny/Frogsword/id like to be alone now please
+          )
         type: 0
         typeString: CustomFieldType_Text
       conversationID: 20

@@ -145,7 +145,7 @@ MonoBehaviour:
       type: 2
       typeString: CustomFieldType_Boolean
     portrait: {fileID: 0}
-    spritePortrait: {fileID: 0}
+    spritePortrait: {fileID: 21300000, guid: d6a3589757b444166965f21b43562ada, type: 3}
     alternatePortraits: []
     spritePortraits: []
   - id: 6
@@ -305,132 +305,6 @@ MonoBehaviour:
   items: []
   locations: []
   variables:
-  - id: 13
-    fields:
-    - title: Name
-      value: Plundering - Spoken to Hearthorn
-      type: 0
-      typeString: CustomFieldType_Text
-    - title: Initial Value
-      value: False
-      type: 2
-      typeString: CustomFieldType_Boolean
-    - title: Description
-      value: 
-      type: 0
-      typeString: CustomFieldType_Text
-  - id: 15
-    fields:
-    - title: Name
-      value: Plundering - Spoken to Frogsword
-      type: 0
-      typeString: CustomFieldType_Text
-    - title: Initial Value
-      value: False
-      type: 2
-      typeString: CustomFieldType_Boolean
-    - title: Description
-      value: 
-      type: 0
-      typeString: CustomFieldType_Text
-  - id: 16
-    fields:
-    - title: Name
-      value: Plundering - Spoken to Coinbone
-      type: 0
-      typeString: CustomFieldType_Text
-    - title: Initial Value
-      value: False
-      type: 2
-      typeString: CustomFieldType_Boolean
-    - title: Description
-      value: 
-      type: 0
-      typeString: CustomFieldType_Text
-  - id: 2
-    fields:
-    - title: Name
-      value: Plundering Frogsword
-      type: 0
-      typeString: CustomFieldType_Text
-    - title: Initial Value
-      value: False
-      type: 2
-      typeString: CustomFieldType_Boolean
-    - title: Description
-      value: 
-      type: 0
-      typeString: CustomFieldType_Text
-  - id: 1
-    fields:
-    - title: Name
-      value: Plundering Hearthorn
-      type: 0
-      typeString: CustomFieldType_Text
-    - title: Initial Value
-      value: False
-      type: 2
-      typeString: CustomFieldType_Boolean
-    - title: Description
-      value: 
-      type: 0
-      typeString: CustomFieldType_Text
-  - id: 3
-    fields:
-    - title: Name
-      value: Plundering Coinbone
-      type: 0
-      typeString: CustomFieldType_Text
-    - title: Initial Value
-      value: False
-      type: 2
-      typeString: CustomFieldType_Boolean
-    - title: Description
-      value: 
-      type: 0
-      typeString: CustomFieldType_Text
-  - id: 4
-    fields:
-    - title: Name
-      value: Frog Statue
-      type: 0
-      typeString: CustomFieldType_Text
-    - title: Initial Value
-      value: False
-      type: 2
-      typeString: CustomFieldType_Boolean
-    - title: Description
-      value: 
-      type: 0
-      typeString: CustomFieldType_Text
-  - id: 5
-    fields:
-    - title: Name
-      value: Plundering Quests Done
-      type: 0
-      typeString: CustomFieldType_Text
-    - title: Initial Value
-      value: 0
-      type: 1
-      typeString: CustomFieldType_Number
-    - title: Description
-      value: 
-      type: 0
-      typeString: CustomFieldType_Text
-  - id: 6
-    fields:
-    - title: Name
-      value: Quartermaster Calculation Done
-      type: 0
-      typeString: CustomFieldType_Text
-    - title: Initial Value
-      value: False
-      type: 2
-      typeString: CustomFieldType_Boolean
-    - title: Description
-      value: 
-      type: 0
-      typeString: CustomFieldType_Text
   - id: 7
     fields:
     - title: Name
@@ -438,101 +312,17 @@ MonoBehaviour:
       type: 0
       typeString: CustomFieldType_Text
     - title: Initial Value
-      value: flag-jolly
+      value: 
       type: 0
       typeString: CustomFieldType_Text
     - title: Description
       value: 
       type: 0
       typeString: CustomFieldType_Text
-  - id: 8
+  - id: 19
     fields:
     - title: Name
-      value: Plundering Quest Over
-      type: 0
-      typeString: CustomFieldType_Text
-    - title: Initial Value
-      value: False
-      type: 2
-      typeString: CustomFieldType_Boolean
-    - title: Description
-      value: 
-      type: 0
-      typeString: CustomFieldType_Text
-  - id: 9
-    fields:
-    - title: Name
-      value: Mutiny - Spoken to Jack
-      type: 0
-      typeString: CustomFieldType_Text
-    - title: Initial Value
-      value: False
-      type: 2
-      typeString: CustomFieldType_Boolean
-    - title: Description
-      value: 
-      type: 0
-      typeString: CustomFieldType_Text
-  - id: 14
-    fields:
-    - title: Name
-      value: Mutiny - Spoken to Hearthorn
-      type: 0
-      typeString: CustomFieldType_Text
-    - title: Initial Value
-      value: False
-      type: 2
-      typeString: CustomFieldType_Boolean
-    - title: Description
-      value: 
-      type: 0
-      typeString: CustomFieldType_Text
-  - id: 17
-    fields:
-    - title: Name
-      value: Mutiny - Spoken to Stella
-      type: 0
-      typeString: CustomFieldType_Text
-    - title: Initial Value
-      value: False
-      type: 2
-      typeString: CustomFieldType_Boolean
-    - title: Description
-      value: 
-      type: 0
-      typeString: CustomFieldType_Text
-  - id: 10
-    fields:
-    - title: Name
-      value: Mutiny Hearthorn
-      type: 0
-      typeString: CustomFieldType_Text
-    - title: Initial Value
-      value: False
-      type: 2
-      typeString: CustomFieldType_Boolean
-    - title: Description
-      value: 
-      type: 0
-      typeString: CustomFieldType_Text
-  - id: 11
-    fields:
-    - title: Name
-      value: Mutiny Crew
-      type: 0
-      typeString: CustomFieldType_Text
-    - title: Initial Value
-      value: False
-      type: 2
-      typeString: CustomFieldType_Boolean
-    - title: Description
-      value: 
-      type: 0
-      typeString: CustomFieldType_Text
-  - id: 12
-    fields:
-    - title: Name
-      value: Mutiny Jack Jones
+      value: DidPlundering
       type: 0
       typeString: CustomFieldType_Text
     - title: Initial Value
@@ -550,17 +340,31 @@ MonoBehaviour:
       type: 0
       typeString: CustomFieldType_Text
     - title: Initial Value
-      value: True
+      value: False
       type: 2
       typeString: CustomFieldType_Boolean
     - title: Description
       value: 
       type: 0
       typeString: CustomFieldType_Text
-  - id: 19
+  - id: 32
     fields:
     - title: Name
-      value: DidPlundering
+      value: Doing Mutiny Interviews
+      type: 0
+      typeString: CustomFieldType_Text
+    - title: Initial Value
+      value: False
+      type: 2
+      typeString: CustomFieldType_Boolean
+    - title: Description
+      value: 
+      type: 0
+      typeString: CustomFieldType_Text
+  - id: 24
+    fields:
+    - title: Name
+      value: Doing Plundering Interviews
       type: 0
       typeString: CustomFieldType_Text
     - title: Initial Value
@@ -623,6 +427,398 @@ MonoBehaviour:
       value: 0
       type: 1
       typeString: CustomFieldType_Number
+    - title: Description
+      value: 
+      type: 0
+      typeString: CustomFieldType_Text
+  - id: 4
+    fields:
+    - title: Name
+      value: Frog Statue
+      type: 0
+      typeString: CustomFieldType_Text
+    - title: Initial Value
+      value: False
+      type: 2
+      typeString: CustomFieldType_Boolean
+    - title: Description
+      value: 
+      type: 0
+      typeString: CustomFieldType_Text
+  - id: 29
+    fields:
+    - title: Name
+      value: Frogsword Blade
+      type: 0
+      typeString: CustomFieldType_Text
+    - title: Initial Value
+      value: False
+      type: 2
+      typeString: CustomFieldType_Boolean
+    - title: Description
+      value: 
+      type: 0
+      typeString: CustomFieldType_Text
+  - id: 35
+    fields:
+    - title: Name
+      value: Mutiny - Interviewed Frogsword
+      type: 0
+      typeString: CustomFieldType_Text
+    - title: Initial Value
+      value: False
+      type: 2
+      typeString: CustomFieldType_Boolean
+    - title: Description
+      value: 
+      type: 0
+      typeString: CustomFieldType_Text
+  - id: 34
+    fields:
+    - title: Name
+      value: Mutiny - Interviewed Hearthorn
+      type: 0
+      typeString: CustomFieldType_Text
+    - title: Initial Value
+      value: False
+      type: 2
+      typeString: CustomFieldType_Boolean
+    - title: Description
+      value: 
+      type: 0
+      typeString: CustomFieldType_Text
+  - id: 36
+    fields:
+    - title: Name
+      value: Mutiny - Interviewed Jack
+      type: 0
+      typeString: CustomFieldType_Text
+    - title: Initial Value
+      value: False
+      type: 2
+      typeString: CustomFieldType_Boolean
+    - title: Description
+      value: 
+      type: 0
+      typeString: CustomFieldType_Text
+  - id: 33
+    fields:
+    - title: Name
+      value: Mutiny - Interviews done
+      type: 0
+      typeString: CustomFieldType_Text
+    - title: Initial Value
+      value: 0
+      type: 1
+      typeString: CustomFieldType_Number
+    - title: Description
+      value: 
+      type: 0
+      typeString: CustomFieldType_Text
+  - id: 30
+    fields:
+    - title: Name
+      value: Mutiny - Spoken to Frogsword
+      type: 0
+      typeString: CustomFieldType_Text
+    - title: Initial Value
+      value: False
+      type: 2
+      typeString: CustomFieldType_Boolean
+    - title: Description
+      value: 
+      type: 0
+      typeString: CustomFieldType_Text
+  - id: 14
+    fields:
+    - title: Name
+      value: Mutiny - Spoken to Hearthorn
+      type: 0
+      typeString: CustomFieldType_Text
+    - title: Initial Value
+      value: False
+      type: 2
+      typeString: CustomFieldType_Boolean
+    - title: Description
+      value: 
+      type: 0
+      typeString: CustomFieldType_Text
+  - id: 9
+    fields:
+    - title: Name
+      value: Mutiny - Spoken to Jack
+      type: 0
+      typeString: CustomFieldType_Text
+    - title: Initial Value
+      value: False
+      type: 2
+      typeString: CustomFieldType_Boolean
+    - title: Description
+      value: 
+      type: 0
+      typeString: CustomFieldType_Text
+  - id: 17
+    fields:
+    - title: Name
+      value: Mutiny - Spoken to Stella
+      type: 0
+      typeString: CustomFieldType_Text
+    - title: Initial Value
+      value: False
+      type: 2
+      typeString: CustomFieldType_Boolean
+    - title: Description
+      value: 
+      type: 0
+      typeString: CustomFieldType_Text
+  - id: 11
+    fields:
+    - title: Name
+      value: Mutiny Crew
+      type: 0
+      typeString: CustomFieldType_Text
+    - title: Initial Value
+      value: False
+      type: 2
+      typeString: CustomFieldType_Boolean
+    - title: Description
+      value: 
+      type: 0
+      typeString: CustomFieldType_Text
+  - id: 28
+    fields:
+    - title: Name
+      value: Mutiny Decided
+      type: 0
+      typeString: CustomFieldType_Text
+    - title: Initial Value
+      value: False
+      type: 2
+      typeString: CustomFieldType_Boolean
+    - title: Description
+      value: 
+      type: 0
+      typeString: CustomFieldType_Text
+  - id: 10
+    fields:
+    - title: Name
+      value: Mutiny Hearthorn
+      type: 0
+      typeString: CustomFieldType_Text
+    - title: Initial Value
+      value: False
+      type: 2
+      typeString: CustomFieldType_Boolean
+    - title: Description
+      value: 
+      type: 0
+      typeString: CustomFieldType_Text
+  - id: 12
+    fields:
+    - title: Name
+      value: Mutiny Jack Jones
+      type: 0
+      typeString: CustomFieldType_Text
+    - title: Initial Value
+      value: False
+      type: 2
+      typeString: CustomFieldType_Boolean
+    - title: Description
+      value: 
+      type: 0
+      typeString: CustomFieldType_Text
+  - id: 31
+    fields:
+    - title: Name
+      value: Mutiny Outcome
+      type: 0
+      typeString: CustomFieldType_Text
+    - title: Initial Value
+      value: 
+      type: 0
+      typeString: CustomFieldType_Text
+    - title: Description
+      value: 
+      type: 0
+      typeString: CustomFieldType_Text
+  - id: 26
+    fields:
+    - title: Name
+      value: Plundering - Interviewed Hearthorn
+      type: 0
+      typeString: CustomFieldType_Text
+    - title: Initial Value
+      value: False
+      type: 2
+      typeString: CustomFieldType_Boolean
+    - title: Description
+      value: 
+      type: 0
+      typeString: CustomFieldType_Text
+  - id: 27
+    fields:
+    - title: Name
+      value: Plundering - Interviewed Jack
+      type: 0
+      typeString: CustomFieldType_Text
+    - title: Initial Value
+      value: False
+      type: 2
+      typeString: CustomFieldType_Boolean
+    - title: Description
+      value: 
+      type: 0
+      typeString: CustomFieldType_Text
+  - id: 25
+    fields:
+    - title: Name
+      value: Plundering - Interviews done
+      type: 0
+      typeString: CustomFieldType_Text
+    - title: Initial Value
+      value: 0
+      type: 1
+      typeString: CustomFieldType_Number
+    - title: Description
+      value: 
+      type: 0
+      typeString: CustomFieldType_Text
+  - id: 16
+    fields:
+    - title: Name
+      value: Plundering - Spoken to Coinbone
+      type: 0
+      typeString: CustomFieldType_Text
+    - title: Initial Value
+      value: False
+      type: 2
+      typeString: CustomFieldType_Boolean
+    - title: Description
+      value: 
+      type: 0
+      typeString: CustomFieldType_Text
+  - id: 15
+    fields:
+    - title: Name
+      value: Plundering - Spoken to Frogsword
+      type: 0
+      typeString: CustomFieldType_Text
+    - title: Initial Value
+      value: False
+      type: 2
+      typeString: CustomFieldType_Boolean
+    - title: Description
+      value: 
+      type: 0
+      typeString: CustomFieldType_Text
+  - id: 13
+    fields:
+    - title: Name
+      value: Plundering - Spoken to Hearthorn
+      type: 0
+      typeString: CustomFieldType_Text
+    - title: Initial Value
+      value: False
+      type: 2
+      typeString: CustomFieldType_Boolean
+    - title: Description
+      value: 
+      type: 0
+      typeString: CustomFieldType_Text
+  - id: 3
+    fields:
+    - title: Name
+      value: Plundering Coinbone
+      type: 0
+      typeString: CustomFieldType_Text
+    - title: Initial Value
+      value: False
+      type: 2
+      typeString: CustomFieldType_Boolean
+    - title: Description
+      value: 
+      type: 0
+      typeString: CustomFieldType_Text
+  - id: 2
+    fields:
+    - title: Name
+      value: Plundering Frogsword
+      type: 0
+      typeString: CustomFieldType_Text
+    - title: Initial Value
+      value: False
+      type: 2
+      typeString: CustomFieldType_Boolean
+    - title: Description
+      value: 
+      type: 0
+      typeString: CustomFieldType_Text
+  - id: 1
+    fields:
+    - title: Name
+      value: Plundering Hearthorn
+      type: 0
+      typeString: CustomFieldType_Text
+    - title: Initial Value
+      value: False
+      type: 2
+      typeString: CustomFieldType_Boolean
+    - title: Description
+      value: 
+      type: 0
+      typeString: CustomFieldType_Text
+  - id: 8
+    fields:
+    - title: Name
+      value: Plundering Quest Over
+      type: 0
+      typeString: CustomFieldType_Text
+    - title: Initial Value
+      value: False
+      type: 2
+      typeString: CustomFieldType_Boolean
+    - title: Description
+      value: 
+      type: 0
+      typeString: CustomFieldType_Text
+  - id: 5
+    fields:
+    - title: Name
+      value: Plundering Quests Done
+      type: 0
+      typeString: CustomFieldType_Text
+    - title: Initial Value
+      value: 0
+      type: 1
+      typeString: CustomFieldType_Number
+    - title: Description
+      value: 
+      type: 0
+      typeString: CustomFieldType_Text
+  - id: 6
+    fields:
+    - title: Name
+      value: Quartermaster Calculation Done
+      type: 0
+      typeString: CustomFieldType_Text
+    - title: Initial Value
+      value: False
+      type: 2
+      typeString: CustomFieldType_Boolean
+    - title: Description
+      value: 
+      type: 0
+      typeString: CustomFieldType_Text
+  - id: 37
+    fields:
+    - title: Name
+      value: Chosen Photo For Hearthorn
+      type: 0
+      typeString: CustomFieldType_Text
+    - title: Initial Value
+      value: 
+      type: 0
+      typeString: CustomFieldType_Text
     - title: Description
       value: 
       type: 0
@@ -1024,7 +1220,8 @@ MonoBehaviour:
         destinationDialogueID: 4
         isConnector: 0
         priority: 2
-      conditionsString: Dialog[thisID].SimStatus ~= "WasDisplayed"
+      conditionsString: Dialog[thisID].SimStatus ~= "WasDisplayed" and (Variable["Flag___Interviews_done"]
+        == 0)
       userScript: 
       onExecute:
         m_PersistentCalls:
@@ -1095,7 +1292,8 @@ MonoBehaviour:
         destinationDialogueID: 5
         isConnector: 0
         priority: 2
-      conditionsString: Dialog[thisID].SimStatus ~= "WasDisplayed"
+      conditionsString: Dialog[thisID].SimStatus ~= "WasDisplayed" and  (Variable["Flag___Interviews_done"]
+        == 0)
       userScript: 
       onExecute:
         m_PersistentCalls:
@@ -1368,7 +1566,7 @@ MonoBehaviour:
         destinationDialogueID: 16
         isConnector: 0
         priority: 2
-      conditionsString: 
+      conditionsString: ' (Variable["Flag___Interviews_done"] == 0)'
       userScript: ShowPhone()
       onExecute:
         m_PersistentCalls:
@@ -1376,7 +1574,7 @@ MonoBehaviour:
       canvasRect:
         serializedVersion: 2
         x: 463.41803
-        y: 275.5122
+        y: 274.38803
         width: 160
         height: 30
     - id: 8
@@ -1678,11 +1876,11 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Actor
-        value: 2
+        value: 1
         type: 5
         typeString: CustomFieldType_Actor
       - title: Conversant
-        value: 1
+        value: 2
         type: 5
         typeString: CustomFieldType_Actor
       - title: Menu Text
@@ -1690,7 +1888,8 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Dialogue Text
-        value: 
+        value: 'I hope everyone is happy with our design. If they''re not happy -
+          it was mostly your idea anyway. '
         type: 0
         typeString: CustomFieldType_Text
       - title: Parenthetical
@@ -1717,15 +1916,15 @@ MonoBehaviour:
       falseConditionAction: Block
       conditionPriority: 2
       outgoingLinks: []
-      conditionsString: 
+      conditionsString: Variable["Chosen_Photo_For_Flag"] ~= ""
       userScript: 
       onExecute:
         m_PersistentCalls:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 1224.2361
-        y: 325.7397
+        x: 673.8713
+        y: 235.9743
         width: 160
         height: 30
     - id: 19
@@ -2168,8 +2367,8 @@ MonoBehaviour:
         width: 160
         height: 30
     entryGroups: []
-    canvasScrollPosition: {x: 469.7027, y: 471.41125}
-    canvasZoom: 0.8199997
+    canvasScrollPosition: {x: 59.39683, y: 118.13298}
+    canvasZoom: 0.8895491
   - id: 3
     fields:
     - title: Title
@@ -2778,13 +2977,13 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 627.6415
-        y: 160.58609
+        x: 625.48895
+        y: 159.50981
         width: 160
         height: 30
     entryGroups: []
-    canvasScrollPosition: {x: 8.62716, y: 7.79807}
-    canvasZoom: 1.0154996
+    canvasScrollPosition: {x: 0, y: 0}
+    canvasZoom: 0.82374257
   - id: 4
     fields:
     - title: Title
@@ -3120,7 +3319,8 @@ MonoBehaviour:
       falseConditionAction: Block
       conditionPriority: 2
       outgoingLinks: []
-      conditionsString: 
+      conditionsString: (Variable["Mutiny___Spoken_to_Jack"] == false) or (Variable["Mutiny___Spoken_to_Hearthorn"]
+        == false) or (Variable["Mutiny___Spoken_to_Stella"] == false)
       userScript: 
       onExecute:
         m_PersistentCalls:
@@ -3184,7 +3384,13 @@ MonoBehaviour:
       delaySimStatus: 0
       falseConditionAction: Block
       conditionPriority: 2
-      outgoingLinks: []
+      outgoingLinks:
+      - originConversationID: 4
+        originDialogueID: 4
+        destinationConversationID: 4
+        destinationDialogueID: 6
+        isConnector: 0
+        priority: 2
       conditionsString: 
       userScript: 
       onExecute:
@@ -3239,7 +3445,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Sequence
-        value: 
+        value: None()
         type: 0
         typeString: CustomFieldType_Text
       conversationID: 4
@@ -3261,9 +3467,74 @@ MonoBehaviour:
         y: 258.841
         width: 160
         height: 30
+    - id: 6
+      fields:
+      - title: Title
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Pictures
+        value: '[]'
+        type: 3
+        typeString: CustomFieldType_Files
+      - title: Description
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Actor
+        value: 8
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Conversant
+        value: 2
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Menu Text
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Dialogue Text
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Parenthetical
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Audio Files
+        value: '[]'
+        type: 3
+        typeString: CustomFieldType_Files
+      - title: Video File
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Sequence
+        value: None()
+        type: 0
+        typeString: CustomFieldType_Text
+      conversationID: 4
+      isRoot: 0
+      isGroup: 0
+      nodeColor: 
+      delaySimStatus: 0
+      falseConditionAction: Block
+      conditionPriority: 2
+      outgoingLinks: []
+      conditionsString: 
+      userScript: SwitchScene("Secret Meeting")
+      onExecute:
+        m_PersistentCalls:
+          m_Calls: []
+      canvasRect:
+        serializedVersion: 2
+        x: 706.5768
+        y: 260.67325
+        width: 160
+        height: 30
     entryGroups: []
-    canvasScrollPosition: {x: 71.65343, y: 1.327179}
-    canvasZoom: 0.75346965
+    canvasScrollPosition: {x: 0, y: 60.876434}
+    canvasZoom: 0.90346956
   - id: 5
     fields:
     - title: Title
@@ -3383,7 +3654,13 @@ MonoBehaviour:
       - originConversationID: 5
         originDialogueID: 0
         destinationConversationID: 5
-        destinationDialogueID: 15
+        destinationDialogueID: 21
+        isConnector: 0
+        priority: 2
+      - originConversationID: 5
+        originDialogueID: 0
+        destinationConversationID: 5
+        destinationDialogueID: 16
         isConnector: 0
         priority: 2
       conditionsString: 
@@ -3756,7 +4033,7 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 235.7077
+        x: 239.09412
         y: 395.06393
         width: 160
         height: 30
@@ -4316,7 +4593,8 @@ MonoBehaviour:
         destinationDialogueID: 1
         isConnector: 0
         priority: 2
-      conditionsString: Variable["Plundering___Spoken_to_Frogsword"] == false
+      conditionsString: Variable["Plundering___Spoken_to_Frogsword"] == false and
+        (Variable["Plundering_Quest_Over"] == false)
       userScript: 
       onExecute:
         m_PersistentCalls:
@@ -4381,18 +4659,19 @@ MonoBehaviour:
       falseConditionAction: Block
       conditionPriority: 2
       outgoingLinks: []
-      conditionsString: Variable["Plundering___Spoken_to_Frogsword"] == true
+      conditionsString: Variable["Plundering___Spoken_to_Frogsword"] == true and
+        (Variable["Plundering_Quest_Over"] == false)
       userScript: 
       onExecute:
         m_PersistentCalls:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 432.04456
-        y: 165.603
+        x: 372.66266
+        y: 253.50522
         width: 160
         height: 30
-    - id: 15
+    - id: 16
       fields:
       - title: Title
         value: 
@@ -4419,7 +4698,298 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Dialogue Text
+        value: 'You know, I''ve been thinking of changing up my look. '
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Parenthetical
         value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Audio Files
+        value: '[]'
+        type: 3
+        typeString: CustomFieldType_Files
+      - title: Video File
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Sequence
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      conversationID: 5
+      isRoot: 0
+      isGroup: 0
+      nodeColor: 
+      delaySimStatus: 0
+      falseConditionAction: Block
+      conditionPriority: 2
+      outgoingLinks:
+      - originConversationID: 5
+        originDialogueID: 16
+        destinationConversationID: 5
+        destinationDialogueID: 17
+        isConnector: 0
+        priority: 2
+      conditionsString: Variable["Plundering_Quest_Over"] == true and (Variable["Mutiny___Spoken_to_Frogsword"]
+        == false)
+      userScript: 
+      onExecute:
+        m_PersistentCalls:
+          m_Calls: []
+      canvasRect:
+        serializedVersion: 2
+        x: 754.16
+        y: 302.4105
+        width: 160
+        height: 30
+    - id: 17
+      fields:
+      - title: Title
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Pictures
+        value: '[]'
+        type: 3
+        typeString: CustomFieldType_Files
+      - title: Description
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Actor
+        value: 4
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Conversant
+        value: 2
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Menu Text
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Dialogue Text
+        value: 'Do I look good with a sword? It''s got a frog on it. '
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Parenthetical
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Audio Files
+        value: '[]'
+        type: 3
+        typeString: CustomFieldType_Files
+      - title: Video File
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Sequence
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      conversationID: 5
+      isRoot: 0
+      isGroup: 0
+      nodeColor: 
+      delaySimStatus: 0
+      falseConditionAction: Block
+      conditionPriority: 2
+      outgoingLinks:
+      - originConversationID: 5
+        originDialogueID: 17
+        destinationConversationID: 5
+        destinationDialogueID: 18
+        isConnector: 0
+        priority: 2
+      - originConversationID: 5
+        originDialogueID: 17
+        destinationConversationID: 5
+        destinationDialogueID: 19
+        isConnector: 0
+        priority: 2
+      conditionsString: 
+      userScript: 
+      onExecute:
+        m_PersistentCalls:
+          m_Calls: []
+      canvasRect:
+        serializedVersion: 2
+        x: 752.92285
+        y: 365.44635
+        width: 160
+        height: 30
+    - id: 18
+      fields:
+      - title: Title
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Pictures
+        value: '[]'
+        type: 3
+        typeString: CustomFieldType_Files
+      - title: Description
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Actor
+        value: 2
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Conversant
+        value: 4
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Menu Text
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Dialogue Text
+        value: 'You look fiercesome with that sword. '
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Parenthetical
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Audio Files
+        value: '[]'
+        type: 3
+        typeString: CustomFieldType_Files
+      - title: Video File
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Sequence
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      conversationID: 5
+      isRoot: 0
+      isGroup: 0
+      nodeColor: 
+      delaySimStatus: 0
+      falseConditionAction: Block
+      conditionPriority: 2
+      outgoingLinks:
+      - originConversationID: 5
+        originDialogueID: 18
+        destinationConversationID: 5
+        destinationDialogueID: 20
+        isConnector: 0
+        priority: 2
+      conditionsString: 
+      userScript: 
+      onExecute:
+        m_PersistentCalls:
+          m_Calls: []
+      canvasRect:
+        serializedVersion: 2
+        x: 664.2791
+        y: 425.87506
+        width: 160
+        height: 30
+    - id: 19
+      fields:
+      - title: Title
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Pictures
+        value: '[]'
+        type: 3
+        typeString: CustomFieldType_Files
+      - title: Description
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Actor
+        value: 2
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Conversant
+        value: 4
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Menu Text
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Dialogue Text
+        value: How could you not look good with a frog?
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Parenthetical
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Audio Files
+        value: '[]'
+        type: 3
+        typeString: CustomFieldType_Files
+      - title: Video File
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Sequence
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      conversationID: 5
+      isRoot: 0
+      isGroup: 0
+      nodeColor: 
+      delaySimStatus: 0
+      falseConditionAction: Block
+      conditionPriority: 2
+      outgoingLinks:
+      - originConversationID: 5
+        originDialogueID: 19
+        destinationConversationID: 5
+        destinationDialogueID: 22
+        isConnector: 0
+        priority: 2
+      conditionsString: 
+      userScript: 
+      onExecute:
+        m_PersistentCalls:
+          m_Calls: []
+      canvasRect:
+        serializedVersion: 2
+        x: 913.26373
+        y: 433.69666
+        width: 160
+        height: 30
+    - id: 20
+      fields:
+      - title: Title
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Pictures
+        value: '[]'
+        type: 3
+        typeString: CustomFieldType_Files
+      - title: Description
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Actor
+        value: 4
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Conversant
+        value: 2
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Menu Text
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Dialogue Text
+        value: Mmm. I'm not sure that's what I'm going for.
         type: 0
         typeString: CustomFieldType_Text
       - title: Parenthetical
@@ -4447,19 +5017,156 @@ MonoBehaviour:
       conditionPriority: 2
       outgoingLinks: []
       conditionsString: 
+      userScript: 'Variable["Mutiny___Spoken_to_Frogsword"] = true;
+
+        Variable["Frogsword_Blade"]
+        = false'
+      onExecute:
+        m_PersistentCalls:
+          m_Calls: []
+      canvasRect:
+        serializedVersion: 2
+        x: 672.1006
+        y: 535.83997
+        width: 160
+        height: 30
+    - id: 21
+      fields:
+      - title: Title
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Pictures
+        value: '[]'
+        type: 3
+        typeString: CustomFieldType_Files
+      - title: Description
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Actor
+        value: 4
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Conversant
+        value: 2
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Menu Text
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Dialogue Text
+        value: Thank you. You've give me a lot to think about.
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Parenthetical
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Audio Files
+        value: '[]'
+        type: 3
+        typeString: CustomFieldType_Files
+      - title: Video File
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Sequence
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      conversationID: 5
+      isRoot: 0
+      isGroup: 0
+      nodeColor: 
+      delaySimStatus: 0
+      falseConditionAction: Block
+      conditionPriority: 2
+      outgoingLinks: []
+      conditionsString: Variable["Plundering_Quest_Over"] == true and (Variable["Mutiny___Spoken_to_Frogsword"]
+        == true)
       userScript: 
       onExecute:
         m_PersistentCalls:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 723.2765
-        y: 170.11835
+        x: 974.488
+        y: 155.94305
+        width: 160
+        height: 30
+    - id: 22
+      fields:
+      - title: Title
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Pictures
+        value: '[]'
+        type: 3
+        typeString: CustomFieldType_Files
+      - title: Description
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Actor
+        value: 4
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Conversant
+        value: 2
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Menu Text
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Dialogue Text
+        value: 'Right you are! I think I''ll carry it then. '
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Parenthetical
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Audio Files
+        value: '[]'
+        type: 3
+        typeString: CustomFieldType_Files
+      - title: Video File
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Sequence
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      conversationID: 5
+      isRoot: 0
+      isGroup: 0
+      nodeColor: 
+      delaySimStatus: 0
+      falseConditionAction: Block
+      conditionPriority: 2
+      outgoingLinks: []
+      conditionsString: 
+      userScript: 'Variable["Frogsword_Blade"] = true;
+
+        Variable["Mutiny___Spoken_to_Frogsword"]
+        = true'
+      onExecute:
+        m_PersistentCalls:
+          m_Calls: []
+      canvasRect:
+        serializedVersion: 2
+        x: 918.4781
+        y: 514.9827
         width: 160
         height: 30
     entryGroups: []
-    canvasScrollPosition: {x: 0, y: 19.197563}
-    canvasZoom: 0.8858923
+    canvasScrollPosition: {x: 0, y: 0}
+    canvasZoom: 0.80832696
   - id: 6
     fields:
     - title: Title
@@ -5910,7 +6617,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Dialogue Text
-        value: Here it
+        value: Here it is.
         type: 0
         typeString: CustomFieldType_Text
       - title: Parenthetical
@@ -5968,7 +6675,7 @@ MonoBehaviour:
         isConnector: 0
         priority: 2
       conditionsString: 
-      userScript: 
+      userScript: ShowPhone()
       onExecute:
         m_PersistentCalls:
           m_Calls: []
@@ -6097,7 +6804,7 @@ MonoBehaviour:
       falseConditionAction: Block
       conditionPriority: 2
       outgoingLinks: []
-      conditionsString: 
+      conditionsString: Variable["Chosen_Photo_For_Hearthorn"] == "hearthorn"
       userScript: 
       onExecute:
         m_PersistentCalls:
@@ -6162,7 +6869,8 @@ MonoBehaviour:
       falseConditionAction: Block
       conditionPriority: 2
       outgoingLinks: []
-      conditionsString: 
+      conditionsString: (Variable["Chosen_Photo_For_Hearthorn"] == "flag") or (Variable["Chosen_Photo_For_Hearthorn"]
+        == "flag-hat")
       userScript: 
       onExecute:
         m_PersistentCalls:
@@ -6227,7 +6935,7 @@ MonoBehaviour:
       falseConditionAction: Block
       conditionPriority: 2
       outgoingLinks: []
-      conditionsString: 
+      conditionsString: Variable["Chosen_Photo_For_Hearthorn"] == "seagulls-hat"
       userScript: 
       onExecute:
         m_PersistentCalls:
@@ -6293,7 +7001,7 @@ MonoBehaviour:
       falseConditionAction: Block
       conditionPriority: 2
       outgoingLinks: []
-      conditionsString: 
+      conditionsString: Variable["Chosen_Photo_For_Hearthorn"] == "hearthorn-hat"
       userScript: Variable["Mutiny___Spoken_to_Hearthorn"] = true
       onExecute:
         m_PersistentCalls:
@@ -6358,7 +7066,7 @@ MonoBehaviour:
       falseConditionAction: Block
       conditionPriority: 2
       outgoingLinks: []
-      conditionsString: 
+      conditionsString: Variable["Chosen_Photo_For_Hearthorn"] == "seagulls"
       userScript: 
       onExecute:
         m_PersistentCalls:
@@ -6370,8 +7078,8 @@ MonoBehaviour:
         width: 160
         height: 30
     entryGroups: []
-    canvasScrollPosition: {x: 94.54152, y: 126.418495}
-    canvasZoom: 0.8101456
+    canvasScrollPosition: {x: 389.74286, y: 131.44406}
+    canvasZoom: 0.78014565
   - id: 7
     fields:
     - title: Title
@@ -7475,7 +8183,13 @@ MonoBehaviour:
       delaySimStatus: 0
       falseConditionAction: Block
       conditionPriority: 2
-      outgoingLinks: []
+      outgoingLinks:
+      - originConversationID: 7
+        originDialogueID: 15
+        destinationConversationID: 7
+        destinationDialogueID: 17
+        isConnector: 0
+        priority: 2
       conditionsString: 
       userScript: 
       onExecute:
@@ -7559,9 +8273,74 @@ MonoBehaviour:
         y: 70
         width: 160
         height: 30
+    - id: 17
+      fields:
+      - title: Title
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Pictures
+        value: '[]'
+        type: 3
+        typeString: CustomFieldType_Files
+      - title: Description
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Actor
+        value: 3
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Conversant
+        value: 10
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Menu Text
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Dialogue Text
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Parenthetical
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Audio Files
+        value: '[]'
+        type: 3
+        typeString: CustomFieldType_Files
+      - title: Video File
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Sequence
+        value: None()
+        type: 0
+        typeString: CustomFieldType_Text
+      conversationID: 7
+      isRoot: 0
+      isGroup: 0
+      nodeColor: 
+      delaySimStatus: 0
+      falseConditionAction: Block
+      conditionPriority: 2
+      outgoingLinks: []
+      conditionsString: 
+      userScript: SwitchScene("Port")
+      onExecute:
+        m_PersistentCalls:
+          m_Calls: []
+      canvasRect:
+        serializedVersion: 2
+        x: 38.72693
+        y: 1084.1929
+        width: 160
+        height: 30
     entryGroups: []
-    canvasScrollPosition: {x: 0, y: 841.9196}
-    canvasZoom: 1.064097
+    canvasScrollPosition: {x: 0, y: 970.3009}
+    canvasZoom: 1.4356815
   - id: 8
     fields:
     - title: Title
@@ -7679,7 +8458,10 @@ MonoBehaviour:
         isConnector: 0
         priority: 2
       conditionsString: 
-      userScript: 
+      userScript: 'Variable["Plundering___Interviewed_Hearthorn"] = true;
+
+        Variable["Plundering___Interviews_done"]
+        = Variable["Plundering___Interviews_done"] + 1'
       onExecute:
         m_PersistentCalls:
           m_Calls: []
@@ -7749,7 +8531,7 @@ MonoBehaviour:
         destinationDialogueID: 2
         isConnector: 0
         priority: 2
-      conditionsString: 
+      conditionsString: Variable["DidPlundering"] == true
       userScript: 
       onExecute:
         m_PersistentCalls:
@@ -7803,7 +8585,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Sequence
-        value: 
+        value: AudioWait(Interviews/Plundering/gaggle of women)
         type: 0
         typeString: CustomFieldType_Text
       conversationID: 8
@@ -7874,7 +8656,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Sequence
-        value: 
+        value: AudioWait(Interviews/Plundering/never seen a pirate so handsome)
         type: 0
         typeString: CustomFieldType_Text
       conversationID: 8
@@ -7945,7 +8727,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Sequence
-        value: 
+        value: AudioWait(Interviews/Plundering/must of thought i was captain)
         type: 0
         typeString: CustomFieldType_Text
       conversationID: 8
@@ -8016,7 +8798,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Sequence
-        value: 
+        value: AudioWait(Interviews/Plundering/what was the question again)
         type: 0
         typeString: CustomFieldType_Text
       conversationID: 8
@@ -8098,7 +8880,7 @@ MonoBehaviour:
         destinationDialogueID: 7
         isConnector: 0
         priority: 2
-      conditionsString: 
+      conditionsString: Variable["DidPlundering"] == false
       userScript: 
       onExecute:
         m_PersistentCalls:
@@ -8152,7 +8934,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Sequence
-        value: 
+        value: AudioWait(Interviews/Plundering/oh it's not how i feel)
         type: 0
         typeString: CustomFieldType_Text
       conversationID: 8
@@ -8223,7 +9005,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Sequence
-        value: 
+        value: AudioWait(Interviews/Plundering/men displeased)
         type: 0
         typeString: CustomFieldType_Text
       conversationID: 8
@@ -8247,7 +9029,7 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 465.78723
+        x: 464.66553
         y: 353.31525
         width: 160
         height: 30
@@ -8294,7 +9076,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Sequence
-        value: 
+        value: AudioWait(Interviews/Plundering/dear captain choice)
         type: 0
         typeString: CustomFieldType_Text
       conversationID: 8
@@ -8448,7 +9230,10 @@ MonoBehaviour:
         isConnector: 0
         priority: 2
       conditionsString: 
-      userScript: 
+      userScript: 'Variable["Plundering___Interviewed_Jack"] = true;
+
+        Variable["Plundering___Interviews_done"]
+        = Variable["Plundering___Interviews_done"] + 1'
       onExecute:
         m_PersistentCalls:
           m_Calls: []
@@ -8518,7 +9303,7 @@ MonoBehaviour:
         destinationDialogueID: 3
         isConnector: 0
         priority: 2
-      conditionsString: 
+      conditionsString: Variable["DidPlundering"] == true
       userScript: 
       onExecute:
         m_PersistentCalls:
@@ -8589,7 +9374,7 @@ MonoBehaviour:
         destinationDialogueID: 6
         isConnector: 0
         priority: 2
-      conditionsString: 
+      conditionsString: Variable["DidPlundering"] == true
       userScript: 
       onExecute:
         m_PersistentCalls:
@@ -8851,7 +9636,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Sequence
-        value: 
+        value: AudioWait(Interviews/Plundering/we took everything their coin)
         type: 0
         typeString: CustomFieldType_Text
       conversationID: 11
@@ -8922,7 +9707,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Sequence
-        value: 
+        value: AudioWait(Interviews/Plundering/their women)
         type: 0
         typeString: CustomFieldType_Text
       conversationID: 11
@@ -8993,7 +9778,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Sequence
-        value: 
+        value: AudioWait(Interviews/Plundering/were not mysoginists)
         type: 0
         typeString: CustomFieldType_Text
       conversationID: 11
@@ -9011,8 +9796,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 343
-        y: 415
+        x: 341.77972
+        y: 413.77975
         width: 160
         height: 30
     - id: 9
@@ -9075,7 +9860,7 @@ MonoBehaviour:
         destinationDialogueID: 12
         isConnector: 0
         priority: 2
-      conditionsString: 
+      conditionsString: Variable["DidPlundering"] == false
       userScript: 
       onExecute:
         m_PersistentCalls:
@@ -9146,7 +9931,7 @@ MonoBehaviour:
         destinationDialogueID: 11
         isConnector: 0
         priority: 2
-      conditionsString: 
+      conditionsString: Variable["DidPlundering"] == false
       userScript: 
       onExecute:
         m_PersistentCalls:
@@ -9433,8 +10218,8 @@ MonoBehaviour:
         width: 160
         height: 30
     entryGroups: []
-    canvasScrollPosition: {x: 87.79745, y: 87.79745}
-    canvasZoom: 0.8194998
+    canvasScrollPosition: {x: 91.94918, y: 47.324284}
+    canvasZoom: 0.6994999
   - id: 12
     fields:
     - title: Title
@@ -10367,14 +11152,14 @@ MonoBehaviour:
         isConnector: 0
         priority: 2
       conditionsString: Variable["Plundering_Quests_Done"] == 0
-      userScript: Variable["Plundering_Quest_Over"] = true
+      userScript: 
       onExecute:
         m_PersistentCalls:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 192.13103
-        y: 1147.2087
+        x: 193.19487
+        y: 1146.1448
         width: 160
         height: 30
     - id: 12
@@ -10435,11 +11220,11 @@ MonoBehaviour:
       - originConversationID: 12
         originDialogueID: 12
         destinationConversationID: 12
-        destinationDialogueID: 15
+        destinationDialogueID: 16
         isConnector: 0
         priority: 2
       conditionsString: Variable["Plundering_Quests_Done"] == 1
-      userScript: Variable["Plundering_Quest_Over"] = true
+      userScript: 
       onExecute:
         m_PersistentCalls:
           m_Calls: []
@@ -10506,18 +11291,18 @@ MonoBehaviour:
       - originConversationID: 12
         originDialogueID: 13
         destinationConversationID: 12
-        destinationDialogueID: 15
+        destinationDialogueID: 17
         isConnector: 0
         priority: 2
       conditionsString: Variable["Plundering_Quests_Done"] == 2
-      userScript: Variable["Plundering_Quest_Over"] = true
+      userScript: 
       onExecute:
         m_PersistentCalls:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
         x: 598.97253
-        y: 1134.3163
+        y: 1133.2524
         width: 160
         height: 30
     - id: 14
@@ -10577,18 +11362,18 @@ MonoBehaviour:
       - originConversationID: 12
         originDialogueID: 14
         destinationConversationID: 12
-        destinationDialogueID: 15
+        destinationDialogueID: 18
         isConnector: 0
         priority: 2
       conditionsString: Variable["Plundering_Quests_Done"] == 3
-      userScript: Variable["Plundering_Quest_Over"] = true
+      userScript: 
       onExecute:
         m_PersistentCalls:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
         x: 789.5003
-        y: 1127.153
+        y: 1126.0891
         width: 160
         height: 30
     - id: 15
@@ -10634,7 +11419,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Sequence
-        value: 
+        value: None()
         type: 0
         typeString: CustomFieldType_Text
       conversationID: 12
@@ -10646,19 +11431,242 @@ MonoBehaviour:
       conditionPriority: 2
       outgoingLinks: []
       conditionsString: 
-      userScript: SwitchScene("Port")
+      userScript: 'Variable["Plundering_Quest_Over"] = true;
+
+        Variable["DidPlundering"]
+        = false;
+
+        Variable["Doing_Plundering_Interviews"] = true;
+
+        SwitchScene("Plunder02");'
       onExecute:
         m_PersistentCalls:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 429.53107
-        y: 1321.0696
+        x: 193.19487
+        y: 1196.1448
+        width: 160
+        height: 30
+    - id: 16
+      fields:
+      - title: Title
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Pictures
+        value: '[]'
+        type: 3
+        typeString: CustomFieldType_Files
+      - title: Description
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Actor
+        value: 4
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Conversant
+        value: 8
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Menu Text
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Dialogue Text
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Parenthetical
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Audio Files
+        value: '[]'
+        type: 3
+        typeString: CustomFieldType_Files
+      - title: Video File
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Sequence
+        value: None()
+        type: 0
+        typeString: CustomFieldType_Text
+      conversationID: 12
+      isRoot: 0
+      isGroup: 0
+      nodeColor: 
+      delaySimStatus: 0
+      falseConditionAction: Block
+      conditionPriority: 2
+      outgoingLinks: []
+      conditionsString: 
+      userScript: 'Variable["Plundering_Quest_Over"] = true;
+
+        Variable["DidPlundering"]
+        = false;
+
+        Variable["Doing_Plundering_Interviews"] = true;
+
+        SwitchScene("Plunder02");'
+      onExecute:
+        m_PersistentCalls:
+          m_Calls: []
+      canvasRect:
+        serializedVersion: 2
+        x: 395.5518
+        y: 1184.3162
+        width: 160
+        height: 30
+    - id: 17
+      fields:
+      - title: Title
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Pictures
+        value: '[]'
+        type: 3
+        typeString: CustomFieldType_Files
+      - title: Description
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Actor
+        value: 4
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Conversant
+        value: 8
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Menu Text
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Dialogue Text
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Parenthetical
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Audio Files
+        value: '[]'
+        type: 3
+        typeString: CustomFieldType_Files
+      - title: Video File
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Sequence
+        value: None()
+        type: 0
+        typeString: CustomFieldType_Text
+      conversationID: 12
+      isRoot: 0
+      isGroup: 0
+      nodeColor: 
+      delaySimStatus: 0
+      falseConditionAction: Block
+      conditionPriority: 2
+      outgoingLinks: []
+      conditionsString: 
+      userScript: 'Variable["Plundering_Quest_Over"] = true;
+
+        Variable["DidPlundering"]
+        = true;
+
+        Variable["Doing_Plundering_Interviews"] = true;
+
+        SwitchScene("Plunder03");'
+      onExecute:
+        m_PersistentCalls:
+          m_Calls: []
+      canvasRect:
+        serializedVersion: 2
+        x: 598.97253
+        y: 1183.2524
+        width: 160
+        height: 30
+    - id: 18
+      fields:
+      - title: Title
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Pictures
+        value: '[]'
+        type: 3
+        typeString: CustomFieldType_Files
+      - title: Description
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Actor
+        value: 4
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Conversant
+        value: 8
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Menu Text
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Dialogue Text
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Parenthetical
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Audio Files
+        value: '[]'
+        type: 3
+        typeString: CustomFieldType_Files
+      - title: Video File
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Sequence
+        value: None()
+        type: 0
+        typeString: CustomFieldType_Text
+      conversationID: 12
+      isRoot: 0
+      isGroup: 0
+      nodeColor: 
+      delaySimStatus: 0
+      falseConditionAction: Block
+      conditionPriority: 2
+      outgoingLinks: []
+      conditionsString: 
+      userScript: 'Variable["Plundering_Quest_Over"] = true;
+
+        Variable["DidPlundering"]
+        = true;
+
+        Variable["Doing_Plundering_Interviews"] = true;
+
+        SwitchScene("Plunder03");'
+      onExecute:
+        m_PersistentCalls:
+          m_Calls: []
+      canvasRect:
+        serializedVersion: 2
+        x: 789.5003
+        y: 1176.0891
         width: 160
         height: 30
     entryGroups: []
-    canvasScrollPosition: {x: 251.17981, y: 66.9813}
-    canvasZoom: 0.6145
+    canvasScrollPosition: {x: 55.246777, y: 931.64465}
+    canvasZoom: 0.9999995
   - id: 13
     fields:
     - title: Title
@@ -12133,8 +13141,8 @@ MonoBehaviour:
         width: 160
         height: 30
     entryGroups: []
-    canvasScrollPosition: {x: 4.74415, y: 0.7930589}
-    canvasZoom: 0.77899873
+    canvasScrollPosition: {x: 0, y: 0}
+    canvasZoom: 0.5989989
   - id: 14
     fields:
     - title: Title
@@ -17236,7 +18244,7 @@ MonoBehaviour:
         typeString: CustomFieldType_Text
       - title: Dialogue Text
         value: 'That all pirates all crazy barbarian murders. Some of us do have
-          a heart. '
+          other hobbies. '
         type: 0
         typeString: CustomFieldType_Text
       - title: Parenthetical
@@ -17270,8 +18278,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 424.46298
-        y: 510.05133
+        x: 431.2855
+        y: 519.148
         width: 160
         height: 30
     - id: 8
@@ -17535,7 +18543,7 @@ MonoBehaviour:
         destinationDialogueID: 7
         isConnector: 0
         priority: 2
-      conditionsString: 
+      conditionsString: Variable["Mutiny_Outcome"] == "frogwins"
       userScript: 
       onExecute:
         m_PersistentCalls:
@@ -17543,7 +18551,7 @@ MonoBehaviour:
       canvasRect:
         serializedVersion: 2
         x: 219.67938
-        y: 258.38547
+        y: 257.00995
         width: 160
         height: 30
     - id: 3
@@ -17612,7 +18620,7 @@ MonoBehaviour:
         destinationDialogueID: 5
         isConnector: 0
         priority: 2
-      conditionsString: 
+      conditionsString: Variable["Mutiny_Outcome"] == "hug"
       userScript: 
       onExecute:
         m_PersistentCalls:
@@ -17951,7 +18959,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Sequence
-        value: 
+        value: AudioWait(Interviews/Mutiny/everyone was so emotional)
         type: 0
         typeString: CustomFieldType_Text
       conversationID: 20
@@ -18017,7 +19025,8 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Sequence
-        value: 
+        value: AudioWait(Interviews/Mutiny/Frogsword/it was totally unexpected hes
+          closed)
         type: 0
         typeString: CustomFieldType_Text
       conversationID: 20
@@ -18082,7 +19091,8 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Sequence
-        value: 
+        value: AudioWait(Interviews/Mutiny/Frogsword/i never knew the the men were
+          so happy)
         type: 0
         typeString: CustomFieldType_Text
       conversationID: 20
@@ -18100,7 +19110,7 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 260.95468
+        x: 259.57916
         y: 408.7496
         width: 160
         height: 30
@@ -18148,7 +19158,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Sequence
-        value: 
+        value: AudioWait(Interviews/Mutiny/Frogsword/ive known him my entire life)
         type: 0
         typeString: CustomFieldType_Text
       conversationID: 20
@@ -18219,7 +19229,8 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Sequence
-        value: 
+        value: AudioWait(Interviews/Mutiny/Frogsword/id like to be alone now please
+          )
         type: 0
         typeString: CustomFieldType_Text
       conversationID: 20
@@ -18242,8 +19253,8 @@ MonoBehaviour:
         width: 160
         height: 30
     entryGroups: []
-    canvasScrollPosition: {x: 0, y: 0}
-    canvasZoom: 0.5870002
+    canvasScrollPosition: {x: 105.635315, y: 45.928413}
+    canvasZoom: 0.7269996
   - id: 21
     fields:
     - title: Title
@@ -18437,7 +19448,7 @@ MonoBehaviour:
         destinationDialogueID: 6
         isConnector: 0
         priority: 2
-      conditionsString: 
+      conditionsString: Variable["Mutiny_Outcome"] == "hug"
       userScript: 
       onExecute:
         m_PersistentCalls:
@@ -18514,7 +19525,7 @@ MonoBehaviour:
         destinationDialogueID: 4
         isConnector: 0
         priority: 2
-      conditionsString: 
+      conditionsString: Variable["Mutiny_Outcome"] == "frogdies"
       userScript: 
       onExecute:
         m_PersistentCalls:
@@ -18852,7 +19863,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Sequence
-        value: 
+        value: AudioWait(Interviews/Mutiny/Hearthorn/lovely ring am i right)
         type: 0
         typeString: CustomFieldType_Text
       conversationID: 21
@@ -18923,7 +19934,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Sequence
-        value: 
+        value: AudioWait(Interviews/Mutiny/Hearthorn/a real shame great man)
         type: 0
         typeString: CustomFieldType_Text
       conversationID: 21
@@ -18994,7 +20005,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Sequence
-        value: 
+        value: AudioWait(Interviews/Mutiny/grateful for our amazing)
         type: 0
         typeString: CustomFieldType_Text
       conversationID: 21
@@ -19065,7 +20076,8 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Sequence
-        value: 
+        value: AudioWait(Interviews/Mutiny/Hearthorn/more than happy being first
+          mate)
         type: 0
         typeString: CustomFieldType_Text
       conversationID: 21
@@ -19075,13 +20087,7 @@ MonoBehaviour:
       delaySimStatus: 0
       falseConditionAction: Block
       conditionPriority: 2
-      outgoingLinks:
-      - originConversationID: 21
-        originDialogueID: 10
-        destinationConversationID: 21
-        destinationDialogueID: 14
-        isConnector: 0
-        priority: 2
+      outgoingLinks: []
       conditionsString: 
       userScript: 
       onExecute:
@@ -19136,7 +20142,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Sequence
-        value: 
+        value: AudioWait(Interviews/Mutiny/Hearthorn/but i was greater)
         type: 0
         typeString: CustomFieldType_Text
       conversationID: 21
@@ -19201,7 +20207,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Sequence
-        value: 
+        value: AudioWait(Interviews/Mutiny/are we done now)
         type: 0
         typeString: CustomFieldType_Text
       conversationID: 21
@@ -19267,7 +20273,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Sequence
-        value: 
+        value: AudioWait(Interviews/Mutiny/Hearthorn/this is my hat you know)
         type: 0
         typeString: CustomFieldType_Text
       conversationID: 21
@@ -19287,71 +20293,6 @@ MonoBehaviour:
         serializedVersion: 2
         x: 51
         y: 448
-        width: 160
-        height: 30
-    - id: 14
-      fields:
-      - title: Title
-        value: 
-        type: 0
-        typeString: CustomFieldType_Text
-      - title: Pictures
-        value: '[]'
-        type: 3
-        typeString: CustomFieldType_Files
-      - title: Description
-        value: 
-        type: 0
-        typeString: CustomFieldType_Text
-      - title: Actor
-        value: 5
-        type: 5
-        typeString: CustomFieldType_Actor
-      - title: Conversant
-        value: 2
-        type: 5
-        typeString: CustomFieldType_Actor
-      - title: Menu Text
-        value: 
-        type: 0
-        typeString: CustomFieldType_Text
-      - title: Dialogue Text
-        value: 'Not sure why you''d thin otherswise. '
-        type: 0
-        typeString: CustomFieldType_Text
-      - title: Parenthetical
-        value: 
-        type: 0
-        typeString: CustomFieldType_Text
-      - title: Audio Files
-        value: '[]'
-        type: 3
-        typeString: CustomFieldType_Files
-      - title: Video File
-        value: 
-        type: 0
-        typeString: CustomFieldType_Text
-      - title: Sequence
-        value: 
-        type: 0
-        typeString: CustomFieldType_Text
-      conversationID: 21
-      isRoot: 0
-      isGroup: 0
-      nodeColor: 
-      delaySimStatus: 0
-      falseConditionAction: Block
-      conditionPriority: 2
-      outgoingLinks: []
-      conditionsString: 
-      userScript: 
-      onExecute:
-        m_PersistentCalls:
-          m_Calls: []
-      canvasRect:
-        serializedVersion: 2
-        x: 714
-        y: 426.48602
         width: 160
         height: 30
     entryGroups: []
@@ -19598,7 +20539,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Sequence
-        value: 
+        value: AudioWait(Interviews/Mutiny/Jack/dont truth that hearthorn fella)
         type: 0
         typeString: CustomFieldType_Text
       conversationID: 22
@@ -19669,7 +20610,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Sequence
-        value: 
+        value: AudioWait(Interviews/Mutiny/Jack/it was a great sword fight)
         type: 0
         typeString: CustomFieldType_Text
       conversationID: 22
@@ -19693,8 +20634,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 502
-        y: 343
+        x: 503.02783
+        y: 344.0278
         width: 160
         height: 30
     - id: 5
@@ -19740,7 +20681,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Sequence
-        value: 
+        value: AudioWait(Interviews/Mutiny/Jack/frogsword had his problems aye)
         type: 0
         typeString: CustomFieldType_Text
       conversationID: 22
@@ -19805,7 +20746,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Sequence
-        value: 
+        value: AudioWait(Interviews/Mutiny/Jack/shame about the death)
         type: 0
         typeString: CustomFieldType_Text
       conversationID: 22
@@ -19828,8 +20769,8 @@ MonoBehaviour:
         width: 160
         height: 30
     entryGroups: []
-    canvasScrollPosition: {x: 0, y: 0}
-    canvasZoom: 0.9405001
+    canvasScrollPosition: {x: 29.130371, y: 50.566105}
+    canvasZoom: 0.9729615
   - id: 23
     fields:
     - title: Title
@@ -21083,9 +22024,15 @@ MonoBehaviour:
       delaySimStatus: 0
       falseConditionAction: Block
       conditionPriority: 2
-      outgoingLinks: []
+      outgoingLinks:
+      - originConversationID: 23
+        originDialogueID: 16
+        destinationConversationID: 23
+        destinationDialogueID: 28
+        isConnector: 0
+        priority: 2
       conditionsString: 
-      userScript: 
+      userScript: Variable["Mutiny_Decided"] = false
       onExecute:
         m_PersistentCalls:
           m_Calls: []
@@ -21651,21 +22598,245 @@ MonoBehaviour:
       delaySimStatus: 0
       falseConditionAction: Block
       conditionPriority: 2
-      outgoingLinks: []
+      outgoingLinks:
+      - originConversationID: 23
+        originDialogueID: 26
+        destinationConversationID: 23
+        destinationDialogueID: 27
+        isConnector: 0
+        priority: 2
+      - originConversationID: 23
+        originDialogueID: 26
+        destinationConversationID: 23
+        destinationDialogueID: 29
+        isConnector: 0
+        priority: 2
       conditionsString: 
-      userScript: 
+      userScript: Variable["Mutiny_Decided"] = true
       onExecute:
         m_PersistentCalls:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 317.8918
-        y: 1041.7006
+        x: 318.82388
+        y: 1040.8406
+        width: 160
+        height: 30
+    - id: 27
+      fields:
+      - title: Title
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Pictures
+        value: '[]'
+        type: 3
+        typeString: CustomFieldType_Files
+      - title: Description
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Actor
+        value: 11
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Conversant
+        value: 5
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Menu Text
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Dialogue Text
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Parenthetical
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Audio Files
+        value: '[]'
+        type: 3
+        typeString: CustomFieldType_Files
+      - title: Video File
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Sequence
+        value: None()
+        type: 0
+        typeString: CustomFieldType_Text
+      conversationID: 23
+      isRoot: 0
+      isGroup: 0
+      nodeColor: 
+      delaySimStatus: 0
+      falseConditionAction: Block
+      conditionPriority: 2
+      outgoingLinks: []
+      conditionsString: Variable["Frogsword_Blade"] == true
+      userScript: 'Variable["Mutiny_Outcome"] = "frogwins";
+
+        Variable["Doing_Mutiny_Interviews"]
+        = true;
+
+        SwitchScene("Mutiny04");'
+      onExecute:
+        m_PersistentCalls:
+          m_Calls: []
+      canvasRect:
+        serializedVersion: 2
+        x: 538.35
+        y: 1166.5311
+        width: 160
+        height: 30
+    - id: 28
+      fields:
+      - title: Title
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Pictures
+        value: '[]'
+        type: 3
+        typeString: CustomFieldType_Files
+      - title: Description
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Actor
+        value: 12
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Conversant
+        value: 5
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Menu Text
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Dialogue Text
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Parenthetical
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Audio Files
+        value: '[]'
+        type: 3
+        typeString: CustomFieldType_Files
+      - title: Video File
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Sequence
+        value: None()
+        type: 0
+        typeString: CustomFieldType_Text
+      conversationID: 23
+      isRoot: 0
+      isGroup: 0
+      nodeColor: 
+      delaySimStatus: 0
+      falseConditionAction: Block
+      conditionPriority: 2
+      outgoingLinks: []
+      conditionsString: 
+      userScript: 'Variable["Mutiny_Outcome"] = "hug";
+
+        Variable["Doing_Mutiny_Interviews"]
+        = true;
+
+        SwitchScene("Mutiny02");
+
+'
+      onExecute:
+        m_PersistentCalls:
+          m_Calls: []
+      canvasRect:
+        serializedVersion: 2
+        x: 873.45746
+        y: 982.37213
+        width: 160
+        height: 30
+    - id: 29
+      fields:
+      - title: Title
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Pictures
+        value: '[]'
+        type: 3
+        typeString: CustomFieldType_Files
+      - title: Description
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Actor
+        value: 11
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Conversant
+        value: 5
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Menu Text
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Dialogue Text
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Parenthetical
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Audio Files
+        value: '[]'
+        type: 3
+        typeString: CustomFieldType_Files
+      - title: Video File
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Sequence
+        value: None()
+        type: 0
+        typeString: CustomFieldType_Text
+      conversationID: 23
+      isRoot: 0
+      isGroup: 0
+      nodeColor: 
+      delaySimStatus: 0
+      falseConditionAction: Block
+      conditionPriority: 2
+      outgoingLinks: []
+      conditionsString: Variable["Frogsword_Blade"] == false
+      userScript: 'Variable["Mutiny_Outcome"] = "frogdies";
+
+        Variable["Doing_Mutiny_Interviews"]
+        = true;
+
+        SwitchScene("Mutiny03");'
+      onExecute:
+        m_PersistentCalls:
+          m_Calls: []
+      canvasRect:
+        serializedVersion: 2
+        x: 210.47156
+        y: 1174.2546
         width: 160
         height: 30
     entryGroups: []
-    canvasScrollPosition: {x: 0, y: 0}
-    canvasZoom: 0.7352666
+    canvasScrollPosition: {x: 0, y: 844.7014}
+    canvasZoom: 0.95287335
   - id: 24
     fields:
     - title: Title
@@ -21688,6 +22859,10 @@ MonoBehaviour:
       value: 2
       type: 5
       typeString: CustomFieldType_Actor
+    - title: automatic
+      value: True
+      type: 2
+      typeString: CustomFieldType_Boolean
     overrideSettings:
       useOverrides: 0
       overrideSubtitleSettings: 0
@@ -21802,7 +22977,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Actor
-        value: 2
+        value: 4
         type: 5
         typeString: CustomFieldType_Actor
       - title: Conversant
@@ -21814,7 +22989,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Dialogue Text
-        value: 'Now, can you please state your name. '
+        value: 'Now, if you could tell me your name. '
         type: 0
         typeString: CustomFieldType_Text
       - title: Parenthetical
@@ -21830,7 +23005,8 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Sequence
-        value: 
+        value: AudioWait(Documentary Only/Character Intros/if you could tell me your
+          name)
         type: 0
         typeString: CustomFieldType_Text
       conversationID: 24
@@ -21873,7 +23049,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Actor
-        value: 7
+        value: 4
         type: 5
         typeString: CustomFieldType_Actor
       - title: Conversant
@@ -21911,7 +23087,13 @@ MonoBehaviour:
       delaySimStatus: 0
       falseConditionAction: Block
       conditionPriority: 2
-      outgoingLinks: []
+      outgoingLinks:
+      - originConversationID: 24
+        originDialogueID: 2
+        destinationConversationID: 24
+        destinationDialogueID: 3
+        isConnector: 0
+        priority: 2
       conditionsString: 
       userScript: 
       onExecute:
@@ -21919,8 +23101,73 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 142
-        y: 255.001
+        x: 141.001
+        y: 256.00003
+        width: 160
+        height: 30
+    - id: 3
+      fields:
+      - title: Title
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Pictures
+        value: '[]'
+        type: 3
+        typeString: CustomFieldType_Files
+      - title: Description
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Actor
+        value: 4
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Conversant
+        value: 7
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Menu Text
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Dialogue Text
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Parenthetical
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Audio Files
+        value: '[]'
+        type: 3
+        typeString: CustomFieldType_Files
+      - title: Video File
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Sequence
+        value: None()
+        type: 0
+        typeString: CustomFieldType_Text
+      conversationID: 24
+      isRoot: 0
+      isGroup: 0
+      nodeColor: 
+      delaySimStatus: 0
+      falseConditionAction: Block
+      conditionPriority: 2
+      outgoingLinks: []
+      conditionsString: 
+      userScript: Advance()
+      onExecute:
+        m_PersistentCalls:
+          m_Calls: []
+      canvasRect:
+        serializedVersion: 2
+        x: 142.99902
+        y: 336.96906
         width: 160
         height: 30
     entryGroups: []
@@ -21948,6 +23195,10 @@ MonoBehaviour:
       value: 2
       type: 5
       typeString: CustomFieldType_Actor
+    - title: automatic
+      value: True
+      type: 2
+      typeString: CustomFieldType_Boolean
     overrideSettings:
       useOverrides: 0
       overrideSubtitleSettings: 0
@@ -22062,7 +23313,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Actor
-        value: 5
+        value: 4
         type: 5
         typeString: CustomFieldType_Actor
       - title: Conversant
@@ -22100,7 +23351,13 @@ MonoBehaviour:
       delaySimStatus: 0
       falseConditionAction: Block
       conditionPriority: 2
-      outgoingLinks: []
+      outgoingLinks:
+      - originConversationID: 25
+        originDialogueID: 1
+        destinationConversationID: 25
+        destinationDialogueID: 2
+        isConnector: 0
+        priority: 2
       conditionsString: 
       userScript: 
       onExecute:
@@ -22110,6 +23367,71 @@ MonoBehaviour:
         serializedVersion: 2
         x: 97
         y: 128
+        width: 160
+        height: 30
+    - id: 2
+      fields:
+      - title: Title
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Pictures
+        value: '[]'
+        type: 3
+        typeString: CustomFieldType_Files
+      - title: Description
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Actor
+        value: 7
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Conversant
+        value: 5
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Menu Text
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Dialogue Text
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Parenthetical
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Audio Files
+        value: '[]'
+        type: 3
+        typeString: CustomFieldType_Files
+      - title: Video File
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Sequence
+        value: None()
+        type: 0
+        typeString: CustomFieldType_Text
+      conversationID: 25
+      isRoot: 0
+      isGroup: 0
+      nodeColor: 
+      delaySimStatus: 0
+      falseConditionAction: Block
+      conditionPriority: 2
+      outgoingLinks: []
+      conditionsString: 
+      userScript: Advance()
+      onExecute:
+        m_PersistentCalls:
+          m_Calls: []
+      canvasRect:
+        serializedVersion: 2
+        x: 97
+        y: 190
         width: 160
         height: 30
     entryGroups: []
@@ -22137,6 +23459,10 @@ MonoBehaviour:
       value: 2
       type: 5
       typeString: CustomFieldType_Actor
+    - title: automatic
+      value: True
+      type: 2
+      typeString: CustomFieldType_Boolean
     overrideSettings:
       useOverrides: 0
       overrideSubtitleSettings: 0
@@ -22290,7 +23616,13 @@ MonoBehaviour:
       delaySimStatus: 0
       falseConditionAction: Block
       conditionPriority: 2
-      outgoingLinks: []
+      outgoingLinks:
+      - originConversationID: 26
+        originDialogueID: 1
+        destinationConversationID: 26
+        destinationDialogueID: 2
+        isConnector: 0
+        priority: 2
       conditionsString: 
       userScript: 
       onExecute:
@@ -22300,6 +23632,71 @@ MonoBehaviour:
         serializedVersion: 2
         x: 184
         y: 215
+        width: 160
+        height: 30
+    - id: 2
+      fields:
+      - title: Title
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Pictures
+        value: '[]'
+        type: 3
+        typeString: CustomFieldType_Files
+      - title: Description
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Actor
+        value: 7
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Conversant
+        value: 7
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Menu Text
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Dialogue Text
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Parenthetical
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Audio Files
+        value: '[]'
+        type: 3
+        typeString: CustomFieldType_Files
+      - title: Video File
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Sequence
+        value: None()
+        type: 0
+        typeString: CustomFieldType_Text
+      conversationID: 26
+      isRoot: 0
+      isGroup: 0
+      nodeColor: 
+      delaySimStatus: 0
+      falseConditionAction: Block
+      conditionPriority: 2
+      outgoingLinks: []
+      conditionsString: 
+      userScript: Advance()
+      onExecute:
+        m_PersistentCalls:
+          m_Calls: []
+      canvasRect:
+        serializedVersion: 2
+        x: 184
+        y: 283.97528
         width: 160
         height: 30
     entryGroups: []
@@ -22817,7 +24214,7 @@ MonoBehaviour:
       - title: Response Menu Sequence
         value: 
         type: 0
-        typeString: 
+        typeString: CustomFieldType_Text
       conversationID: 28
       isRoot: 0
       isGroup: 0
@@ -22862,6 +24259,10 @@ MonoBehaviour:
       value: 2
       type: 5
       typeString: CustomFieldType_Actor
+    - title: automatic
+      value: True
+      type: 2
+      typeString: CustomFieldType_Boolean
     overrideSettings:
       useOverrides: 0
       overrideSubtitleSettings: 0
@@ -23004,7 +24405,78 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Sequence
+        value: AudioWait(Interviews/Mutiny/hearthorn confronted his superior)
+        type: 0
+        typeString: CustomFieldType_Text
+      conversationID: 29
+      isRoot: 0
+      isGroup: 0
+      nodeColor: 
+      delaySimStatus: 0
+      falseConditionAction: Block
+      conditionPriority: 2
+      outgoingLinks:
+      - originConversationID: 29
+        originDialogueID: 1
+        destinationConversationID: 29
+        destinationDialogueID: 2
+        isConnector: 0
+        priority: 2
+      conditionsString: 
+      userScript: 
+      onExecute:
+        m_PersistentCalls:
+          m_Calls: []
+      canvasRect:
+        serializedVersion: 2
+        x: 29
+        y: 110
+        width: 160
+        height: 30
+    - id: 2
+      fields:
+      - title: Title
         value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Pictures
+        value: '[]'
+        type: 3
+        typeString: CustomFieldType_Files
+      - title: Description
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Actor
+        value: 4
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Conversant
+        value: 2
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Menu Text
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Dialogue Text
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Parenthetical
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Audio Files
+        value: '[]'
+        type: 3
+        typeString: CustomFieldType_Files
+      - title: Video File
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Sequence
+        value: None()
         type: 0
         typeString: CustomFieldType_Text
       conversationID: 29
@@ -23016,14 +24488,14 @@ MonoBehaviour:
       conditionPriority: 2
       outgoingLinks: []
       conditionsString: 
-      userScript: 
+      userScript: Advance()
       onExecute:
         m_PersistentCalls:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 30
-        y: 111
+        x: 29
+        y: 190
         width: 160
         height: 30
     entryGroups: []
@@ -23281,7 +24753,7 @@ MonoBehaviour:
       conditionPriority: 2
       outgoingLinks: []
       conditionsString: 
-      userScript: Advance()
+      userScript: SwitchScene("Port")
       onExecute:
         m_PersistentCalls:
           m_Calls: []
@@ -23292,8 +24764,8 @@ MonoBehaviour:
         width: 160
         height: 30
     entryGroups: []
-    canvasScrollPosition: {x: 0, y: 0}
-    canvasZoom: 1
+    canvasScrollPosition: {x: 16.753689, y: 27.219246}
+    canvasZoom: 1.2999997
   - id: 31
     fields:
     - title: Title
@@ -23546,7 +25018,7 @@ MonoBehaviour:
       conditionPriority: 2
       outgoingLinks: []
       conditionsString: 
-      userScript: Advance()
+      userScript: SwitchScene("Port")
       onExecute:
         m_PersistentCalls:
           m_Calls: []
@@ -24896,7 +26368,7 @@ MonoBehaviour:
       canvasRect:
         serializedVersion: 2
         x: 70
-        y: 419
+        y: 315.74188
         width: 160
         height: 30
     - id: 3
@@ -25038,13 +26510,13 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 53
-        y: 232
+        x: 58.012527
+        y: 240.02002
         width: 160
         height: 30
     entryGroups: []
-    canvasScrollPosition: {x: 1.9003726, y: 1.5684378}
-    canvasZoom: 0.98300034
+    canvasScrollPosition: {x: 5.2128367, y: 5.7534213}
+    canvasZoom: 0.9975004
   - id: 36
     fields:
     - title: Title
@@ -25197,7 +26669,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Dialogue Text
-        value: 'I had a fight with an Englishman. Our swords clashed well. '
+        value: We took everything. Their coin, their rum, their supplies.
         type: 0
         typeString: CustomFieldType_Text
       - title: Parenthetical
@@ -25213,7 +26685,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Sequence
-        value: AudioWait(Interviews/Plundering/fight with an englishman)
+        value: AudioWait(Interviews/Plundering/we took everything their coin)
         type: 0
         typeString: CustomFieldType_Text
       conversationID: 36
@@ -25237,8 +26709,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 30
-        y: 87
+        x: 50
+        y: 82
         width: 160
         height: 30
     - id: 2
@@ -25302,8 +26774,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 70
-        y: 419
+        x: 56
+        y: 326
         width: 160
         height: 30
     - id: 3
@@ -25333,8 +26805,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Dialogue Text
-        value: 'But I won. I put my blade through his heart, as the whites of his
-          eyes stared back at me. '
+        value: Their women?
         type: 0
         typeString: CustomFieldType_Text
       - title: Parenthetical
@@ -25350,7 +26821,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Sequence
-        value: AudioWait(Interviews/Plundering/put my blade through his heart)
+        value: AudioWait(Interviews/Plundering/their women)
         type: 0
         typeString: CustomFieldType_Text
       conversationID: 36
@@ -25374,8 +26845,8 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 62
-        y: 142
+        x: 38
+        y: 148
         width: 160
         height: 30
     - id: 4
@@ -25405,7 +26876,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Dialogue Text
-        value: Twas a decent night, yeah.
+        value: 'Christ no. We''re not misogynists. '
         type: 0
         typeString: CustomFieldType_Text
       - title: Parenthetical
@@ -25421,7 +26892,7 @@ MonoBehaviour:
         type: 0
         typeString: CustomFieldType_Text
       - title: Sequence
-        value: AudioWait(Interviews/Plundering/twas a decent night yeah)
+        value: AudioWait(Interviews/Plundering/were not mysoginists)
         type: 0
         typeString: CustomFieldType_Text
       conversationID: 36
@@ -25445,8 +26916,1403 @@ MonoBehaviour:
           m_Calls: []
       canvasRect:
         serializedVersion: 2
-        x: 53
-        y: 232
+        x: 50
+        y: 223
+        width: 160
+        height: 30
+    entryGroups: []
+    canvasScrollPosition: {x: 0, y: 0}
+    canvasZoom: 1
+  - id: 37
+    fields:
+    - title: Title
+      value: Mutiny02
+      type: 0
+      typeString: CustomFieldType_Text
+    - title: Pictures
+      value: '[]'
+      type: 3
+      typeString: CustomFieldType_Files
+    - title: Description
+      value: 
+      type: 0
+      typeString: CustomFieldType_Text
+    - title: Actor
+      value: 4
+      type: 5
+      typeString: CustomFieldType_Actor
+    - title: Conversant
+      value: 2
+      type: 5
+      typeString: CustomFieldType_Actor
+    - title: automatic
+      value: True
+      type: 2
+      typeString: CustomFieldType_Boolean
+    overrideSettings:
+      useOverrides: 0
+      overrideSubtitleSettings: 0
+      showNPCSubtitlesDuringLine: 1
+      showNPCSubtitlesWithResponses: 1
+      showPCSubtitlesDuringLine: 0
+      skipPCSubtitleAfterResponseMenu: 0
+      subtitleCharsPerSecond: 30
+      minSubtitleSeconds: 2
+      continueButton: 0
+      overrideSequenceSettings: 0
+      defaultSequence: 
+      defaultPlayerSequence: 
+      defaultResponseMenuSequence: 
+      overrideInputSettings: 0
+      alwaysForceResponseMenu: 1
+      includeInvalidEntries: 0
+      responseTimeout: 0
+      emTagForOldResponses: 0
+      emTagForInvalidResponses: 0
+      cancelSubtitle:
+        key: 27
+        buttonName: 
+      cancelConversation:
+        key: 27
+        buttonName: 
+    nodeColor: 
+    dialogueEntries:
+    - id: 0
+      fields:
+      - title: Title
+        value: START
+        type: 0
+        typeString: 
+      - title: Pictures
+        value: '[]'
+        type: 3
+        typeString: CustomFieldType_Files
+      - title: Description
+        value: 
+        type: 0
+        typeString: 
+      - title: Actor
+        value: 4
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Conversant
+        value: 2
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Menu Text
+        value: 
+        type: 0
+        typeString: 
+      - title: Dialogue Text
+        value: 
+        type: 0
+        typeString: 
+      - title: Parenthetical
+        value: 
+        type: 0
+        typeString: 
+      - title: Audio Files
+        value: '[]'
+        type: 3
+        typeString: CustomFieldType_Files
+      - title: Video File
+        value: 
+        type: 0
+        typeString: 
+      - title: Sequence
+        value: None()
+        type: 0
+        typeString: 
+      conversationID: 37
+      isRoot: 0
+      isGroup: 0
+      nodeColor: 
+      delaySimStatus: 0
+      falseConditionAction: 
+      conditionPriority: 2
+      outgoingLinks:
+      - originConversationID: 37
+        originDialogueID: 0
+        destinationConversationID: 37
+        destinationDialogueID: 1
+        isConnector: 0
+        priority: 2
+      conditionsString: 
+      userScript: 
+      onExecute:
+        m_PersistentCalls:
+          m_Calls: []
+      canvasRect:
+        serializedVersion: 2
+        x: 30
+        y: 20
+        width: 160
+        height: 30
+    - id: 1
+      fields:
+      - title: Title
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Pictures
+        value: '[]'
+        type: 3
+        typeString: CustomFieldType_Files
+      - title: Description
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Actor
+        value: 2
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Conversant
+        value: 4
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Menu Text
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Dialogue Text
+        value: But he proceeded to clearly lose his nerve, instead embracing Frogsword,
+          causing several crew members to gently weep.
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Parenthetical
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Audio Files
+        value: '[]'
+        type: 3
+        typeString: CustomFieldType_Files
+      - title: Video File
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Sequence
+        value: AudioWait(Interviews/Mutiny/several crew members to gentlely weep)
+        type: 0
+        typeString: CustomFieldType_Text
+      conversationID: 37
+      isRoot: 0
+      isGroup: 0
+      nodeColor: 
+      delaySimStatus: 0
+      falseConditionAction: Block
+      conditionPriority: 2
+      outgoingLinks:
+      - originConversationID: 37
+        originDialogueID: 1
+        destinationConversationID: 37
+        destinationDialogueID: 2
+        isConnector: 0
+        priority: 2
+      conditionsString: 
+      userScript: 
+      onExecute:
+        m_PersistentCalls:
+          m_Calls: []
+      canvasRect:
+        serializedVersion: 2
+        x: 30
+        y: 87
+        width: 160
+        height: 30
+    - id: 2
+      fields:
+      - title: Title
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Pictures
+        value: '[]'
+        type: 3
+        typeString: CustomFieldType_Files
+      - title: Description
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Actor
+        value: 4
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Conversant
+        value: 2
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Menu Text
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Dialogue Text
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Parenthetical
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Audio Files
+        value: '[]'
+        type: 3
+        typeString: CustomFieldType_Files
+      - title: Video File
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Sequence
+        value: None()
+        type: 0
+        typeString: CustomFieldType_Text
+      conversationID: 37
+      isRoot: 0
+      isGroup: 0
+      nodeColor: 
+      delaySimStatus: 0
+      falseConditionAction: Block
+      conditionPriority: 2
+      outgoingLinks: []
+      conditionsString: 
+      userScript: SwitchScene("Port")
+      onExecute:
+        m_PersistentCalls:
+          m_Calls: []
+      canvasRect:
+        serializedVersion: 2
+        x: 29
+        y: 154
+        width: 160
+        height: 30
+    entryGroups: []
+    canvasScrollPosition: {x: 14.381114, y: 29.109947}
+    canvasZoom: 1.2999997
+  - id: 38
+    fields:
+    - title: Title
+      value: Mutiny03
+      type: 0
+      typeString: CustomFieldType_Text
+    - title: Pictures
+      value: '[]'
+      type: 3
+      typeString: CustomFieldType_Files
+    - title: Description
+      value: 
+      type: 0
+      typeString: CustomFieldType_Text
+    - title: Actor
+      value: 4
+      type: 5
+      typeString: CustomFieldType_Actor
+    - title: Conversant
+      value: 2
+      type: 5
+      typeString: CustomFieldType_Actor
+    - title: automatic
+      value: True
+      type: 2
+      typeString: CustomFieldType_Boolean
+    overrideSettings:
+      useOverrides: 0
+      overrideSubtitleSettings: 0
+      showNPCSubtitlesDuringLine: 1
+      showNPCSubtitlesWithResponses: 1
+      showPCSubtitlesDuringLine: 0
+      skipPCSubtitleAfterResponseMenu: 0
+      subtitleCharsPerSecond: 30
+      minSubtitleSeconds: 2
+      continueButton: 0
+      overrideSequenceSettings: 0
+      defaultSequence: 
+      defaultPlayerSequence: 
+      defaultResponseMenuSequence: 
+      overrideInputSettings: 0
+      alwaysForceResponseMenu: 1
+      includeInvalidEntries: 0
+      responseTimeout: 0
+      emTagForOldResponses: 0
+      emTagForInvalidResponses: 0
+      cancelSubtitle:
+        key: 27
+        buttonName: 
+      cancelConversation:
+        key: 27
+        buttonName: 
+    nodeColor: 
+    dialogueEntries:
+    - id: 0
+      fields:
+      - title: Title
+        value: START
+        type: 0
+        typeString: 
+      - title: Pictures
+        value: '[]'
+        type: 3
+        typeString: CustomFieldType_Files
+      - title: Description
+        value: 
+        type: 0
+        typeString: 
+      - title: Actor
+        value: 4
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Conversant
+        value: 2
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Menu Text
+        value: 
+        type: 0
+        typeString: 
+      - title: Dialogue Text
+        value: 
+        type: 0
+        typeString: 
+      - title: Parenthetical
+        value: 
+        type: 0
+        typeString: 
+      - title: Audio Files
+        value: '[]'
+        type: 3
+        typeString: CustomFieldType_Files
+      - title: Video File
+        value: 
+        type: 0
+        typeString: 
+      - title: Sequence
+        value: None()
+        type: 0
+        typeString: 
+      conversationID: 38
+      isRoot: 0
+      isGroup: 0
+      nodeColor: 
+      delaySimStatus: 0
+      falseConditionAction: 
+      conditionPriority: 2
+      outgoingLinks:
+      - originConversationID: 38
+        originDialogueID: 0
+        destinationConversationID: 38
+        destinationDialogueID: 1
+        isConnector: 0
+        priority: 2
+      conditionsString: 
+      userScript: 
+      onExecute:
+        m_PersistentCalls:
+          m_Calls: []
+      canvasRect:
+        serializedVersion: 2
+        x: 30
+        y: 20
+        width: 160
+        height: 30
+    - id: 1
+      fields:
+      - title: Title
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Pictures
+        value: '[]'
+        type: 3
+        typeString: CustomFieldType_Files
+      - title: Description
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Actor
+        value: 2
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Conversant
+        value: 4
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Menu Text
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Dialogue Text
+        value: 'Drawing his rapier, he pierced Frogsword through his heart, taking
+          his hat and becoming the new pirate Captain. '
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Parenthetical
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Audio Files
+        value: '[]'
+        type: 3
+        typeString: CustomFieldType_Files
+      - title: Video File
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Sequence
+        value: AudioWait(Interviews/Mutiny/hearthorn becomes captain)
+        type: 0
+        typeString: CustomFieldType_Text
+      conversationID: 38
+      isRoot: 0
+      isGroup: 0
+      nodeColor: 
+      delaySimStatus: 0
+      falseConditionAction: Block
+      conditionPriority: 2
+      outgoingLinks:
+      - originConversationID: 38
+        originDialogueID: 1
+        destinationConversationID: 38
+        destinationDialogueID: 2
+        isConnector: 0
+        priority: 2
+      conditionsString: 
+      userScript: 
+      onExecute:
+        m_PersistentCalls:
+          m_Calls: []
+      canvasRect:
+        serializedVersion: 2
+        x: 30
+        y: 87
+        width: 160
+        height: 30
+    - id: 2
+      fields:
+      - title: Title
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Pictures
+        value: '[]'
+        type: 3
+        typeString: CustomFieldType_Files
+      - title: Description
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Actor
+        value: 4
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Conversant
+        value: 2
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Menu Text
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Dialogue Text
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Parenthetical
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Audio Files
+        value: '[]'
+        type: 3
+        typeString: CustomFieldType_Files
+      - title: Video File
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Sequence
+        value: None()
+        type: 0
+        typeString: CustomFieldType_Text
+      conversationID: 38
+      isRoot: 0
+      isGroup: 0
+      nodeColor: 
+      delaySimStatus: 0
+      falseConditionAction: Block
+      conditionPriority: 2
+      outgoingLinks: []
+      conditionsString: 
+      userScript: SwitchScene("Port")
+      onExecute:
+        m_PersistentCalls:
+          m_Calls: []
+      canvasRect:
+        serializedVersion: 2
+        x: 29
+        y: 154
+        width: 160
+        height: 30
+    entryGroups: []
+    canvasScrollPosition: {x: 0, y: 0}
+    canvasZoom: 1
+  - id: 39
+    fields:
+    - title: Title
+      value: Mutiny04
+      type: 0
+      typeString: CustomFieldType_Text
+    - title: Pictures
+      value: '[]'
+      type: 3
+      typeString: CustomFieldType_Files
+    - title: Description
+      value: 
+      type: 0
+      typeString: CustomFieldType_Text
+    - title: Actor
+      value: 4
+      type: 5
+      typeString: CustomFieldType_Actor
+    - title: Conversant
+      value: 2
+      type: 5
+      typeString: CustomFieldType_Actor
+    - title: automatic
+      value: True
+      type: 2
+      typeString: CustomFieldType_Boolean
+    overrideSettings:
+      useOverrides: 0
+      overrideSubtitleSettings: 0
+      showNPCSubtitlesDuringLine: 1
+      showNPCSubtitlesWithResponses: 1
+      showPCSubtitlesDuringLine: 0
+      skipPCSubtitleAfterResponseMenu: 0
+      subtitleCharsPerSecond: 30
+      minSubtitleSeconds: 2
+      continueButton: 0
+      overrideSequenceSettings: 0
+      defaultSequence: 
+      defaultPlayerSequence: 
+      defaultResponseMenuSequence: 
+      overrideInputSettings: 0
+      alwaysForceResponseMenu: 1
+      includeInvalidEntries: 0
+      responseTimeout: 0
+      emTagForOldResponses: 0
+      emTagForInvalidResponses: 0
+      cancelSubtitle:
+        key: 27
+        buttonName: 
+      cancelConversation:
+        key: 27
+        buttonName: 
+    nodeColor: 
+    dialogueEntries:
+    - id: 0
+      fields:
+      - title: Title
+        value: START
+        type: 0
+        typeString: 
+      - title: Pictures
+        value: '[]'
+        type: 3
+        typeString: CustomFieldType_Files
+      - title: Description
+        value: 
+        type: 0
+        typeString: 
+      - title: Actor
+        value: 4
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Conversant
+        value: 2
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Menu Text
+        value: 
+        type: 0
+        typeString: 
+      - title: Dialogue Text
+        value: 
+        type: 0
+        typeString: 
+      - title: Parenthetical
+        value: 
+        type: 0
+        typeString: 
+      - title: Audio Files
+        value: '[]'
+        type: 3
+        typeString: CustomFieldType_Files
+      - title: Video File
+        value: 
+        type: 0
+        typeString: 
+      - title: Sequence
+        value: None()
+        type: 0
+        typeString: 
+      conversationID: 39
+      isRoot: 0
+      isGroup: 0
+      nodeColor: 
+      delaySimStatus: 0
+      falseConditionAction: 
+      conditionPriority: 2
+      outgoingLinks:
+      - originConversationID: 39
+        originDialogueID: 0
+        destinationConversationID: 39
+        destinationDialogueID: 1
+        isConnector: 0
+        priority: 2
+      conditionsString: 
+      userScript: 
+      onExecute:
+        m_PersistentCalls:
+          m_Calls: []
+      canvasRect:
+        serializedVersion: 2
+        x: 30
+        y: 20
+        width: 160
+        height: 30
+    - id: 1
+      fields:
+      - title: Title
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Pictures
+        value: '[]'
+        type: 3
+        typeString: CustomFieldType_Files
+      - title: Description
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Actor
+        value: 2
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Conversant
+        value: 4
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Menu Text
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Dialogue Text
+        value: 'He drew his rapier, but in a dramatic twist, so did Frogsword, and
+          the two danced back and forth, swashbuckling, until Frogsword emerged victorious. '
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Parenthetical
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Audio Files
+        value: '[]'
+        type: 3
+        typeString: CustomFieldType_Files
+      - title: Video File
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Sequence
+        value: AudioWait(Interviews/Mutiny/in a dramatic twist so did frogsword)
+        type: 0
+        typeString: CustomFieldType_Text
+      conversationID: 39
+      isRoot: 0
+      isGroup: 0
+      nodeColor: 
+      delaySimStatus: 0
+      falseConditionAction: Block
+      conditionPriority: 2
+      outgoingLinks:
+      - originConversationID: 39
+        originDialogueID: 1
+        destinationConversationID: 39
+        destinationDialogueID: 2
+        isConnector: 0
+        priority: 2
+      conditionsString: 
+      userScript: 
+      onExecute:
+        m_PersistentCalls:
+          m_Calls: []
+      canvasRect:
+        serializedVersion: 2
+        x: 30
+        y: 87
+        width: 160
+        height: 30
+    - id: 2
+      fields:
+      - title: Title
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Pictures
+        value: '[]'
+        type: 3
+        typeString: CustomFieldType_Files
+      - title: Description
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Actor
+        value: 4
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Conversant
+        value: 2
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Menu Text
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Dialogue Text
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Parenthetical
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Audio Files
+        value: '[]'
+        type: 3
+        typeString: CustomFieldType_Files
+      - title: Video File
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Sequence
+        value: None()
+        type: 0
+        typeString: CustomFieldType_Text
+      conversationID: 39
+      isRoot: 0
+      isGroup: 0
+      nodeColor: 
+      delaySimStatus: 0
+      falseConditionAction: Block
+      conditionPriority: 2
+      outgoingLinks: []
+      conditionsString: 
+      userScript: SwitchScene("Port")
+      onExecute:
+        m_PersistentCalls:
+          m_Calls: []
+      canvasRect:
+        serializedVersion: 2
+        x: 29
+        y: 154
+        width: 160
+        height: 30
+    entryGroups: []
+    canvasScrollPosition: {x: 0, y: 0}
+    canvasZoom: 1
+  - id: 40
+    fields:
+    - title: Title
+      value: Mutiny12
+      type: 0
+      typeString: CustomFieldType_Text
+    - title: Pictures
+      value: '[]'
+      type: 3
+      typeString: CustomFieldType_Files
+    - title: Description
+      value: 
+      type: 0
+      typeString: CustomFieldType_Text
+    - title: Actor
+      value: 4
+      type: 5
+      typeString: CustomFieldType_Actor
+    - title: Conversant
+      value: 2
+      type: 5
+      typeString: CustomFieldType_Actor
+    - title: automatic
+      value: True
+      type: 2
+      typeString: CustomFieldType_Boolean
+    overrideSettings:
+      useOverrides: 0
+      overrideSubtitleSettings: 0
+      showNPCSubtitlesDuringLine: 1
+      showNPCSubtitlesWithResponses: 1
+      showPCSubtitlesDuringLine: 0
+      skipPCSubtitleAfterResponseMenu: 0
+      subtitleCharsPerSecond: 30
+      minSubtitleSeconds: 2
+      continueButton: 0
+      overrideSequenceSettings: 0
+      defaultSequence: 
+      defaultPlayerSequence: 
+      defaultResponseMenuSequence: 
+      overrideInputSettings: 0
+      alwaysForceResponseMenu: 1
+      includeInvalidEntries: 0
+      responseTimeout: 0
+      emTagForOldResponses: 0
+      emTagForInvalidResponses: 0
+      cancelSubtitle:
+        key: 27
+        buttonName: 
+      cancelConversation:
+        key: 27
+        buttonName: 
+    nodeColor: 
+    dialogueEntries:
+    - id: 0
+      fields:
+      - title: Title
+        value: START
+        type: 0
+        typeString: 
+      - title: Pictures
+        value: '[]'
+        type: 3
+        typeString: CustomFieldType_Files
+      - title: Description
+        value: 
+        type: 0
+        typeString: 
+      - title: Actor
+        value: 4
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Conversant
+        value: 2
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Menu Text
+        value: 
+        type: 0
+        typeString: 
+      - title: Dialogue Text
+        value: 
+        type: 0
+        typeString: 
+      - title: Parenthetical
+        value: 
+        type: 0
+        typeString: 
+      - title: Audio Files
+        value: '[]'
+        type: 3
+        typeString: CustomFieldType_Files
+      - title: Video File
+        value: 
+        type: 0
+        typeString: 
+      - title: Sequence
+        value: None()
+        type: 0
+        typeString: 
+      conversationID: 40
+      isRoot: 0
+      isGroup: 0
+      nodeColor: 
+      delaySimStatus: 0
+      falseConditionAction: 
+      conditionPriority: 2
+      outgoingLinks:
+      - originConversationID: 40
+        originDialogueID: 0
+        destinationConversationID: 40
+        destinationDialogueID: 1
+        isConnector: 0
+        priority: 2
+      conditionsString: 
+      userScript: 
+      onExecute:
+        m_PersistentCalls:
+          m_Calls: []
+      canvasRect:
+        serializedVersion: 2
+        x: 30
+        y: 20
+        width: 160
+        height: 30
+    - id: 1
+      fields:
+      - title: Title
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Pictures
+        value: '[]'
+        type: 3
+        typeString: CustomFieldType_Files
+      - title: Description
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Actor
+        value: 4
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Conversant
+        value: 2
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Menu Text
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Dialogue Text
+        value: 'Oh, I was just so.. grateful for our amazing Captain. '
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Parenthetical
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Audio Files
+        value: '[]'
+        type: 3
+        typeString: CustomFieldType_Files
+      - title: Video File
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Sequence
+        value: AudioWait(Interviews/Mutiny/grateful for our amazing)
+        type: 0
+        typeString: CustomFieldType_Text
+      conversationID: 40
+      isRoot: 0
+      isGroup: 0
+      nodeColor: 
+      delaySimStatus: 0
+      falseConditionAction: Block
+      conditionPriority: 2
+      outgoingLinks:
+      - originConversationID: 40
+        originDialogueID: 1
+        destinationConversationID: 40
+        destinationDialogueID: 3
+        isConnector: 0
+        priority: 2
+      conditionsString: 
+      userScript: 
+      onExecute:
+        m_PersistentCalls:
+          m_Calls: []
+      canvasRect:
+        serializedVersion: 2
+        x: 30
+        y: 87
+        width: 160
+        height: 30
+    - id: 2
+      fields:
+      - title: Title
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Pictures
+        value: '[]'
+        type: 3
+        typeString: CustomFieldType_Files
+      - title: Description
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Actor
+        value: 4
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Conversant
+        value: 2
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Menu Text
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Dialogue Text
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Parenthetical
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Audio Files
+        value: '[]'
+        type: 3
+        typeString: CustomFieldType_Files
+      - title: Video File
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Sequence
+        value: None()
+        type: 0
+        typeString: CustomFieldType_Text
+      conversationID: 40
+      isRoot: 0
+      isGroup: 0
+      nodeColor: 
+      delaySimStatus: 0
+      falseConditionAction: Block
+      conditionPriority: 2
+      outgoingLinks: []
+      conditionsString: 
+      userScript: Advance()
+      onExecute:
+        m_PersistentCalls:
+          m_Calls: []
+      canvasRect:
+        serializedVersion: 2
+        x: 27
+        y: 203
+        width: 160
+        height: 30
+    - id: 3
+      fields:
+      - title: Title
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Pictures
+        value: '[]'
+        type: 3
+        typeString: CustomFieldType_Files
+      - title: Description
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Actor
+        value: 4
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Conversant
+        value: 2
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Menu Text
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Dialogue Text
+        value: Are we done now?
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Parenthetical
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Audio Files
+        value: '[]'
+        type: 3
+        typeString: CustomFieldType_Files
+      - title: Video File
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Sequence
+        value: AudioWait(Interviews/Mutiny/are we done now)
+        type: 0
+        typeString: CustomFieldType_Text
+      conversationID: 40
+      isRoot: 0
+      isGroup: 0
+      nodeColor: 
+      delaySimStatus: 0
+      falseConditionAction: Block
+      conditionPriority: 2
+      outgoingLinks:
+      - originConversationID: 40
+        originDialogueID: 3
+        destinationConversationID: 40
+        destinationDialogueID: 2
+        isConnector: 0
+        priority: 2
+      conditionsString: 
+      userScript: 
+      onExecute:
+        m_PersistentCalls:
+          m_Calls: []
+      canvasRect:
+        serializedVersion: 2
+        x: 31
+        y: 137
+        width: 160
+        height: 30
+    entryGroups: []
+    canvasScrollPosition: {x: 0, y: 0}
+    canvasZoom: 1
+  - id: 41
+    fields:
+    - title: Title
+      value: Mutiny10
+      type: 0
+      typeString: CustomFieldType_Text
+    - title: Pictures
+      value: '[]'
+      type: 3
+      typeString: CustomFieldType_Files
+    - title: Description
+      value: 
+      type: 0
+      typeString: CustomFieldType_Text
+    - title: Actor
+      value: 4
+      type: 5
+      typeString: CustomFieldType_Actor
+    - title: Conversant
+      value: 2
+      type: 5
+      typeString: CustomFieldType_Actor
+    - title: automatic
+      value: True
+      type: 2
+      typeString: CustomFieldType_Boolean
+    overrideSettings:
+      useOverrides: 0
+      overrideSubtitleSettings: 0
+      showNPCSubtitlesDuringLine: 1
+      showNPCSubtitlesWithResponses: 1
+      showPCSubtitlesDuringLine: 0
+      skipPCSubtitleAfterResponseMenu: 0
+      subtitleCharsPerSecond: 30
+      minSubtitleSeconds: 2
+      continueButton: 0
+      overrideSequenceSettings: 0
+      defaultSequence: 
+      defaultPlayerSequence: 
+      defaultResponseMenuSequence: 
+      overrideInputSettings: 0
+      alwaysForceResponseMenu: 1
+      includeInvalidEntries: 0
+      responseTimeout: 0
+      emTagForOldResponses: 0
+      emTagForInvalidResponses: 0
+      cancelSubtitle:
+        key: 27
+        buttonName: 
+      cancelConversation:
+        key: 27
+        buttonName: 
+    nodeColor: 
+    dialogueEntries:
+    - id: 0
+      fields:
+      - title: Title
+        value: START
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Pictures
+        value: '[]'
+        type: 3
+        typeString: CustomFieldType_Files
+      - title: Description
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Actor
+        value: 4
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Conversant
+        value: 2
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Menu Text
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Dialogue Text
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Parenthetical
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Audio Files
+        value: '[]'
+        type: 3
+        typeString: CustomFieldType_Files
+      - title: Video File
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Sequence
+        value: None()
+        type: 0
+        typeString: CustomFieldType_Text
+      conversationID: 41
+      isRoot: 0
+      isGroup: 0
+      nodeColor: 
+      delaySimStatus: 0
+      falseConditionAction: Block
+      conditionPriority: 2
+      outgoingLinks:
+      - originConversationID: 41
+        originDialogueID: 0
+        destinationConversationID: 41
+        destinationDialogueID: 1
+        isConnector: 0
+        priority: 2
+      conditionsString: 
+      userScript: 
+      onExecute:
+        m_PersistentCalls:
+          m_Calls: []
+      canvasRect:
+        serializedVersion: 2
+        x: 30
+        y: 20
+        width: 160
+        height: 30
+    - id: 1
+      fields:
+      - title: Title
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Pictures
+        value: '[]'
+        type: 3
+        typeString: CustomFieldType_Files
+      - title: Description
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Actor
+        value: 4
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Conversant
+        value: 2
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Menu Text
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Dialogue Text
+        value: 'Everyone was so emotional. I''m glad we can be open about our feelings.
+          The true pirate way. '
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Parenthetical
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Audio Files
+        value: '[]'
+        type: 3
+        typeString: CustomFieldType_Files
+      - title: Video File
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Sequence
+        value: AudioWait(Interviews/Mutiny/everyone was so emotional)
+        type: 0
+        typeString: CustomFieldType_Text
+      conversationID: 41
+      isRoot: 0
+      isGroup: 0
+      nodeColor: 
+      delaySimStatus: 0
+      falseConditionAction: Block
+      conditionPriority: 2
+      outgoingLinks:
+      - originConversationID: 41
+        originDialogueID: 1
+        destinationConversationID: 41
+        destinationDialogueID: 2
+        isConnector: 0
+        priority: 2
+      conditionsString: 
+      userScript: 
+      onExecute:
+        m_PersistentCalls:
+          m_Calls: []
+      canvasRect:
+        serializedVersion: 2
+        x: 33
+        y: 121
+        width: 160
+        height: 30
+    - id: 2
+      fields:
+      - title: Title
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Pictures
+        value: '[]'
+        type: 3
+        typeString: CustomFieldType_Files
+      - title: Description
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Actor
+        value: 4
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Conversant
+        value: 2
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Menu Text
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Dialogue Text
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Parenthetical
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Audio Files
+        value: '[]'
+        type: 3
+        typeString: CustomFieldType_Files
+      - title: Video File
+        value: 
+        type: 0
+        typeString: CustomFieldType_Text
+      - title: Sequence
+        value: None()
+        type: 0
+        typeString: CustomFieldType_Text
+      conversationID: 41
+      isRoot: 0
+      isGroup: 0
+      nodeColor: 
+      delaySimStatus: 0
+      falseConditionAction: Block
+      conditionPriority: 2
+      outgoingLinks: []
+      conditionsString: 
+      userScript: Advance()
+      onExecute:
+        m_PersistentCalls:
+          m_Calls: []
+      canvasRect:
+        serializedVersion: 2
+        x: 27
+        y: 203
         width: 160
         height: 30
     entryGroups: []
