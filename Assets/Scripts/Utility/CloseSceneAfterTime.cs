@@ -12,7 +12,7 @@ public class CloseSceneAfterTime : MonoBehaviour {
     void Update() {
         time -= Time.deltaTime;
         if (time <= 0f) {
-            GameState.LoadLastLocation();
+            GameStateMono.instance.LoadLastLocation();
         }
     }
 }

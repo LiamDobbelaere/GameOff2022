@@ -67,7 +67,7 @@ public class GoToSceneOnUse : MonoBehaviour {
     }
 
     private void ExecuteUse() {
-        GameState.StoreLastLocation();
+        GameStateMono.instance.StoreLastLocation();
         SceneManager.LoadScene(sceneToLoad);
     }
 }

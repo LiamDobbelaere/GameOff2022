@@ -17,7 +17,7 @@ public class SceneTransitionTrigger : MonoBehaviour {
 
     private void OnTriggerEnter2D(Collider2D collision) {
         if (targetMarkerName.Length > 0) {
-            GameState.targetMarker = targetMarkerName;
+            GameStateMono.instance.targetMarker = targetMarkerName;
         }
 
         SceneManager.LoadScene(targetSceneName);

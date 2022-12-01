@@ -6,43 +6,48 @@ public class Notification {
     public string message;
 }
 
-public static class GameState {
-    public static bool isFirstTime = true;
-    public static string lastScene;
-    public static Vector2? lastPosition = null;
-    public static Texture2D customFlagTexture = new Texture2D(256, 256, TextureFormat.RGB24, false);
-    public static Texture2D customFlagTextureDrawn = new Texture2D(256, 256, TextureFormat.RGB24, false);
-    public static bool customFlagIsJollyRoger = false;
-    public static Dictionary<string, bool> hasTakenPictureOf = new Dictionary<string, bool>() {
+public class GameState {
+    public bool isFirstTime = true;
+    public string lastScene;
+    public Vector2? lastPosition = null;
+    public Texture2D customFlagTexture = new Texture2D(256, 256, TextureFormat.RGB24, false);
+    public Texture2D customFlagTextureDrawn = new Texture2D(256, 256, TextureFormat.RGB24, false);
+    public bool customFlagIsJollyRoger = false;
+    public Dictionary<string, bool> hasTakenPictureOf = new Dictionary<string, bool>() {
         ["flag"] = false,
         ["hearthorn"] = false,
         ["seagulls"] = false
     };
-    public static bool inPhotographyMode = false;
-    public static string targetMarker;
-    public static List<Notification> notifications = new List<Notification> { };
-    public static bool hasUnreadNotifications = false;
-    public static List<string> documentaryScenes = new List<string> { };
-    private static float lastNotificationTime = float.MinValue;
-    public static bool justSawTheFlag = false;
-    public static string lastChosenFilterPhoto = "";
+    public bool inPhotographyMode = false;
+    public string targetMarker;
+    public List<Notification> notifications = new List<Notification> { };
+    public bool hasUnreadNotifications = false;
+    public List<string> documentaryScenes = new List<string> { };
+    private float lastNotificationTime = float.MinValue;
+    public bool justSawTheFlag = false;
+    public string lastChosenFilterPhoto = "";
 
-    public static void StoreLastLocation() {
+    public void StoreLastLocation() {
         if (GameObject.FindGameObjectWithTag("Player") != null) {
             lastScene = SceneManager.GetActiveScene().name;
             lastPosition = GameObject.FindGameObjectWithTag("Player").transform.position;
         }
     }
 
-    public static void LoadLastLocation() {
+    public void LoadLastLocation() {
         SceneManager.LoadScene(lastScene);
     }
 
-    public static void ShowUIHint(string message) {
-        GameObject.FindGameObjectWithTag("HintsCanvas").GetComponent<HintsCanvas>().ShowHint(message);
+    public void ShowUIHint(string message) {
+        if (GameObject.FindGameObjectWithTag("HintsCanvas") != null) {
+            HintsCanvas canvas = GameObject.FindGameObjectWithTag("HintsCanvas").GetComponent<HintsCanvas>();
+            if (canvas != null) {
+                canvas.ShowHint(message);
+            }
+        }
     }
 
-    public static void AddNotification(string message) {
+    public void AddNotification(string message) {
         if (Time.time - lastNotificationTime > 0.5f) {
             SaneAudio.PlaySFX("phone.notification");
             lastNotificationTime = Time.time;
@@ -57,7 +62,7 @@ public static class GameState {
         ShowUIHint("You have a new notification, press TAB to open your phone!");
     }
 
-    public static void AddDocumentaryScene(string sceneName) {
+    public void AddDocumentaryScene(string sceneName) {
         documentaryScenes.Add(sceneName);
         ShowUIHint("You made progress on your documentary!");
     }

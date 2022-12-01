@@ -187,16 +187,16 @@ public class Calculator : MonoBehaviour {
 
         // Cheat: show all pictures
         if (result == -159632) {
-            GameState.hasTakenPictureOf["flag"] = true;
-            GameState.hasTakenPictureOf["hearthorn"] = true;
-            GameState.hasTakenPictureOf["seagulls"] = true;
+            GameStateMono.instance.hasTakenPictureOf["flag"] = true;
+            GameStateMono.instance.hasTakenPictureOf["hearthorn"] = true;
+            GameStateMono.instance.hasTakenPictureOf["seagulls"] = true;
 
             input.text = "All pics";
         }
 
         // Cheat: add documentary scene test
         if (result == -147896) {
-            GameState.AddDocumentaryScene("Plunder01");
+            GameStateMono.instance.AddDocumentaryScene("Plunder01");
 
             input.text = "Docu test";
         }

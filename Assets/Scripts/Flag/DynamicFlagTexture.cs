@@ -10,7 +10,7 @@ public class DynamicFlagTexture : MonoBehaviour {
         string chosenPhoto = DialogueLua.GetVariable("Chosen Photo For Flag").asString;
 
         if (chosenPhoto.Contains("flag")) {
-            GetComponent<Renderer>().material.mainTexture = GameState.customFlagTextureDrawn;
+            GetComponent<Renderer>().material.mainTexture = GameStateMono.instance.customFlagTextureDrawn;
         } else if (chosenPhoto == "hearthorn") {
             GetComponent<Renderer>().material.mainTexture = hearthornFlag;
         } else if (chosenPhoto == "seagulls") {

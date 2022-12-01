@@ -17,11 +17,11 @@ public class PlayerController : MonoBehaviour {
 
         GetPlayerScaleTargets();
 
-        GameState.inPhotographyMode = false;
+        GameStateMono.instance.inPhotographyMode = false;
 
-        if (GameState.isFirstTime) {
+        if (GameStateMono.instance.isFirstTime) {
             AddMechanicsExplanationNotification();
-            GameState.isFirstTime = false;
+            GameStateMono.instance.isFirstTime = false;
         }
         DisableDoingFlagInterviewsWhenDone();
         DisableDoingPlunderingInterviewsWhenDone();
@@ -43,27 +43,27 @@ public class PlayerController : MonoBehaviour {
     }
 
     private void RestoreLastPositionIfSet() {
-        if (GameState.lastPosition == null) {
+        if (GameStateMono.instance.lastPosition == null) {
             return;
         }
 
-        transform.position = (Vector2)GameState.lastPosition;
-        GameState.lastPosition = null;
+        transform.position = (Vector2)GameStateMono.instance.lastPosition;
+        GameStateMono.instance.lastPosition = null;
     }
 
     private void RestoreMarkerPositionIfSet() {
-        if (GameState.targetMarker == null) {
+        if (GameStateMono.instance.targetMarker == null) {
             return;
         }
 
-        GameObject marker = GameObject.Find(GameState.targetMarker);
+        GameObject marker = GameObject.Find(GameStateMono.instance.targetMarker);
         if (marker == null) {
-            Debug.LogError("Marker not found for name " + GameState.targetMarker);
+            Debug.LogError("Marker not found for name " + GameStateMono.instance.targetMarker);
         }
 
         transform.position = (Vector2)marker.transform.position;
 
-        GameState.targetMarker = null;
+        GameStateMono.instance.targetMarker = null;
     }
 
     private void DisableDoingFlagInterviewsWhenDone() {
@@ -84,17 +84,17 @@ public class PlayerController : MonoBehaviour {
     }
 
     private void AddMechanicsExplanationNotification() {
-        GameState.AddNotification("The goal is simple. Make the most cliche pirate documentary ever. Or go completely wild.");
-        GameState.AddNotification("Speak to the crew, use your apps to assist you, and once you've plotted and schemed, talk to Council Chair Coldwell.");
-        GameState.AddNotification("After each event, you can then interview several pirates to create a unique narrative.");
-        GameState.AddNotification("There are many branching paths, and everything will stick together at the end to make your hopefully epic documentary.");
-        GameState.AddNotification("You can look at your checklist. The main objectives are in order, whilst the side objectives can be completed at any time. Everything will stick together at the end, and you'll have a full documentary based on your decisions.");
+        GameStateMono.instance.AddNotification("The goal is simple. Make the most cliche pirate documentary ever. Or go completely wild.");
+        GameStateMono.instance.AddNotification("Speak to the crew, use your apps to assist you, and once you've plotted and schemed, talk to Council Chair Coldwell.");
+        GameStateMono.instance.AddNotification("After each event, you can then interview several pirates to create a unique narrative.");
+        GameStateMono.instance.AddNotification("There are many branching paths, and everything will stick together at the end to make your hopefully epic documentary.");
+        GameStateMono.instance.AddNotification("You can look at your checklist. The main objectives are in order, whilst the side objectives can be completed at any time. Everything will stick together at the end, and you'll have a full documentary based on your decisions.");
     }
 
     private void AddInterviewsNotificationIfNeeded() {
-        if (GameState.justSawTheFlag) {
-            GameState.AddNotification("Interview some people about the flag! Not everyone will have something to say.");
-            GameState.justSawTheFlag = false;
+        if (GameStateMono.instance.justSawTheFlag) {
+            GameStateMono.instance.AddNotification("Interview some people about the flag! Not everyone will have something to say.");
+            GameStateMono.instance.justSawTheFlag = false;
         }
     }
 

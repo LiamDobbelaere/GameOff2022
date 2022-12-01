@@ -12,7 +12,7 @@ public class Notifications : MonoBehaviour {
             Destroy(transform.GetChild(i).gameObject);
         }
 
-        foreach (Notification notification in GameState.notifications) {
+        foreach (Notification notification in GameStateMono.instance.notifications) {
             Transform newNotification = Instantiate(notificationTemplate, transform);
 
             newNotification.Find("Body/Message").GetComponent<TextMeshProUGUI>().text = notification.message;

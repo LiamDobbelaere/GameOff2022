@@ -17,28 +17,28 @@ public class TakePictureButton : MonoBehaviour {
                 flagCam.Render();
 
                 RenderTexture.active = renderTexture;
-                GameState.customFlagTexture.ReadPixels(
+                GameStateMono.instance.customFlagTexture.ReadPixels(
                         new Rect(0, 0, renderTexture.width, renderTexture.height),
                     0, 0);
-                GameState.customFlagTexture.Apply();
+                GameStateMono.instance.customFlagTexture.Apply();
 
 
                 int currentCullingMask = flagCam.cullingMask;
                 flagCam.cullingMask = oldCullingMask;
                 flagCam.Render();
 
-                GameState.customFlagTextureDrawn.ReadPixels(
+                GameStateMono.instance.customFlagTextureDrawn.ReadPixels(
                         new Rect(0, 0, renderTexture.width, renderTexture.height),
                     0, 0);
-                GameState.customFlagTextureDrawn.Apply();
+                GameStateMono.instance.customFlagTextureDrawn.Apply();
 
                 flagCam.cullingMask = currentCullingMask;
 
-                GameState.customFlagIsJollyRoger =
+                GameStateMono.instance.customFlagIsJollyRoger =
                     GameObject.FindGameObjectWithTag("DragAndDropItems")
                         .GetComponent<JollyRogerCheck>().isJollyRoger;
 
-                GameState.hasTakenPictureOf["flag"] = true;
+                GameStateMono.instance.hasTakenPictureOf["flag"] = true;
 
                 GetComponentInParent<Phone>().StartApp("Pictures");
             }

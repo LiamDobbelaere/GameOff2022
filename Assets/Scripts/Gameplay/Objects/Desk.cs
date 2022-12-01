@@ -13,7 +13,7 @@ public class Desk : MonoBehaviour {
     }
 
     public void OnUse() {
-        GameState.StoreLastLocation();
+        GameStateMono.instance.StoreLastLocation();
         SceneManager.LoadScene("FlagEditor");
     }
 }

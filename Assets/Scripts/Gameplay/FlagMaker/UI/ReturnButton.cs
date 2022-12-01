@@ -5,7 +5,7 @@ public class ReturnButton : MonoBehaviour {
     // Start is called before the first frame update
     void Start() {
         GetComponent<Button>().onClick.AddListener(() => {
-            GameState.LoadLastLocation();
+            GameStateMono.instance.LoadLastLocation();
         });
     }
 

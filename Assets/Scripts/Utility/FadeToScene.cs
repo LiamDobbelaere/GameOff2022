@@ -12,6 +12,6 @@ public class FadeToScene : MonoBehaviour {
     }
 
     public void BeginFade() {
-        GameState.LoadLastLocation();
+        GameStateMono.instance.LoadLastLocation();
     }
 }

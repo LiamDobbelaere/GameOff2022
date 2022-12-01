@@ -7,8 +7,8 @@ public class Pictures : MonoBehaviour {
     }
 
     private void OnEnable() {
-        foreach (string key in GameState.hasTakenPictureOf.Keys) {
-            transform.Find(key).gameObject.SetActive(GameState.hasTakenPictureOf[key]);
+        foreach (string key in GameStateMono.instance.hasTakenPictureOf.Keys) {
+            transform.Find(key).gameObject.SetActive(GameStateMono.instance.hasTakenPictureOf[key]);
         }
     }
 

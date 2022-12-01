@@ -12,7 +12,7 @@ public class Picture : MonoBehaviour {
 
             string finalKeyName = pictureKeyName;
             if (pictureKeyName == "flag") {
-                finalKeyName += GameState.customFlagIsJollyRoger ? "-jolly" : "-other";
+                finalKeyName += GameStateMono.instance.customFlagIsJollyRoger ? "-jolly" : "-other";
             }
 
             DialogueLua.SetVariable("Chosen Photo For Flag", finalKeyName);

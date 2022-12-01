@@ -13,14 +13,14 @@ public class AlertBadge : MonoBehaviour {
 
     private void OnEnable() {
         image = GetComponent<Image>();
-        image.enabled = GameState.hasUnreadNotifications;
+        image.enabled = GameStateMono.instance.hasUnreadNotifications;
     }
 
     // Update is called once per frame
     void Update() {
         updateTimer += Time.deltaTime;
         if (updateTimer > MAX_UPDATE_TIME) {
-            image.enabled = GameState.hasUnreadNotifications;
+            image.enabled = GameStateMono.instance.hasUnreadNotifications;
             updateTimer = 0f;
         }
     }

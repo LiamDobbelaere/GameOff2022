@@ -7,7 +7,7 @@ public class PirateFlagPicture : MonoBehaviour {
     }
 
     private void OnEnable() {
-        GetComponent<RawImage>().texture = GameState.customFlagTexture;
+        GetComponent<RawImage>().texture = GameStateMono.instance.customFlagTexture;
     }
 
     // Update is called once per frame

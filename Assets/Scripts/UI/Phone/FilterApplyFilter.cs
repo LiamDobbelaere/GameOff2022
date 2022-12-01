@@ -34,7 +34,7 @@ public class FilterApplyFilter : MonoBehaviour {
                 if (filteredTexture.name.Contains("hat")) {
                     suffix = "-hat";
                 }
-                DialogueLua.SetVariable("Chosen Photo For Hearthorn", GameState.lastChosenFilterPhoto + suffix);
+                DialogueLua.SetVariable("Chosen Photo For Hearthorn", GameStateMono.instance.lastChosenFilterPhoto + suffix);
 
                 SetShownImageTo(filteredTexture);
             });

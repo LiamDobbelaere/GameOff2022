@@ -19,7 +19,7 @@ public class FilterPickPhoto : MonoBehaviour {
                 applyFilterScreen.GetComponent<FilterApplyFilter>().originalImage = image;
                 applyFilterScreen.gameObject.SetActive(true);
 
-                GameState.lastChosenFilterPhoto = child.name;
+                GameStateMono.instance.lastChosenFilterPhoto = child.name;
 
                 gameObject.SetActive(false);
             });

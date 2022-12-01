@@ -13,16 +13,16 @@ public class DialogueLuaFunctions : MonoBehaviour {
             "SwitchScene", this, SymbolExtensions.GetMethodInfo(() => SwitchScene(string.Empty))
         );
         Lua.RegisterFunction(
-            "ShowUIHint", this, SymbolExtensions.GetMethodInfo(() => GameState.ShowUIHint(string.Empty))
+            "ShowUIHint", this, SymbolExtensions.GetMethodInfo(() => GameStateMono.instance.ShowUIHint(string.Empty))
         );
         Lua.RegisterFunction(
             "Advance", this, SymbolExtensions.GetMethodInfo(() => Advance())
         );
         Lua.RegisterFunction(
-            "AddDocumentaryScene", this, SymbolExtensions.GetMethodInfo(() => GameState.AddDocumentaryScene(string.Empty))
+            "AddDocumentaryScene", this, SymbolExtensions.GetMethodInfo(() => GameStateMono.instance.AddDocumentaryScene(string.Empty))
         );
         Lua.RegisterFunction(
-            "AddNotification", this, SymbolExtensions.GetMethodInfo(() => GameState.AddNotification(string.Empty))
+            "AddNotification", this, SymbolExtensions.GetMethodInfo(() => GameStateMono.instance.AddNotification(string.Empty))
         );
     }
 
@@ -40,9 +40,9 @@ public class DialogueLuaFunctions : MonoBehaviour {
     }
 
     private void SwitchScene(string sceneName) {
-        GameState.StoreLastLocation();
+        GameStateMono.instance.StoreLastLocation();
         if (sceneName == "PabloShowFlag") {
-            GameState.justSawTheFlag = true;
+            GameStateMono.instance.justSawTheFlag = true;
         }
         SceneManager.LoadScene(sceneName);
     }

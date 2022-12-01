@@ -24,23 +24,23 @@ public class CameraApp : MonoBehaviour {
         foreach (GameObject photographable in photographables) {
             string key = photographable.GetComponent<Photographable>().key;
 
-            if (!GameState.hasTakenPictureOf[key]) {
+            if (!GameStateMono.instance.hasTakenPictureOf[key]) {
                 canTakePictures = true;
                 break;
             }
         }
 
         if (canTakePictures) {
-            GameState.inPhotographyMode = true;
+            GameStateMono.instance.inPhotographyMode = true;
             GetComponentInParent<Phone>().StartApp("HomeScreen");
             GetComponentInParent<PhoneCanvas>().HidePhone();
 
-            GameState.ShowUIHint("Click on a glowing character or object to take a photo of it!");
+            GameStateMono.instance.ShowUIHint("Click on a glowing character or object to take a photo of it!");
         } else {
             GetComponentInParent<Phone>().StartApp("HomeScreen");
             GetComponentInParent<PhoneCanvas>().HidePhone();
 
-            GameState.ShowUIHint("There is nothing interesting to take a photo of here..");
+            GameStateMono.instance.ShowUIHint("There is nothing interesting to take a photo of here..");
         }
     }
 
